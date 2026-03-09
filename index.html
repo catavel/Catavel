@@ -229,6 +229,8 @@ ul,ol{list-style:none}
 }
 .dp-g{display:flex;flex-direction:column;align-items:flex-end;gap:1px}
 .dp-orig{font-size:11px;color:var(--muted);text-decoration:line-through}
+.dp-from{font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;display:block}
+.dp-live-note{font-size:10px;color:var(--muted);display:block;margin-top:1px}
 .dp-price{font-family:var(--fh);font-size:17px;color:var(--text);letter-spacing:-.3px;line-height:1;white-space:nowrap}
 .dp-save{font-size:10.5px;color:#15803D;font-weight:500}
 /* Book CTA — 44×44 minimum touch target */
@@ -843,7 +845,11 @@ ul,ol{list-style:none}
 
     <!-- DEALS LIST -->
     <section aria-labelledby="dh-t">
-      <div class="dh">
+      <div class="price-note" role="note">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+  Prices shown are indicative fares updated every 6 hours. Final price is confirmed at checkout on the OTA's website.
+</div>
+<div class="dh">
         <h2 class="dh-title" id="dh-t">Today's Deals</h2>
         <span class="dh-ct" id="dh-ct" aria-live="polite" aria-atomic="true">0 deals</span>
         <span class="dh-upd"><span class="dot" aria-hidden="true"></span>42 min ago</span>
@@ -1440,11 +1446,12 @@ function injectSchema(deals){
    The .mc row is rendered always in HTML; shown/hidden via CSS display.
 */
 function cardNormal(d){
-  const sv=d.original_price-d.discounted_price;
   const urg=isUrgent(d.valid_until);
   const urgCls=urg?' urg':'';
-  const hot=d.is_hot?'<span class="tag-hot">Hot</span>':'';
-  const exp=d.is_expiring?'<span class="tag-exp">Expiring</span>':'';
+  const hot=d.is_hot?'<span class="tag-hot">🔥 Hot</span>':'';
+  const exp=d.is_expiring?'<span class="tag-exp">⏰ Expiring</span>':'';
+  // "from" price — honest about price variability
+  const fromPrice=`from ${d.currency} ${d.discounted_price.toLocaleString()}`;
   return`<li class="di">
 <article class="dc" data-cat="${d.category}" itemscope itemtype="https://schema.org/Offer">
   <meta itemprop="price" content="${d.discounted_price}">
@@ -1467,32 +1474,32 @@ function cardNormal(d){
       </span>
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
       <span class="d-mkt">${d.market==='SGD'?'🇸🇬':'🇲🇾'}</span>
-      <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
+      <span class="d-exp${urgCls}">Updated <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
-  <!-- desktop: price + CTA (hidden on mobile via CSS) -->
+  <!-- desktop: price + CTA -->
   <div class="dp">
     <div class="dp-g">
-      <span class="dp-orig">${d.currency} ${d.original_price.toLocaleString()}</span>
+      <span class="dp-from">from</span>
       <span class="dp-price" itemprop="price">${d.currency} ${d.discounted_price.toLocaleString()}</span>
-      <span class="dp-save">Save ${d.currency} ${sv.toLocaleString()}</span>
+      <span class="dp-live-note">Live price at checkout</span>
     </div>
     <a href="${d.link}" class="btn-bk" target="_blank" rel="noopener noreferrer sponsored"
-       aria-label="Book ${d.title} on ${d.ota}" itemprop="url">
-      Book
+       aria-label="Check live price for ${d.title} on ${d.ota}" itemprop="url">
+      Check Price
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
-  <!-- mobile: CTA row (hidden on desktop, shown on ≤600px) -->
+  <!-- mobile: CTA row -->
   <div class="mc">
     <div class="mc-price">
-      <span class="mc-orig">${d.currency} ${d.original_price.toLocaleString()}</span>
+      <span class="dp-from">from</span>
       <span class="mc-val">${d.currency} ${d.discounted_price.toLocaleString()}</span>
-      <span class="mc-save">Save ${d.currency} ${sv.toLocaleString()}</span>
+      <span class="dp-live-note">Live price at checkout</span>
     </div>
     <a href="${d.link}" class="mc-book" target="_blank" rel="noopener noreferrer sponsored"
-       aria-label="Book ${d.title} — ${d.currency} ${d.discounted_price}">
-      Book Now
+       aria-label="Check price for ${d.title} — ${d.currency} ${d.discounted_price}">
+      Check Price
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
