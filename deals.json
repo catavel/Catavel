@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-09T23:22:41.985Z",
+  "lastUpdated": "2026-03-09T23:29:27.861Z",
   "totalDeals": 20,
   "generatedBy": "Catavel Pipeline v12",
   "deals": [
     {
-      "id": "flight_MNL_TYO_1773098541112_g8a2",
+      "id": "flight_MNL_TYO_1773098965510_qi1y",
       "title": "Manila to Tokyo from PHP 220",
       "destination": "Tokyo",
       "origin": "Manila",
@@ -16,12 +16,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FMNL230826TYO1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.318Z",
+      "created_at": "2026-03-09T23:29:26.318Z",
       "market": "PHP"
     },
     {
-      "id": "flight_HKG_TYO_1773098540173_e580",
+      "id": "flight_HKG_TYO_1773098964566_xeua",
       "title": "Hong Kong to Tokyo from HKD 224",
       "destination": "Tokyo",
       "origin": "Hong Kong",
@@ -33,12 +33,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG110426TYO1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "HKD"
     },
     {
-      "id": "flight_MNL_SEL_1773098541112_7xrx",
+      "id": "flight_MNL_SEL_1773098965510_ps28",
       "title": "Manila to Seoul from PHP 172",
       "destination": "Seoul",
       "origin": "Manila",
@@ -50,12 +50,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FMNL010726SEL1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.318Z",
+      "created_at": "2026-03-09T23:29:26.318Z",
       "market": "PHP"
     },
     {
-      "id": "flight_HKG_OSA_1773098540173_7mb4",
+      "id": "flight_HKG_OSA_1773098964566_edv7",
       "title": "Hong Kong to Osaka from HKD 231",
       "destination": "Osaka",
       "origin": "Hong Kong",
@@ -67,12 +67,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG130526OSA1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "HKD"
     },
     {
-      "id": "flight_MNL_TPE_1773098541112_c0hx",
+      "id": "flight_MNL_TPE_1773098965510_9994",
       "title": "Manila to Taipei from PHP 132",
       "destination": "Taipei",
       "origin": "Manila",
@@ -84,12 +84,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FMNL070227TPE1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.318Z",
+      "created_at": "2026-03-09T23:29:26.318Z",
       "market": "PHP"
     },
     {
-      "id": "flight_MNL_OSA_1773098541111_1uqt",
+      "id": "flight_MNL_OSA_1773098965510_99pp",
       "title": "Manila to Osaka from PHP 260",
       "destination": "Osaka",
       "origin": "Manila",
@@ -101,12 +101,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FMNL040626OSA1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.318Z",
+      "created_at": "2026-03-09T23:29:26.318Z",
       "market": "PHP"
     },
     {
-      "id": "flight_HKG_SEL_1773098540173_7cdk",
+      "id": "flight_HKG_SEL_1773098964566_h00x",
       "title": "Hong Kong to Seoul from HKD 206",
       "destination": "Seoul",
       "origin": "Hong Kong",
@@ -118,12 +118,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG150426SEL1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "HKD"
     },
     {
-      "id": "flight_HKG_TPE_1773098540173_cs5n",
+      "id": "flight_HKG_TPE_1773098964566_9esd",
       "title": "Hong Kong to Taipei from HKD 149",
       "destination": "Taipei",
       "origin": "Hong Kong",
@@ -135,12 +135,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG230326TPE1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "HKD"
     },
     {
-      "id": "flight_KUL_HKT_1773098539137_rj49",
+      "id": "flight_KUL_HKT_1773098963567_wj5k",
       "title": "Kuala Lumpur to Phuket from MYR 91",
       "destination": "Phuket",
       "origin": "Kuala Lumpur",
@@ -152,12 +152,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL060526HKT1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "MYR"
     },
     {
-      "id": "flight_KUL_TYO_1773098539138_schm",
+      "id": "flight_KUL_TYO_1773098963568_r2fb",
       "title": "Kuala Lumpur to Tokyo from MYR 314",
       "destination": "Tokyo",
       "origin": "Kuala Lumpur",
@@ -169,12 +169,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL220626TYO1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "MYR"
     },
     {
-      "id": "flight_MNL_HKG_1773098541111_w907",
+      "id": "flight_MNL_HKG_1773098965510_5z71",
       "title": "Manila to Hong Kong from PHP 128",
       "destination": "Hong Kong",
       "origin": "Manila",
@@ -186,12 +186,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FMNL250227HKG1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.318Z",
+      "created_at": "2026-03-09T23:29:26.318Z",
       "market": "PHP"
     },
     {
-      "id": "flight_SIN_OSA_1773098538169_dd2r",
+      "id": "flight_SIN_OSA_1773098962568_55gi",
       "title": "Singapore to Osaka from SGD 314",
       "destination": "Osaka",
       "origin": "Singapore",
@@ -203,12 +203,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN140426OSA1",
-      "valid_until": "2026-03-16T23:22:21.922Z",
-      "created_at": "2026-03-09T23:22:21.922Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "SGD"
     },
     {
-      "id": "flight_SIN_TYO_1773098538169_bcz5",
+      "id": "flight_SIN_TYO_1773098962568_uk18",
       "title": "Singapore to Tokyo from SGD 342",
       "destination": "Tokyo",
       "origin": "Singapore",
@@ -220,12 +220,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN030526TYO1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "SGD"
     },
     {
-      "id": "flight_KUL_SEL_1773098539137_cfbn",
+      "id": "flight_KUL_SEL_1773098963568_l8sm",
       "title": "Kuala Lumpur to Seoul from MYR 270",
       "destination": "Seoul",
       "origin": "Kuala Lumpur",
@@ -237,12 +237,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL170526SEL1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "MYR"
     },
     {
-      "id": "flight_KUL_DPS_1773098539137_t619",
+      "id": "flight_KUL_DPS_1773098963567_afkc",
       "title": "Kuala Lumpur to Bali from MYR 128",
       "destination": "Bali",
       "origin": "Kuala Lumpur",
@@ -254,12 +254,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL110326DPS1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "MYR"
     },
     {
-      "id": "flight_KUL_OSA_1773098539137_3qqe",
+      "id": "flight_KUL_OSA_1773098963568_p6l5",
       "title": "Kuala Lumpur to Osaka from MYR 356",
       "destination": "Osaka",
       "origin": "Kuala Lumpur",
@@ -271,12 +271,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL150726OSA1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "MYR"
     },
     {
-      "id": "flight_SIN_SEL_1773098538169_ghhp",
+      "id": "flight_SIN_SEL_1773098962568_yt4t",
       "title": "Singapore to Seoul from SGD 275",
       "destination": "Seoul",
       "origin": "Singapore",
@@ -288,12 +288,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN010626SEL1",
-      "valid_until": "2026-03-16T23:22:21.922Z",
-      "created_at": "2026-03-09T23:22:21.922Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "SGD"
     },
     {
-      "id": "flight_SIN_HKT_1773098538169_zxsa",
+      "id": "flight_SIN_HKT_1773098962568_rj27",
       "title": "Singapore to Phuket from SGD 121",
       "destination": "Phuket",
       "origin": "Singapore",
@@ -305,12 +305,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN160426HKT1",
-      "valid_until": "2026-03-16T23:22:21.922Z",
-      "created_at": "2026-03-09T23:22:21.922Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "SGD"
     },
     {
-      "id": "flight_SIN_TPE_1773098538169_pcgd",
+      "id": "flight_SIN_TPE_1773098962568_1yr5",
       "title": "Singapore to Taipei from SGD 210",
       "destination": "Taipei",
       "origin": "Singapore",
@@ -322,12 +322,12 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN120526TPE1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.317Z",
+      "created_at": "2026-03-09T23:29:26.317Z",
       "market": "SGD"
     },
     {
-      "id": "flight_MNL_SYD_1773098541112_8hsd",
+      "id": "flight_MNL_SYD_1773098965510_vrdb",
       "title": "Manila to Sydney from PHP 396",
       "destination": "Sydney",
       "origin": "Manila",
@@ -339,8 +339,8 @@
       "category": "Flight",
       "image_url": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&q=80",
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FMNL021126SYD1",
-      "valid_until": "2026-03-16T23:22:21.923Z",
-      "created_at": "2026-03-09T23:22:21.923Z",
+      "valid_until": "2026-03-16T23:29:26.318Z",
+      "created_at": "2026-03-09T23:29:26.318Z",
       "market": "PHP"
     }
   ]
