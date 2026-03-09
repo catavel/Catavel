@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catavel — Best Travel Deals for Singapore &amp; Malaysia</title>
+<meta name="description" content="Best flight, hotel and activity deals for Singapore and Malaysia travelers. Curated from 60+ OTAs, updated every 6 hours.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://catavel.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://catavel.com/">
+<meta property="og:title" content="Catavel — Best Travel Deals for SG &amp; MY">
+<meta property="og:description" content="Curated flight, hotel and activity deals from 60+ OTAs. Updated every 6 hours.">
+<meta property="og:image" content="https://catavel.com/og-image.jpg">
+<meta property="og:locale" content="en_SG">
+<meta property="og:site_name" content="Catavel">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catavel — Best Travel Deals for SG &amp; MY">
+<meta name="twitter:description" content="Curated deals from 60+ OTAs. Updated every 6 hours.">
+<meta name="twitter:image" content="https://catavel.com/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Serif+Display&display=swap">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Catavel","url":"https://catavel.com","sameAs":["https://t.me/SGTravelDeals","https://t.me/MYTravelDeals"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Catavel","url":"https://catavel.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://catavel.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+<style>
+/* ===========================================
+   TOKENS
+   =========================================== */
+:root{
+  --teal:#00897B; --teal-d:#00695C; --teal-lt:#E6F4F2; --teal-bd:#B2DFDB;
+  --orange:#E8622A; --orange-d:#D4561E;
+  --white:#fff; --bg:#F6F6F4; --text:#111; --text2:#444; --muted:#999;
+  --bdr:#E5E5E2; --bdr2:#D0D0CB;
+  --r:6px;
+  --f:'DM Sans',system-ui,sans-serif;
+  --fh:'DM Serif Display',Georgia,serif;
+  /* Height of mobile sticky bottom bar */
+  --bh:72px;
+}
+
+/* ===========================================
+   RESET & BASE
+   =========================================== */
+html{box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
+body{font-family:var(--f);font-size:14px;line-height:1.5;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font:inherit;border:none;background:none;-webkit-tap-highlight-color:transparent}
+ul,ol{list-style:none}
+.skip{position:absolute;top:-40px;left:8px;z-index:9999;padding:6px 14px;background:var(--teal);color:#fff;border-radius:0 0 var(--r) var(--r);font-size:13px;transition:top .15s}
+.skip:focus{top:0}
+/* Constrained container */
+.w{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* ===========================================
+   HEADER
+   =========================================== */
+.hd{position:sticky;top:0;z-index:200;background:var(--white);border-bottom:1px solid var(--bdr)}
+.hd-i{display:flex;align-items:center;gap:14px;height:48px}
+.logo{font-family:var(--fh);font-size:18px;letter-spacing:-.3px;display:flex;align-items:center;gap:5px;flex-shrink:0}
+.logo em{font-style:normal;display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--orange);margin-bottom:2px}
+.nav{display:flex;gap:1px}
+.nav a{font-size:13px;font-weight:500;color:var(--muted);padding:5px 10px;border-radius:4px;transition:color .12s,background .12s}
+.nav a:hover,.nav a[aria-current]{color:var(--teal)}
+.hd-r{margin-left:auto;display:flex;gap:6px;align-items:center}
+/* Telegram buttons in header */
+.btn-tg{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:500;color:#fff;background:#0088CC;white-space:nowrap}
+.btn-tg:hover{opacity:.88}
+.btn-tg-my{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:500;color:var(--text2);border:1px solid var(--bdr2);white-space:nowrap}
+.btn-tg-my:hover{border-color:var(--text);color:var(--text)}
+
+/* ===========================================
+   HERO
+   =========================================== */
+.hero{background:var(--white);border-bottom:1px solid var(--bdr);padding:28px 0 22px}
+.hero-live{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;color:var(--muted);margin-bottom:10px}
+.dot{width:5px;height:5px;border-radius:50%;background:#22C55E;animation:pulse 2.5s ease-in-out infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.hero h1{font-family:var(--fh);font-size:clamp(22px,4vw,38px);font-weight:400;letter-spacing:-.5px;line-height:1.15;margin-bottom:8px;max-width:520px}
+.hero h1 i{font-style:italic;color:var(--teal)}
+.hero-sub{font-size:13.5px;color:var(--text2);max-width:420px;line-height:1.55;margin-bottom:18px}
+/* Search form */
+.sf{display:flex;max-width:520px;border:1.5px solid var(--bdr2);border-radius:var(--r);background:var(--white);overflow:hidden}
+.sf:focus-within{border-color:var(--teal);outline:2px solid rgba(0,137,123,.12);outline-offset:0}
+.sf-in{flex:1;display:flex;align-items:center;gap:7px;padding:0 12px;border-right:1px solid var(--bdr);height:46px}
+.sf-in svg{color:var(--muted);flex-shrink:0;width:14px;height:14px}
+.sf-in input{flex:1;border:none;outline:none;font:inherit;font-size:14px;color:var(--text);background:transparent;min-width:0}
+.sf-in input::placeholder{color:var(--muted)}
+.sf-cat{padding:0 22px 0 9px;border-right:1px solid var(--bdr);border:none;border-right:1px solid var(--bdr);outline:none;font:inherit;font-size:13px;color:var(--text2);background:var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 6px center;-webkit-appearance:none;appearance:none;cursor:pointer;height:46px}
+.sf-btn{padding:0 20px;background:var(--teal);color:#fff;font-size:13.5px;font-weight:500;white-space:nowrap;height:46px;transition:background .12s}
+.sf-btn:hover{background:var(--teal-d)}
+/* Stats bar */
+.stats{display:flex;gap:24px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid var(--bdr)}
+.stat-n{font-family:var(--fh);font-size:17px;color:var(--text);letter-spacing:-.3px}
+.stat-l{font-size:11px;color:var(--muted)}
+
+/* ===========================================
+   CATEGORY NAV (sticky)
+   =========================================== */
+.cat-nav{background:var(--white);border-bottom:1px solid var(--bdr);position:sticky;top:48px;z-index:90}
+.cat-nav-i{display:flex;gap:2px;align-items:center;height:42px;overflow-x:auto;scrollbar-width:none;padding:0 2px}
+.cat-nav-i::-webkit-scrollbar{display:none}
+/* Pills — visually 42px, touch target extended 8px via pseudo-element */
+.pill{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:0 11px;height:32px;
+  border-radius:4px;font-size:12.5px;font-weight:500;
+  color:var(--muted);white-space:nowrap;flex-shrink:0;
+  border:1px solid transparent;position:relative;
+  transition:color .12s,background .12s;
+}
+/* Extended touch target — does not interfere with neighbours */
+.pill::before{content:'';position:absolute;inset:-8px 0}
+.pill:hover{color:var(--text);background:var(--bg)}
+.pill.on{color:var(--teal);background:var(--teal-lt);border-color:var(--teal-bd)}
+.cat-sep{width:1px;height:14px;background:var(--bdr);flex-shrink:0;margin:0 4px}
+
+/* ===========================================
+   MAIN LAYOUT GRID
+   =========================================== */
+.grid{display:grid;grid-template-columns:188px 1fr;gap:20px;padding:16px 0 60px;align-items:start}
+
+/* ===========================================
+   SIDEBAR (desktop only — hidden ≤860px)
+   =========================================== */
+.sb{display:flex;flex-direction:column;gap:14px}
+.sb-lbl{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:4px}
+/* Dropdown selects */
+.sb-sel{
+  width:100%;height:38px;padding:0 22px 0 9px;
+  border:1px solid var(--bdr2);border-radius:var(--r);
+  font:inherit;font-size:13px;color:var(--text);
+  background:var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 7px center;
+  -webkit-appearance:none;appearance:none;cursor:pointer;outline:none;
+}
+.sb-sel:focus{border-color:var(--teal)}
+/* OTA checkbox rows — min 36px each */
+.ota-row{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text2);cursor:pointer;min-height:36px;padding:0 3px;border-radius:4px}
+.ota-row:hover{background:var(--bg)}
+.ota-row input{accent-color:var(--teal);width:14px;height:14px;flex-shrink:0}
+.ota-ct{margin-left:auto;font-size:11px;color:var(--muted)}
+/* Range slider */
+.range-wrap{display:flex;flex-direction:column;gap:5px}
+.range{-webkit-appearance:none;appearance:none;width:100%;height:3px;background:var(--bdr2);border-radius:2px;outline:none}
+.range::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--teal);border:2px solid var(--white);box-shadow:0 0 0 1.5px var(--teal);cursor:pointer}
+.range-lbl{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+/* Apply button */
+.btn-apply{width:100%;height:42px;background:var(--text);color:#fff;font-size:13px;font-weight:500;border-radius:var(--r)}
+.btn-apply:hover{background:#333}
+.sb-div{height:1px;background:var(--bdr)}
+/* Telegram widget in sidebar */
+.sb-tg{border:1px solid var(--bdr);border-radius:var(--r);padding:12px;background:var(--white)}
+.sb-tg h2{font-family:var(--fh);font-size:13px;font-weight:400;margin-bottom:4px}
+.sb-tg p{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:8px}
+.sb-tg-lnk{display:flex;align-items:center;gap:6px;padding:7px 9px;border:1px solid var(--bdr);border-radius:var(--r);font-size:12px;font-weight:500;color:var(--text2);margin-bottom:4px;min-height:38px;transition:border-color .12s,color .12s}
+.sb-tg-lnk:last-child{margin-bottom:0}
+.sb-tg-lnk:hover{border-color:#0088CC;color:#0088CC}
+
+/* ===========================================
+   DEALS HEADER
+   =========================================== */
+.dh{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.dh-title{font-family:var(--fh);font-size:15px;font-weight:400}
+.dh-ct{font-size:11.5px;color:var(--muted);background:var(--bg);border:1px solid var(--bdr);padding:1px 8px;border-radius:20px}
+.dh-upd{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--muted)}
+.dh-sort{margin-left:auto;font-size:12px;color:var(--muted)}
+.dh-sort select{border:1px solid var(--bdr2);border-radius:4px;padding:4px 8px;font:inherit;font-size:12px;color:var(--text2);background:var(--white);outline:none;cursor:pointer;min-height:30px}
+
+/* ===========================================
+   DEAL CARD — BASE (desktop: 3 columns)
+   =========================================== */
+.dl{display:flex;flex-direction:column;gap:2px}
+.di{list-style:none}
+.dc{
+  display:grid;
+  /* [accent 30px] [body 1fr] [price/action auto] */
+  grid-template-columns:30px 1fr auto;
+  grid-template-rows:auto;
+  align-items:stretch;
+  background:var(--white);
+  border:1px solid var(--bdr);
+  border-radius:var(--r);
+  overflow:hidden;
+  contain:layout style;
+  transition:border-color .12s,background .12s;
+}
+.dc:hover{border-color:var(--bdr2);background:#FAFAF8}
+
+/* LEFT: colour-coded accent strip */
+.da{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  border-right:1px solid var(--bdr);padding:10px 0;flex-shrink:0;
+}
+.da-ico{font-size:13px;line-height:1}
+.da-pct{font-size:9px;font-weight:700;padding:1px 3px;border-radius:2px;line-height:1.3;white-space:nowrap}
+.dc[data-cat=flight]  .da{background:#EFF6FF} .dc[data-cat=flight]  .da-pct{background:#1D4ED8;color:#fff}
+.dc[data-cat=hotel]   .da{background:#F0FDF4} .dc[data-cat=hotel]   .da-pct{background:#15803D;color:#fff}
+.dc[data-cat=activity].da{background:#FFF7ED} .dc[data-cat=activity].da-pct{background:#C2410C;color:#fff}
+.dc[data-cat=package] .da{background:#FAF5FF} .dc[data-cat=package] .da-pct{background:#7C3AED;color:#fff}
+.dc[data-cat=voucher] .da{background:#FFF8F0} .dc[data-cat=voucher] .da-pct{background:var(--orange);color:#fff}
+
+/* CENTRE: deal info body */
+.db{padding:10px 13px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.dr1{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+/* Title: 2-line max on desktop, no truncation — preserves full context */
+.dtitle{
+  font-family:var(--fh);font-size:13.5px;font-weight:400;color:var(--text);
+  line-height:1.3;word-break:break-word;overflow-wrap:anywhere;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.tag-hot{font-size:9.5px;font-weight:600;padding:1px 5px;border-radius:2px;background:#FEF3C7;color:#92400E;flex-shrink:0;white-space:nowrap}
+.tag-exp{font-size:9.5px;font-weight:600;padding:1px 5px;border-radius:2px;background:#FEE2E2;color:#991B1B;flex-shrink:0;white-space:nowrap}
+.dr2{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:2px}
+.d-dest{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:2px}
+.d-dest svg{width:9px;height:9px;flex-shrink:0}
+.d-ota{font-size:11px;color:var(--muted)}
+.d-ota b{color:var(--text2);font-weight:500}
+.d-mkt{font-size:11px;color:var(--muted)}
+.d-exp{font-size:11px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.d-exp.urg{color:#DC2626;font-weight:600}
+
+/* RIGHT: price + book (desktop) */
+.dp{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 14px;border-left:1px solid var(--bdr);flex-shrink:0;
+}
+.dp-g{display:flex;flex-direction:column;align-items:flex-end;gap:1px}
+.dp-orig{font-size:11px;color:var(--muted);text-decoration:line-through}
+.dp-price{font-family:var(--fh);font-size:17px;color:var(--text);letter-spacing:-.3px;line-height:1;white-space:nowrap}
+.dp-save{font-size:10.5px;color:#15803D;font-weight:500}
+/* Book CTA — 44×44 minimum touch target */
+.btn-bk{
+  display:inline-flex;align-items:center;justify-content:center;gap:4px;
+  min-width:72px;min-height:44px;padding:0 14px;
+  background:var(--teal);color:#fff;
+  font-size:13px;font-weight:500;border-radius:var(--r);
+  white-space:nowrap;flex-shrink:0;transition:background .12s;
+}
+.btn-bk:hover{background:var(--teal-d)}
+.btn-bk svg{width:10px;height:10px}
+
+/* RIGHT: voucher reveal widget (desktop) */
+.dv{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 14px;border-left:1px solid var(--bdr);flex-shrink:0;min-width:195px;
+}
+.vch-lbl{font-size:11px;color:var(--muted);line-height:1.4;flex-shrink:0;text-align:right}
+.vch-lbl strong{display:block;font-family:var(--fh);font-size:16px;color:var(--orange);letter-spacing:-.2px}
+/* Code blur widget */
+.cw{display:flex;align-items:stretch;border:1.5px solid var(--bdr2);border-radius:var(--r);overflow:hidden;width:100%}
+.ch{
+  flex:1;padding:0 10px;
+  font-family:monospace;font-size:12.5px;font-weight:700;letter-spacing:1.5px;
+  color:var(--text);background:var(--bg);
+  user-select:none;pointer-events:none;
+  filter:blur(4px);transition:filter .25s ease;
+  white-space:nowrap;overflow:hidden;
+  display:flex;align-items:center;min-height:40px;
+}
+.cw.open .ch{filter:none;user-select:text;pointer-events:auto}
+.btn-rv{
+  padding:0 11px;min-height:40px;
+  background:var(--orange);color:#fff;
+  font-size:11.5px;font-weight:700;white-space:nowrap;flex-shrink:0;
+  border-left:1.5px solid rgba(0,0,0,.09);
+  transition:background .15s;display:flex;align-items:center;
+}
+.btn-rv:hover{background:var(--orange-d)}
+.cw.open .btn-rv{background:var(--teal)}
+
+/* ===========================================
+   MOBILE CTA ROW
+   — Always rendered in HTML, hidden via display:none on desktop.
+   — On mobile (≤600px): shown as full-width bottom row of each card.
+   — Contains: price stack (left) + CTA button (right).
+   =========================================== */
+.mc{
+  /* Hidden on desktop */
+  display:none;
+  grid-column:1 / -1; /* span full card width */
+  border-top:1px solid var(--bdr);
+  align-items:stretch;
+  min-height:52px;
+}
+/* Price stack inside mobile CTA row */
+.mc-price{
+  flex:1;padding:8px 13px;
+  display:flex;flex-direction:column;justify-content:center;gap:1px;
+}
+.mc-orig{font-size:10.5px;color:var(--muted);text-decoration:line-through;line-height:1}
+.mc-val{font-family:var(--fh);font-size:18px;color:var(--text);letter-spacing:-.4px;line-height:1.1}
+.mc-save{font-size:10.5px;color:#15803D;font-weight:500;line-height:1}
+/* Book button — full height of row, minimum 52px */
+.mc-book{
+  display:flex;align-items:center;justify-content:center;gap:5px;
+  padding:0 20px;min-height:52px;flex-shrink:0;
+  background:var(--teal);color:#fff;
+  font-size:15px;font-weight:600;
+  border-left:1px solid rgba(0,0,0,.07);
+  white-space:nowrap;transition:background .12s;
+}
+.mc-book:hover,.mc-book:active{background:var(--teal-d)}
+.mc-book svg{width:13px;height:13px}
+/* Voucher row variant */
+.mc-vch{flex:1;display:flex;align-items:center;gap:10px;padding:8px 13px}
+.mc-vch-lbl{font-size:11px;color:var(--muted);line-height:1.3;flex-shrink:0}
+.mc-vch-lbl strong{display:block;font-family:var(--fh);font-size:16px;color:var(--orange)}
+/* Mobile code widget */
+.mcw{display:flex;align-items:stretch;border:1.5px solid var(--bdr2);border-radius:var(--r);overflow:hidden;flex:1;min-height:44px}
+.mch{
+  flex:1;padding:0 9px;
+  font-family:monospace;font-size:11.5px;font-weight:700;letter-spacing:1.5px;
+  color:var(--text);background:var(--bg);
+  user-select:none;pointer-events:none;
+  filter:blur(4px);transition:filter .25s;
+  white-space:nowrap;overflow:hidden;
+  display:flex;align-items:center;
+}
+.mcw.open .mch{filter:none;user-select:text;pointer-events:auto}
+.btn-mrv{
+  padding:0 11px;min-height:44px;
+  background:var(--orange);color:#fff;
+  font-size:12px;font-weight:700;white-space:nowrap;flex-shrink:0;
+  border-left:1.5px solid rgba(0,0,0,.08);
+  transition:background .15s;display:flex;align-items:center;
+}
+.btn-mrv:hover{background:var(--orange-d)}
+.mcw.open .btn-mrv{background:var(--teal)}
+
+/* Empty state */
+.empty{padding:36px 16px;text-align:center;background:var(--white);border:1px solid var(--bdr);border-radius:var(--r)}
+.empty p{font-size:13px;color:var(--muted)}
+
+/* ===========================================
+   AI SECTION
+   =========================================== */
+.ai-s{background:var(--white);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:40px 0}
+.ai-g{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.ai-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--teal);margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.ai-lbl::before{content:'';display:block;width:14px;height:1px;background:var(--teal)}
+.ai-copy h2{font-family:var(--fh);font-size:25px;font-weight:400;letter-spacing:-.4px;line-height:1.2;margin-bottom:10px}
+.ai-copy h2 i{font-style:italic;color:var(--teal)}
+.ai-copy p{font-size:13.5px;color:var(--text2);line-height:1.65;margin-bottom:14px}
+.ai-feats{display:flex;flex-direction:column;gap:6px}
+.ai-feat{display:flex;gap:7px;font-size:12.5px;color:var(--text2)}
+.ai-feat::before{content:'→';color:var(--teal);flex-shrink:0}
+.ai-demo{border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden}
+.ai-bar{background:var(--text);padding:8px 12px;display:flex;align-items:center;gap:6px}
+.ai-dots{display:flex;gap:4px}
+.ai-dot{width:7px;height:7px;border-radius:50%}
+.r{background:#FF5F57}.y{background:#FEBC2E}.g{background:#28C840}
+.ai-ttl{font-size:10px;color:rgba(255,255,255,.25);margin-left:4px}
+.ai-body{padding:12px;background:var(--bg)}
+.ai-inp{background:var(--white);border:1px solid var(--bdr);border-radius:var(--r);padding:9px 11px;margin-bottom:9px}
+.ai-inp-lbl{font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px}
+.ai-inp-txt{font-size:12.5px;color:var(--text2);line-height:1.5}
+.ai-inp-txt b{color:var(--teal);font-weight:500}
+.ai-res{display:flex;flex-direction:column;gap:5px}
+.ai-row{background:var(--white);border:1px solid var(--bdr);border-radius:var(--r);padding:8px 10px;display:flex;align-items:center;gap:7px}
+.ai-ico{font-size:13px}
+.ai-info{flex:1;min-width:0}
+.ai-name{font-size:11px;font-weight:500;color:var(--text)}
+.ai-sub{font-size:10px;color:var(--muted);margin-top:1px}
+.ai-px{font-family:var(--fh);font-size:13px;color:var(--teal);white-space:nowrap}
+.ai-cta{display:flex;align-items:center;justify-content:center;margin-top:9px;padding:9px;border-radius:var(--r);background:var(--teal-lt);border:1px solid var(--teal-bd);color:var(--teal);font-size:12px;font-weight:500}
+
+/* ===========================================
+   TELEGRAM BANNER
+   =========================================== */
+.tg-ban{background:#0088CC;padding:24px 0}
+.tg-ban-i{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.tg-copy{flex:1;min-width:180px}
+.tg-copy h2{font-family:var(--fh);font-size:18px;font-weight:400;color:#fff;margin-bottom:3px}
+.tg-copy p{font-size:12.5px;color:rgba(255,255,255,.7);line-height:1.5}
+.tg-btns{display:flex;gap:7px;flex-wrap:wrap}
+.btn-tw{display:inline-flex;align-items:center;gap:5px;padding:0 16px;height:44px;background:#fff;color:#0077BB;font-size:13px;font-weight:500;border-radius:var(--r)}
+.btn-tw:hover{opacity:.9}
+.btn-to{display:inline-flex;align-items:center;gap:5px;padding:0 16px;height:44px;color:#fff;font-size:13px;font-weight:500;border:1.5px solid rgba(255,255,255,.35);border-radius:var(--r)}
+.btn-to:hover{border-color:rgba(255,255,255,.7)}
+
+/* ===========================================
+   DESTINATIONS
+   =========================================== */
+.dest-s{background:var(--white);border-top:1px solid var(--bdr);padding:30px 0}
+.dest-s h2{font-family:var(--fh);font-size:18px;font-weight:400;margin-bottom:12px;letter-spacing:-.2px}
+.dest-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:6px}
+.dest-a{display:flex;align-items:center;gap:7px;padding:10px 11px;border:1px solid var(--bdr);border-radius:var(--r);font-size:12.5px;font-weight:500;color:var(--text2);min-height:44px;transition:border-color .12s,color .12s}
+.dest-a:hover{border-color:var(--teal);color:var(--teal)}
+
+/* ===========================================
+   NEWSLETTER
+   =========================================== */
+.nl{background:var(--bg);border-top:1px solid var(--bdr);padding:36px 0}
+.nl-i{max-width:380px;margin:0 auto;text-align:center}
+.nl-eye{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--orange);margin-bottom:8px}
+.nl h2{font-family:var(--fh);font-size:21px;font-weight:400;margin-bottom:6px;letter-spacing:-.2px}
+.nl p{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:16px}
+.nl-form{display:flex;gap:5px}
+.nl-inp{flex:1;padding:0 12px;border:1px solid var(--bdr2);border-radius:var(--r);font:inherit;font-size:13px;color:var(--text);outline:none;background:var(--white);min-height:46px}
+.nl-inp:focus{border-color:var(--teal)}
+.nl-inp::placeholder{color:var(--muted)}
+.nl-sub{padding:0 18px;background:var(--orange);color:#fff;font-size:13px;font-weight:500;border-radius:var(--r);white-space:nowrap;min-height:46px;transition:background .12s}
+.nl-sub:hover{background:var(--orange-d)}
+.nl-note{font-size:11px;color:var(--muted);margin-top:8px}
+.nl-note a{color:var(--teal)}
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+.ft{background:var(--text);padding:28px 0 20px}
+.ft-g{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:24px;margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.07)}
+.ft-brand p{font-size:11.5px;color:rgba(255,255,255,.35);line-height:1.6;margin-top:7px}
+.ft-brand .logo{color:#fff}
+.ft-col h3{font-size:10px;font-weight:600;color:rgba(255,255,255,.28);text-transform:uppercase;letter-spacing:.7px;margin-bottom:9px;font-family:var(--f)}
+.ft-col a{display:block;font-size:12.5px;color:rgba(255,255,255,.45);padding:3px 0;line-height:1.8;transition:color .12s}
+.ft-col a:hover{color:rgba(255,255,255,.85)}
+.ft-btm{display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.ft-disc{font-size:11px;color:rgba(255,255,255,.22);line-height:1.6;flex:1}
+.ft-disc strong{color:rgba(255,255,255,.3)}
+.ft-copy{font-size:11px;color:rgba(255,255,255,.18);white-space:nowrap}
+
+/* ===========================================
+   TOAST
+   =========================================== */
+.toast{
+  position:fixed;bottom:18px;right:16px;z-index:9500;
+  background:var(--text);color:#fff;
+  padding:10px 16px;border-radius:var(--r);
+  font-size:13px;
+  display:flex;align-items:center;gap:7px;
+  transform:translateY(70px);opacity:0;
+  transition:transform .22s cubic-bezier(.34,1.4,.64,1),opacity .22s;
+  pointer-events:none;
+  max-width:calc(100vw - 32px);
+}
+.toast.on{transform:translateY(0);opacity:1;pointer-events:auto}
+.t-ok{color:#22C55E;flex-shrink:0;font-size:14px}
+
+/* ===========================================
+   MOBILE FILTER BOTTOM SHEET
+   =========================================== */
+/* Overlay backdrop */
+.mf-ov{
+  display:none;position:fixed;inset:0;z-index:400;
+  background:rgba(0,0,0,.48);
+  -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+}
+.mf-ov.open{display:block}
+/* Sheet panel */
+.mf-sh{
+  position:fixed;left:0;right:0;bottom:0;z-index:401;
+  background:var(--white);
+  border-radius:16px 16px 0 0;
+  /* Safe area padding for iPhone home bar */
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  max-height:90vh;overflow-y:auto;
+  transform:translateY(100%);
+  transition:transform .28s cubic-bezier(.32,.07,.67,0);
+  will-change:transform;
+}
+.mf-ov.open .mf-sh{
+  transform:translateY(0);
+  transition-timing-function:cubic-bezier(.33,1,.68,1);
+}
+/* Drag handle */
+.mf-handle{width:36px;height:4px;background:var(--bdr2);border-radius:2px;margin:12px auto 0}
+/* Sheet header */
+.mf-hd{display:flex;align-items:center;justify-content:space-between;padding:14px 20px 8px}
+.mf-hd h2{font-family:var(--fh);font-size:17px;font-weight:400}
+/* Close button — 44×44 touch target */
+.mf-close{
+  width:44px;height:44px;border-radius:50%;
+  background:var(--bg);display:flex;align-items:center;justify-content:center;
+  font-size:18px;color:var(--muted);flex-shrink:0;
+}
+.mf-close:active{background:var(--bdr)}
+/* Sheet body */
+.mf-bd{padding:0 20px 20px;display:flex;flex-direction:column;gap:18px}
+.mf-lbl{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;display:block;margin-bottom:7px}
+/* Sheet selects — 50px height for comfortable touch */
+.mf-sel{
+  width:100%;height:50px;padding:0 40px 0 14px;
+  border:1.5px solid var(--bdr2);border-radius:var(--r);
+  font:inherit;font-size:15px;color:var(--text);
+  background:var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center;
+  -webkit-appearance:none;appearance:none;cursor:pointer;outline:none;
+}
+.mf-sel:focus{border-color:var(--teal)}
+/* OTA grid checkboxes — 48px each */
+.mf-ota{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.mf-ota-lbl{
+  display:flex;align-items:center;gap:8px;
+  font-size:14px;color:var(--text2);cursor:pointer;
+  min-height:48px;padding:0 12px;
+  border:1.5px solid var(--bdr);border-radius:var(--r);
+  transition:border-color .12s,background .12s,color .12s;
+}
+.mf-ota-lbl input{accent-color:var(--teal);width:16px;height:16px;flex-shrink:0}
+.mf-ota-lbl:has(input:checked){border-color:var(--teal);background:var(--teal-lt);color:var(--teal)}
+/* Sort options as button group */
+.mf-sort{display:flex;gap:6px}
+.mf-sort-btn{
+  flex:1;height:44px;border:1.5px solid var(--bdr);border-radius:var(--r);
+  font:inherit;font-size:13px;color:var(--text2);background:var(--white);
+  transition:border-color .12s,background .12s,color .12s;
+}
+.mf-sort-btn.on{border-color:var(--teal);background:var(--teal-lt);color:var(--teal);font-weight:600}
+/* Apply button in sheet */
+.mf-apply{
+  width:100%;height:54px;
+  background:var(--teal);color:#fff;
+  font-size:16px;font-weight:600;border-radius:var(--r);
+  margin-top:4px;transition:background .12s;
+}
+.mf-apply:hover,.mf-apply:active{background:var(--teal-d)}
+
+/* ===========================================
+   MOBILE BOTTOM BAR
+   — Shown only on ≤860px via @media.
+   — 3 actions: Filter | SG Deals | MY Deals.
+   — Safe-area-aware padding for iPhone home bar.
+   =========================================== */
+.mob-bar{
+  /* Default hidden — shown by media query below */
+  display:none;
+  position:fixed;left:0;right:0;bottom:0;z-index:300;
+  background:var(--white);border-top:1px solid var(--bdr);
+  /* Horizontal padding + extra bottom for iPhone home bar */
+  padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px));
+  gap:8px;
+  box-shadow:0 -1px 12px rgba(0,0,0,.06);
+}
+/* Each button — flex col, min 48px height */
+.mob-bar a,
+.mob-bar button{
+  flex:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:3px;
+  min-height:48px;padding:4px;
+  border-radius:var(--r);
+  font-size:11.5px;font-weight:600;
+  border:1.5px solid var(--bdr);
+  background:var(--white);color:var(--text2);
+  white-space:nowrap;
+  -webkit-tap-highlight-color:transparent;
+  transition:opacity .12s,background .12s;
+}
+.mob-bar a:active,.mob-bar button:active{opacity:.75}
+.mob-ico{font-size:18px;line-height:1}
+/* Filter button */
+.mb-filter{background:var(--teal)!important;color:#fff!important;border-color:var(--teal)!important}
+/* SG Telegram */
+.mb-sg{background:#0088CC!important;color:#fff!important;border-color:#0088CC!important}
+/* MY Telegram */
+.mb-my{background:#fff!important;color:#0088CC!important;border-color:#0088CC!important}
+
+/* ===========================================
+   RESPONSIVE — 860px (tablet, sidebar gone)
+   =========================================== */
+@media(max-width:860px){
+  /* Single column layout */
+  .grid{grid-template-columns:1fr;padding-bottom:calc(var(--bh) + 16px)}
+  /* Hide desktop sidebar */
+  .sb{display:none}
+  /* AI section: stack */
+  .ai-g{grid-template-columns:1fr}
+  /* Footer: 2 columns */
+  .ft-g{grid-template-columns:1fr 1fr}
+  /* Push footer content above bottom bar */
+  .ft{padding-bottom:calc(20px + var(--bh))}
+  /* SHOW bottom bar — must be display:flex (not just display:block) */
+  .mob-bar{display:flex}
+  /* Toast: lift above bottom bar */
+  .toast{bottom:calc(var(--bh) + 10px);right:16px}
+}
+
+/* ===========================================
+   RESPONSIVE — 600px (phone)
+   =========================================== */
+@media(max-width:600px){
+  /* HEADER */
+  .nav{display:none}
+  .btn-tg-my{display:none}
+
+  /* HERO — ultra-compact, get deals above fold fast */
+  .hero{padding:12px 0 10px}
+  .hero-live{margin-bottom:5px;font-size:11px}
+  .hero h1{font-size:19px;margin-bottom:0;line-height:1.2;
+    /* Single line on very small screens to save vertical space */
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+  .hero-sub{display:none}
+  /* Search: full width, no type dropdown (handled by cat pills) */
+  .sf{max-width:100%;margin-top:8px}
+  .sf-cat{display:none}
+  .sf-in{border-right:none}
+  .stats{display:none}
+
+  /* CAT NAV — slightly taller pills for thumb comfort */
+  .cat-nav{top:48px}
+  .cat-nav-i{height:46px;padding:0 4px}
+  .pill{height:34px;padding:0 12px;font-size:13px}
+
+  /* DEAL CARD LAYOUT on mobile:
+     Grid becomes 2 rows:
+       Row 1: [accent 28px] [body 1fr]   ← existing columns
+       Row 2: [mobile CTA row spanning both columns]
+  */
+  .dc{
+    grid-template-columns:28px 1fr;
+    grid-template-rows:auto auto;
+  }
+  /* Hide desktop price/voucher columns */
+  .dp{display:none!important}
+  .dv{display:none!important}
+  /* Show mobile CTA row */
+  .mc{display:flex}
+  /* Title: no clamp, full text visible */
+  .dtitle{-webkit-line-clamp:unset;overflow:visible}
+  /* Meta row: hide market flag, keep destination + OTA + expiry */
+  .d-mkt{display:none}
+  .d-exp{margin-left:0}
+  /* Deals header */
+  .dh{margin-bottom:4px}
+  .dh-sort{display:none} /* sort in filter sheet */
+
+  /* TELEGRAM BANNER */
+  .tg-ban{padding:18px 0}
+  .tg-copy h2{font-size:16px}
+  .tg-btns{width:100%}
+  .btn-tw,.btn-to{flex:1;justify-content:center;min-height:50px}
+
+  /* DESTINATIONS */
+  .dest-g{grid-template-columns:repeat(2,1fr)}
+
+  /* NEWSLETTER */
+  .nl-form{flex-direction:column}
+  .nl-inp,.nl-sub{width:100%;min-height:50px}
+
+  /* FOOTER */
+  .ft-g{grid-template-columns:1fr}
+
+  /* TOAST — full width, centred above bar */
+  .toast{bottom:calc(var(--bh) + 8px);right:12px;left:12px;justify-content:center;text-align:center}
+}
+
+/* ===========================================
+   RESPONSIVE — 380px (small Android phones)
+   =========================================== */
+@media(max-width:380px){
+  .hero h1{font-size:17px}
+  .pill{padding:0 9px;font-size:12px}
+  .mc-book{padding:0 15px;font-size:14px}
+}
+
+/* ===========================================
+   PRINT
+   =========================================== */
+@media print{
+  .hd,.cat-nav,.sb,.tg-ban,.nl,.toast,.mob-bar,.mf-ov{display:none!important}
+  .grid{grid-template-columns:1fr;padding-bottom:0}
+  .mc{display:none!important}
+  .dp,.dv{display:flex!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ══════════════════════════════════
+     HEADER
+     ══════════════════════════════════ -->
+<header class="hd" role="banner">
+  <div class="w hd-i">
+    <a href="/" class="logo" aria-label="Catavel home">Catavel<em aria-hidden="true"></em></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/" aria-current="page">Deals</a>
+      <a href="/destinations/">Destinations</a>
+      <a href="/blog/">Blog</a>
+      <a href="/vouchers/">Vouchers</a>
+    </nav>
+    <div class="hd-r">
+      <a href="https://t.me/SGTravelDeals" class="btn-tg" target="_blank" rel="noopener noreferrer" aria-label="Join SG Telegram channel">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+        @SGTravelDeals
+      </a>
+      <a href="https://t.me/MYTravelDeals" class="btn-tg-my" target="_blank" rel="noopener noreferrer" aria-label="Join MY Telegram channel">🇲🇾 @MYTravelDeals</a>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════
+     HERO
+     ══════════════════════════════════ -->
+<section class="hero" aria-labelledby="h1">
+  <div class="w">
+    <p class="hero-live" aria-live="polite"><span class="dot" aria-hidden="true"></span>Updated every 6 hours &middot; 60+ OTAs</p>
+    <h1 id="h1">Best deals for <i>SG &amp; MY</i> travelers</h1>
+    <p class="hero-sub">Flights, hotels, activities and voucher codes — curated from 60+ OTAs in one place.</p>
+    <form class="sf" role="search" action="/" method="get" onsubmit="doSearch(event)">
+      <label class="sf-in" for="q">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" id="q" name="q" placeholder="Destination, hotel, airline…" autocomplete="off" spellcheck="false">
+      </label>
+      <select class="sf-cat" name="type" id="scat" aria-label="Category">
+        <option value="all">All</option>
+        <option value="flight">Flights</option>
+        <option value="hotel">Hotels</option>
+        <option value="activity">Activities</option>
+        <option value="package">Packages</option>
+        <option value="voucher">Vouchers</option>
+      </select>
+      <button type="submit" class="sf-btn">Search</button>
+    </form>
+    <div class="stats" aria-label="Summary stats">
+      <div><span class="stat-n" id="sn">248</span><br><span class="stat-l">Live deals</span></div>
+      <div><span class="stat-n">60+</span><br><span class="stat-l">OTAs covered</span></div>
+      <div><span class="stat-n">Up to 65%</span><br><span class="stat-l">Max savings</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     CATEGORY NAV
+     ══════════════════════════════════ -->
+<nav class="cat-nav" aria-label="Filter by category or destination">
+  <div class="w cat-nav-i" role="list">
+    <a href="/?type=all"      class="pill on" role="listitem" aria-selected="true"  data-cat="all">All</a>
+    <a href="/?type=flight"   class="pill"    role="listitem" aria-selected="false" data-cat="flight">✈ Flights</a>
+    <a href="/?type=hotel"    class="pill"    role="listitem" aria-selected="false" data-cat="hotel">🏨 Hotels</a>
+    <a href="/?type=activity" class="pill"    role="listitem" aria-selected="false" data-cat="activity">🎡 Activities</a>
+    <a href="/?type=package"  class="pill"    role="listitem" aria-selected="false" data-cat="package">📦 Packages</a>
+    <a href="/?type=voucher"  class="pill"    role="listitem" aria-selected="false" data-cat="voucher">🏷 Vouchers</a>
+    <span class="cat-sep" aria-hidden="true"></span>
+    <a href="/destinations/bali/"      class="pill" role="listitem" data-dest="Bali">Bali</a>
+    <a href="/destinations/bangkok/"   class="pill" role="listitem" data-dest="Bangkok">Bangkok</a>
+    <a href="/destinations/tokyo/"     class="pill" role="listitem" data-dest="Tokyo">Tokyo</a>
+    <a href="/destinations/melbourne/" class="pill" role="listitem" data-dest="Melbourne">Melbourne</a>
+    <a href="/destinations/london/"    class="pill" role="listitem" data-dest="London">London</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════
+     MAIN CONTENT
+     ══════════════════════════════════ -->
+<main id="main" class="w">
+  <div class="grid">
+
+    <!-- SIDEBAR (desktop) -->
+    <aside class="sb" aria-label="Filters">
+      <div>
+        <label class="sb-lbl" for="f-dest">Destination</label>
+        <select class="sb-sel" id="f-dest">
+          <option value="all">All Destinations</option>
+          <option value="Bali">Bali</option>
+          <option value="Bangkok">Bangkok</option>
+          <option value="Tokyo">Tokyo</option>
+          <option value="Melbourne">Melbourne</option>
+          <option value="Istanbul">Istanbul</option>
+          <option value="London">London</option>
+          <option value="Singapore">Singapore</option>
+        </select>
+      </div>
+      <div>
+        <label class="sb-lbl" for="f-mkt">Market</label>
+        <select class="sb-sel" id="f-mkt">
+          <option value="all">SG + MY</option>
+          <option value="SGD">🇸🇬 Singapore (SGD)</option>
+          <option value="MYR">🇲🇾 Malaysia (MYR)</option>
+        </select>
+      </div>
+      <div>
+        <label class="sb-lbl" for="f-pr">Max Price (SGD)</label>
+        <div class="range-wrap">
+          <input type="range" class="range" min="0" max="2000" value="2000" id="f-pr"
+            oninput="document.getElementById('prv').textContent='SGD '+parseInt(this.value).toLocaleString()">
+          <div class="range-lbl"><span>SGD 0</span><span id="prv">SGD 2,000</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="sb-lbl" id="ota-g">Platform</p>
+        <div role="group" aria-labelledby="ota-g">
+          <label class="ota-row"><input type="checkbox" checked value="Agoda"> Agoda <span class="ota-ct">108</span></label>
+          <label class="ota-row"><input type="checkbox" checked value="Booking.com"> Booking.com <span class="ota-ct">82</span></label>
+          <label class="ota-row"><input type="checkbox" checked value="Trip.com"> Trip.com <span class="ota-ct">64</span></label>
+          <label class="ota-row"><input type="checkbox" checked value="Klook"> Klook <span class="ota-ct">31</span></label>
+          <label class="ota-row"><input type="checkbox" checked value="Skyscanner"> Skyscanner <span class="ota-ct">28</span></label>
+          <label class="ota-row"><input type="checkbox" value="Airpaz"> Airpaz <span class="ota-ct">22</span></label>
+        </div>
+      </div>
+      <button class="btn-apply" onclick="applyFilters()">Apply Filters</button>
+      <div class="sb-div"></div>
+      <div class="sb-tg">
+        <h2>Instant alerts</h2>
+        <p>Get notified the moment a deal drops — free.</p>
+        <a href="https://t.me/SGTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+          🇸🇬 @SGTravelDeals
+        </a>
+        <a href="https://t.me/MYTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+          🇲🇾 @MYTravelDeals
+        </a>
+      </div>
+    </aside>
+
+    <!-- DEALS LIST -->
+    <section aria-labelledby="dh-t">
+      <div class="dh">
+        <h2 class="dh-title" id="dh-t">Today's Deals</h2>
+        <span class="dh-ct" id="dh-ct" aria-live="polite" aria-atomic="true">0 deals</span>
+        <span class="dh-upd"><span class="dot" aria-hidden="true"></span>42 min ago</span>
+        <div class="dh-sort">
+          Sort:
+          <select id="srt" onchange="sortDeals(this.value)" aria-label="Sort deals">
+            <option value="discount">Best Discount</option>
+            <option value="price_asc">Price ↑</option>
+            <option value="price_desc">Price ↓</option>
+          </select>
+        </div>
+      </div>
+      <ul class="dl" id="dl" aria-label="Travel deals"></ul>
+    </section>
+
+  </div>
+</main>
+
+<!-- ══════════════════════════════════
+     AI SECTION
+     ══════════════════════════════════ -->
+<section class="ai-s" aria-labelledby="ai-h">
+  <div class="w">
+    <div class="ai-g">
+      <div class="ai-copy">
+        <p class="ai-lbl" aria-hidden="true">AI-Powered</p>
+        <h2 id="ai-h">Drop your <i>itinerary</i>.<br>Get deals instantly.</h2>
+        <p>Type your trip in plain language. AI extracts destination, dates and budget — then surfaces matching flights, hotels and activities with affiliate links ready to book.</p>
+        <ul class="ai-feats">
+          <li class="ai-feat">Natural language input, no forms</li>
+          <li class="ai-feat">Searches 60+ OTAs simultaneously</li>
+          <li class="ai-feat">Personalised results in seconds</li>
+        </ul>
+      </div>
+      <div class="ai-demo" aria-label="AI Planner demo preview" role="img">
+        <div class="ai-bar" aria-hidden="true">
+          <div class="ai-dots"><div class="ai-dot r"></div><div class="ai-dot y"></div><div class="ai-dot g"></div></div>
+          <span class="ai-ttl">catavel ai planner</span>
+        </div>
+        <div class="ai-body">
+          <div class="ai-inp"><p class="ai-inp-lbl">Your itinerary</p><p class="ai-inp-txt"><b>SG → Bali</b>, <b>3–7 Apr</b>, <b>2 pax</b>, budget <b>SGD 800</b></p></div>
+          <div class="ai-res">
+            <div class="ai-row"><span class="ai-ico" aria-hidden="true">✈️</span><div class="ai-info"><p class="ai-name">SIN → DPS · Scoot Direct</p><p class="ai-sub">3 Apr · 2h 35m</p></div><span class="ai-px">SGD 148</span></div>
+            <div class="ai-row"><span class="ai-ico" aria-hidden="true">🏨</span><div class="ai-info"><p class="ai-name">The Layar Villas, Seminyak</p><p class="ai-sub">4 nights · Pool villa</p></div><span class="ai-px">SGD 428</span></div>
+            <div class="ai-row"><span class="ai-ico" aria-hidden="true">🎡</span><div class="ai-info"><p class="ai-name">Bali ATV + Swing Bundle</p><p class="ai-sub">Klook · 2 pax</p></div><span class="ai-px">SGD 89</span></div>
+          </div>
+          <a href="#" class="ai-cta">✨ AI Planner — Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     TELEGRAM BANNER
+     ══════════════════════════════════ -->
+<section class="tg-ban" aria-labelledby="tg-h">
+  <div class="w">
+    <div class="tg-ban-i">
+      <div class="tg-copy">
+        <h2 id="tg-h">Never miss a flash deal</h2>
+        <p>Instant alerts when a deal drops. Free, no spam.</p>
+      </div>
+      <div class="tg-btns">
+        <a href="https://t.me/SGTravelDeals" class="btn-tw" target="_blank" rel="noopener noreferrer">🇸🇬 @SGTravelDeals</a>
+        <a href="https://t.me/MYTravelDeals" class="btn-to" target="_blank" rel="noopener noreferrer">🇲🇾 @MYTravelDeals</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     DESTINATIONS
+     ══════════════════════════════════ -->
+<section class="dest-s" aria-labelledby="dest-h">
+  <div class="w">
+    <h2 id="dest-h">Browse by Destination</h2>
+    <nav aria-label="Destinations">
+      <ul class="dest-g">
+        <li><a href="/destinations/bali/"      class="dest-a"><span aria-hidden="true">🌴</span>Bali</a></li>
+        <li><a href="/destinations/bangkok/"   class="dest-a"><span aria-hidden="true">🇹🇭</span>Bangkok</a></li>
+        <li><a href="/destinations/tokyo/"     class="dest-a"><span aria-hidden="true">🗼</span>Tokyo</a></li>
+        <li><a href="/destinations/melbourne/" class="dest-a"><span aria-hidden="true">🦘</span>Melbourne</a></li>
+        <li><a href="/destinations/istanbul/"  class="dest-a"><span aria-hidden="true">🕌</span>Istanbul</a></li>
+        <li><a href="/destinations/london/"    class="dest-a"><span aria-hidden="true">🎡</span>London</a></li>
+        <li><a href="/destinations/phuket/"    class="dest-a"><span aria-hidden="true">🏖️</span>Phuket</a></li>
+        <li><a href="/destinations/seoul/"     class="dest-a"><span aria-hidden="true">🇰🇷</span>Seoul</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     NEWSLETTER
+     ══════════════════════════════════ -->
+<section class="nl" aria-labelledby="nl-h">
+  <div class="nl-i">
+    <p class="nl-eye">Weekly Digest</p>
+    <h2 id="nl-h">Top deals, every Monday</h2>
+    <p>Best 10 deals of the week for SG &amp; MY. Free.</p>
+    <form class="nl-form" action="#" method="post" onsubmit="doNL(event)">
+      <input class="nl-inp" type="email" name="EMAIL" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+      <button class="nl-sub" type="submit">Subscribe</button>
+    </form>
+    <p class="nl-note">No spam. <a href="/privacy-policy/">Privacy Policy</a>.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     FOOTER
+     ══════════════════════════════════ -->
+<footer class="ft" role="contentinfo">
+  <div class="w">
+    <div class="ft-g">
+      <div class="ft-brand">
+        <a href="/" class="logo" aria-label="Catavel home" style="color:#fff">Catavel<em aria-hidden="true" style="background:#E8622A"></em></a>
+        <p>Travel deal aggregator for Singapore &amp; Malaysia. 60+ OTAs, updated every 6 hours.</p>
+      </div>
+      <nav aria-label="Destinations" class="ft-col">
+        <h3>Destinations</h3>
+        <a href="/destinations/bali/">Bali Deals</a>
+        <a href="/destinations/bangkok/">Bangkok Deals</a>
+        <a href="/destinations/tokyo/">Tokyo Deals</a>
+        <a href="/destinations/melbourne/">Melbourne</a>
+        <a href="/destinations/">All Destinations</a>
+      </nav>
+      <nav aria-label="Platforms" class="ft-col">
+        <h3>Platforms</h3>
+        <a href="/agoda-promo-codes/">Agoda Promos</a>
+        <a href="/booking-com-deals/">Booking.com</a>
+        <a href="/trip-com-deals/">Trip.com</a>
+        <a href="/klook-deals/">Klook</a>
+        <a href="/skyscanner-deals/">Skyscanner</a>
+      </nav>
+      <nav aria-label="Company" class="ft-col">
+        <h3>Catavel</h3>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+        <a href="/for-travel-agents/">For Agents</a>
+        <a href="/affiliate-disclosure/">Disclosure</a>
+        <a href="/privacy-policy/">Privacy</a>
+      </nav>
+    </div>
+    <div class="ft-btm">
+      <p class="ft-disc"><strong>Affiliate Disclosure:</strong> Catavel earns a commission when you book through our links, at no extra cost to you.</p>
+      <p class="ft-copy">&copy; 2026 Catavel</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════
+     MOBILE FILTER BOTTOM SHEET
+     ══════════════════════════════════ -->
+<div class="mf-ov" id="mf-ov" role="dialog" aria-modal="true" aria-label="Filter and sort deals" onclick="handleOverlayClick(event)">
+  <div class="mf-sh" id="mf-sh">
+    <div class="mf-handle" aria-hidden="true"></div>
+    <div class="mf-hd">
+      <h2>Filter &amp; Sort</h2>
+      <!-- 44×44 close button -->
+      <button class="mf-close" onclick="closeMF()" aria-label="Close filter panel">✕</button>
+    </div>
+    <div class="mf-bd">
+      <!-- Destination -->
+      <div>
+        <label class="mf-lbl" for="mf-dest">Destination</label>
+        <select class="mf-sel" id="mf-dest">
+          <option value="all">All Destinations</option>
+          <option value="Bali">🌴 Bali</option>
+          <option value="Bangkok">🇹🇭 Bangkok</option>
+          <option value="Tokyo">🗼 Tokyo</option>
+          <option value="Melbourne">🦘 Melbourne</option>
+          <option value="Istanbul">🕌 Istanbul</option>
+          <option value="London">🎡 London</option>
+          <option value="Singapore">🇸🇬 Singapore</option>
+        </select>
+      </div>
+      <!-- Market -->
+      <div>
+        <label class="mf-lbl" for="mf-mkt">Market</label>
+        <select class="mf-sel" id="mf-mkt">
+          <option value="all">SG + MY (All)</option>
+          <option value="SGD">🇸🇬 Singapore (SGD)</option>
+          <option value="MYR">🇲🇾 Malaysia (MYR)</option>
+        </select>
+      </div>
+      <!-- Platform checkboxes -->
+      <div>
+        <p class="mf-lbl" id="mf-ota-g">Platform</p>
+        <div class="mf-ota" role="group" aria-labelledby="mf-ota-g">
+          <label class="mf-ota-lbl"><input type="checkbox" checked value="Agoda"> Agoda</label>
+          <label class="mf-ota-lbl"><input type="checkbox" checked value="Booking.com"> Booking.com</label>
+          <label class="mf-ota-lbl"><input type="checkbox" checked value="Trip.com"> Trip.com</label>
+          <label class="mf-ota-lbl"><input type="checkbox" checked value="Klook"> Klook</label>
+          <label class="mf-ota-lbl"><input type="checkbox" checked value="Skyscanner"> Skyscanner</label>
+          <label class="mf-ota-lbl"><input type="checkbox" value="Airpaz"> Airpaz</label>
+        </div>
+      </div>
+      <!-- Sort -->
+      <div>
+        <p class="mf-lbl">Sort by</p>
+        <div class="mf-sort" role="group" aria-label="Sort options">
+          <button class="mf-sort-btn on" data-sort="discount" onclick="setMFSort(this)">Best Discount</button>
+          <button class="mf-sort-btn"    data-sort="price_asc" onclick="setMFSort(this)">Price ↑</button>
+          <button class="mf-sort-btn"    data-sort="price_desc" onclick="setMFSort(this)">Price ↓</button>
+        </div>
+      </div>
+      <!-- Apply -->
+      <button class="mf-apply" onclick="applyMF()">Show Deals</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     MOBILE BOTTOM BAR
+     Shown only ≤860px via CSS.
+     Three equal-width tappable actions.
+     ══════════════════════════════════ -->
+<nav class="mob-bar" aria-label="Quick actions">
+  <button class="mb-filter" onclick="openMF()" aria-haspopup="dialog" aria-label="Open filter and sort">
+    <span class="mob-ico" aria-hidden="true">⚙️</span>
+    Filter
+  </button>
+  <a href="https://t.me/SGTravelDeals" class="mb-sg" target="_blank" rel="noopener noreferrer" aria-label="Join Singapore Telegram">
+    <span class="mob-ico" aria-hidden="true">🇸🇬</span>
+    SG Deals
+  </a>
+  <a href="https://t.me/MYTravelDeals" class="mb-my" target="_blank" rel="noopener noreferrer" aria-label="Join Malaysia Telegram">
+    <span class="mob-ico" aria-hidden="true">🇲🇾</span>
+    MY Deals
+  </a>
+</nav>
+
+<!-- ══════════════════════════════════
+     TOAST
+     ══════════════════════════════════ -->
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+  <span class="t-ok" aria-hidden="true">✓</span>
+  <span id="tmsg"></span>
+</div>
+
+<!-- ══════════════════════════════════
+     JAVASCRIPT
+     ══════════════════════════════════ -->
+<script>
+'use strict';
+
+/* ─── SAMPLE DATA ─── */
+const DEALS=[
+  {
+    id:'d001',title:'3D2N Bali Pool Villa with Breakfast — Seminyak',
+    destination:'Bali',original_price:450,discounted_price:299,discount_percent:34,
+    currency:'SGD',ota:'Agoda',link:'#',valid_until:'2026-04-30',
+    category:'hotel',is_hot:true,is_expiring:false,market:'SGD'
+  },{
+    id:'d002',title:'SIN → Tokyo Return — Scoot Economy Class',
+    destination:'Tokyo',original_price:520,discounted_price:312,discount_percent:40,
+    currency:'SGD',ota:'Skyscanner',link:'#',valid_until:'2026-04-15',
+    category:'flight',is_hot:true,is_expiring:true,market:'SGD'
+  },{
+    id:'d003',title:'Bangkok 4D3N Package — Hotel + Flight from KUL',
+    destination:'Bangkok',original_price:1890,discounted_price:1190,discount_percent:37,
+    currency:'MYR',ota:'Trip.com',link:'#',valid_until:'2026-05-15',
+    category:'package',is_hot:false,is_expiring:false,market:'MYR'
+  },{
+    id:'d004',title:'Universal Studios Singapore — 1-Day Adult E-Ticket',
+    destination:'Singapore',original_price:88,discounted_price:63,discount_percent:28,
+    currency:'SGD',ota:'Klook',link:'#',valid_until:'2026-06-30',
+    category:'activity',is_hot:false,is_expiring:false,market:'SGD'
+  },{
+    id:'d005',title:'KUL → Melbourne Return — AirAsia with 20kg Baggage Included',
+    destination:'Melbourne',original_price:1650,discounted_price:1090,discount_percent:34,
+    currency:'MYR',ota:'Airpaz',link:'#',valid_until:'2026-04-20',
+    category:'flight',is_hot:false,is_expiring:true,market:'MYR'
+  },{
+    id:'d006',title:'Agoda Extra 15% Off Hotels — Singapore Users',
+    destination:'All Destinations',original_price:null,discounted_price:null,discount_percent:15,
+    currency:'SGD',ota:'Agoda',link:'https://www.agoda.com',valid_until:'2026-04-30',
+    category:'voucher',is_hot:true,is_expiring:false,market:'SGD',
+    voucher_code:'AGODA15SG',voucher_type:'percent',discount_value:15
+  },{
+    id:'d007',title:'Klook SGD 12 Off Any Activity Booking',
+    destination:'All Destinations',original_price:null,discounted_price:null,discount_percent:null,
+    currency:'SGD',ota:'Klook',link:'https://www.klook.com',valid_until:'2026-04-25',
+    category:'voucher',is_hot:false,is_expiring:true,market:'SGD',
+    voucher_code:'KLOOK12SG',voucher_type:'flat',discount_value:12
+  }
+];
+
+let cur=[...DEALS], activeCat='all', activeDest=null, mfSort='discount';
+
+/* Category icons */
+const ICON={flight:'✈️',hotel:'🏨',activity:'🎡',package:'📦',voucher:'🏷️'};
+
+/* Format date: "30 Apr" */
+function fmtDate(s){
+  const d=new Date(s);
+  return d.getDate()+' '+d.toLocaleString('en',{month:'short'});
+}
+/* True if deal expires within 7 days */
+function isUrgent(s){return(new Date(s)-Date.now())<7*864e5;}
+
+/* ─── SCHEMA INJECTION ─── */
+function injectSchema(deals){
+  let s=document.getElementById('_sc');
+  if(!s){s=document.createElement('script');s.type='application/ld+json';s.id='_sc';document.head.appendChild(s);}
+  s.textContent=JSON.stringify({
+    '@context':'https://schema.org','@type':'ItemList',
+    name:'Best Travel Deals — Catavel',url:'https://catavel.com/',
+    numberOfItems:deals.length,
+    itemListElement:deals.map((d,i)=>({'@type':'ListItem',position:i+1,item:{
+      '@type':'Offer',name:d.title,
+      price:d.discounted_price||0,priceCurrency:d.currency,
+      availability:'https://schema.org/InStock',validThrough:d.valid_until,
+      url:'https://catavel.com/'+d.id+'/',
+      seller:{'@type':'Organization',name:d.ota}
+    }}))
+  });
+}
+
+/* ─── CARD: NORMAL DEAL ───
+   Desktop: 3-col grid (accent | body | price+CTA)
+   Mobile : 2-col grid (accent | body) + .mc row spanning full width
+   The .mc row is rendered always in HTML; shown/hidden via CSS display.
+*/
+function cardNormal(d){
+  const sv=d.original_price-d.discounted_price;
+  const urg=isUrgent(d.valid_until);
+  const urgCls=urg?' urg':'';
+  const hot=d.is_hot?'<span class="tag-hot">Hot</span>':'';
+  const exp=d.is_expiring?'<span class="tag-exp">Expiring</span>':'';
+  return`<li class="di">
+<article class="dc" data-cat="${d.category}" itemscope itemtype="https://schema.org/Offer">
+  <meta itemprop="price" content="${d.discounted_price}">
+  <meta itemprop="priceCurrency" content="${d.currency}">
+  <meta itemprop="validThrough" content="${d.valid_until}">
+  <!-- accent strip -->
+  <div class="da" aria-hidden="true">
+    <span class="da-ico">${ICON[d.category]||'🌐'}</span>
+    <span class="da-pct">−${d.discount_percent}%</span>
+  </div>
+  <!-- body -->
+  <div class="db">
+    <div class="dr1">
+      <h3 class="dtitle" itemprop="name">${d.title}</h3>${hot}${exp}
+    </div>
+    <div class="dr2">
+      <span class="d-dest">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="9" height="9" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+        ${d.destination}
+      </span>
+      <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
+      <span class="d-mkt">${d.market==='SGD'?'🇸🇬':'🇲🇾'}</span>
+      <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
+    </div>
+  </div>
+  <!-- desktop: price + CTA (hidden on mobile via CSS) -->
+  <div class="dp">
+    <div class="dp-g">
+      <span class="dp-orig">${d.currency} ${d.original_price.toLocaleString()}</span>
+      <span class="dp-price" itemprop="price">${d.currency} ${d.discounted_price.toLocaleString()}</span>
+      <span class="dp-save">Save ${d.currency} ${sv.toLocaleString()}</span>
+    </div>
+    <a href="${d.link}" class="btn-bk" target="_blank" rel="noopener noreferrer sponsored"
+       aria-label="Book ${d.title} on ${d.ota}" itemprop="url">
+      Book
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+  <!-- mobile: CTA row (hidden on desktop, shown on ≤600px) -->
+  <div class="mc">
+    <div class="mc-price">
+      <span class="mc-orig">${d.currency} ${d.original_price.toLocaleString()}</span>
+      <span class="mc-val">${d.currency} ${d.discounted_price.toLocaleString()}</span>
+      <span class="mc-save">Save ${d.currency} ${sv.toLocaleString()}</span>
+    </div>
+    <a href="${d.link}" class="mc-book" target="_blank" rel="noopener noreferrer sponsored"
+       aria-label="Book ${d.title} — ${d.currency} ${d.discounted_price}">
+      Book Now
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</article></li>`;
+}
+
+/* ─── CARD: VOUCHER ─── */
+function cardVoucher(d){
+  const urg=isUrgent(d.valid_until);
+  const urgCls=urg?' urg':'';
+  const hot=d.is_hot?'<span class="tag-hot">Hot</span>':'';
+  const exp=d.is_expiring?'<span class="tag-exp">Expiring</span>':'';
+  const discLabel=d.voucher_type==='percent'?`${d.discount_value}% OFF`:`${d.currency} ${d.discount_value} OFF`;
+  const accentLabel=d.voucher_type==='percent'?`−${d.discount_value}%`:`−${d.currency}${d.discount_value}`;
+  return`<li class="di">
+<article class="dc" data-cat="voucher" itemscope itemtype="https://schema.org/Offer">
+  <meta itemprop="name" content="${d.title}">
+  <meta itemprop="validThrough" content="${d.valid_until}">
+  <!-- accent -->
+  <div class="da" aria-hidden="true">
+    <span class="da-ico">🏷️</span>
+    <span class="da-pct">${accentLabel}</span>
+  </div>
+  <!-- body -->
+  <div class="db">
+    <div class="dr1">
+      <h3 class="dtitle" itemprop="name">${d.title}</h3>${hot}${exp}
+    </div>
+    <div class="dr2">
+      <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
+      <span class="d-mkt">${d.market==='SGD'?'🇸🇬':'🇲🇾'}</span>
+      <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
+    </div>
+  </div>
+  <!-- desktop voucher widget -->
+  <div class="dv">
+    <div class="vch-lbl"><strong>${discLabel}</strong>voucher</div>
+    <div class="cw" id="cw-${d.id}" data-code="${d.voucher_code}" data-link="${d.link}">
+      <span class="ch" id="ch-${d.id}" aria-label="Voucher code hidden">${d.voucher_code}</span>
+      <button class="btn-rv" onclick="reveal('${d.id}')" aria-label="Show voucher code for ${d.ota}">Show Code</button>
+    </div>
+  </div>
+  <!-- mobile voucher widget (shown ≤600px) -->
+  <div class="mc">
+    <div class="mc-vch">
+      <div class="mc-vch-lbl"><strong>${discLabel}</strong>voucher</div>
+      <div class="mcw" id="mcw-${d.id}" data-code="${d.voucher_code}" data-link="${d.link}">
+        <span class="mch" id="mch-${d.id}" aria-label="Voucher code hidden">${d.voucher_code}</span>
+        <button class="btn-mrv" onclick="reveal('${d.id}')" aria-label="Show voucher code for ${d.ota}">Show</button>
+      </div>
+    </div>
+  </div>
+</article></li>`;
+}
+
+/* ─── REVEAL VOUCHER ───
+   - Syncs both desktop (.cw) and mobile (.mcw) widgets at once
+   - Clipboard via queueMicrotask → does not block INP frame
+   - window.open after 420ms → avoids popup blocker
+*/
+function reveal(id){
+  const dw=document.getElementById('cw-'+id);   /* desktop widget */
+  const mw=document.getElementById('mcw-'+id);  /* mobile widget  */
+  const widgets=[dw,mw].filter(Boolean);
+  if(!widgets.length) return;
+
+  const code=widgets[0].dataset.code;
+  const link=widgets[0].dataset.link;
+  if(!code) return;
+
+  /* Already revealed: just re-copy */
+  if(widgets[0].classList.contains('open')){
+    queueMicrotask(()=>copy(code));
+    widgets.forEach(w=>{
+      const b=w.querySelector('button');
+      if(b){b.textContent='Copied!';setTimeout(()=>b.textContent='Copy Again',1800);}
+    });
+    return;
+  }
+
+  /* Reveal: add class to both widgets simultaneously */
+  widgets.forEach(w=>{
+    w.classList.add('open');
+    const b=w.querySelector('button');
+    if(b) b.textContent='Copied! ✓';
+  });
+
+  /* Clipboard write — queued to keep main thread free (INP fix) */
+  queueMicrotask(()=>copy(code));
+
+  showToast('Code copied: '+code);
+
+  /* Open affiliate link — 420ms delay avoids popup blocker */
+  setTimeout(()=>{if(link&&link!=='#') window.open(link,'_blank','noopener,noreferrer');},420);
+
+  /* Reset label */
+  setTimeout(()=>{
+    widgets.forEach(w=>{
+      if(w.classList.contains('open')){
+        const b=w.querySelector('button');
+        if(b) b.textContent='Copy Again';
+      }
+    });
+  },3200);
+}
+
+/* Clipboard with textarea fallback for Android WebView */
+function copy(text){
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(text).catch(()=>fbCopy(text));
+  } else {
+    fbCopy(text);
+  }
+}
+function fbCopy(text){
+  try{
+    const t=document.createElement('textarea');
+    t.value=text;t.style.cssText='position:fixed;opacity:0;top:0;left:0;pointer-events:none';
+    document.body.appendChild(t);t.focus();t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+  }catch(_){}
+}
+
+/* ─── RENDER ─── */
+function render(arr){
+  const list=document.getElementById('dl');
+  const ct=document.getElementById('dh-ct');
+  if(!arr.length){
+    list.innerHTML='<li><div class="empty" role="status"><p>No deals match your filters. Adjusting filters or check back in 6 hours.</p></div></li>';
+    ct.textContent='0 deals';
+    return;
+  }
+  list.innerHTML=arr.map(d=>d.category==='voucher'?cardVoucher(d):cardNormal(d)).join('');
+  ct.textContent=arr.length+' deal'+(arr.length!==1?'s':'');
+  injectSchema(arr);
+}
+
+/* ─── FILTER ENGINE ─── */
+function runFilter(dest,mkt,maxSGD){
+  let r=[...DEALS];
+  /* Category pill */
+  if(activeCat!=='all') r=r.filter(d=>d.category===activeCat);
+  /* Destination pill */
+  if(activeDest) r=r.filter(d=>d.destination===activeDest||d.destination==='All Destinations');
+  /* Sidebar/sheet: destination dropdown */
+  if(dest&&dest!=='all') r=r.filter(d=>d.destination===dest||d.destination==='All Destinations');
+  /* Market */
+  if(mkt&&mkt!=='all') r=r.filter(d=>d.market===mkt);
+  /* Max price (normalise MYR → SGD at 3.3 rate) */
+  r=r.filter(d=>{
+    if(!d.discounted_price) return true;
+    const p=d.currency==='MYR'?d.discounted_price/3.3:d.discounted_price;
+    return p<=(maxSGD||2000);
+  });
+  cur=r;
+  render(r);
+  showToast(r.length+' deal'+(r.length!==1?'s':'')+' found');
+}
+
+/* Desktop sidebar apply */
+function applyFilters(){
+  runFilter(
+    document.getElementById('f-dest').value,
+    document.getElementById('f-mkt').value,
+    parseInt(document.getElementById('f-pr').value||2000)
+  );
+}
+
+/* ─── SORT ─── */
+function sortDeals(by){
+  const s=[...cur];
+  if(by==='discount')   s.sort((a,b)=>(b.discount_percent||0)-(a.discount_percent||0));
+  if(by==='price_asc')  s.sort((a,b)=>(a.discounted_price||0)-(b.discounted_price||0));
+  if(by==='price_desc') s.sort((a,b)=>(b.discounted_price||0)-(a.discounted_price||0));
+  render(s);
+}
+
+/* ─── CATEGORY PILLS ─── */
+document.querySelectorAll('.pill[data-cat]').forEach(el=>{
+  el.addEventListener('click',e=>{
+    e.preventDefault();
+    document.querySelectorAll('.pill[data-cat]').forEach(x=>{x.setAttribute('aria-selected','false');x.classList.remove('on');});
+    el.setAttribute('aria-selected','true');el.classList.add('on');
+    activeCat=el.dataset.cat;
+    activeDest=null;
+    document.querySelectorAll('.pill[data-dest]').forEach(x=>{x.setAttribute('aria-selected','false');x.classList.remove('on');});
+    applyFilters();
+  });
+});
+document.querySelectorAll('.pill[data-dest]').forEach(el=>{
+  el.addEventListener('click',e=>{
+    e.preventDefault();
+    const was=el.classList.contains('on');
+    document.querySelectorAll('.pill[data-dest]').forEach(x=>{x.setAttribute('aria-selected','false');x.classList.remove('on');});
+    activeDest=was?null:el.dataset.dest;
+    if(!was){el.setAttribute('aria-selected','true');el.classList.add('on');}
+    applyFilters();
+  });
+});
+
+/* ─── SEARCH ─── */
+function doSearch(e){
+  e.preventDefault();
+  const q=document.getElementById('q').value.toLowerCase().trim();
+  const cat=document.getElementById('scat')?.value||'all';
+  let r=[...DEALS];
+  if(q) r=r.filter(d=>d.title.toLowerCase().includes(q)||d.destination.toLowerCase().includes(q)||d.ota.toLowerCase().includes(q));
+  if(cat!=='all') r=r.filter(d=>d.category===cat);
+  cur=r;render(r);
+}
+
+/* ─── MOBILE FILTER SHEET ─── */
+function openMF(){
+  document.getElementById('mf-ov').classList.add('open');
+  document.body.style.overflow='hidden';
+  /* Focus the close button for accessibility */
+  setTimeout(()=>document.querySelector('.mf-close')?.focus(),80);
+}
+function closeMF(){
+  document.getElementById('mf-ov').classList.remove('open');
+  document.body.style.overflow='';
+}
+/* Close on overlay backdrop click (not on sheet itself) */
+function handleOverlayClick(e){
+  if(e.target===document.getElementById('mf-ov')) closeMF();
+}
+/* Escape key */
+document.addEventListener('keydown',e=>{if(e.key==='Escape') closeMF();});
+
+/* Sort button toggle in sheet */
+function setMFSort(btn){
+  document.querySelectorAll('.mf-sort-btn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  mfSort=btn.dataset.sort;
+}
+
+/* Apply mobile filter sheet */
+function applyMF(){
+  const dest=document.getElementById('mf-dest').value;
+  const mkt=document.getElementById('mf-mkt').value;
+  /* Sync desktop selects to match */
+  const ds=document.getElementById('f-dest'); if(ds) ds.value=dest;
+  const ms=document.getElementById('f-mkt');  if(ms) ms.value=mkt;
+  /* Update desktop sort select */
+  const sr=document.getElementById('srt'); if(sr) sr.value=mfSort;
+  closeMF();
+  runFilter(dest,mkt,2000);
+  /* Apply sort after filter */
+  sortDeals(mfSort);
+}
+
+/* ─── NEWSLETTER ─── */
+function doNL(e){e.preventDefault();showToast('Subscribed! First digest arrives Monday.');e.target.reset();}
+
+/* ─── TOAST ─── */
+let _tt;
+function showToast(msg){
+  const t=document.getElementById('toast');
+  document.getElementById('tmsg').textContent=msg;
+  t.classList.add('on');clearTimeout(_tt);
+  _tt=setTimeout(()=>t.classList.remove('on'),2800);
+}
+
+/* ─── INIT ─── */
+async function init(){
+  try{
+    const r=await fetch('deals.json',{cache:'no-cache'});
+    if(!r.ok) throw 0;
+    const data=await r.json();
+    if(Array.isArray(data)&&data.length){
+      DEALS.length=0;
+      data.forEach(x=>DEALS.push(x));
+    }
+  }catch(_){/* use built-in sample data */}
+  finally{
+    cur=[...DEALS];
+    render(DEALS);
+    document.getElementById('sn').textContent=DEALS.length;
+  }
+}
+document.readyState==='loading'
+  ?document.addEventListener('DOMContentLoaded',init)
+  :init();
+</script>
+</body>
+</html>
