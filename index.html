@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="catavel-logo.svg">
+<link rel="apple-touch-icon" href="catavel-logo.svg">
 <title>Catavel — Best Travel Deals for Singapore &amp; Malaysia</title>
 <meta name="description" content="Best flight, hotel and activity deals for Singapore and Malaysia travelers. Curated from 60+ OTAs, updated every 6 hours.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
@@ -71,6 +73,7 @@ ul,ol{list-style:none}
 .btn-tg:hover{opacity:.88}
 .btn-tg-my{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:500;color:var(--text2);border:1px solid var(--bdr2);white-space:nowrap}
 .btn-tg-my:hover{border-color:var(--text);color:var(--text)}
+.btn-tg .tg-label,.btn-tg-my .tg-label{display:inline}
 
 /* ===========================================
    HERO
@@ -585,7 +588,7 @@ ul,ol{list-style:none}
 @media(max-width:600px){
   /* HEADER */
   .nav{display:none}
-  .btn-tg-my{display:none}
+  .btn-tg-my{display:inline-flex}
 
   /* HERO — ultra-compact, get deals above fold fast */
   .hero{padding:12px 0 10px}
@@ -701,6 +704,18 @@ ul,ol{list-style:none}
   background:var(--teal-lt);padding:3px 8px;border-radius:20px}
 .ess-cta{font-size:12px;font-weight:700;color:var(--orange)}
 .ess-hidden{display:none}
+
+@media(max-width:480px){
+  .btn-tg,.btn-tg-my{padding:0 10px;font-size:12px;height:32px;gap:4px}
+}
+
+.tg-short{display:none}
+.tg-full{display:inline}
+@media(max-width:600px){
+  .tg-short{display:inline}
+  .tg-full{display:none}
+  .btn-tg-my{display:inline-flex!important}
+}
 </style>
 </head>
 <body>
@@ -721,9 +736,12 @@ ul,ol{list-style:none}
     <div class="hd-r">
       <a href="https://t.me/CatavelSGTravelDeals" class="btn-tg" target="_blank" rel="noopener noreferrer" aria-label="Join SG Telegram channel">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-        @CatavelSGTravelDeals
+        <span class="tg-full">@CatavelSGTravelDeals</span><span class="tg-short">🇸🇬 SG</span>
       </a>
-      <a href="https://t.me/CatavelMYTravelDeals" class="btn-tg-my" target="_blank" rel="noopener noreferrer" aria-label="Join MY Telegram channel">🇲🇾 @CatavelMYTravelDeals</a>
+      <a href="https://t.me/CatavelMYTravelDeals" class="btn-tg-my" target="_blank" rel="noopener noreferrer" aria-label="Join MY Telegram channel">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+        <span class="tg-full">🇲🇾 @CatavelMYTravelDeals</span><span class="tg-short">🇲🇾 MY</span>
+      </a>
     </div>
   </div>
 </header>
