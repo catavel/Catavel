@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-09T08:02:15.616Z",
-  "totalDeals": 7,
+  "lastUpdated": "2026-03-09T08:04:53.889Z",
+  "totalDeals": 14,
   "generatedBy": "Catavel Pipeline v8",
   "deals": [
     {
@@ -21,6 +21,23 @@
       "market": "MY"
     },
     {
+      "id": "flight_KUL_HKT_1773043491788_ejo5",
+      "title": "Kuala Lumpur to Phuket from SGD 91",
+      "destination": "Phuket",
+      "origin": "Kuala Lumpur",
+      "original_price": 130,
+      "discounted_price": 91,
+      "discount_percent": 30,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL090426HKT1",
+      "valid_until": "2026-03-12T08:04:52.594Z",
+      "created_at": "2026-03-09T08:04:52.594Z",
+      "market": "MY"
+    },
+    {
       "id": "flight_KUL_TYO_1773043333409_0s0k",
       "title": "Kuala Lumpur to Tokyo from SGD 318",
       "destination": "Tokyo",
@@ -35,6 +52,23 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL090426TYO1",
       "valid_until": "2026-03-12T08:02:14.219Z",
       "created_at": "2026-03-09T08:02:14.219Z",
+      "market": "MY"
+    },
+    {
+      "id": "flight_KUL_TYO_1773043491788_ay8e",
+      "title": "Kuala Lumpur to Tokyo from SGD 318",
+      "destination": "Tokyo",
+      "origin": "Kuala Lumpur",
+      "original_price": 450,
+      "discounted_price": 318,
+      "discount_percent": 29,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL090426TYO1",
+      "valid_until": "2026-03-12T08:04:52.594Z",
+      "created_at": "2026-03-09T08:04:52.594Z",
       "market": "MY"
     },
     {
@@ -55,6 +89,23 @@
       "market": "SG"
     },
     {
+      "id": "flight_SIN_OSA_1773043490771_bkz9",
+      "title": "Singapore to Osaka from SGD 314",
+      "destination": "Osaka",
+      "origin": "Singapore",
+      "original_price": 420,
+      "discounted_price": 314,
+      "discount_percent": 25,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN090426OSA1",
+      "valid_until": "2026-03-12T08:04:52.594Z",
+      "created_at": "2026-03-09T08:04:52.594Z",
+      "market": "SG"
+    },
+    {
       "id": "flight_SIN_TYO_1773043332462_83qg",
       "title": "Singapore to Tokyo from SGD 344",
       "destination": "Tokyo",
@@ -72,6 +123,23 @@
       "market": "SG"
     },
     {
+      "id": "flight_SIN_TYO_1773043490771_3xox",
+      "title": "Singapore to Tokyo from SGD 343",
+      "destination": "Tokyo",
+      "origin": "Singapore",
+      "original_price": 450,
+      "discounted_price": 343,
+      "discount_percent": 24,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN090426TYO1",
+      "valid_until": "2026-03-12T08:04:52.594Z",
+      "created_at": "2026-03-09T08:04:52.594Z",
+      "market": "SG"
+    },
+    {
       "id": "flight_KUL_SEL_1773043333409_11ty",
       "title": "Kuala Lumpur to Seoul from SGD 270",
       "destination": "Seoul",
@@ -86,6 +154,23 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL090426SEL1",
       "valid_until": "2026-03-12T08:02:14.219Z",
       "created_at": "2026-03-09T08:02:14.219Z",
+      "market": "MY"
+    },
+    {
+      "id": "flight_KUL_SEL_1773043491788_c41j",
+      "title": "Kuala Lumpur to Seoul from SGD 270",
+      "destination": "Seoul",
+      "origin": "Kuala Lumpur",
+      "original_price": 320,
+      "discounted_price": 270,
+      "discount_percent": 16,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL090426SEL1",
+      "valid_until": "2026-03-12T08:04:52.594Z",
+      "created_at": "2026-03-09T08:04:52.594Z",
       "market": "MY"
     },
     {
@@ -120,6 +205,40 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL090426OSA1",
       "valid_until": "2026-03-12T08:02:14.219Z",
       "created_at": "2026-03-09T08:02:14.219Z",
+      "market": "MY"
+    },
+    {
+      "id": "flight_KUL_DPS_1773043491787_p2fj",
+      "title": "Kuala Lumpur to Bali from SGD 128",
+      "destination": "Bali",
+      "origin": "Kuala Lumpur",
+      "original_price": 150,
+      "discounted_price": 128,
+      "discount_percent": 15,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL090426DPS1",
+      "valid_until": "2026-03-12T08:04:52.594Z",
+      "created_at": "2026-03-09T08:04:52.594Z",
+      "market": "MY"
+    },
+    {
+      "id": "flight_KUL_OSA_1773043491788_39lg",
+      "title": "Kuala Lumpur to Osaka from SGD 357",
+      "destination": "Osaka",
+      "origin": "Kuala Lumpur",
+      "original_price": 420,
+      "discounted_price": 357,
+      "discount_percent": 15,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL090426OSA1",
+      "valid_until": "2026-03-12T08:04:52.594Z",
+      "created_at": "2026-03-09T08:04:52.594Z",
       "market": "MY"
     }
   ]
