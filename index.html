@@ -1970,6 +1970,20 @@ function filterEss(cat, btn) {
     }
   });
 }
+// ── Telegram dropdown ─────────────────────────────────────────
+function toggleTgDrop() {
+  const d = document.getElementById('tgDrop');
+  const isOpen = d.classList.toggle('open');
+  d.querySelector('.tg-drop-btn').setAttribute('aria-expanded', isOpen);
+}
+document.addEventListener('click', function(e) {
+  const d = document.getElementById('tgDrop');
+  if (d && !d.contains(e.target)) d.classList.remove('open');
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') { const d = document.getElementById('tgDrop'); if(d) d.classList.remove('open'); }
+});
+
 
 </script>
 </body>
