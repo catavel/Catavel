@@ -5,21 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="catavel-logo.svg">
 <link rel="apple-touch-icon" href="catavel-logo.svg">
-<title>Catavel — Best Travel Deals for Singapore &amp; Malaysia</title>
-<meta name="description" content="Best flight, hotel and activity deals for Singapore and Malaysia travelers. Curated from 60+ OTAs, updated every 6 hours.">
+<title>Catavel — Travel Deals for Southeast Asia — Catavel</title>
+<meta name="description" content="Best flight, hotel and activity deals for Southeast Asia travelers. Curated from 60+ OTAs, updated every 6 hours.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="agd-partner-manual-verification" />
 <link rel="canonical" href="https://catavel.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://catavel.com/">
-<meta property="og:title" content="Catavel — Best Travel Deals for SG &amp; MY">
-<meta property="og:description" content="Curated flight, hotel and activity deals from 60+ OTAs. Updated every 6 hours.">
+<meta property="og:title" content="Catavel — Travel Deals for Southeast Asia — Catavel">
+<meta property="og:description" content="Travel deals for Southeast Asia. Curated from 60+ OTAs, updated every 6 hours.">
 <meta property="og:image" content="https://catavel.com/og-image.jpg">
 <meta property="og:locale" content="en_SG">
 <meta property="og:site_name" content="Catavel">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Catavel — Best Travel Deals for SG &amp; MY">
-<meta name="twitter:description" content="Curated deals from 60+ OTAs. Updated every 6 hours.">
+<meta name="twitter:title" content="Catavel — Travel Deals for Southeast Asia — Catavel">
+<meta name="twitter:description" content="Travel deals for Southeast Asia. Curated from 60+ OTAs.">
 <meta name="twitter:image" content="https://catavel.com/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
   gtag('js', new Date());
   gtag('config', 'G-SMQ9BN5CRX');
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Catavel","url":"https://catavel.com","sameAs":["https://t.me/CatavelSGTravelDeals","https://t.me/CatavelMYTravelDeals"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Catavel","url":"https://catavel.com","sameAs":["https://t.me/CatavelSGTravelDeals","https://t.me/CatavelMYTravelDeals","https://t.me/CatavelHKTravelDeals","https://t.me/CatavelPHTravelDeals"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Catavel","url":"https://catavel.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://catavel.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 <style>
 /* ===========================================
@@ -77,12 +77,23 @@ ul,ol{list-style:none}
 .nav a{font-size:13px;font-weight:500;color:var(--muted);padding:5px 10px;border-radius:4px;transition:color .12s,background .12s}
 .nav a:hover,.nav a[aria-current]{color:var(--teal)}
 .hd-r{margin-left:auto;display:flex;gap:6px;align-items:center}
-/* Telegram buttons in header */
-.btn-tg{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:500;color:#fff;background:#0088CC;white-space:nowrap}
-.btn-tg:hover{opacity:.88}
-.btn-tg-my{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:500;color:var(--text2);border:1px solid var(--bdr2);white-space:nowrap}
-.btn-tg-my:hover{border-color:var(--text);color:var(--text)}
-.btn-tg .tg-label,.btn-tg-my .tg-label{display:inline}
+/* Telegram dropdown */
+.tg-drop{position:relative}
+.tg-drop-btn{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:600;color:#fff;background:#0088CC;border:none;cursor:pointer;white-space:nowrap;transition:opacity .12s}
+.tg-drop-btn:hover{opacity:.88}
+.tg-drop-btn svg{flex-shrink:0}
+.tg-caret{font-size:9px;opacity:.75;margin-left:1px;transition:transform .2s}
+.tg-drop.open .tg-caret{transform:rotate(180deg)}
+.tg-menu{display:none;position:absolute;top:calc(100% + 6px);right:0;min-width:220px;background:var(--white);border:1.5px solid var(--bdr);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.12);overflow:hidden;z-index:200}
+.tg-drop.open .tg-menu{display:block}
+.tg-menu-hd{padding:8px 14px 6px;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--bdr)}
+.tg-menu a{display:flex;align-items:center;gap:9px;padding:10px 14px;font-size:13px;font-weight:500;color:var(--text);transition:background .1s;text-decoration:none}
+.tg-menu a:hover{background:var(--bg)}
+.tg-menu a .tg-ch-flag{font-size:16px;flex-shrink:0}
+.tg-menu a .tg-ch-info{display:flex;flex-direction:column;gap:1px}
+.tg-menu a .tg-ch-name{font-size:12.5px;font-weight:600}
+.tg-menu a .tg-ch-handle{font-size:11px;color:var(--muted)}
+.tg-menu a .tg-ch-arrow{margin-left:auto;font-size:11px;color:var(--muted)}
 
 /* ===========================================
    HERO
@@ -570,6 +581,14 @@ ul,ol{list-style:none}
 .mb-sg{background:#0088CC!important;color:#fff!important;border-color:#0088CC!important}
 /* MY Telegram */
 .mb-my{background:#fff!important;color:#0088CC!important;border-color:#0088CC!important}
+/* HK Telegram */
+.mb-hk{background:#DE2910!important;color:#fff!important;border-color:#DE2910!important}
+/* PH Telegram */
+.mb-ph{background:#0038A8!important;color:#fff!important;border-color:#0038A8!important}
+/* HK Telegram */
+.mb-hk{background:#DE2910!important;color:#fff!important;border-color:#DE2910!important}
+/* PH Telegram */
+.mb-ph{background:#0038A8!important;color:#fff!important;border-color:#0038A8!important}
 
 /* ===========================================
    RESPONSIVE — 860px (tablet, sidebar gone)
@@ -597,7 +616,6 @@ ul,ol{list-style:none}
 @media(max-width:600px){
   /* HEADER */
   .nav{display:none}
-  .btn-tg-my{display:inline-flex}
 
   /* HERO — ultra-compact, get deals above fold fast */
   .hero{padding:12px 0 10px}
@@ -715,15 +733,9 @@ ul,ol{list-style:none}
 .ess-hidden{display:none}
 
 @media(max-width:480px){
-  .btn-tg,.btn-tg-my{padding:0 10px;font-size:12px;height:32px;gap:4px}
 }
 
-.tg-short{display:none}
-.tg-full{display:inline}
 @media(max-width:600px){
-  .tg-short{display:inline}
-  .tg-full{display:none}
-  .btn-tg-my{display:inline-flex!important}
 }
 </style>
 </head>
@@ -738,19 +750,42 @@ ul,ol{list-style:none}
     <a href="/" class="logo" aria-label="Catavel home">Catavel<em aria-hidden="true"></em></a>
     <nav class="nav" aria-label="Primary">
       <a href="/" aria-current="page">Deals</a>
-      <a href="/destinations/">Destinations</a>
-      <a href="/blog/">Blog</a>
+      <a href="/klook-promo-codes/">Klook</a>
+      <a href="/trip-com-promo-codes/">Trip.com</a>
+      <a href="/agoda-promo-codes/">Agoda</a>
       <a href="/vouchers/">Vouchers</a>
+      <a href="/blog/">Blog</a>
     </nav>
     <div class="hd-r">
-      <a href="https://t.me/CatavelSGTravelDeals" class="btn-tg" target="_blank" rel="noopener noreferrer" aria-label="Join SG Telegram channel">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-        <span class="tg-full">@CatavelSGTravelDeals</span><span class="tg-short">🇸🇬 SG</span>
-      </a>
-      <a href="https://t.me/CatavelMYTravelDeals" class="btn-tg-my" target="_blank" rel="noopener noreferrer" aria-label="Join MY Telegram channel">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-        <span class="tg-full">🇲🇾 @CatavelMYTravelDeals</span><span class="tg-short">🇲🇾 MY</span>
-      </a>
+      <div class="tg-drop" id="tgDrop">
+        <button class="tg-drop-btn" onclick="toggleTgDrop()" aria-expanded="false" aria-haspopup="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+          <span>Telegram</span><span class="tg-caret">▾</span>
+        </button>
+        <div class="tg-menu" role="menu">
+          <div class="tg-menu-hd">Join our channels — free</div>
+          <a href="https://t.me/CatavelSGTravelDeals" target="_blank" rel="noopener noreferrer" role="menuitem">
+            <span class="tg-ch-flag">🇸🇬</span>
+            <span class="tg-ch-info"><span class="tg-ch-name">Singapore Deals</span><span class="tg-ch-handle">@CatavelSGTravelDeals</span></span>
+            <span class="tg-ch-arrow">↗</span>
+          </a>
+          <a href="https://t.me/CatavelMYTravelDeals" target="_blank" rel="noopener noreferrer" role="menuitem">
+            <span class="tg-ch-flag">🇲🇾</span>
+            <span class="tg-ch-info"><span class="tg-ch-name">Malaysia Deals</span><span class="tg-ch-handle">@CatavelMYTravelDeals</span></span>
+            <span class="tg-ch-arrow">↗</span>
+          </a>
+          <a href="https://t.me/CatavelHKTravelDeals" target="_blank" rel="noopener noreferrer" role="menuitem">
+            <span class="tg-ch-flag">🇭🇰</span>
+            <span class="tg-ch-info"><span class="tg-ch-name">Hong Kong Deals</span><span class="tg-ch-handle">@CatavelHKTravelDeals</span></span>
+            <span class="tg-ch-arrow">↗</span>
+          </a>
+          <a href="https://t.me/CatavelPHTravelDeals" target="_blank" rel="noopener noreferrer" role="menuitem">
+            <span class="tg-ch-flag">🇵🇭</span>
+            <span class="tg-ch-info"><span class="tg-ch-name">Philippines Deals</span><span class="tg-ch-handle">@CatavelPHTravelDeals</span></span>
+            <span class="tg-ch-arrow">↗</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -761,8 +796,8 @@ ul,ol{list-style:none}
 <section class="hero" aria-labelledby="h1">
   <div class="w">
     <p class="hero-live" aria-live="polite"><span class="dot" aria-hidden="true"></span>Updated every 6 hours &middot; 60+ OTAs</p>
-    <h1 id="h1">Best deals for <i>SG &amp; MY</i> travelers</h1>
-    <p class="hero-sub">Flights, hotels, activities and voucher codes — curated from 60+ OTAs in one place.</p>
+    <h1 id="h1">Best deals for <i>SEAblings</i></h1>
+    <p class="hero-sub">Flights, hotels, activities and voucher codes — curated from 60+ OTAs for Southeast Asia travelers.</p>
     <form class="sf" role="search" action="/" method="get" onsubmit="doSearch(event)">
       <label class="sf-in" for="q">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
@@ -830,7 +865,7 @@ ul,ol{list-style:none}
       <div>
         <label class="sb-lbl" for="f-mkt">Market</label>
         <select class="sb-sel" id="f-mkt">
-          <option value="all">SG + MY</option>
+          <option value="all">All Markets</option>
           <option value="SGD">🇸🇬 Singapore (SGD)</option>
           <option value="MYR">🇲🇾 Malaysia (MYR)</option>
         </select>
@@ -866,6 +901,22 @@ ul,ol{list-style:none}
         <a href="https://t.me/CatavelMYTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
           🇲🇾 @CatavelMYTravelDeals
+        </a>
+        <a href="https://t.me/CatavelHKTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+          🇭🇰 @CatavelHKTravelDeals
+        </a>
+        <a href="https://t.me/CatavelPHTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+          🇵🇭 @CatavelPHTravelDeals
+        </a>
+        <a href="https://t.me/CatavelHKTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+          🇭🇰 @CatavelHKTravelDeals
+        </a>
+        <a href="https://t.me/CatavelPHTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+          🇵🇭 @CatavelPHTravelDeals
         </a>
       </div>
     </aside>
@@ -1248,8 +1299,10 @@ ul,ol{list-style:none}
         <p>Instant alerts when a deal drops. Free, no spam.</p>
       </div>
       <div class="tg-btns">
-        <a href="https://t.me/CatavelSGTravelDeals" class="btn-tw" target="_blank" rel="noopener noreferrer">🇸🇬 @CatavelSGTravelDeals</a>
-        <a href="https://t.me/CatavelMYTravelDeals" class="btn-to" target="_blank" rel="noopener noreferrer">🇲🇾 @CatavelMYTravelDeals</a>
+        <a href="https://t.me/CatavelSGTravelDeals" class="btn-tw" target="_blank" rel="noopener noreferrer">🇸🇬 Singapore</a>
+        <a href="https://t.me/CatavelMYTravelDeals" class="btn-to" target="_blank" rel="noopener noreferrer">🇲🇾 Malaysia</a>
+        <a href="https://t.me/CatavelHKTravelDeals" class="btn-tw" target="_blank" rel="noopener noreferrer">🇭🇰 Hong Kong</a>
+        <a href="https://t.me/CatavelPHTravelDeals" class="btn-to" target="_blank" rel="noopener noreferrer">🇵🇭 Philippines</a>
       </div>
     </div>
   </div>
@@ -1283,7 +1336,7 @@ ul,ol{list-style:none}
   <div class="nl-i">
     <p class="nl-eye">Weekly Digest</p>
     <h2 id="nl-h">Top deals, every Monday</h2>
-    <p>Best 10 deals of the week for SG &amp; MY. Free.</p>
+    <p>Best 10 deals of the week for SEAblings. Free.</p>
     <form class="nl-form" action="#" method="post" onsubmit="doNL(event)">
       <input class="nl-inp" type="email" name="EMAIL" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
       <button class="nl-sub" type="submit">Subscribe</button>
@@ -1300,7 +1353,7 @@ ul,ol{list-style:none}
     <div class="ft-g">
       <div class="ft-brand">
         <a href="/" class="logo" aria-label="Catavel home" style="color:#fff">Catavel<em aria-hidden="true" style="background:#E8622A"></em></a>
-        <p>Travel deal aggregator for Singapore &amp; Malaysia. 60+ OTAs, updated every 6 hours.</p>
+        <p>Travel deals for Southeast Asia. 60+ OTAs, updated every 6 hours.</p>
       </div>
       <nav aria-label="Destinations" class="ft-col">
         <h3>Destinations</h3>
@@ -1311,12 +1364,12 @@ ul,ol{list-style:none}
         <a href="/destinations/">All Destinations</a>
       </nav>
       <nav aria-label="Platforms" class="ft-col">
-        <h3>Platforms</h3>
-        <a href="/agoda-promo-codes/">Agoda Promos</a>
-        <a href="/booking-com-deals/">Booking.com</a>
-        <a href="/trip-com-deals/">Trip.com</a>
-        <a href="/klook-deals/">Klook</a>
-        <a href="/skyscanner-deals/">Skyscanner</a>
+        <h3>Deals &amp; Vouchers</h3>
+        <a href="/klook-promo-codes/">Klook Deals</a>
+        <a href="/trip-com-promo-codes/">Trip.com Deals</a>
+        <a href="/agoda-promo-codes/">Agoda Deals</a>
+        <a href="/vouchers/">All Vouchers</a>
+        <a href="/#essentials">Travel Essentials</a>
       </nav>
       <nav aria-label="Company" class="ft-col">
         <h3>Catavel</h3>
@@ -1329,7 +1382,7 @@ ul,ol{list-style:none}
     </div>
     <div class="ft-btm">
       <p class="ft-disc"><strong>Affiliate Disclosure:</strong> Catavel earns a commission when you book through our links, at no extra cost to you.</p>
-      <p class="ft-copy">&copy; 2026 Catavel</p>
+      <p class="ft-copy">&copy; 2026 Catavel — For SEAblings 🌏</p>
     </div>
   </div>
 </footer>
@@ -1364,9 +1417,11 @@ ul,ol{list-style:none}
       <div>
         <label class="mf-lbl" for="mf-mkt">Market</label>
         <select class="mf-sel" id="mf-mkt">
-          <option value="all">SG + MY (All)</option>
+          <option value="all">All Markets</option>
           <option value="SGD">🇸🇬 Singapore (SGD)</option>
           <option value="MYR">🇲🇾 Malaysia (MYR)</option>
+          <option value="HKD">🇭🇰 Hong Kong (HKD)</option>
+          <option value="PHP">🇵🇭 Philippines (PHP)</option>
         </select>
       </div>
       <!-- Platform checkboxes -->
@@ -1406,13 +1461,17 @@ ul,ol{list-style:none}
     <span class="mob-ico" aria-hidden="true">⚙️</span>
     Filter
   </button>
-  <a href="https://t.me/CatavelSGTravelDeals" class="mb-sg" target="_blank" rel="noopener noreferrer" aria-label="Join Singapore Telegram">
-    <span class="mob-ico" aria-hidden="true">🇸🇬</span>
-    SG Deals
+  <a href="https://t.me/CatavelSGTravelDeals" class="mb-sg" target="_blank" rel="noopener noreferrer" aria-label="Singapore">
+    <span class="mob-ico">🇸🇬</span>SG
   </a>
-  <a href="https://t.me/CatavelMYTravelDeals" class="mb-my" target="_blank" rel="noopener noreferrer" aria-label="Join Malaysia Telegram">
-    <span class="mob-ico" aria-hidden="true">🇲🇾</span>
-    MY Deals
+  <a href="https://t.me/CatavelMYTravelDeals" class="mb-my" target="_blank" rel="noopener noreferrer" aria-label="Malaysia">
+    <span class="mob-ico">🇲🇾</span>MY
+  </a>
+  <a href="https://t.me/CatavelHKTravelDeals" class="mb-hk" target="_blank" rel="noopener noreferrer" aria-label="Hong Kong">
+    <span class="mob-ico">🇭🇰</span>HK
+  </a>
+  <a href="https://t.me/CatavelPHTravelDeals" class="mb-ph" target="_blank" rel="noopener noreferrer" aria-label="Philippines">
+    <span class="mob-ico">🇵🇭</span>PH
   </a>
 </nav>
 
@@ -1843,10 +1902,12 @@ function normaliseDeal(x){
   /* is_hot / is_expiring: pipeline may not send these */
   if(x.is_hot      === undefined) x.is_hot      = (x.discount_percent||0) >= 35;
   if(x.is_expiring === undefined) x.is_expiring = x.valid_until ? isUrgent(x.valid_until) : false;
-  /* market: pipeline uses 'SG,MY' — normalise to 'SGD' or 'MYR' for filter */
-  if(!x.market || x.market==='SG,MY') x.market = 'SGD'; // default SG for display
+  /* market: normalise all variants to currency code for filter */
+  if(!x.market || x.market==='SG,MY') x.market = 'SGD';
   else if(x.market==='SG') x.market = 'SGD';
   else if(x.market==='MY') x.market = 'MYR';
+  else if(x.market==='HK' || x.market==='HKG') x.market = 'HKD';
+  else if(x.market==='PH' || x.market==='MNL') x.market = 'PHP';
   return x;
 }
 
