@@ -715,9 +715,9 @@ ul,ol{list-style:none}
       <button type="submit" class="sf-btn">Search</button>
     </form>
     <div class="stats" aria-label="Summary stats">
-      <div><span class="stat-n" id="sn">248</span><br><span class="stat-l">Live deals</span></div>
+      <div><span class="stat-n" id="sn">—</span><br><span class="stat-l">Live deals</span></div>
       <div><span class="stat-n">60+</span><br><span class="stat-l">OTAs covered</span></div>
-      <div><span class="stat-n">Up to 65%</span><br><span class="stat-l">Max savings</span></div>
+      <div><span class="stat-n" id="smax">—</span><br><span class="stat-l">Max savings</span></div>
     </div>
   </div>
 </section>
@@ -1504,8 +1504,16 @@ async function init(){
   finally{
     cur=[...DEALS];
     render(DEALS);
+    /* Update stats bar dynamically */
     const sn=document.getElementById('sn');
     if(sn) sn.textContent=DEALS.length;
+
+    /* Max savings: highest discount_percent from live data */
+    const smax=document.getElementById('smax');
+    if(smax){
+      const maxDisc=DEALS.reduce((m,d)=>Math.max(m,d.discount_percent||0),0);
+      smax.textContent=maxDisc>0?'Up to '+maxDisc+'%':'—';
+    }
   }
 }
 document.readyState==='loading'
