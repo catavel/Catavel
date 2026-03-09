@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-09T05:06:09.406Z",
-  "totalDeals": 46,
+  "lastUpdated": "2026-03-09T05:11:31.424Z",
+  "totalDeals": 50,
   "generatedBy": "Catavel Pipeline",
   "deals": [
     {
@@ -38,6 +38,23 @@
       "market": "MY"
     },
     {
+      "id": "flight_KUL_HKT_1773033086019_g0p2",
+      "title": "?? Kuala Lumpur ? Phuket from SGD 91",
+      "destination": "Phuket",
+      "origin": "Kuala Lumpur",
+      "original_price": 130,
+      "discounted_price": 91,
+      "discount_percent": 30,
+      "currency": "SGD",
+      "ota": "Travelpayouts",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL1HKT",
+      "valid_until": "2026-03-12T05:11:30.458Z",
+      "created_at": "2026-03-09T05:11:30.458Z",
+      "market": "MY"
+    },
+    {
       "id": "flight_KUL_TYO_1773032215585_06ds",
       "title": "?? Kuala Lumpur ? Tokyo from SGD 318",
       "destination": "Tokyo",
@@ -69,6 +86,23 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKULTYO",
       "valid_until": "2026-03-12T05:06:08.296Z",
       "created_at": "2026-03-09T05:06:08.296Z",
+      "market": "MY"
+    },
+    {
+      "id": "flight_KUL_TYO_1773033086019_k7xy",
+      "title": "?? Kuala Lumpur ? Tokyo from SGD 318",
+      "destination": "Tokyo",
+      "origin": "Kuala Lumpur",
+      "original_price": 450,
+      "discounted_price": 318,
+      "discount_percent": 29,
+      "currency": "SGD",
+      "ota": "Travelpayouts",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL1TYO",
+      "valid_until": "2026-03-12T05:11:30.458Z",
+      "created_at": "2026-03-09T05:11:30.458Z",
       "market": "MY"
     },
     {
@@ -106,6 +140,23 @@
       "market": "SG"
     },
     {
+      "id": "flight_SIN_OSA_1773033085000_u3bw",
+      "title": "?? Singapore ? Osaka from SGD 314",
+      "destination": "Osaka",
+      "origin": "Singapore",
+      "original_price": 420,
+      "discounted_price": 314,
+      "discount_percent": 25,
+      "currency": "SGD",
+      "ota": "Travelpayouts",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN1OSA",
+      "valid_until": "2026-03-12T05:11:30.457Z",
+      "created_at": "2026-03-09T05:11:30.457Z",
+      "market": "SG"
+    },
+    {
       "id": "flight_SIN_TYO_1773032214414_v5zg",
       "title": "?? Singapore ? Tokyo from SGD 344",
       "destination": "Tokyo",
@@ -140,6 +191,23 @@
       "market": "SG"
     },
     {
+      "id": "flight_SIN_TYO_1773033085000_kw44",
+      "title": "?? Singapore ? Tokyo from SGD 344",
+      "destination": "Tokyo",
+      "origin": "Singapore",
+      "original_price": 450,
+      "discounted_price": 344,
+      "discount_percent": 24,
+      "currency": "SGD",
+      "ota": "Travelpayouts",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN1TYO",
+      "valid_until": "2026-03-12T05:11:30.458Z",
+      "created_at": "2026-03-09T05:11:30.458Z",
+      "market": "SG"
+    },
+    {
       "id": "flight_KUL_SEL_1773032215585_s7uv",
       "title": "?? Kuala Lumpur ? Seoul from SGD 270",
       "destination": "Seoul",
@@ -171,6 +239,23 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKULSEL",
       "valid_until": "2026-03-12T05:06:08.296Z",
       "created_at": "2026-03-09T05:06:08.296Z",
+      "market": "MY"
+    },
+    {
+      "id": "flight_KUL_SEL_1773033086019_3nej",
+      "title": "?? Kuala Lumpur ? Seoul from SGD 270",
+      "destination": "Seoul",
+      "origin": "Kuala Lumpur",
+      "original_price": 320,
+      "discounted_price": 270,
+      "discount_percent": 16,
+      "currency": "SGD",
+      "ota": "Travelpayouts",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL1SEL",
+      "valid_until": "2026-03-12T05:11:30.458Z",
+      "created_at": "2026-03-09T05:11:30.458Z",
       "market": "MY"
     },
     {
@@ -239,6 +324,40 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKULOSA",
       "valid_until": "2026-03-12T05:06:08.295Z",
       "created_at": "2026-03-09T05:06:08.295Z",
+      "market": "MY"
+    },
+    {
+      "id": "flight_KUL_DPS_1773033086019_yhna",
+      "title": "?? Kuala Lumpur ? Bali from SGD 128",
+      "destination": "Bali",
+      "origin": "Kuala Lumpur",
+      "original_price": 150,
+      "discounted_price": 128,
+      "discount_percent": 15,
+      "currency": "SGD",
+      "ota": "Travelpayouts",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL1DPS",
+      "valid_until": "2026-03-12T05:11:30.458Z",
+      "created_at": "2026-03-09T05:11:30.458Z",
+      "market": "MY"
+    },
+    {
+      "id": "flight_KUL_OSA_1773033086019_xz42",
+      "title": "?? Kuala Lumpur ? Osaka from SGD 358",
+      "destination": "Osaka",
+      "origin": "Kuala Lumpur",
+      "original_price": 420,
+      "discounted_price": 358,
+      "discount_percent": 15,
+      "currency": "SGD",
+      "ota": "Travelpayouts",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL1OSA",
+      "valid_until": "2026-03-12T05:11:30.458Z",
+      "created_at": "2026-03-09T05:11:30.458Z",
       "market": "MY"
     },
     {
@@ -732,57 +851,6 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKULKHH",
       "valid_until": "2026-03-12T05:06:08.295Z",
       "created_at": "2026-03-09T05:06:08.295Z",
-      "market": "MY"
-    },
-    {
-      "id": "flight_KUL_MNL_1773032764925_w9ko",
-      "title": "?? Kuala Lumpur ? Manila from SGD 183",
-      "destination": "Manila",
-      "origin": "Kuala Lumpur",
-      "original_price": 183,
-      "discounted_price": 183,
-      "discount_percent": 0,
-      "currency": "SGD",
-      "ota": "Travelpayouts",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKULMNL",
-      "valid_until": "2026-03-12T05:06:08.295Z",
-      "created_at": "2026-03-09T05:06:08.295Z",
-      "market": "MY"
-    },
-    {
-      "id": "flight_KUL_RGN_1773032764925_gup0",
-      "title": "?? Kuala Lumpur ? Yangon from SGD 328",
-      "destination": "Yangon",
-      "origin": "Kuala Lumpur",
-      "original_price": 328,
-      "discounted_price": 328,
-      "discount_percent": 0,
-      "currency": "SGD",
-      "ota": "Travelpayouts",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKULRGN",
-      "valid_until": "2026-03-12T05:06:08.295Z",
-      "created_at": "2026-03-09T05:06:08.295Z",
-      "market": "MY"
-    },
-    {
-      "id": "flight_KUL_SGN_1773032764925_ri76",
-      "title": "?? Kuala Lumpur ? Ho Chi Minh from SGD 106",
-      "destination": "Ho Chi Minh",
-      "origin": "Kuala Lumpur",
-      "original_price": 106,
-      "discounted_price": 106,
-      "discount_percent": 0,
-      "currency": "SGD",
-      "ota": "Travelpayouts",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKULSGN",
-      "valid_until": "2026-03-12T05:06:08.296Z",
-      "created_at": "2026-03-09T05:06:08.296Z",
       "market": "MY"
     }
   ]
