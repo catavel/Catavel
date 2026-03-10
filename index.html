@@ -3,38 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/svg+xml" href="catavel-logo.svg">
-<link rel="apple-touch-icon" href="catavel-logo.svg">
-<title>Catavel — Travel Deals for Southeast Asia — Catavel</title>
-<meta name="description" content="Best flight, hotel and activity deals for Southeast Asia travelers. Curated from 60+ OTAs, updated every 6 hours.">
+<title>Catavel — Best Travel Deals for Singapore &amp; Malaysia</title>
+<meta name="description" content="Best flight, hotel and activity deals for Singapore and Malaysia travelers. Curated from 60+ OTAs, updated every 6 hours.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-<meta name="agd-partner-manual-verification" />
 <link rel="canonical" href="https://catavel.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://catavel.com/">
-<meta property="og:title" content="Catavel — Travel Deals for Southeast Asia — Catavel">
-<meta property="og:description" content="Travel deals for Southeast Asia. Curated from 60+ OTAs, updated every 6 hours.">
+<meta property="og:title" content="Catavel — Best Travel Deals for SG &amp; MY">
+<meta property="og:description" content="Curated flight, hotel and activity deals from 60+ OTAs. Updated every 6 hours.">
 <meta property="og:image" content="https://catavel.com/og-image.jpg">
 <meta property="og:locale" content="en_SG">
 <meta property="og:site_name" content="Catavel">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Catavel — Travel Deals for Southeast Asia — Catavel">
-<meta name="twitter:description" content="Travel deals for Southeast Asia. Curated from 60+ OTAs.">
+<meta name="twitter:title" content="Catavel — Best Travel Deals for SG &amp; MY">
+<meta name="twitter:description" content="Curated deals from 60+ OTAs. Updated every 6 hours.">
 <meta name="twitter:image" content="https://catavel.com/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-<!-- Google Analytics 4 — replace G-SMQ9BN5CRX with your Measurement ID -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMQ9BN5CRX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-SMQ9BN5CRX');
-</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Catavel","url":"https://catavel.com","sameAs":["https://t.me/CatavelSGTravelDeals","https://t.me/CatavelMYTravelDeals","https://t.me/CatavelHKTravelDeals","https://t.me/CatavelPHTravelDeals"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Catavel","url":"https://catavel.com","sameAs":["https://t.me/SGTravelDeals","https://t.me/MYTravelDeals"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Catavel","url":"https://catavel.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://catavel.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 <style>
 /* ===========================================
@@ -77,28 +66,11 @@ ul,ol{list-style:none}
 .nav a{font-size:13px;font-weight:500;color:var(--muted);padding:5px 10px;border-radius:4px;transition:color .12s,background .12s}
 .nav a:hover,.nav a[aria-current]{color:var(--teal)}
 .hd-r{margin-left:auto;display:flex;gap:6px;align-items:center}
-/* Currency switcher */
-.curr-sw{display:inline-flex;align-items:center;gap:1px;background:var(--bg);border:1.5px solid var(--bdr2);border-radius:var(--r);overflow:hidden;flex-shrink:0}
-.curr-btn{padding:0 9px;height:32px;font-size:11.5px;font-weight:600;color:var(--muted);background:none;border:none;cursor:pointer;transition:background .12s,color .12s;white-space:nowrap}
-.curr-btn:hover{color:var(--text)}
-.curr-btn.active{background:var(--teal);color:#fff}
-/* Telegram dropdown */
-.tg-drop{position:relative}
-.tg-drop-btn{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:600;color:#fff;background:#0088CC;border:none;cursor:pointer;white-space:nowrap;transition:opacity .12s}
-.tg-drop-btn:hover{opacity:.88}
-.tg-drop-btn svg{flex-shrink:0}
-.tg-caret{font-size:9px;opacity:.75;margin-left:1px;transition:transform .2s}
-.tg-drop.open .tg-caret{transform:rotate(180deg)}
-.tg-menu{display:none;position:absolute;top:calc(100% + 6px);right:0;min-width:220px;background:var(--white);border:1.5px solid var(--bdr);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.12);overflow:hidden;z-index:200}
-.tg-drop.open .tg-menu{display:block}
-.tg-menu-hd{padding:8px 14px 6px;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--bdr)}
-.tg-menu a{display:flex;align-items:center;gap:9px;padding:10px 14px;font-size:13px;font-weight:500;color:var(--text);transition:background .1s;text-decoration:none}
-.tg-menu a:hover{background:var(--bg)}
-.tg-menu a .tg-ch-flag{font-size:16px;flex-shrink:0}
-.tg-menu a .tg-ch-info{display:flex;flex-direction:column;gap:1px}
-.tg-menu a .tg-ch-name{font-size:12.5px;font-weight:600}
-.tg-menu a .tg-ch-handle{font-size:11px;color:var(--muted)}
-.tg-menu a .tg-ch-arrow{margin-left:auto;font-size:11px;color:var(--muted)}
+/* Telegram buttons in header */
+.btn-tg{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:500;color:#fff;background:#0088CC;white-space:nowrap}
+.btn-tg:hover{opacity:.88}
+.btn-tg-my{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:500;color:var(--text2);border:1px solid var(--bdr2);white-space:nowrap}
+.btn-tg-my:hover{border-color:var(--text);color:var(--text)}
 
 /* ===========================================
    HERO
@@ -191,7 +163,7 @@ ul,ol{list-style:none}
    DEALS HEADER
    =========================================== */
 .dh{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
-.dh-title{font-family:var(--fh);font-size:15px;font-weight:400;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.dh-title{font-family:var(--fh);font-size:15px;font-weight:400}
 .dh-ct{font-size:11.5px;color:var(--muted);background:var(--bg);border:1px solid var(--bdr);padding:1px 8px;border-radius:20px}
 .dh-upd{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--muted)}
 .dh-sort{margin-left:auto;font-size:12px;color:var(--muted)}
@@ -257,8 +229,6 @@ ul,ol{list-style:none}
 }
 .dp-g{display:flex;flex-direction:column;align-items:flex-end;gap:1px}
 .dp-orig{font-size:11px;color:var(--muted);text-decoration:line-through}
-.dp-from{font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;display:block}
-.dp-live-note{font-size:10px;color:var(--muted);display:block;margin-top:1px}
 .dp-price{font-family:var(--fh);font-size:17px;color:var(--text);letter-spacing:-.3px;line-height:1;white-space:nowrap}
 .dp-save{font-size:10.5px;color:#15803D;font-weight:500}
 /* Book CTA — 44×44 minimum touch target */
@@ -586,13 +556,7 @@ ul,ol{list-style:none}
 .mb-sg{background:#0088CC!important;color:#fff!important;border-color:#0088CC!important}
 /* MY Telegram */
 .mb-my{background:#fff!important;color:#0088CC!important;border-color:#0088CC!important}
-/* HK Telegram */
 .mb-hk{background:#DE2910!important;color:#fff!important;border-color:#DE2910!important}
-/* PH Telegram */
-.mb-ph{background:#0038A8!important;color:#fff!important;border-color:#0038A8!important}
-/* HK Telegram */
-.mb-hk{background:#DE2910!important;color:#fff!important;border-color:#DE2910!important}
-/* PH Telegram */
 .mb-ph{background:#0038A8!important;color:#fff!important;border-color:#0038A8!important}
 
 /* ===========================================
@@ -621,7 +585,7 @@ ul,ol{list-style:none}
 @media(max-width:600px){
   /* HEADER */
   .nav{display:none}
-  .curr-sw{display:none}
+  .btn-tg-my{display:none}
 
   /* HERO — ultra-compact, get deals above fold fast */
   .hero{padding:12px 0 10px}
@@ -703,46 +667,53 @@ ul,ol{list-style:none}
   .dp,.dv{display:flex!important}
 }
 
-/* ── TRAVEL ESSENTIALS ─────────────────────────────────────── */
-.ess-s{padding:48px 0;background:var(--bg)}
-.ess-s h2{font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px}
-.ess-s .ess-sub{font-size:13px;color:var(--muted);margin-bottom:28px}
-.ess-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
-.ess-tab{background:var(--white);border:1.5px solid var(--bdr);color:var(--muted);
-  font-size:12px;font-weight:700;padding:6px 14px;border-radius:20px;cursor:pointer;
-  transition:all .2s;white-space:nowrap}
-.ess-tab.active,.ess-tab:hover{background:var(--teal);border-color:var(--teal);color:white}
-.ess-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
-.ess-card{background:var(--white);border:1px solid var(--bdr);border-radius:14px;
-  padding:18px 20px;display:flex;flex-direction:column;gap:10px;
-  transition:box-shadow .2s,transform .2s;text-decoration:none}
-.ess-card:hover{box-shadow:0 8px 24px rgba(0,137,123,.12);transform:translateY(-2px)}
-.ess-top{display:flex;align-items:center;gap:10px}
-.ess-ico{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;
-  justify-content:center;font-size:20px;flex-shrink:0;
-  background:#F4F6F8;overflow:hidden;border:1px solid var(--bdr)}
-.ess-ico img{width:36px;height:36px;object-fit:contain;border-radius:6px;image-rendering:crisp-edges}
-.ess-ico.esim{background:#E0F2F1}
-.ess-ico.transfer{background:#FFF3E0}
-.ess-ico.rental{background:#E8F5E9}
-.ess-ico.activity{background:#F3E5F5}
-.ess-ico.insurance{background:#E3F2FD}
-.ess-ico.compensation{background:#FFEBEE}
-.ess-ico.storage{background:#FFF8E1}
-.ess-name{font-size:14px;font-weight:700;color:var(--text)}
-.ess-desc{font-size:12px;color:var(--muted);line-height:1.5;flex:1}
-.ess-footer{display:flex;align-items:center;justify-content:space-between;
-  padding-top:10px;border-top:1px solid var(--bdr)}
-.ess-comm{font-size:11px;font-weight:700;color:var(--teal);
-  background:var(--teal-lt);padding:3px 8px;border-radius:20px}
-.ess-cta{font-size:12px;font-weight:700;color:var(--orange)}
-.ess-hidden{display:none}
+/* Currency switcher */
+.curr-sw{display:inline-flex;align-items:center;gap:1px;background:var(--bg);border:1.5px solid var(--bdr2);border-radius:var(--r);overflow:hidden;flex-shrink:0}
+.curr-btn{padding:0 9px;height:32px;font-size:11.5px;font-weight:600;color:var(--muted);background:none;border:none;cursor:pointer;transition:background .12s,color .12s;white-space:nowrap}
+.curr-btn:hover{color:var(--text)}
+.curr-btn.active{background:var(--teal);color:#fff}
+/* Telegram dropdown */
+.tg-drop{position:relative}
+.tg-drop-btn{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:600;color:#fff;background:#0088CC;border:none;cursor:pointer;white-space:nowrap;transition:opacity .12s}
+.tg-drop-btn:hover{opacity:.88}
+.tg-drop-btn svg{flex-shrink:0}
+.tg-caret{font-size:9px;opacity:.75;margin-left:1px;transition:transform .2s}
+.tg-drop.open .tg-caret{transform:rotate(180deg)}
+.tg-menu{display:none;position:absolute;top:calc(100% + 6px);right:0;min-width:220px;background:var(--white);border:1.5px solid var(--bdr);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.12);overflow:hidden;z-index:200}
+.tg-drop.open .tg-menu{display:block}
+.tg-menu-hd{padding:8px 14px 6px;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--bdr)}
+.tg-menu a{display:flex;align-items:center;gap:9px;padding:10px 14px;font-size:13px;font-weight:500;color:var(--text);transition:background .1s;text-decoration:none}
+.tg-menu a:hover{background:var(--bg)}
+.tg-menu a .tg-ch-flag{font-size:16px;flex-shrink:0}
+.tg-menu a .tg-ch-info{display:flex;flex-direction:column;gap:1px}
+.tg-menu a .tg-ch-name{font-size:12.5px;font-weight:600}
+.tg-menu a .tg-ch-handle{font-size:11px;color:var(--muted)}
+.tg-menu a .tg-ch-arrow{margin-left:auto;font-size:11px;color:var(--muted)}
+@media(max-width:600px){.curr-sw{display:none}}
 
-@media(max-width:480px){
-}
+/* Nav voucher dropdown */
+.nav-vd{position:relative}
+.nav-vd-btn{font-size:13px;font-weight:500;color:var(--muted);padding:5px 10px;border-radius:4px;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:3px;transition:color .12s}
+.nav-vd-btn:hover,.nav-vd.open .nav-vd-btn{color:var(--teal)}
+.nav-vd-caret{font-size:9px;opacity:.7;transition:transform .2s}
+.nav-vd.open .nav-vd-caret{transform:rotate(180deg)}
+.nav-vd-menu{display:none;position:absolute;top:calc(100% + 4px);left:0;min-width:180px;background:var(--white);border:1.5px solid var(--bdr);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.11);overflow:hidden;z-index:200}
+.nav-vd.open .nav-vd-menu{display:block}
+.nav-vd-hd{padding:8px 14px 5px;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--bdr)}
+.nav-vd-menu a{display:block;padding:9px 14px;font-size:13px;font-weight:500;color:var(--text);transition:background .1s;text-decoration:none}
+.nav-vd-menu a:hover{background:var(--bg);color:var(--teal)}
+.nav-vd-sep{height:1px;background:var(--bdr);margin:3px 0}
 
-@media(max-width:600px){
-}
+/* Voucher Directory strip */
+.vd-s{background:var(--white);border-bottom:1px solid var(--bdr);padding:10px 0}
+.vd-grid{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 0}
+.vd-grid::-webkit-scrollbar{display:none}
+.vd-card{display:flex;flex-direction:column;gap:2px;flex-shrink:0;padding:8px 16px;border:1.5px solid var(--bdr);border-radius:var(--r);text-decoration:none;transition:border-color .12s,background .12s;min-width:100px;text-align:center}
+.vd-card:hover{border-color:var(--teal);background:var(--teal-lt)}
+.vd-name{font-size:13px;font-weight:600;color:var(--text)}
+.vd-tag{font-size:11px;color:var(--muted)}
+.vd-card:hover .vd-name{color:var(--teal)}
+.vd-card:hover .vd-tag{color:var(--teal)}
 </style>
 </head>
 <body>
@@ -756,11 +727,19 @@ ul,ol{list-style:none}
     <a href="/" class="logo" aria-label="Catavel home">Catavel<em aria-hidden="true"></em></a>
     <nav class="nav" aria-label="Primary">
       <a href="/" aria-current="page">Deals</a>
-      <a href="/klook-promo-codes/">Klook</a>
-      <a href="/trip-com-promo-codes/">Trip.com</a>
-      <a href="/agoda-promo-codes/">Agoda</a>
-      <a href="/vouchers/">Vouchers</a>
+      <a href="/destinations/">Destinations</a>
       <a href="/blog/">Blog</a>
+      <div class="nav-vd" id="navVd">
+        <button class="nav-vd-btn" onclick="toggleVd()" aria-expanded="false" aria-haspopup="true">Vouchers <span class="nav-vd-caret">▾</span></button>
+        <div class="nav-vd-menu" role="menu">
+          <div class="nav-vd-hd">Promo Codes &amp; Deals</div>
+          <a href="/klook-promo-codes/" role="menuitem">Klook</a>
+          <a href="/trip-com-promo-codes/" role="menuitem">Trip.com</a>
+          <a href="/agoda-promo-codes/" role="menuitem">Agoda</a>
+          <div class="nav-vd-sep"></div>
+          <a href="https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fspecial-offers" target="_blank" rel="noopener sponsored" role="menuitem">Aviasales Deals ↗</a>
+        </div>
+      </div>
     </nav>
     <div class="hd-r">
       <div class="curr-sw" id="currSw" role="group" aria-label="Currency">
@@ -809,7 +788,7 @@ ul,ol{list-style:none}
   <div class="w">
     <p class="hero-live" aria-live="polite"><span class="dot" aria-hidden="true"></span>Updated every 6 hours &middot; 60+ OTAs</p>
     <h1 id="h1">Best deals for <i>SEAblings</i></h1>
-    <p class="hero-sub">Flights, hotels, activities and voucher codes — curated from 60+ OTAs for Southeast Asia travelers.</p>
+    <p class="hero-sub">Flights, hotels, activities and voucher codes — curated from 60+ OTAs in one place.</p>
     <form class="sf" role="search" action="/" method="get" onsubmit="doSearch(event)">
       <label class="sf-in" for="q">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
@@ -826,9 +805,39 @@ ul,ol{list-style:none}
       <button type="submit" class="sf-btn">Search</button>
     </form>
     <div class="stats" aria-label="Summary stats">
-      <div><span class="stat-n" id="sn">—</span><br><span class="stat-l">Live deals</span></div>
+      <div><span class="stat-n" id="sn">248</span><br><span class="stat-l">Live deals</span></div>
       <div><span class="stat-n">60+</span><br><span class="stat-l">OTAs covered</span></div>
-      <div><span class="stat-n" id="smax">—</span><br><span class="stat-l">Max savings</span></div>
+      <div><span class="stat-n">Up to 65%</span><br><span class="stat-l">Max savings</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     VOUCHER DIRECTORY
+     ══════════════════════════════════ -->
+<section class="vd-s" aria-labelledby="vd-h">
+  <div class="w">
+    <div class="vd-grid">
+      <a href="/klook-promo-codes/" class="vd-card">
+        <span class="vd-name">Klook</span>
+        <span class="vd-tag">Promo Codes</span>
+      </a>
+      <a href="/trip-com-promo-codes/" class="vd-card">
+        <span class="vd-name">Trip.com</span>
+        <span class="vd-tag">Promo Codes</span>
+      </a>
+      <a href="/agoda-promo-codes/" class="vd-card">
+        <span class="vd-name">Agoda</span>
+        <span class="vd-tag">Promo Codes</span>
+      </a>
+      <a href="https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fspecial-offers" class="vd-card" target="_blank" rel="noopener sponsored">
+        <span class="vd-name">Aviasales</span>
+        <span class="vd-tag">Flight Deals ↗</span>
+      </a>
+      <a href="https://tp.media/r?marker=709139&trs=505880&p=4057&u=https%3A%2F%2Fwww.trip.com%2Fsale%2F" class="vd-card" target="_blank" rel="noopener sponsored">
+        <span class="vd-name">Flash Sales</span>
+        <span class="vd-tag">Trip.com ↗</span>
+      </a>
     </div>
   </div>
 </section>
@@ -880,6 +889,8 @@ ul,ol{list-style:none}
           <option value="all">All Markets</option>
           <option value="SGD">🇸🇬 Singapore (SGD)</option>
           <option value="MYR">🇲🇾 Malaysia (MYR)</option>
+          <option value="HKD">🇭🇰 Hong Kong (HKD)</option>
+          <option value="PHP">🇵🇭 Philippines (PHP)</option>
         </select>
       </div>
       <div>
@@ -903,35 +914,23 @@ ul,ol{list-style:none}
       </div>
       <button class="btn-apply" onclick="applyFilters()">Apply Filters</button>
       <div class="sb-div"></div>
-            <div class="sb-tg">
+      <div class="sb-tg">
         <h2>Instant alerts</h2>
         <p>Get notified the moment a deal drops — free.</p>
-        <a href="https://t.me/CatavelSGTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/SGTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-          🇸🇬 @CatavelSGTravelDeals
+          🇸🇬 @SGTravelDeals
         </a>
-        <a href="https://t.me/CatavelMYTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/MYTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-          🇲🇾 @CatavelMYTravelDeals
-        </a>
-        <a href="https://t.me/CatavelHKTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-          🇭🇰 @CatavelHKTravelDeals
-        </a>
-        <a href="https://t.me/CatavelPHTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-          🇵🇭 @CatavelPHTravelDeals
+          🇲🇾 @MYTravelDeals
         </a>
       </div>
     </aside>
 
     <!-- DEALS LIST -->
     <section aria-labelledby="dh-t">
-      <div class="price-note" role="note">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-  Prices shown are indicative fares updated every 6 hours. Final price is confirmed at checkout on the OTA's website.
-</div>
-<div class="dh">
+      <div class="dh">
         <h2 class="dh-title" id="dh-t">Today's Deals</h2>
         <span class="dh-ct" id="dh-ct" aria-live="polite" aria-atomic="true">0 deals</span>
         <span class="dh-upd"><span class="dot" aria-hidden="true"></span>42 min ago</span>
@@ -985,313 +984,6 @@ ul,ol{list-style:none}
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════
-     TRAVEL ESSENTIALS
-     ══════════════════════════════════ -->
-<section class="ess-s" aria-labelledby="ess-h">
-  <div class="w">
-    <h2 id="ess-h">Travel Essentials</h2>
-    <p class="ess-sub">Everything you need for your trip — curated tools & services</p>
-
-    <div class="ess-tabs" role="tablist" aria-label="Filter essentials">
-      <button class="ess-tab active" onclick="filterEss('all',this)" role="tab">All</button>
-      <button class="ess-tab" onclick="filterEss('esim',this)" role="tab">📱 eSIM</button>
-      <button class="ess-tab" onclick="filterEss('transfer',this)" role="tab">🚗 Airport Transfer</button>
-      <button class="ess-tab" onclick="filterEss('rental',this)" role="tab">🔑 Car Rental</button>
-      <button class="ess-tab" onclick="filterEss('activity',this)" role="tab">🎡 Activities</button>
-      <button class="ess-tab" onclick="filterEss('compensation',this)" role="tab">✈️ Flight Compensation</button>
-      <button class="ess-tab" onclick="filterEss('storage',this)" role="tab">🧳 Luggage Storage</button>
-    </div>
-
-    <div class="ess-grid" id="ess-grid">
-
-      <!-- eSIM -->
-      <a class="ess-card" data-cat="esim" href="https://tp.media/r?campaign_id=541&marker=709139&p=8310&trs=505880&u=https%3A%2F%2Fairalo.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico esim"><span style="font-size:22px;line-height:1">📱</span></div>
-          <div class="ess-name">Airalo</div>
-        </div>
-        <p class="ess-desc">World's largest eSIM store. Get data in 200+ countries instantly — no physical SIM needed.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">Up to 12% cashback</span>
-          <span class="ess-cta">Get eSIM →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="esim" href="https://tp.media/r?campaign_id=224&marker=709139&p=5998&trs=505880&u=https%3A%2F%2Fyesim.tech" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico esim"><span style="font-size:22px;line-height:1">📶</span></div>
-          <div class="ess-name">Yesim</div>
-        </div>
-        <p class="ess-desc">Swiss eSIM with built-in VPN. Fast data in 150+ countries with a single app.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">18% reward rate</span>
-          <span class="ess-cta">Get eSIM →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="esim" href="https://tp.media/r?campaign_id=629&marker=709139&p=8979&trs=505880&u=https%3A%2F%2Fsaily.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico esim"><span style="font-size:22px;line-height:1">🌐</span></div>
-          <div class="ess-name">Saily</div>
-        </div>
-        <p class="ess-desc">Global eSIM by NordVPN team. Affordable data plans for international travel.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">15% reward rate</span>
-          <span class="ess-cta">Get eSIM →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="esim" href="https://tp.media/r?campaign_id=102&marker=709139&p=2762&trs=505880&u=https%3A%2F%2Fw1.drimsim.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico esim"><span style="font-size:22px;line-height:1">📡</span></div>
-          <div class="ess-name">Drimsim</div>
-        </div>
-        <p class="ess-desc">Universal SIM & eSIM for 190 countries. One card, zero roaming headaches.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">€8 fixed reward</span>
-          <span class="ess-cta">Get SIM →</span>
-        </div>
-      </a>
-
-      <!-- Airport Transfer -->
-      <a class="ess-card" data-cat="transfer" href="https://tp.media/r?campaign_id=147&marker=709139&p=4439&trs=505880&u=https%3A%2F%2Fgettransfer.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico transfer"><span style="font-size:22px;line-height:1">🚗</span></div>
-          <div class="ess-name">GetTransfer</div>
-        </div>
-        <p class="ess-desc">Book airport transfers in 175 countries. Fixed prices, professional drivers.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">Up to 25% reward</span>
-          <span class="ess-cta">Book Transfer →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="transfer" href="https://tp.media/r?campaign_id=627&marker=709139&p=8919&trs=505880&u=https%3A%2F%2Fwelcomepickups.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico transfer"><span style="font-size:22px;line-height:1">🚖</span></div>
-          <div class="ess-name">Welcome Pickups</div>
-        </div>
-        <p class="ess-desc">Reliable airport transfers with professional English-speaking drivers worldwide.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">8–9% reward rate</span>
-          <span class="ess-cta">Book Transfer →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="transfer" href="https://tp.media/r?campaign_id=1&marker=709139&p=647&trs=505880&u=https%3A%2F%2Fkiwitaxi.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico transfer"><span style="font-size:22px;line-height:1">🚕</span></div>
-          <div class="ess-name">Kiwitaxi</div>
-        </div>
-        <p class="ess-desc">Airport taxis in 100 countries. Multiple vehicle classes, English-speaking drivers.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">9–11% reward rate</span>
-          <span class="ess-cta">Book Taxi →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="transfer" href="https://tp.media/r?campaign_id=22&marker=709139&p=657&trs=505880&u=https%3A%2F%2Fintui.travel" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico transfer"><span style="font-size:22px;line-height:1">🛺</span></div>
-          <div class="ess-name">Intui.travel</div>
-        </div>
-        <p class="ess-desc">Book transfers from local transport companies in 175 countries at great prices.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">10% reward rate</span>
-          <span class="ess-cta">Book Transfer →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="transfer" href="https://tp.media/r?campaign_id=122&marker=709139&p=7542&trs=505880&u=https%3A%2F%2Fwww.holidaytaxis.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico transfer"><span style="font-size:22px;line-height:1">🚖</span></div>
-          <div class="ess-name">Holiday Taxis</div>
-        </div>
-        <p class="ess-desc">Pre-book airport transfers & shuttles worldwide. Fixed prices, no hidden charges, 24/7 support.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">Up to 10% reward rate</span>
-          <span class="ess-cta">Book Transfer →</span>
-        </div>
-      </a>
-
-      <!-- Car Rental -->
-      <a class="ess-card" data-cat="rental" href="https://tp.media/r?campaign_id=172&marker=709139&p=4845&trs=505880&u=https%3A%2F%2Fqeeq.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico rental"><span style="font-size:22px;line-height:1">🔑</span></div>
-          <div class="ess-name">QEEQ</div>
-        </div>
-        <p class="ess-desc">7 million+ rental cars in 200 countries. Compare top brands, best prices guaranteed.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">5–10% reward rate</span>
-          <span class="ess-cta">Find Car →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="rental" href="https://tp.media/r?campaign_id=87&marker=709139&p=2043&trs=505880&u=https%3A%2F%2Flocalrent.com%2Fen" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico rental"><span style="font-size:22px;line-height:1">🚙</span></div>
-          <div class="ess-name">Localrent</div>
-        </div>
-        <p class="ess-desc">Local car rentals worldwide. Cooperates with national companies for the best prices.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">7.5–12% reward rate</span>
-          <span class="ess-cta">Rent Car →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="rental" href="https://tp.media/r?campaign_id=10&marker=709139&p=2018&trs=505880&u=https%3A%2F%2Fwww.economybookings.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico rental"><span style="font-size:22px;line-height:1">🚘</span></div>
-          <div class="ess-name">EconomyBookings</div>
-        </div>
-        <p class="ess-desc">Best prices from 800+ car rental companies including Hertz, Avis, and Budget.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">3–8% reward rate</span>
-          <span class="ess-cta">Compare →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="rental" href="https://tp.media/r?campaign_id=222&marker=709139&p=5996&trs=505880&u=https%3A%2F%2Fgetrentacar.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico rental"><span style="font-size:22px;line-height:1">🏎️</span></div>
-          <div class="ess-name">GetRentacar</div>
-        </div>
-        <p class="ess-desc">Rent from national companies and local owners. Best prices, no hidden fees.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">10% reward rate</span>
-          <span class="ess-cta">Rent Car →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="rental" href="https://tp.media/r?campaign_id=57&marker=709139&p=1767&trs=505880&u=https%3A%2F%2Fbikesbooking.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico rental"><span style="font-size:22px;line-height:1">🏍️</span></div>
-          <div class="ess-name">BikesBooking</div>
-        </div>
-        <p class="ess-desc">Rent motorcycles, scooters, and bikes worldwide. Perfect for Bali, Thailand & more.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">4% reward rate</span>
-          <span class="ess-cta">Rent Bike →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="rental" href="https://tp.media/r?campaign_id=143&marker=709139&p=4354&trs=505880&u=https%3A%2F%2Fautoeurope.eu" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico rental"><span style="font-size:22px;line-height:1">🗺️</span></div>
-          <div class="ess-name">Auto Europe</div>
-        </div>
-        <p class="ess-desc">Compare Hertz, Sixt & more across Europe and worldwide. Best rate guarantee.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">4.4–8% reward rate</span>
-          <span class="ess-cta">Compare →</span>
-        </div>
-      </a>
-
-      <!-- Activities -->
-      <a class="ess-card" data-cat="activity" href="https://www.klook.com/?aid=115333" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico activity"><span style="font-size:22px;line-height:1">🎡</span></div>
-          <div class="ess-name">Klook</div>
-        </div>
-        <p class="ess-desc">Asia's top activities platform. Book tours, attractions & experiences in 200+ destinations.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">2–5% reward rate</span>
-          <span class="ess-cta">Explore →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="activity" href="https://tp.media/r?campaign_id=89&marker=709139&p=2074&trs=505880&u=https%3A%2F%2Ftiqets.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico activity"><span style="font-size:22px;line-height:1">🎭</span></div>
-          <div class="ess-name">Tiqets</div>
-        </div>
-        <p class="ess-desc">Instant mobile tickets for museums, attractions & experiences worldwide. Skip the line.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">3.5–8% reward rate</span>
-          <span class="ess-cta">Book Tickets →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="activity" href="https://tp.media/r?campaign_id=150&marker=709139&p=4487&trs=505880&u=https%3A%2F%2Fwegotrip.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico activity"><span style="font-size:22px;line-height:1">🎧</span></div>
-          <div class="ess-name">WeGoTrip</div>
-        </div>
-        <p class="ess-desc">AI-powered self-guided audio tours with attraction tickets. Explore at your own pace.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">6.6–41.5% reward rate</span>
-          <span class="ess-cta">Start Tour →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="activity" href="https://tp.media/r?campaign_id=164&marker=709139&p=4696&trs=505880&u=https%3A%2F%2Featwith.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico activity"><span style="font-size:22px;line-height:1">🍽️</span></div>
-          <div class="ess-name">EatWith</div>
-        </div>
-        <p class="ess-desc">Book unique dining experiences with local hosts worldwide. Private dinners, cooking classes & food tours.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">Up to 12% reward rate</span>
-          <span class="ess-cta">Book Experience →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="activity" href="https://tp.media/r?campaign_id=62&marker=709139&p=1942&trs=505880&u=https%3A%2F%2Fgocity.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico activity"><span style="font-size:22px;line-height:1">🏙️</span></div>
-          <div class="ess-name">Go City</div>
-        </div>
-        <p class="ess-desc">All-inclusive attraction passes for top cities — Singapore, London, NYC & more. One pass, unlimited entry.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">Up to 8% reward rate</span>
-          <span class="ess-cta">Get City Pass →</span>
-        </div>
-      </a>
-
-      <!-- Flight Compensation -->
-      <a class="ess-card" data-cat="compensation" href="https://tp.media/r?campaign_id=120&marker=709139&p=3670&trs=505880&u=https%3A%2F%2Fairhelp.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico compensation"><span style="font-size:22px;line-height:1">✈️</span></div>
-          <div class="ess-name">AirHelp</div>
-        </div>
-        <p class="ess-desc">Flight delayed or cancelled? Claim up to €600 compensation. AirHelp handles everything.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">15–16.6% reward rate</span>
-          <span class="ess-cta">Check Claim →</span>
-        </div>
-      </a>
-
-      <a class="ess-card" data-cat="compensation" href="https://tp.media/r?campaign_id=86&marker=709139&p=4129&trs=505880&u=https%3A%2F%2Fcompensair.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico compensation"><span style="font-size:22px;line-height:1">💸</span></div>
-          <div class="ess-name">Compensair</div>
-        </div>
-        <p class="ess-desc">Get compensation for flight delays, cancellations & denied boarding. Fast and easy.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">€5–12 fixed reward</span>
-          <span class="ess-cta">Check Claim →</span>
-        </div>
-      </a>
-
-      <!-- Luggage Storage -->
-      <a class="ess-card" data-cat="storage" href="https://tp.media/r?campaign_id=209&marker=709139&p=5867&trs=505880&u=https%3A%2F%2Fradicalstorage.com" target="_blank" rel="noopener sponsored">
-        <div class="ess-top">
-          <div class="ess-ico storage"><span style="font-size:22px;line-height:1">🧳</span></div>
-          <div class="ess-name">Radical Storage</div>
-        </div>
-        <p class="ess-desc">Store your luggage anywhere in the city. 5,000+ locations worldwide from just €5/day.</p>
-        <div class="ess-footer">
-          <span class="ess-comm">8% reward rate</span>
-          <span class="ess-cta">Store Bags →</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
 <!-- ══════════════════════════════════
      TELEGRAM BANNER
      ══════════════════════════════════ -->
@@ -1303,10 +995,8 @@ ul,ol{list-style:none}
         <p>Instant alerts when a deal drops. Free, no spam.</p>
       </div>
       <div class="tg-btns">
-        <a href="https://t.me/CatavelSGTravelDeals" class="btn-tw" target="_blank" rel="noopener noreferrer">🇸🇬 Singapore</a>
-        <a href="https://t.me/CatavelMYTravelDeals" class="btn-to" target="_blank" rel="noopener noreferrer">🇲🇾 Malaysia</a>
-        <a href="https://t.me/CatavelHKTravelDeals" class="btn-tw" target="_blank" rel="noopener noreferrer">🇭🇰 Hong Kong</a>
-        <a href="https://t.me/CatavelPHTravelDeals" class="btn-to" target="_blank" rel="noopener noreferrer">🇵🇭 Philippines</a>
+        <a href="https://t.me/SGTravelDeals" class="btn-tw" target="_blank" rel="noopener noreferrer">🇸🇬 @SGTravelDeals</a>
+        <a href="https://t.me/MYTravelDeals" class="btn-to" target="_blank" rel="noopener noreferrer">🇲🇾 @MYTravelDeals</a>
       </div>
     </div>
   </div>
@@ -1357,7 +1047,7 @@ ul,ol{list-style:none}
     <div class="ft-g">
       <div class="ft-brand">
         <a href="/" class="logo" aria-label="Catavel home" style="color:#fff">Catavel<em aria-hidden="true" style="background:#E8622A"></em></a>
-        <p>Travel deals for Southeast Asia. 60+ OTAs, updated every 6 hours.</p>
+        <p>Travel deal aggregator for Singapore &amp; Malaysia. 60+ OTAs, updated every 6 hours.</p>
       </div>
       <nav aria-label="Destinations" class="ft-col">
         <h3>Destinations</h3>
@@ -1368,12 +1058,12 @@ ul,ol{list-style:none}
         <a href="/destinations/">All Destinations</a>
       </nav>
       <nav aria-label="Platforms" class="ft-col">
-        <h3>Deals &amp; Vouchers</h3>
-        <a href="/klook-promo-codes/">Klook Deals</a>
-        <a href="/trip-com-promo-codes/">Trip.com Deals</a>
-        <a href="/agoda-promo-codes/">Agoda Deals</a>
-        <a href="/vouchers/">All Vouchers</a>
-        <a href="/#essentials">Travel Essentials</a>
+        <h3>Platforms</h3>
+        <a href="/agoda-promo-codes/">Agoda Promos</a>
+        <a href="/booking-com-deals/">Booking.com</a>
+        <a href="/trip-com-deals/">Trip.com</a>
+        <a href="/klook-deals/">Klook</a>
+        <a href="/skyscanner-deals/">Skyscanner</a>
       </nav>
       <nav aria-label="Company" class="ft-col">
         <h3>Catavel</h3>
@@ -1386,7 +1076,7 @@ ul,ol{list-style:none}
     </div>
     <div class="ft-btm">
       <p class="ft-disc"><strong>Affiliate Disclosure:</strong> Catavel earns a commission when you book through our links, at no extra cost to you.</p>
-      <p class="ft-copy">&copy; 2026 Catavel — For SEAblings 🌏</p>
+      <p class="ft-copy">&copy; 2026 Catavel</p>
     </div>
   </div>
 </footer>
@@ -1424,8 +1114,6 @@ ul,ol{list-style:none}
           <option value="all">All Markets</option>
           <option value="SGD">🇸🇬 Singapore (SGD)</option>
           <option value="MYR">🇲🇾 Malaysia (MYR)</option>
-          <option value="HKD">🇭🇰 Hong Kong (HKD)</option>
-          <option value="PHP">🇵🇭 Philippines (PHP)</option>
         </select>
       </div>
       <!-- Platform checkboxes -->
@@ -1572,12 +1260,11 @@ function injectSchema(deals){
    The .mc row is rendered always in HTML; shown/hidden via CSS display.
 */
 function cardNormal(d){
+  const sv=d.original_price-d.discounted_price;
   const urg=isUrgent(d.valid_until);
   const urgCls=urg?' urg':'';
-  const hot=d.is_hot?'<span class="tag-hot">🔥 Hot</span>':'';
-  const exp=d.is_expiring?'<span class="tag-exp">⏰ Expiring</span>':'';
-  // "from" price — honest about price variability
-  const fromPrice=`from ${d.currency} ${d.discounted_price.toLocaleString()}`;
+  const hot=d.is_hot?'<span class="tag-hot">Hot</span>':'';
+  const exp=d.is_expiring?'<span class="tag-exp">Expiring</span>':'';
   return`<li class="di">
 <article class="dc" data-cat="${d.category}" itemscope itemtype="https://schema.org/Offer">
   <meta itemprop="price" content="${d.discounted_price}">
@@ -1599,33 +1286,33 @@ function cardNormal(d){
         ${d.destination}
       </span>
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
-      <span class="d-mkt">${{SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'}[d.market]||'🌏'}</span>
-      <span class="d-exp${urgCls}">Updated <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
+      <span class="d-mkt">${d.market==='SGD'?'🇸🇬':'🇲🇾'}</span>
+      <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
-  <!-- desktop: price + CTA -->
+  <!-- desktop: price + CTA (hidden on mobile via CSS) -->
   <div class="dp">
     <div class="dp-g">
-      <span class="dp-from">from</span>
+      <span class="dp-orig">${d.currency} ${d.original_price.toLocaleString()}</span>
       <span class="dp-price" itemprop="price">${d.currency} ${d.discounted_price.toLocaleString()}</span>
-      <span class="dp-live-note">Live price at checkout</span>
+      <span class="dp-save">Save ${d.currency} ${sv.toLocaleString()}</span>
     </div>
     <a href="${d.link}" class="btn-bk" target="_blank" rel="noopener noreferrer sponsored"
-       aria-label="Check live price for ${d.title} on ${d.ota}" itemprop="url">
-      Check Price
+       aria-label="Book ${d.title} on ${d.ota}" itemprop="url">
+      Book
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
-  <!-- mobile: CTA row -->
+  <!-- mobile: CTA row (hidden on desktop, shown on ≤600px) -->
   <div class="mc">
     <div class="mc-price">
-      <span class="dp-from">from</span>
+      <span class="mc-orig">${d.currency} ${d.original_price.toLocaleString()}</span>
       <span class="mc-val">${d.currency} ${d.discounted_price.toLocaleString()}</span>
-      <span class="dp-live-note">Live price at checkout</span>
+      <span class="mc-save">Save ${d.currency} ${sv.toLocaleString()}</span>
     </div>
     <a href="${d.link}" class="mc-book" target="_blank" rel="noopener noreferrer sponsored"
-       aria-label="Check price for ${d.title} — ${d.currency} ${d.discounted_price}">
-      Check Price
+       aria-label="Book ${d.title} — ${d.currency} ${d.discounted_price}">
+      Book Now
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
@@ -1656,7 +1343,7 @@ function cardVoucher(d){
     </div>
     <div class="dr2">
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
-      <span class="d-mkt">${{SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'}[d.market]||'🌏'}</span>
+      <span class="d-mkt">${d.market==='SGD'?'🇸🇬':'🇲🇾'}</span>
       <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
@@ -1893,20 +1580,14 @@ function showToast(msg){
 /* ─── INIT ─── */
 /* ─── NORMALISE deal from pipeline → website field names ─── */
 function normaliseDeal(x){
-  /* affiliate_link (pipeline) → link (website) */
   if(!x.link && x.affiliate_link) x.link = x.affiliate_link;
   if(!x.link) x.link = '#';
-  /* discount_percent: pipeline may send as string */
   if(x.discount_percent) x.discount_percent = parseInt(x.discount_percent)||0;
-  /* original_price / discounted_price: ensure numbers */
   if(x.original_price)   x.original_price   = parseFloat(x.original_price)||0;
   if(x.discounted_price) x.discounted_price  = parseFloat(x.discounted_price)||0;
-  /* category: ensure lowercase */
   if(x.category) x.category = x.category.toLowerCase();
-  /* is_hot / is_expiring: pipeline may not send these */
   if(x.is_hot      === undefined) x.is_hot      = (x.discount_percent||0) >= 35;
   if(x.is_expiring === undefined) x.is_expiring = x.valid_until ? isUrgent(x.valid_until) : false;
-  /* market: normalise all variants to currency code for filter */
   if(!x.market || x.market==='SG,MY') x.market = 'SGD';
   else if(x.market==='SG') x.market = 'SGD';
   else if(x.market==='MY') x.market = 'MYR';
@@ -1920,20 +1601,13 @@ async function init(){
     const r=await fetch('deals.json',{cache:'no-cache'});
     if(!r.ok) throw 0;
     const raw=await r.json();
-
-    /* Handle BOTH formats:
-       Old (manual): [ {...}, {...} ]
-       New (pipeline): { "lastUpdated":..., "deals": [{...}] } */
     const arr = Array.isArray(raw) ? raw
               : (raw.deals && Array.isArray(raw.deals)) ? raw.deals
               : null;
-
     if(arr && arr.length){
       DEALS.length=0;
       arr.forEach(x=>DEALS.push(normaliseDeal(x)));
     }
-
-    /* Show last updated time if available */
     if(raw.lastUpdated){
       const lu=document.getElementById('last-updated');
       if(lu){
@@ -1945,11 +1619,8 @@ async function init(){
   finally{
     cur=[...DEALS];
     render(DEALS);
-    /* Update stats bar dynamically */
     const sn=document.getElementById('sn');
     if(sn) sn.textContent=DEALS.length;
-
-    /* Max savings: highest discount_percent from live data */
     const smax=document.getElementById('smax');
     if(smax){
       const maxDisc=DEALS.reduce((m,d)=>Math.max(m,d.discount_percent||0),0);
@@ -1961,53 +1632,61 @@ document.readyState==='loading'
   ?document.addEventListener('DOMContentLoaded',init)
   :init();
 
-function filterEss(cat, btn) {
-  // Update active tab
+// ── Travel Essentials filter ──────────────────────────────────
+window.filterEss = function(cat, btn) {
   document.querySelectorAll('.ess-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
-  // Show/hide cards
   document.querySelectorAll('.ess-card').forEach(card => {
-    if (cat === 'all' || card.dataset.cat === cat) {
-      card.classList.remove('ess-hidden');
-    } else {
-      card.classList.add('ess-hidden');
-    }
+    card.classList.toggle('ess-hidden', cat !== 'all' && card.dataset.cat !== cat);
   });
-}
+};
+
 // ── Currency switcher ─────────────────────────────────────────
-function setCurr(curr) {
-  // Update active button
+window.setCurr = function(curr) {
   document.querySelectorAll('.curr-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.curr === curr);
   });
-  // Sync with sidebar market filter + mobile filter
   const mktSelSb = document.getElementById('f-mkt');
   const mktSelMf = document.getElementById('mf-mkt');
   if (mktSelSb) mktSelSb.value = curr;
   if (mktSelMf) mktSelMf.value = curr;
-  // Run filter immediately
   runFilter(
     document.getElementById('f-dest')?.value || 'all',
     curr,
-    parseInt(document.getElementById('f-price')?.value || '2000')
+    parseInt(document.getElementById('f-pr')?.value || '2000')
   );
-}
+};
 
 // ── Telegram dropdown ─────────────────────────────────────────
-function toggleTgDrop() {
+window.toggleTgDrop = function() {
   const d = document.getElementById('tgDrop');
+  if (!d) return;
   const isOpen = d.classList.toggle('open');
   d.querySelector('.tg-drop-btn').setAttribute('aria-expanded', isOpen);
-}
+};
 document.addEventListener('click', function(e) {
   const d = document.getElementById('tgDrop');
   if (d && !d.contains(e.target)) d.classList.remove('open');
 });
 document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') { const d = document.getElementById('tgDrop'); if(d) d.classList.remove('open'); }
+  if (e.key === 'Escape') {
+    closeMF();
+    const d = document.getElementById('tgDrop');
+    if (d) d.classList.remove('open');
+  }
 });
 
-
+// ── Nav Voucher dropdown ──────────────────────────────────────
+window.toggleVd = function() {
+  const d = document.getElementById('navVd');
+  if (!d) return;
+  const isOpen = d.classList.toggle('open');
+  d.querySelector('.nav-vd-btn').setAttribute('aria-expanded', isOpen);
+};
+document.addEventListener('click', function(e) {
+  const d = document.getElementById('navVd');
+  if (d && !d.contains(e.target)) d.classList.remove('open');
+});
 </script>
 </body>
 </html>
