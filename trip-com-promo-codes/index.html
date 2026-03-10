@@ -129,12 +129,58 @@ ul,ol{list-style:none}
 <header class="hd" role="banner">
   <div class="w hd-i">
     <a href="/" class="logo" aria-label="Catavel home">Catavel<em aria-hidden="true"></em></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/" aria-current="page">Deals</a>
+      <a href="/destinations/">Destinations</a>
+      <a href="/blog/">Blog</a>
+      <div class="nav-vd" id="navVd">
+        <button class="nav-vd-btn" onclick="toggleVd()" aria-expanded="false" aria-haspopup="true">Vouchers <span class="nav-vd-caret">▾</span></button>
+        <div class="nav-vd-menu" role="menu">
+          <div class="nav-vd-hd">Promo Codes &amp; Deals</div>
+          <a href="/klook-promo-codes/" role="menuitem">Klook</a>
+          <a href="/trip-com-promo-codes/" role="menuitem">Trip.com</a>
+          <a href="/agoda-promo-codes/" role="menuitem">Agoda</a>
+          <div class="nav-vd-sep"></div>
+          <a href="https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fspecial-offers" target="_blank" rel="noopener sponsored" role="menuitem">Aviasales Deals ↗</a>
+        </div>
+      </div>
+    </nav>
     <div class="hd-r">
-      <a href="/" class="hd-back">← All Deals</a>
-      <a href="https://t.me/CatavelSGTravelDeals" class="btn-tg" target="_blank" rel="noopener noreferrer">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-        SG Deals
-      </a>
+      <div class="curr-sw" id="currSw" role="group" aria-label="Currency">
+        <button class="curr-btn active" data-curr="SGD" onclick="setCurr('SGD')">SGD</button>
+        <button class="curr-btn" data-curr="MYR" onclick="setCurr('MYR')">MYR</button>
+        <button class="curr-btn" data-curr="HKD" onclick="setCurr('HKD')">HKD</button>
+        <button class="curr-btn" data-curr="PHP" onclick="setCurr('PHP')">PHP</button>
+      </div>
+      <div class="tg-drop" id="tgDrop">
+        <button class="tg-drop-btn" onclick="toggleTgDrop()" aria-expanded="false" aria-haspopup="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
+          <span>Telegram</span><span class="tg-caret">▾</span>
+        </button>
+        <div class="tg-menu" role="menu">
+          <div class="tg-menu-hd">Join our channels — free</div>
+          <a href="https://t.me/CatavelSGTravelDeals" target="_blank" rel="noopener noreferrer" role="menuitem">
+            <span class="tg-ch-flag">🇸🇬</span>
+            <span class="tg-ch-info"><span class="tg-ch-name">Singapore Deals</span><span class="tg-ch-handle">@CatavelSGTravelDeals</span></span>
+            <span class="tg-ch-arrow">↗</span>
+          </a>
+          <a href="https://t.me/CatavelMYTravelDeals" target="_blank" rel="noopener noreferrer" role="menuitem">
+            <span class="tg-ch-flag">🇲🇾</span>
+            <span class="tg-ch-info"><span class="tg-ch-name">Malaysia Deals</span><span class="tg-ch-handle">@CatavelMYTravelDeals</span></span>
+            <span class="tg-ch-arrow">↗</span>
+          </a>
+          <a href="https://t.me/CatavelHKTravelDeals" target="_blank" rel="noopener noreferrer" role="menuitem">
+            <span class="tg-ch-flag">🇭🇰</span>
+            <span class="tg-ch-info"><span class="tg-ch-name">Hong Kong Deals</span><span class="tg-ch-handle">@CatavelHKTravelDeals</span></span>
+            <span class="tg-ch-arrow">↗</span>
+          </a>
+          <a href="https://t.me/CatavelPHTravelDeals" target="_blank" rel="noopener noreferrer" role="menuitem">
+            <span class="tg-ch-flag">🇵🇭</span>
+            <span class="tg-ch-info"><span class="tg-ch-name">Philippines Deals</span><span class="tg-ch-handle">@CatavelPHTravelDeals</span></span>
+            <span class="tg-ch-arrow">↗</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
