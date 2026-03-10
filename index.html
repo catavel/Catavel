@@ -704,16 +704,7 @@ ul,ol{list-style:none}
 .nav-vd-menu a:hover{background:var(--bg);color:var(--teal)}
 .nav-vd-sep{height:1px;background:var(--bdr);margin:3px 0}
 
-/* Voucher Directory strip */
-.vd-s{background:var(--white);border-bottom:1px solid var(--bdr);padding:10px 0}
-.vd-grid{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 0}
-.vd-grid::-webkit-scrollbar{display:none}
-.vd-card{display:flex;flex-direction:column;gap:2px;flex-shrink:0;padding:8px 16px;border:1.5px solid var(--bdr);border-radius:var(--r);text-decoration:none;transition:border-color .12s,background .12s;min-width:100px;text-align:center}
-.vd-card:hover{border-color:var(--teal);background:var(--teal-lt)}
-.vd-name{font-size:13px;font-weight:600;color:var(--text)}
-.vd-tag{font-size:11px;color:var(--muted)}
-.vd-card:hover .vd-name{color:var(--teal)}
-.vd-card:hover .vd-tag{color:var(--teal)}
+
 </style>
 </head>
 <body>
@@ -807,37 +798,7 @@ ul,ol{list-style:none}
     <div class="stats" aria-label="Summary stats">
       <div><span class="stat-n" id="sn">248</span><br><span class="stat-l">Live deals</span></div>
       <div><span class="stat-n">60+</span><br><span class="stat-l">OTAs covered</span></div>
-      <div><span class="stat-n">Up to 65%</span><br><span class="stat-l">Max savings</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════
-     VOUCHER DIRECTORY
-     ══════════════════════════════════ -->
-<section class="vd-s" aria-labelledby="vd-h">
-  <div class="w">
-    <div class="vd-grid">
-      <a href="/klook-promo-codes/" class="vd-card">
-        <span class="vd-name">Klook</span>
-        <span class="vd-tag">Promo Codes</span>
-      </a>
-      <a href="/trip-com-promo-codes/" class="vd-card">
-        <span class="vd-name">Trip.com</span>
-        <span class="vd-tag">Promo Codes</span>
-      </a>
-      <a href="/agoda-promo-codes/" class="vd-card">
-        <span class="vd-name">Agoda</span>
-        <span class="vd-tag">Promo Codes</span>
-      </a>
-      <a href="https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fspecial-offers" class="vd-card" target="_blank" rel="noopener sponsored">
-        <span class="vd-name">Aviasales</span>
-        <span class="vd-tag">Flight Deals ↗</span>
-      </a>
-      <a href="https://tp.media/r?marker=709139&trs=505880&p=4057&u=https%3A%2F%2Fwww.trip.com%2Fsale%2F" class="vd-card" target="_blank" rel="noopener sponsored">
-        <span class="vd-name">Flash Sales</span>
-        <span class="vd-tag">Trip.com ↗</span>
-      </a>
+      <div><span class="stat-n" id="smax">Up to 65%</span><br><span class="stat-l">Max savings</span></div>
     </div>
   </div>
 </section>
