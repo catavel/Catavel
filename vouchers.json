@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-10T09:32:40.932Z",
+  "lastUpdated": "2026-03-10T09:40:32.254Z",
   "count": 5,
   "vouchers": [
     {
@@ -8,7 +8,7 @@
       "code": "TAIWANJOY8",
       "description": "8% off Taiwan Bookings min. spend $100, capped at $15",
       "discount_type": "percent",
-      "discount": "0.08",
+      "discount": "8%",
       "min_spend": "SGD 100",
       "max_discount": "USD11.79",
       "applicable_for": "All activities & products",
@@ -25,7 +25,7 @@
       "code": "CITIM267OFFMAR",
       "description": "Citi Mastercard 7% off min. $250",
       "discount_type": "percent",
-      "discount": "0.07",
+      "discount": "7%",
       "min_spend": "SGD 250",
       "max_discount": "USD15.69",
       "applicable_for": "All activities & products on Klook (Unless listed under \"Non-applicable activities\")",
@@ -76,7 +76,7 @@
       "code": "G02TAIWAN",
       "description": "B1G1 on Taiwan High Speed Rail: Routes going to Taichung, Kaohsiung, Chiayi, Tainan, Changhua & Yunlin only",
       "discount_type": "percent",
-      "discount": "0.5",
+      "discount": "50%",
       "min_spend": "",
       "max_discount": "USD31",
       "applicable_for": "All activities & products",
