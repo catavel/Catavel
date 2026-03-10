@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-10T09:22:05.290Z",
-  "count": 5,
+  "lastUpdated": "2026-03-10T09:32:31.994Z",
+  "count": 4,
   "vouchers": [
     {
       "id": "vc_taiwanjoy8",
@@ -67,23 +67,6 @@
       "market": "SGD",
       "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/14-taiwan-things-to-do/?city_id=&category_id=0&aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to new to hotel Klook Members residing in Singapore only, T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use.",
-      "status": "active",
-      "is_expiring": false
-    },
-    {
-      "id": "vc_g02taiwan",
-      "ota": "Klook",
-      "code": "G02TAIWAN",
-      "description": "B1G1 on Taiwan High Speed Rail: Routes going to Taichung, Kaohsiung, Chiayi, Tainan, Changhua & Yunlin only",
-      "discount_type": "percent",
-      "discount": "0.5",
-      "min_spend": "",
-      "max_discount": "USD31",
-      "applicable_for": "All activities & products",
-      "valid_until": "2026-03-30",
-      "market": "SGD",
-      "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/14-taiwan-things-to-do/?city_id=&category_id=0&aid=115333",
-      "tc": "Only applicable for selected Taiwan High Speed Rail B1G1 Packages, as follows: Any of the following departure points: Taipei, Nangang, Banqiao, Taoyuan, Hsinchu, Miaoli, Taichung, Changhua, Yunlin, Chiayi, Tainan, Kaohsiung. Heading to to any of the following destinations: Taichung, Changhua, Yunlin, Chiayi, Tainan, Kaohsiung. One-time use only. Description 8% off Taiwan Bookings min. spend $100, capped at $15 Discount value 8% off, min spend SGD 100 ? 8% off, min spend USD 78.45 The amount is based on latest exchange rate. The price shown is for reference only and might not be the final amount. Rules Max. discount: USD11.79 Applicable for Validity period Valid until 2026-03-31 22:59 Redeem before 2026-03-31 22:59 Promo code TAIWANJOY8 Copy T&Cs One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use. Description 8% off Taiwan Bookings min. spend $100, capped at $15 Discount value 8% off, min spend SGD 100 ? 8% off, min spend USD 78.45 The amount is based on latest exchange rate. The price shown is for reference only and might not be the final amount. Rules Max. discount: USD11.79 Applicable for Validity period Valid until 2026-03-31 22:59 Redeem before 2026-03-31 22:59 Promo code TAIWANJOY8 Copy T&Cs One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use. Description 8% off Taiwan Bookings min. spend $100, capped at $15 Discount value 8% off, min spend SGD 100 ? 8% off, min spend USD 78.45 The amount is based on latest exchange rate. The price shown is for reference only and might not be the final amount. Rules Max. discount: USD11.79 Applicable for Validity period Valid until 2026-03-31 22:59 Redeem before 2026-03-31 22:59 Promo code TAIWANJOY8 Copy T&Cs One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use.",
       "status": "active",
       "is_expiring": false
     }
