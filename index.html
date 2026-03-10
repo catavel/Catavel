@@ -23,7 +23,7 @@
 <meta name="twitter:image" content="https://catavel.com/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Serif+Display&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <!-- Google Analytics 4 — replace G-SMQ9BN5CRX with your Measurement ID -->
@@ -46,8 +46,8 @@
   --white:#fff; --bg:#F6F6F4; --text:#111; --text2:#444; --muted:#999;
   --bdr:#E5E5E2; --bdr2:#D0D0CB;
   --r:6px;
-  --f:'DM Sans',system-ui,sans-serif;
-  --fh:'DM Serif Display',Georgia,serif;
+  --f:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;
+  --fh:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;
   /* Height of mobile sticky bottom bar */
   --bh:72px;
 }
@@ -77,6 +77,11 @@ ul,ol{list-style:none}
 .nav a{font-size:13px;font-weight:500;color:var(--muted);padding:5px 10px;border-radius:4px;transition:color .12s,background .12s}
 .nav a:hover,.nav a[aria-current]{color:var(--teal)}
 .hd-r{margin-left:auto;display:flex;gap:6px;align-items:center}
+/* Currency switcher */
+.curr-sw{display:inline-flex;align-items:center;gap:1px;background:var(--bg);border:1.5px solid var(--bdr2);border-radius:var(--r);overflow:hidden;flex-shrink:0}
+.curr-btn{padding:0 9px;height:32px;font-size:11.5px;font-weight:600;color:var(--muted);background:none;border:none;cursor:pointer;transition:background .12s,color .12s;white-space:nowrap}
+.curr-btn:hover{color:var(--text)}
+.curr-btn.active{background:var(--teal);color:#fff}
 /* Telegram dropdown */
 .tg-drop{position:relative}
 .tg-drop-btn{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:34px;border-radius:var(--r);font-size:12.5px;font-weight:600;color:#fff;background:#0088CC;border:none;cursor:pointer;white-space:nowrap;transition:opacity .12s}
@@ -616,6 +621,7 @@ ul,ol{list-style:none}
 @media(max-width:600px){
   /* HEADER */
   .nav{display:none}
+  .curr-sw{display:none}
 
   /* HERO — ultra-compact, get deals above fold fast */
   .hero{padding:12px 0 10px}
@@ -757,6 +763,12 @@ ul,ol{list-style:none}
       <a href="/blog/">Blog</a>
     </nav>
     <div class="hd-r">
+      <div class="curr-sw" id="currSw" role="group" aria-label="Currency">
+        <button class="curr-btn active" data-curr="SGD" onclick="setCurr('SGD')">SGD</button>
+        <button class="curr-btn" data-curr="MYR" onclick="setCurr('MYR')">MYR</button>
+        <button class="curr-btn" data-curr="HKD" onclick="setCurr('HKD')">HKD</button>
+        <button class="curr-btn" data-curr="PHP" onclick="setCurr('PHP')">PHP</button>
+      </div>
       <div class="tg-drop" id="tgDrop">
         <button class="tg-drop-btn" onclick="toggleTgDrop()" aria-expanded="false" aria-haspopup="true">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
@@ -1595,7 +1607,7 @@ function cardNormal(d){
         ${d.destination}
       </span>
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
-      <span class="d-mkt">${d.market==='SGD'?'🇸🇬':'🇲🇾'}</span>
+      <span class="d-mkt">${{SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'}[d.market]||'🌏'}</span>
       <span class="d-exp${urgCls}">Updated <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
@@ -1652,7 +1664,7 @@ function cardVoucher(d){
     </div>
     <div class="dr2">
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
-      <span class="d-mkt">${d.market==='SGD'?'🇸🇬':'🇲🇾'}</span>
+      <span class="d-mkt">${{SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'}[d.market]||'🌏'}</span>
       <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
@@ -1970,6 +1982,25 @@ function filterEss(cat, btn) {
     }
   });
 }
+// ── Currency switcher ─────────────────────────────────────────
+function setCurr(curr) {
+  // Update active button
+  document.querySelectorAll('.curr-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.curr === curr);
+  });
+  // Sync with sidebar market filter + mobile filter
+  const mktSelSb = document.getElementById('f-mkt');
+  const mktSelMf = document.getElementById('mf-mkt');
+  if (mktSelSb) mktSelSb.value = curr;
+  if (mktSelMf) mktSelMf.value = curr;
+  // Run filter immediately
+  runFilter(
+    document.getElementById('f-dest')?.value || 'all',
+    curr,
+    parseInt(document.getElementById('f-price')?.value || '2000')
+  );
+}
+
 // ── Telegram dropdown ─────────────────────────────────────────
 function toggleTgDrop() {
   const d = document.getElementById('tgDrop');
