@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-11T02:50:52.455Z",
+  "lastUpdated": "2026-03-11T02:50:56.768Z",
   "count": 11,
   "vouchers": [
     {
@@ -92,7 +92,7 @@
       "ota": "Klook",
       "code": "SPRINGUSJ",
       "description": "Universal Studios Japan Studio Pass Special Offer",
-      "discount_type": "percent",
+      "discount_type": "flat",
       "discount": "SGD 24",
       "min_spend": "",
       "max_discount": "",
