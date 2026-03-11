@@ -704,7 +704,34 @@ ul,ol{list-style:none}
 .nav-vd-menu a:hover{background:var(--bg);color:var(--teal)}
 .nav-vd-sep{height:1px;background:var(--bdr);margin:3px 0}
 
+/* Voucher Directory strip */
+.vd-s{background:var(--white);border-bottom:1px solid var(--bdr);padding:10px 0}
+.vd-grid{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 0}
+.vd-grid::-webkit-scrollbar{display:none}
+.vd-card{display:flex;flex-direction:column;gap:2px;flex-shrink:0;padding:8px 16px;border:1.5px solid var(--bdr);border-radius:var(--r);text-decoration:none;transition:border-color .12s,background .12s;min-width:100px;text-align:center}
+.vd-card:hover{border-color:var(--teal);background:var(--teal-lt)}
+.vd-name{font-size:13px;font-weight:600;color:var(--text)}
+.vd-tag{font-size:11px;color:var(--muted)}
+.vd-card:hover .vd-name{color:var(--teal)}
+.vd-card:hover .vd-tag{color:var(--teal)}
 
+/* ── TRAVEL ESSENTIALS HIGHLIGHT ── */
+.ess-s{padding:28px 0;border-top:1px solid var(--bdr);background:var(--white)}
+.ess-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+.ess-hd-title{font-size:16px;font-weight:700;letter-spacing:-.3px}
+.ess-hd-sub{font-size:12px;color:var(--muted);margin-top:2px}
+.ess-see-all{display:inline-flex;align-items:center;gap:5px;padding:0 13px;height:32px;border:1.5px solid var(--teal-bd);border-radius:var(--r);font-size:12px;font-weight:600;color:var(--teal);background:var(--teal-lt);transition:background .12s;white-space:nowrap;flex-shrink:0}
+.ess-see-all:hover{background:var(--teal-bd)}
+.ess-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.ess-card{background:var(--bg);border:1.5px solid var(--bdr);border-radius:var(--r);padding:12px 8px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;transition:border-color .15s,box-shadow .15s,transform .12s;position:relative}
+.ess-card:hover{border-color:var(--teal-bd);box-shadow:0 2px 10px rgba(0,137,123,.1);transform:translateY(-1px)}
+.ess-card-link{position:absolute;inset:0;border-radius:var(--r)}
+.ess-logo{width:34px;height:34px;border-radius:7px;object-fit:contain;background:var(--white);border:1px solid var(--bdr);padding:3px;flex-shrink:0}
+.ess-name{font-size:11.5px;font-weight:600;color:var(--text);line-height:1.3}
+.ess-cat{font-size:10px;color:var(--muted)}
+.ess-arr{font-size:10px;color:var(--teal);margin-top:2px}
+@media(max-width:640px){.ess-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:360px){.ess-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -798,7 +825,37 @@ ul,ol{list-style:none}
     <div class="stats" aria-label="Summary stats">
       <div><span class="stat-n" id="sn">248</span><br><span class="stat-l">Live deals</span></div>
       <div><span class="stat-n">60+</span><br><span class="stat-l">OTAs covered</span></div>
-      <div><span class="stat-n" id="smax">Up to 65%</span><br><span class="stat-l">Max savings</span></div>
+      <div><span class="stat-n">Up to 65%</span><br><span class="stat-l">Max savings</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     VOUCHER DIRECTORY
+     ══════════════════════════════════ -->
+<section class="vd-s" aria-labelledby="vd-h">
+  <div class="w">
+    <div class="vd-grid">
+      <a href="/klook-promo-codes/" class="vd-card">
+        <span class="vd-name">Klook</span>
+        <span class="vd-tag">Promo Codes</span>
+      </a>
+      <a href="/trip-com-promo-codes/" class="vd-card">
+        <span class="vd-name">Trip.com</span>
+        <span class="vd-tag">Promo Codes</span>
+      </a>
+      <a href="/agoda-promo-codes/" class="vd-card">
+        <span class="vd-name">Agoda</span>
+        <span class="vd-tag">Promo Codes</span>
+      </a>
+      <a href="https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fspecial-offers" class="vd-card" target="_blank" rel="noopener sponsored">
+        <span class="vd-name">Aviasales</span>
+        <span class="vd-tag">Flight Deals ↗</span>
+      </a>
+      <a href="https://tp.media/r?marker=709139&trs=505880&p=4057&u=https%3A%2F%2Fwww.trip.com%2Fsale%2F" class="vd-card" target="_blank" rel="noopener sponsored">
+        <span class="vd-name">Flash Sales</span>
+        <span class="vd-tag">Trip.com ↗</span>
+      </a>
     </div>
   </div>
 </section>
@@ -981,6 +1038,65 @@ ul,ol{list-style:none}
         <li><a href="/destinations/seoul/"     class="dest-a"><span aria-hidden="true">🇰🇷</span>Seoul</a></li>
       </ul>
     </nav>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     TRAVEL ESSENTIALS
+     ══════════════════════════════════ -->
+<section class="ess-s" aria-labelledby="ess-h">
+  <div class="w">
+    <div class="ess-hd">
+      <div>
+        <h2 class="ess-hd-title" id="ess-h">Travel Essentials</h2>
+        <p class="ess-hd-sub">Best tools &amp; apps for SEAblings — handpicked by Catavel</p>
+      </div>
+      <a href="/travel-essentials/" class="ess-see-all">See all 24 tools &#8594;</a>
+    </div>
+    <div class="ess-grid">
+      <div class="ess-card">
+        <a href="https://tp.media/r?campaign_id=541&marker=709139&p=8310&trs=505880&u=https%3A%2F%2Fairalo.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="Airalo eSIM"></a>
+        <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=airalo.com&sz=64" alt="Airalo" loading="lazy">
+        <div class="ess-name">Airalo</div>
+        <div class="ess-cat">eSIM</div>
+        <div class="ess-arr">&#8594;</div>
+      </div>
+      <div class="ess-card">
+        <a href="https://tp.media/r?campaign_id=137&marker=709139&p=4110&trs=505880&u=https%3A%2F%2Fklook.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="Klook Activities"></a>
+        <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=klook.com&sz=64" alt="Klook" loading="lazy">
+        <div class="ess-name">Klook</div>
+        <div class="ess-cat">Activities</div>
+        <div class="ess-arr">&#8594;</div>
+      </div>
+      <div class="ess-card">
+        <a href="https://tp.media/r?campaign_id=627&marker=709139&p=8919&trs=505880&u=https%3A%2F%2Fwelcomepickups.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="Welcome Pickups transfer"></a>
+        <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=welcomepickups.com&sz=64" alt="Welcome Pickups" loading="lazy">
+        <div class="ess-name">Welcome Pickups</div>
+        <div class="ess-cat">Transfers</div>
+        <div class="ess-arr">&#8594;</div>
+      </div>
+      <div class="ess-card">
+        <a href="https://tp.media/r?campaign_id=120&marker=709139&p=3670&trs=505880&u=https%3A%2F%2Fairhelp.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="AirHelp flight claims"></a>
+        <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=airhelp.com&sz=64" alt="AirHelp" loading="lazy">
+        <div class="ess-name">AirHelp</div>
+        <div class="ess-cat">Flight Claims</div>
+        <div class="ess-arr">&#8594;</div>
+      </div>
+      <div class="ess-card">
+        <a href="https://tp.media/r?campaign_id=89&marker=709139&p=2074&trs=505880&u=https%3A%2F%2Ftiqets.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="Tiqets tickets"></a>
+        <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=tiqets.com&sz=64" alt="Tiqets" loading="lazy">
+        <div class="ess-name">Tiqets</div>
+        <div class="ess-cat">Tickets</div>
+        <div class="ess-arr">&#8594;</div>
+      </div>
+      <div class="ess-card">
+        <a href="https://tp.media/r?campaign_id=172&marker=709139&p=4845&trs=505880&u=https%3A%2F%2Fqeeq.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="QEEQ car rental"></a>
+        <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=qeeq.com&sz=64" alt="QEEQ" loading="lazy">
+        <div class="ess-name">QEEQ</div>
+        <div class="ess-cat">Car Rental</div>
+        <div class="ess-arr">&#8594;</div>
+      </div>
+    </div>
   </div>
 </section>
 
