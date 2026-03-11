@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-11T03:17:04.353Z",
+  "lastUpdated": "2026-03-11T04:04:02.827Z",
   "count": 42,
   "vouchers": [
     {
@@ -125,7 +125,7 @@
       "id": "vc_skytree10mar",
       "ota": "Klook",
       "code": "SKYTREE10MAR",
-      "description": "TOKYO SKYTREE? Ticket 10%",
+      "description": "TOKYO SKYTREE Ticket 10%",
       "discount_type": "percent",
       "discount": "10%",
       "min_spend": "",
