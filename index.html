@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catavel — Best Travel Deals for Singapore &amp; Malaysia</title>
+<title>Catavel - Best Travel Deals for you</title>
 <meta name="description" content="Best flight, hotel and activity deals for Singapore and Malaysia travelers. Curated from 60+ OTAs, updated every 6 hours.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://catavel.com/">
@@ -805,8 +805,8 @@ ul,ol{list-style:none}
 <section class="hero" aria-labelledby="h1">
   <div class="w">
     <p class="hero-live" aria-live="polite"><span class="dot" aria-hidden="true"></span>Updated every 6 hours &middot; 60+ OTAs</p>
-    <h1 id="h1">Best deals for <i>SEAblings</i></h1>
-    <p class="hero-sub">Flights, hotels, activities and voucher codes — curated from 60+ OTAs in one place.</p>
+    <h1 id="h1">We did the searching.<br><i>You do the traveling.</i></h1>
+    <p class="hero-sub">Flights, hotels, activities and voucher codes — updated every 6 hours. No sign-up needed.</p>
     <form class="sf" role="search" action="/" method="get" onsubmit="doSearch(event)">
       <label class="sf-in" for="q">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
@@ -817,15 +817,13 @@ ul,ol{list-style:none}
         <option value="flight">Flights</option>
         <option value="hotel">Hotels</option>
         <option value="activity">Activities</option>
-        <option value="package">Packages</option>
-        <option value="voucher">Vouchers</option>
       </select>
       <button type="submit" class="sf-btn">Search</button>
     </form>
     <div class="stats" aria-label="Summary stats">
-      <div><span class="stat-n" id="sn">248</span><br><span class="stat-l">Live deals</span></div>
-      <div><span class="stat-n">60+</span><br><span class="stat-l">OTAs covered</span></div>
-      <div><span class="stat-n">Up to 65%</span><br><span class="stat-l">Max savings</span></div>
+      <div><span class="stat-n" id="sn">—</span><br><span class="stat-l">Live deals</span></div>
+      <div><span class="stat-n" id="smax">—</span><br><span class="stat-l">Max savings</span></div>
+      <div><span class="stat-n" id="last-updated">—</span><br><span class="stat-l">Last updated</span></div>
     </div>
   </div>
 </section>
@@ -869,14 +867,10 @@ ul,ol{list-style:none}
     <a href="/?type=flight"   class="pill"    role="listitem" aria-selected="false" data-cat="flight">✈ Flights</a>
     <a href="/?type=hotel"    class="pill"    role="listitem" aria-selected="false" data-cat="hotel">🏨 Hotels</a>
     <a href="/?type=activity" class="pill"    role="listitem" aria-selected="false" data-cat="activity">🎡 Activities</a>
-    <a href="/?type=package"  class="pill"    role="listitem" aria-selected="false" data-cat="package">📦 Packages</a>
-    <a href="/?type=voucher"  class="pill"    role="listitem" aria-selected="false" data-cat="voucher">🏷 Vouchers</a>
     <span class="cat-sep" aria-hidden="true"></span>
     <a href="/destinations/bali/"      class="pill" role="listitem" data-dest="Bali">Bali</a>
     <a href="/destinations/bangkok/"   class="pill" role="listitem" data-dest="Bangkok">Bangkok</a>
     <a href="/destinations/tokyo/"     class="pill" role="listitem" data-dest="Tokyo">Tokyo</a>
-    <a href="/destinations/melbourne/" class="pill" role="listitem" data-dest="Melbourne">Melbourne</a>
-    <a href="/destinations/london/"    class="pill" role="listitem" data-dest="London">London</a>
   </div>
 </nav>
 
@@ -935,13 +929,13 @@ ul,ol{list-style:none}
       <div class="sb-tg">
         <h2>Instant alerts</h2>
         <p>Get notified the moment a deal drops — free.</p>
-        <a href="https://t.me/SGTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/CatavelSGTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-          🇸🇬 @SGTravelDeals
+          🇸🇬 @CatavelSGTravelDeals
         </a>
-        <a href="https://t.me/MYTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/CatavelMYTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-          🇲🇾 @MYTravelDeals
+          🇲🇾 @CatavelMYTravelDeals
         </a>
       </div>
     </aside>
@@ -951,7 +945,7 @@ ul,ol{list-style:none}
       <div class="dh">
         <h2 class="dh-title" id="dh-t">Today's Deals</h2>
         <span class="dh-ct" id="dh-ct" aria-live="polite" aria-atomic="true">0 deals</span>
-        <span class="dh-upd"><span class="dot" aria-hidden="true"></span>42 min ago</span>
+        <span class="dh-upd" id="dh-upd"></span>
         <div class="dh-sort">
           Sort:
           <select id="srt" onchange="sortDeals(this.value)" aria-label="Sort deals">
@@ -968,59 +962,6 @@ ul,ol{list-style:none}
 </main>
 
 <!-- ══════════════════════════════════
-     AI SECTION
-     ══════════════════════════════════ -->
-<section class="ai-s" aria-labelledby="ai-h">
-  <div class="w">
-    <div class="ai-g">
-      <div class="ai-copy">
-        <p class="ai-lbl" aria-hidden="true">AI-Powered</p>
-        <h2 id="ai-h">Drop your <i>itinerary</i>.<br>Get deals instantly.</h2>
-        <p>Type your trip in plain language. AI extracts destination, dates and budget — then surfaces matching flights, hotels and activities with affiliate links ready to book.</p>
-        <ul class="ai-feats">
-          <li class="ai-feat">Natural language input, no forms</li>
-          <li class="ai-feat">Searches 60+ OTAs simultaneously</li>
-          <li class="ai-feat">Personalised results in seconds</li>
-        </ul>
-      </div>
-      <div class="ai-demo" aria-label="AI Planner demo preview" role="img">
-        <div class="ai-bar" aria-hidden="true">
-          <div class="ai-dots"><div class="ai-dot r"></div><div class="ai-dot y"></div><div class="ai-dot g"></div></div>
-          <span class="ai-ttl">catavel ai planner</span>
-        </div>
-        <div class="ai-body">
-          <div class="ai-inp"><p class="ai-inp-lbl">Your itinerary</p><p class="ai-inp-txt"><b>SG → Bali</b>, <b>3–7 Apr</b>, <b>2 pax</b>, budget <b>SGD 800</b></p></div>
-          <div class="ai-res">
-            <div class="ai-row"><span class="ai-ico" aria-hidden="true">✈️</span><div class="ai-info"><p class="ai-name">SIN → DPS · Scoot Direct</p><p class="ai-sub">3 Apr · 2h 35m</p></div><span class="ai-px">SGD 148</span></div>
-            <div class="ai-row"><span class="ai-ico" aria-hidden="true">🏨</span><div class="ai-info"><p class="ai-name">The Layar Villas, Seminyak</p><p class="ai-sub">4 nights · Pool villa</p></div><span class="ai-px">SGD 428</span></div>
-            <div class="ai-row"><span class="ai-ico" aria-hidden="true">🎡</span><div class="ai-info"><p class="ai-name">Bali ATV + Swing Bundle</p><p class="ai-sub">Klook · 2 pax</p></div><span class="ai-px">SGD 89</span></div>
-          </div>
-          <a href="#" class="ai-cta">✨ AI Planner — Coming Soon</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════
-     TELEGRAM BANNER
-     ══════════════════════════════════ -->
-<section class="tg-ban" aria-labelledby="tg-h">
-  <div class="w">
-    <div class="tg-ban-i">
-      <div class="tg-copy">
-        <h2 id="tg-h">Never miss a flash deal</h2>
-        <p>Instant alerts when a deal drops. Free, no spam.</p>
-      </div>
-      <div class="tg-btns">
-        <a href="https://t.me/SGTravelDeals" class="btn-tw" target="_blank" rel="noopener noreferrer">🇸🇬 @SGTravelDeals</a>
-        <a href="https://t.me/MYTravelDeals" class="btn-to" target="_blank" rel="noopener noreferrer">🇲🇾 @MYTravelDeals</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════
      DESTINATIONS
      ══════════════════════════════════ -->
 <section class="dest-s" aria-labelledby="dest-h">
@@ -1031,11 +972,9 @@ ul,ol{list-style:none}
         <li><a href="/destinations/bali/"      class="dest-a"><span aria-hidden="true">🌴</span>Bali</a></li>
         <li><a href="/destinations/bangkok/"   class="dest-a"><span aria-hidden="true">🇹🇭</span>Bangkok</a></li>
         <li><a href="/destinations/tokyo/"     class="dest-a"><span aria-hidden="true">🗼</span>Tokyo</a></li>
-        <li><a href="/destinations/melbourne/" class="dest-a"><span aria-hidden="true">🦘</span>Melbourne</a></li>
-        <li><a href="/destinations/istanbul/"  class="dest-a"><span aria-hidden="true">🕌</span>Istanbul</a></li>
-        <li><a href="/destinations/london/"    class="dest-a"><span aria-hidden="true">🎡</span>London</a></li>
+        <li><a href="/destinations/singapore/" class="dest-a"><span aria-hidden="true">🇸🇬</span>Singapore</a></li>
+        <li><a href="/destinations/hong-kong/" class="dest-a"><span aria-hidden="true">🇭🇰</span>Hong Kong</a></li>
         <li><a href="/destinations/phuket/"    class="dest-a"><span aria-hidden="true">🏖️</span>Phuket</a></li>
-        <li><a href="/destinations/seoul/"     class="dest-a"><span aria-hidden="true">🇰🇷</span>Seoul</a></li>
       </ul>
     </nav>
   </div>
@@ -1049,9 +988,9 @@ ul,ol{list-style:none}
     <div class="ess-hd">
       <div>
         <h2 class="ess-hd-title" id="ess-h">Travel Essentials</h2>
-        <p class="ess-hd-sub">Best tools &amp; apps for SEAblings — handpicked by Catavel</p>
+        <p class="ess-hd-sub">The best tools & apps for every trip — handpicked by Catavel</p>
       </div>
-      <a href="/travel-essentials/" class="ess-see-all">See all 24 tools &#8594;</a>
+      <a href="/travel-essentials/" class="ess-see-all">Browse all tools</a>
     </div>
     <div class="ess-grid">
       <div class="ess-card">
@@ -1059,42 +998,36 @@ ul,ol{list-style:none}
         <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=airalo.com&sz=64" alt="Airalo" loading="lazy">
         <div class="ess-name">Airalo</div>
         <div class="ess-cat">eSIM</div>
-        <div class="ess-arr">&#8594;</div>
       </div>
       <div class="ess-card">
         <a href="https://tp.media/r?campaign_id=137&marker=709139&p=4110&trs=505880&u=https%3A%2F%2Fklook.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="Klook Activities"></a>
         <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=klook.com&sz=64" alt="Klook" loading="lazy">
         <div class="ess-name">Klook</div>
         <div class="ess-cat">Activities</div>
-        <div class="ess-arr">&#8594;</div>
       </div>
       <div class="ess-card">
         <a href="https://tp.media/r?campaign_id=627&marker=709139&p=8919&trs=505880&u=https%3A%2F%2Fwelcomepickups.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="Welcome Pickups transfer"></a>
         <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=welcomepickups.com&sz=64" alt="Welcome Pickups" loading="lazy">
         <div class="ess-name">Welcome Pickups</div>
         <div class="ess-cat">Transfers</div>
-        <div class="ess-arr">&#8594;</div>
       </div>
       <div class="ess-card">
         <a href="https://tp.media/r?campaign_id=120&marker=709139&p=3670&trs=505880&u=https%3A%2F%2Fairhelp.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="AirHelp flight claims"></a>
         <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=airhelp.com&sz=64" alt="AirHelp" loading="lazy">
         <div class="ess-name">AirHelp</div>
         <div class="ess-cat">Flight Claims</div>
-        <div class="ess-arr">&#8594;</div>
       </div>
       <div class="ess-card">
         <a href="https://tp.media/r?campaign_id=89&marker=709139&p=2074&trs=505880&u=https%3A%2F%2Ftiqets.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="Tiqets tickets"></a>
         <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=tiqets.com&sz=64" alt="Tiqets" loading="lazy">
         <div class="ess-name">Tiqets</div>
         <div class="ess-cat">Tickets</div>
-        <div class="ess-arr">&#8594;</div>
       </div>
       <div class="ess-card">
         <a href="https://tp.media/r?campaign_id=172&marker=709139&p=4845&trs=505880&u=https%3A%2F%2Fqeeq.com" class="ess-card-link" target="_blank" rel="noopener sponsored" aria-label="QEEQ car rental"></a>
         <img class="ess-logo" src="https://www.google.com/s2/favicons?domain=qeeq.com&sz=64" alt="QEEQ" loading="lazy">
         <div class="ess-name">QEEQ</div>
         <div class="ess-cat">Car Rental</div>
-        <div class="ess-arr">&#8594;</div>
       </div>
     </div>
   </div>
@@ -1107,7 +1040,7 @@ ul,ol{list-style:none}
   <div class="nl-i">
     <p class="nl-eye">Weekly Digest</p>
     <h2 id="nl-h">Top deals, every Monday</h2>
-    <p>Best 10 deals of the week for SEAblings. Free.</p>
+    <p>The week's best travel deals, straight to your inbox. Free.</p>
     <form class="nl-form" action="#" method="post" onsubmit="doNL(event)">
       <input class="nl-inp" type="email" name="EMAIL" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
       <button class="nl-sub" type="submit">Subscribe</button>
@@ -1124,29 +1057,25 @@ ul,ol{list-style:none}
     <div class="ft-g">
       <div class="ft-brand">
         <a href="/" class="logo" aria-label="Catavel home" style="color:#fff">Catavel<em aria-hidden="true" style="background:#E8622A"></em></a>
-        <p>Travel deal aggregator for Singapore &amp; Malaysia. 60+ OTAs, updated every 6 hours.</p>
+        <p>Travel deal aggregator. Updated every 6 hours.</p>
       </div>
       <nav aria-label="Destinations" class="ft-col">
         <h3>Destinations</h3>
-        <a href="/destinations/bali/">Bali Deals</a>
-        <a href="/destinations/bangkok/">Bangkok Deals</a>
-        <a href="/destinations/tokyo/">Tokyo Deals</a>
-        <a href="/destinations/melbourne/">Melbourne</a>
-        <a href="/destinations/">All Destinations</a>
+        <a href="/destinations/bali/">Bali</a>
+        <a href="/destinations/bangkok/">Bangkok</a>
+        <a href="/destinations/tokyo/">Tokyo</a>
+        <a href="/destinations/singapore/">Singapore</a>
+        <a href="/destinations/hong-kong/">Hong Kong</a>
       </nav>
-      <nav aria-label="Platforms" class="ft-col">
-        <h3>Platforms</h3>
-        <a href="/agoda-promo-codes/">Agoda Promos</a>
-        <a href="/booking-com-deals/">Booking.com</a>
-        <a href="/trip-com-deals/">Trip.com</a>
-        <a href="/klook-deals/">Klook</a>
-        <a href="/skyscanner-deals/">Skyscanner</a>
+      <nav aria-label="Vouchers" class="ft-col">
+        <h3>Promo Codes</h3>
+        <a href="/klook-promo-codes/">Klook</a>
+        <a href="/trip-com-promo-codes/">Trip.com</a>
+        <a href="/agoda-promo-codes/">Agoda</a>
+        <a href="/travel-essentials/">Travel Essentials</a>
       </nav>
       <nav aria-label="Company" class="ft-col">
         <h3>Catavel</h3>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-        <a href="/for-travel-agents/">For Agents</a>
         <a href="/affiliate-disclosure/">Disclosure</a>
         <a href="/privacy-policy/">Privacy</a>
       </nav>
@@ -1687,9 +1616,12 @@ async function init(){
     }
     if(raw.lastUpdated){
       const lu=document.getElementById('last-updated');
-      if(lu){
+      const dhUpd=document.getElementById('dh-upd');
+      if(lu||dhUpd){
         const d=new Date(raw.lastUpdated);
-        lu.textContent='Updated '+d.toLocaleString('en-SG',{hour:'2-digit',minute:'2-digit',hour12:true,day:'numeric',month:'short'});
+        const str=d.toLocaleString('en-SG',{hour:'2-digit',minute:'2-digit',hour12:true,day:'numeric',month:'short'});
+        if(lu) lu.textContent=str;
+        if(dhUpd) dhUpd.innerHTML='<span class="dot" aria-hidden="true"></span>'+str;
       }
     }
   }catch(_){/* use built-in sample data */}
@@ -1701,7 +1633,7 @@ async function init(){
     const smax=document.getElementById('smax');
     if(smax){
       const maxDisc=DEALS.reduce((m,d)=>Math.max(m,d.discount_percent||0),0);
-      smax.textContent=maxDisc>0?'Up to '+maxDisc+'%':'—';
+      smax.textContent=maxDisc>0?'Up to '+maxDisc+'% off':'—';
     }
   }
 }
