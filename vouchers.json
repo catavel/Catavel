@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-11T03:10:55.746Z",
-  "count": 25,
+  "lastUpdated": "2026-03-11T03:11:06.284Z",
+  "count": 24,
   "vouchers": [
     {
       "id": "vc_taiwanjoy8",
@@ -409,23 +409,6 @@
       "tc": "Buy 1 Get 1 Free on China High Speed Rail Second Class Seats (Hong Kong West Kowloon <> Futian) Discount: Min. spend 2 second seat tickets of Hong Kong West Kowloon <> Futian, get HKD $75 off Limit: One-time use per user; first-come, first-served Validity: Book by April 30th Note: Only for designated routes; cannot be combined with other offers",
       "status": "active",
       "is_expiring": false
-    },
-    {
-      "id": "vc_ytklookh30wk2",
-      "ota": "Klook",
-      "code": "YTKLOOKH30WK2",
-      "description": "YouTrip $30 off min. $500 on Hotels",
-      "discount_type": "flat",
-      "discount": "SGD 30",
-      "min_spend": "SGD 500",
-      "max_discount": "",
-      "applicable_for": "All activities & products",
-      "valid_until": "2026-03-16",
-      "market": "SGD",
-      "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/2-hong-kong-macau-things-to-do/?aid=115333",
-      "tc": "YouTrip cardmembers with Singapore residence and phone number only. Valid with min. spend S$500 on Hotels (https://www.klook.com/en-SG/hotels/). Available for use on first-come, first-served basis; code redemption does not guarantee availability for use. One-time use per user account.",
-      "status": "active",
-      "is_expiring": true
     }
   ]
 }
