@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-11T03:16:53.459Z",
-  "count": 43,
+  "lastUpdated": "2026-03-11T03:17:04.353Z",
+  "count": 42,
   "vouchers": [
     {
       "id": "vc_taiwanjoy8",
@@ -613,23 +613,6 @@
       "tc": "Citi Mastercard Cardmembers with Singapore phone number and residence only. Valid with min. spend S$400. Available for use on first-come, first-served basis; code redemption does not guarantee availability for use. One-time use per user account.",
       "status": "active",
       "is_expiring": true
-    },
-    {
-      "id": "vc_citim267offmar",
-      "ota": "Klook",
-      "code": "CITIM267OFFMAR",
-      "description": "Citi Mastercard 7% off min. $250",
-      "discount_type": "percent",
-      "discount": "7%",
-      "min_spend": "SGD 250",
-      "max_discount": "USD15.7",
-      "applicable_for": "All activities & products on Klook (Unless listed under \"Non-applicable activities\")",
-      "valid_until": "2026-03-30",
-      "market": "SGD",
-      "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/sg-cherryblossom/?aid=115333",
-      "tc": "Citi Mastercard Cardmembers with Singapore phone number and residence only. Valid with min. spend S$250. Discount capped at S$20. Available for use on first-come, first-served basis; code redemption does not guarantee availability for use. One-time use per user account.",
-      "status": "active",
-      "is_expiring": false
     },
     {
       "id": "vc_dbs267offmar",
