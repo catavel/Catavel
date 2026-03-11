@@ -558,6 +558,23 @@ ul,ol{list-style:none}
 .mb-my{background:#fff!important;color:#0088CC!important;border-color:#0088CC!important}
 .mb-hk{background:#DE2910!important;color:#fff!important;border-color:#DE2910!important}
 .mb-ph{background:#0038A8!important;color:#fff!important;border-color:#0038A8!important}
+/* Vouchers button in mob-bar */
+.mb-vd{background:var(--white)!important;color:var(--teal)!important;border-color:var(--teal)!important}
+
+/* Mobile voucher bottom sheet */
+.mv-ov{display:none;position:fixed;inset:0;z-index:400;background:rgba(0,0,0,.48);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
+.mv-ov.open{display:block}
+.mv-sh{position:fixed;left:0;right:0;bottom:0;z-index:401;background:var(--white);border-radius:16px 16px 0 0;padding-bottom:env(safe-area-inset-bottom,0px);transform:translateY(100%);transition:transform .28s cubic-bezier(.32,.07,.67,0);will-change:transform}
+.mv-ov.open .mv-sh{transform:translateY(0);transition-timing-function:cubic-bezier(.33,1,.68,1)}
+.mv-handle{width:36px;height:4px;background:var(--bdr2);border-radius:2px;margin:12px auto 0}
+.mv-hd{display:flex;align-items:center;justify-content:space-between;padding:14px 20px 8px}
+.mv-hd h2{font-family:var(--fh);font-size:17px;font-weight:400}
+.mv-close{width:44px;height:44px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--muted);flex-shrink:0}
+.mv-close:active{background:var(--bdr)}
+.mv-sec-hd{padding:6px 20px 7px;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--bdr)}
+.mv-sh a{display:flex;align-items:center;padding:0 20px;font-size:15px;font-weight:500;color:var(--text);text-decoration:none;border-bottom:1px solid var(--bdr);min-height:52px}
+.mv-sh a:active{background:var(--bg);color:var(--teal)}
+.mv-sep{height:6px;background:var(--bg);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
 
 /* ===========================================
    RESPONSIVE — 860px (tablet, sidebar gone)
@@ -1221,6 +1238,26 @@ ul,ol{list-style:none}
 </div>
 
 <!-- ══════════════════════════════════
+     MOBILE VOUCHER SHEET
+     Opened by Vouchers button in mob-bar.
+     ══════════════════════════════════ -->
+<div class="mv-ov" id="mvOv" role="dialog" aria-modal="true" aria-label="Vouchers and promo codes" onclick="if(event.target===this)closeMobVd()">
+  <div class="mv-sh">
+    <div class="mv-handle" aria-hidden="true"></div>
+    <div class="mv-hd">
+      <h2>Vouchers &amp; Promo Codes</h2>
+      <button class="mv-close" onclick="closeMobVd()" aria-label="Close vouchers">✕</button>
+    </div>
+    <div class="mv-sec-hd">Promo Codes &amp; Deals</div>
+    <a href="/klook-promo-codes/">Klook</a>
+    <a href="/trip-com-promo-codes/">Trip.com</a>
+    <a href="/agoda-promo-codes/">Agoda</a>
+    <div class="mv-sep"></div>
+    <a href="https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fspecial-offers" target="_blank" rel="noopener sponsored">Aviasales Deals ↗</a>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
      MOBILE BOTTOM BAR
      Shown only ≤860px via CSS.
      Three equal-width tappable actions.
@@ -1229,6 +1266,10 @@ ul,ol{list-style:none}
   <button class="mb-filter" onclick="openMF()" aria-haspopup="dialog" aria-label="Open filter and sort">
     <span class="mob-ico" aria-hidden="true">⚙️</span>
     Filter
+  </button>
+  <button class="mb-vd" onclick="openMobVd()" aria-haspopup="dialog" aria-label="Open vouchers and promo codes">
+    <span class="mob-ico" aria-hidden="true">🏷️</span>
+    Vouchers
   </button>
   <a href="https://t.me/CatavelSGTravelDeals" class="mb-sg" target="_blank" rel="noopener noreferrer" aria-label="Singapore">
     <span class="mob-ico">🇸🇬</span>SG
@@ -1618,7 +1659,7 @@ function handleOverlayClick(e){
   if(e.target===document.getElementById('mf-ov')) closeMF();
 }
 /* Escape key */
-document.addEventListener('keydown',e=>{if(e.key==='Escape') closeMF();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMF();closeMobVd();}});
 
 /* Sort button toggle in sheet */
 function setMFSort(btn){
@@ -1752,6 +1793,18 @@ document.addEventListener('keydown', function(e) {
     if (d) d.classList.remove('open');
   }
 });
+
+// ── Mobile Voucher Sheet ──────────────────────────────────────
+function openMobVd(){
+  document.getElementById('mvOv').classList.add('open');
+  document.body.style.overflow='hidden';
+  setTimeout(()=>document.querySelector('.mv-close')?.focus(),80);
+}
+function closeMobVd(){
+  const ov=document.getElementById('mvOv');
+  if(ov) ov.classList.remove('open');
+  document.body.style.overflow='';
+}
 
 // ── Nav Voucher dropdown ──────────────────────────────────────
 window.toggleVd = function() {
