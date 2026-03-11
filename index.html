@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catavel - Best Travel Deals for you</title>
+<title>Catavel — Best Travel Deals for Singapore &amp; Malaysia</title>
 <meta name="description" content="Best flight, hotel and activity deals for Singapore and Malaysia travelers. Curated from 60+ OTAs, updated every 6 hours.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://catavel.com/">
@@ -407,11 +407,15 @@ ul,ol{list-style:none}
 .nl-note{font-size:11px;color:var(--muted);margin-top:8px}
 .nl-note a{color:var(--teal)}
 
+.ft-social{display:flex;gap:8px;margin-top:12px}
+.ft-soc-lnk{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:6px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.45);transition:background .12s,color .12s}
+.ft-soc-lnk:hover{background:rgba(255,255,255,.15);color:rgba(255,255,255,.9)}
+
 /* ===========================================
    FOOTER
    =========================================== */
 .ft{background:var(--text);padding:28px 0 20px}
-.ft-g{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:24px;margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.07)}
+.ft-g{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:24px;margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.07)}
 .ft-brand p{font-size:11.5px;color:rgba(255,255,255,.35);line-height:1.6;margin-top:7px}
 .ft-brand .logo{color:#fff}
 .ft-col h3{font-size:10px;font-weight:600;color:rgba(255,255,255,.28);text-transform:uppercase;letter-spacing:.7px;margin-bottom:9px;font-family:var(--f)}
@@ -915,29 +919,11 @@ ul,ol{list-style:none}
       </div>
       <div>
         <p class="sb-lbl" id="ota-g">Platform</p>
-        <div role="group" aria-labelledby="ota-g">
-          <label class="ota-row"><input type="checkbox" checked value="Agoda"> Agoda <span class="ota-ct">108</span></label>
-          <label class="ota-row"><input type="checkbox" checked value="Booking.com"> Booking.com <span class="ota-ct">82</span></label>
-          <label class="ota-row"><input type="checkbox" checked value="Trip.com"> Trip.com <span class="ota-ct">64</span></label>
-          <label class="ota-row"><input type="checkbox" checked value="Klook"> Klook <span class="ota-ct">31</span></label>
-          <label class="ota-row"><input type="checkbox" checked value="Skyscanner"> Skyscanner <span class="ota-ct">28</span></label>
-          <label class="ota-row"><input type="checkbox" value="Airpaz"> Airpaz <span class="ota-ct">22</span></label>
+        <div role="group" aria-labelledby="ota-g" id="ota-list">
+          <!-- populated dynamically from deals.json -->
         </div>
       </div>
       <button class="btn-apply" onclick="applyFilters()">Apply Filters</button>
-      <div class="sb-div"></div>
-      <div class="sb-tg">
-        <h2>Instant alerts</h2>
-        <p>Get notified the moment a deal drops — free.</p>
-        <a href="https://t.me/CatavelSGTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-          🇸🇬 @CatavelSGTravelDeals
-        </a>
-        <a href="https://t.me/CatavelMYTravelDeals" class="sb-tg-lnk" target="_blank" rel="noopener noreferrer">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="#0088CC" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247-2.09 9.851c-.155.695-.562.866-1.138.538l-3.136-2.31-1.513 1.456c-.168.168-.308.308-.632.308l.226-3.198 5.827-5.264c.253-.226-.056-.352-.392-.126L6.18 14.354l-3.054-.953c-.664-.207-.678-.664.138-.984l11.923-4.598c.55-.2 1.036.126.856.984z"/></svg>
-          🇲🇾 @CatavelMYTravelDeals
-        </a>
-      </div>
     </aside>
 
     <!-- DEALS LIST -->
@@ -960,25 +946,6 @@ ul,ol{list-style:none}
 
   </div>
 </main>
-
-<!-- ══════════════════════════════════
-     DESTINATIONS
-     ══════════════════════════════════ -->
-<section class="dest-s" aria-labelledby="dest-h">
-  <div class="w">
-    <h2 id="dest-h">Browse by Destination</h2>
-    <nav aria-label="Destinations">
-      <ul class="dest-g">
-        <li><a href="/destinations/bali/"      class="dest-a"><span aria-hidden="true">🌴</span>Bali</a></li>
-        <li><a href="/destinations/bangkok/"   class="dest-a"><span aria-hidden="true">🇹🇭</span>Bangkok</a></li>
-        <li><a href="/destinations/tokyo/"     class="dest-a"><span aria-hidden="true">🗼</span>Tokyo</a></li>
-        <li><a href="/destinations/singapore/" class="dest-a"><span aria-hidden="true">🇸🇬</span>Singapore</a></li>
-        <li><a href="/destinations/hong-kong/" class="dest-a"><span aria-hidden="true">🇭🇰</span>Hong Kong</a></li>
-        <li><a href="/destinations/phuket/"    class="dest-a"><span aria-hidden="true">🏖️</span>Phuket</a></li>
-      </ul>
-    </nav>
-  </div>
-</section>
 
 <!-- ══════════════════════════════════
      TRAVEL ESSENTIALS
@@ -1057,27 +1024,29 @@ ul,ol{list-style:none}
     <div class="ft-g">
       <div class="ft-brand">
         <a href="/" class="logo" aria-label="Catavel home" style="color:#fff">Catavel<em aria-hidden="true" style="background:#E8622A"></em></a>
-        <p>Travel deal aggregator. Updated every 6 hours.</p>
+        <p>Travel deal aggregator.<br>Updated every 6 hours.</p>
+        <div class="ft-social">
+          <a href="#" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer" class="ft-soc-lnk">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer" class="ft-soc-lnk">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer" class="ft-soc-lnk">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
       </div>
-      <nav aria-label="Destinations" class="ft-col">
-        <h3>Destinations</h3>
-        <a href="/destinations/bali/">Bali</a>
-        <a href="/destinations/bangkok/">Bangkok</a>
-        <a href="/destinations/tokyo/">Tokyo</a>
-        <a href="/destinations/singapore/">Singapore</a>
-        <a href="/destinations/hong-kong/">Hong Kong</a>
+      <nav aria-label="About" class="ft-col">
+        <h3>About</h3>
+        <a href="/about/">About Catavel</a>
+        <a href="/blog/">Blog</a>
       </nav>
-      <nav aria-label="Vouchers" class="ft-col">
-        <h3>Promo Codes</h3>
-        <a href="/klook-promo-codes/">Klook</a>
-        <a href="/trip-com-promo-codes/">Trip.com</a>
-        <a href="/agoda-promo-codes/">Agoda</a>
-        <a href="/travel-essentials/">Travel Essentials</a>
-      </nav>
-      <nav aria-label="Company" class="ft-col">
-        <h3>Catavel</h3>
-        <a href="/affiliate-disclosure/">Disclosure</a>
-        <a href="/privacy-policy/">Privacy</a>
+      <nav aria-label="Legal" class="ft-col">
+        <h3>Legal</h3>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms/">Terms &amp; Conditions</a>
+        <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
       </nav>
     </div>
     <div class="ft-btm">
@@ -1635,11 +1604,40 @@ async function init(){
       const maxDisc=DEALS.reduce((m,d)=>Math.max(m,d.discount_percent||0),0);
       smax.textContent=maxDisc>0?'Up to '+maxDisc+'% off':'—';
     }
+    buildOtaList();
   }
 }
 document.readyState==='loading'
   ?document.addEventListener('DOMContentLoaded',init)
   :init();
+
+// ── Dynamic OTA list ──────────────────────────────────────────
+function buildOtaList() {
+  const container = document.getElementById('ota-list');
+  if (!container) return;
+
+  // Count deals per OTA
+  const counts = {};
+  DEALS.forEach(d => {
+    const ota = d.ota || 'Other';
+    counts[ota] = (counts[ota] || 0) + 1;
+  });
+
+  // Sort by count descending
+  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+  if (sorted.length === 0) {
+    container.innerHTML = '<p style="font-size:12px;color:var(--muted);padding:4px 3px">No platforms available</p>';
+    return;
+  }
+
+  container.innerHTML = sorted.map(([ota, count]) => `
+    <label class="ota-row">
+      <input type="checkbox" checked value="${ota}"> ${ota}
+      <span class="ota-ct">${count}</span>
+    </label>
+  `).join('');
+}
 
 // ── Travel Essentials filter ──────────────────────────────────
 window.filterEss = function(cat, btn) {
