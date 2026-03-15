@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Catavel</title>
+<meta name="description" content="Catavel's privacy policy. How we handle data, cookies, and analytics on our travel deal platform.">
+<meta property="og:title" content="Privacy Policy — Catavel">
+<meta property="og:description" content="How Catavel handles your data, cookies, and analytics.">
+<meta property="og:url" content="https://catavel.com/privacy-policy/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Catavel">
+<link rel="canonical" href="https://catavel.com/privacy-policy/">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal: #00897B;
+  --teal-dark: #00695C;
+  --teal-light: #E0F2F1;
+  --orange: #E8622A;
+  --orange-light: #FFF3ED;
+  --bg: #F8FAFB;
+  --white: #FFFFFF;
+  --text: #1A1A2E;
+  --text2: #4A5568;
+  --muted: #94A3B8;
+  --border: #E2E8F0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.8; }
+
+.header { background: var(--white); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.header-logo { font-size: 20px; font-weight: 800; color: var(--teal); text-decoration: none; letter-spacing: -0.5px; }
+.header-nav { display: flex; gap: 8px; }
+.header-nav a { font-size: 13px; color: var(--text2); text-decoration: none; padding: 6px 12px; border-radius: 8px; font-weight: 500; transition: background 0.2s; }
+.header-nav a:hover { background: var(--teal-light); color: var(--teal-dark); }
+
+.breadcrumb { max-width: 720px; margin: 0 auto; padding: 20px 24px 0; font-size: 13px; color: var(--muted); }
+.breadcrumb a { color: var(--teal); text-decoration: none; font-weight: 500; }
+
+.content { max-width: 720px; margin: 0 auto; padding: 24px 24px 60px; }
+.content h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.8px; line-height: 1.25; margin-bottom: 8px; color: var(--text); }
+.content .subtitle { font-size: 15px; color: var(--text2); margin-bottom: 32px; line-height: 1.7; }
+.content h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.3px; margin: 36px 0 12px; color: var(--text); }
+.content h3 { font-size: 16px; font-weight: 700; margin: 24px 0 8px; color: var(--text); }
+.content p { color: var(--text2); margin-bottom: 16px; }
+.content a { color: var(--teal); text-decoration: underline; text-underline-offset: 2px; }
+.content a:hover { color: var(--teal-dark); }
+.content ul, .content ol { color: var(--text2); margin: 0 0 16px 20px; }
+.content li { margin-bottom: 6px; }
+.content strong { color: var(--text); font-weight: 600; }
+
+.info-box { background: var(--teal-light); border-left: 4px solid var(--teal); border-radius: 0 12px 12px 0; padding: 18px 22px; margin: 24px 0; }
+.info-box p { color: var(--teal-dark); margin-bottom: 0; font-size: 14px; }
+
+.data-table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
+.data-table thead { background: var(--teal); }
+.data-table th { padding: 11px 16px; font-size: 12px; font-weight: 700; color: white; text-align: left; text-transform: uppercase; letter-spacing: 0.3px; }
+.data-table td { padding: 10px 16px; font-size: 13px; color: var(--text2); border-bottom: 1px solid var(--border); vertical-align: top; }
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tr:hover { background: #F8FFFE; }
+.data-table td:first-child { font-weight: 600; color: var(--text); }
+
+.last-updated { font-size: 13px; color: var(--muted); margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
+
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; }
+.footer-brand { font-size: 18px; font-weight: 800; color: var(--teal); margin-bottom: 12px; }
+.footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; }
+.footer-links a { font-size: 13px; color: var(--text2); text-decoration: none; }
+.footer-links a:hover { color: var(--teal); }
+.footer-copy { font-size: 12px; color: var(--muted); }
+
+@media (max-width: 640px) {
+  .content h1 { font-size: 26px; }
+  .header-nav { display: none; }
+  .data-table { font-size: 12px; }
+  .data-table th, .data-table td { padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a href="https://catavel.com/" class="header-logo">Catavel</a>
+  <nav class="header-nav">
+    <a href="https://catavel.com/">Deals</a>
+    <a href="https://catavel.com/klook-promo-codes/">Klook</a>
+    <a href="https://catavel.com/trip-com-promo-codes/">Trip.com</a>
+    <a href="https://catavel.com/agoda-promo-codes/">Agoda</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="https://catavel.com/">Home</a> › Privacy Policy
+</div>
+
+<main class="content">
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">This policy explains what data Catavel collects, how we use it, and your rights. We keep things simple because we collect very little.</p>
+
+  <div class="info-box">
+    <p><strong>The short version:</strong> Catavel does not require sign-ups, does not store personal data, and does not sell information to third parties. We use Google Analytics to understand how our site is used, and affiliate cookies are set by our travel partners when you click a booking link.</p>
+  </div>
+
+  <h2>1. Who We Are</h2>
+  <p>Catavel is a travel deal discovery platform operated from Southeast Asia. Our website is <strong>catavel.com</strong>. For privacy-related questions, you can contact us at <strong>hello@catavel.com</strong>.</p>
+
+  <h2>2. What Data We Collect</h2>
+  <p>Catavel collects minimal data. We do not require user accounts, logins, or registrations. Here is exactly what we collect:</p>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Data Type</th><th>What</th><th>Why</th><th>Stored By</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Analytics</td>
+        <td>Page views, device type, country, referral source</td>
+        <td>Understand which content is useful</td>
+        <td>Google Analytics (GA4)</td>
+      </tr>
+      <tr>
+        <td>Affiliate cookies</td>
+        <td>Tracking ID linking your booking to Catavel</td>
+        <td>Attribute bookings so we earn commission</td>
+        <td>Partner sites (Klook, Agoda, etc.)</td>
+      </tr>
+      <tr>
+        <td>Email address</td>
+        <td>Only if you voluntarily subscribe to our newsletter</td>
+        <td>Send weekly travel deal digest</td>
+        <td>Mailchimp</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>We do <strong>not</strong> collect: names, phone numbers, payment information, passport details, IP addresses (GA4 does not log IP by default), or any other personally identifiable information.</p>
+
+  <h2>3. Google Analytics</h2>
+  <p>We use Google Analytics 4 (GA4) to understand how visitors use Catavel. GA4 collects anonymised usage data such as pages visited, time on site, device type, and approximate geographic region. GA4 does not collect IP addresses by default and does not identify individual users.</p>
+  <p>You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>, or by using a browser with built-in tracking protection.</p>
+
+  <h2>4. Cookies</h2>
+  <p>Catavel itself does not set cookies. However, the following third-party services may set cookies when you interact with our site:</p>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Service</th><th>Cookie Purpose</th><th>Duration</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Google Analytics</td>
+        <td>Distinguish unique visitors, session tracking</td>
+        <td>Up to 2 years</td>
+      </tr>
+      <tr>
+        <td>Klook</td>
+        <td>Affiliate tracking (set when you click a Klook link)</td>
+        <td>30 days</td>
+      </tr>
+      <tr>
+        <td>Trip.com</td>
+        <td>Affiliate tracking (set when you click a Trip.com link)</td>
+        <td>30 days</td>
+      </tr>
+      <tr>
+        <td>Agoda</td>
+        <td>Affiliate tracking (set when you click an Agoda link)</td>
+        <td>30-90 days</td>
+      </tr>
+      <tr>
+        <td>Travelpayouts</td>
+        <td>Affiliate tracking for partner OTAs</td>
+        <td>30 days</td>
+      </tr>
+      <tr>
+        <td>Mailchimp</td>
+        <td>Newsletter signup form functionality</td>
+        <td>Session</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>You can manage or delete cookies at any time through your browser settings. Blocking affiliate cookies will not affect your ability to browse Catavel, but it will mean we do not earn a commission if you make a booking.</p>
+
+  <h2>5. Newsletter</h2>
+  <p>If you subscribe to our newsletter, your email address is stored by <strong>Mailchimp</strong> (operated by Intuit Inc.). We use it solely to send you a weekly travel deal digest. We do not share your email with any other party. You can unsubscribe at any time by clicking the "Unsubscribe" link at the bottom of any email, or by contacting us directly.</p>
+
+  <h2>6. Third-Party Links</h2>
+  <p>Catavel contains links to third-party websites (booking platforms, airlines, travel service providers). Once you leave Catavel by clicking an external link, your activity is governed by that website's privacy policy — not ours. We encourage you to read the privacy policies of any site where you provide personal or payment information.</p>
+
+  <h2>7. Data Sharing</h2>
+  <p>We do not sell, rent, or share personal data with third parties. The only data processing occurs through:</p>
+  <ul>
+    <li><strong>Google Analytics:</strong> Anonymised usage statistics</li>
+    <li><strong>Mailchimp:</strong> Newsletter subscriber emails (only if you opt in)</li>
+    <li><strong>Affiliate partners:</strong> Booking attribution via cookies (no personal data is shared by us)</li>
+  </ul>
+
+  <h2>8. Data Retention</h2>
+  <p>Google Analytics data is retained for 14 months, after which it is automatically deleted. Newsletter subscriber data is retained until you unsubscribe. Catavel does not maintain any other user database.</p>
+
+  <h2>9. Your Rights</h2>
+  <p>Regardless of where you are located, you have the right to:</p>
+  <ul>
+    <li><strong>Access:</strong> Ask what data we hold about you (the answer is almost certainly: none)</li>
+    <li><strong>Deletion:</strong> Request removal of your newsletter subscription and any associated data</li>
+    <li><strong>Opt out:</strong> Disable cookies, opt out of Google Analytics, or unsubscribe from our newsletter at any time</li>
+    <li><strong>Complain:</strong> Contact the relevant data protection authority in your jurisdiction if you believe your rights have been violated</li>
+  </ul>
+  <p>For users in Singapore, this policy complies with the <strong>Personal Data Protection Act 2012 (PDPA)</strong>. For users in the EU, we process minimal data and do not track individual users, which aligns with GDPR principles of data minimisation.</p>
+
+  <h2>10. Children's Privacy</h2>
+  <p>Catavel is not directed at children under 13. We do not knowingly collect data from children. If you believe a child has provided us with personal information (e.g., via the newsletter form), please contact us and we will delete it promptly.</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>We may update this privacy policy from time to time. Changes will be reflected on this page with an updated "Last updated" date. We will not reduce your rights under this policy without your explicit consent.</p>
+
+  <h2>12. Contact</h2>
+  <p>For any privacy-related questions or requests:</p>
+  <p><strong>Email:</strong> hello@catavel.com<br>
+  <strong>Website:</strong> <a href="https://catavel.com/">catavel.com</a></p>
+
+  <p class="last-updated">Last updated: March 2026</p>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">Catavel</div>
+  <div class="footer-links">
+    <a href="https://catavel.com/">Deals</a>
+    <a href="https://catavel.com/klook-promo-codes/">Klook</a>
+    <a href="https://catavel.com/trip-com-promo-codes/">Trip.com</a>
+    <a href="https://catavel.com/agoda-promo-codes/">Agoda</a>
+    <a href="https://catavel.com/about/">About</a>
+    <a href="https://catavel.com/affiliate-disclosure/">Affiliate Disclosure</a>
+  </div>
+  <div class="footer-copy">© 2026 Catavel — Travel deals for SEAblings</div>
+</footer>
+
+</body>
+</html>
