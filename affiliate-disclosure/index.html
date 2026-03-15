@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Affiliate Disclosure — Catavel</title>
+<meta name="description" content="Catavel's affiliate disclosure. How we earn revenue, which programs we participate in, and our commitment to transparency.">
+<meta property="og:title" content="Affiliate Disclosure — Catavel">
+<meta property="og:description" content="How Catavel earns revenue through affiliate partnerships — at no extra cost to you.">
+<meta property="og:url" content="https://catavel.com/affiliate-disclosure/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Catavel">
+<link rel="canonical" href="https://catavel.com/affiliate-disclosure/">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal: #00897B;
+  --teal-dark: #00695C;
+  --teal-light: #E0F2F1;
+  --orange: #E8622A;
+  --orange-light: #FFF3ED;
+  --bg: #F8FAFB;
+  --white: #FFFFFF;
+  --text: #1A1A2E;
+  --text2: #4A5568;
+  --muted: #94A3B8;
+  --border: #E2E8F0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.8; }
+
+/* ── Header ── */
+.header { background: var(--white); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.header-logo { font-size: 20px; font-weight: 800; color: var(--teal); text-decoration: none; letter-spacing: -0.5px; }
+.header-nav { display: flex; gap: 8px; }
+.header-nav a { font-size: 13px; color: var(--text2); text-decoration: none; padding: 6px 12px; border-radius: 8px; font-weight: 500; transition: background 0.2s; }
+.header-nav a:hover { background: var(--teal-light); color: var(--teal-dark); }
+
+/* ── Breadcrumb ── */
+.breadcrumb { max-width: 720px; margin: 0 auto; padding: 20px 24px 0; font-size: 13px; color: var(--muted); }
+.breadcrumb a { color: var(--teal); text-decoration: none; font-weight: 500; }
+
+/* ── Content ── */
+.content { max-width: 720px; margin: 0 auto; padding: 24px 24px 60px; }
+.content h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.8px; line-height: 1.25; margin-bottom: 8px; color: var(--text); }
+.content .subtitle { font-size: 15px; color: var(--text2); margin-bottom: 32px; line-height: 1.7; }
+.content h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.3px; margin: 36px 0 12px; color: var(--text); }
+.content h3 { font-size: 16px; font-weight: 700; margin: 24px 0 8px; color: var(--text); }
+.content p { color: var(--text2); margin-bottom: 16px; }
+.content a { color: var(--teal); text-decoration: underline; text-underline-offset: 2px; }
+.content a:hover { color: var(--teal-dark); }
+.content ul, .content ol { color: var(--text2); margin: 0 0 16px 20px; }
+.content li { margin-bottom: 6px; }
+.content strong { color: var(--text); font-weight: 600; }
+
+/* ── Info box ── */
+.info-box { background: var(--teal-light); border-left: 4px solid var(--teal); border-radius: 0 12px 12px 0; padding: 18px 22px; margin: 24px 0; }
+.info-box p { color: var(--teal-dark); margin-bottom: 0; font-size: 14px; }
+
+/* ── Partner table ── */
+.partner-table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
+.partner-table thead { background: var(--teal); }
+.partner-table th { padding: 11px 16px; font-size: 12px; font-weight: 700; color: white; text-align: left; text-transform: uppercase; letter-spacing: 0.3px; }
+.partner-table td { padding: 10px 16px; font-size: 13px; color: var(--text2); border-bottom: 1px solid var(--border); vertical-align: top; }
+.partner-table tr:last-child td { border-bottom: none; }
+.partner-table tr:hover { background: #F8FFFE; }
+.partner-table td:first-child { font-weight: 600; color: var(--text); }
+
+.last-updated { font-size: 13px; color: var(--muted); margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
+
+/* ── Footer ── */
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; }
+.footer-brand { font-size: 18px; font-weight: 800; color: var(--teal); margin-bottom: 12px; }
+.footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; }
+.footer-links a { font-size: 13px; color: var(--text2); text-decoration: none; }
+.footer-links a:hover { color: var(--teal); }
+.footer-copy { font-size: 12px; color: var(--muted); }
+
+@media (max-width: 640px) {
+  .content h1 { font-size: 26px; }
+  .header-nav { display: none; }
+  .partner-table { font-size: 12px; }
+  .partner-table th, .partner-table td { padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a href="https://catavel.com/" class="header-logo">Catavel</a>
+  <nav class="header-nav">
+    <a href="https://catavel.com/">Deals</a>
+    <a href="https://catavel.com/klook-promo-codes/">Klook</a>
+    <a href="https://catavel.com/trip-com-promo-codes/">Trip.com</a>
+    <a href="https://catavel.com/agoda-promo-codes/">Agoda</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="https://catavel.com/">Home</a> › Affiliate Disclosure
+</div>
+
+<main class="content">
+  <h1>Affiliate Disclosure</h1>
+  <p class="subtitle">Catavel believes in full transparency. This page explains how we earn revenue, which companies we partner with, and how affiliate links work on our site.</p>
+
+  <div class="info-box">
+    <p><strong>In short:</strong> When you book through a link on Catavel, we may earn a small commission from the travel company — at absolutely no extra cost to you. The price you pay is the same whether you use our link or go directly to the booking site.</p>
+  </div>
+
+  <h2>How Catavel Earns Revenue</h2>
+  <p>Catavel is a free travel deal discovery platform. We do not charge users for access, subscriptions, or memberships. Instead, we earn revenue through <strong>affiliate partnerships</strong> with travel companies (Online Travel Agencies, airlines, eSIM providers, and other travel service providers).</p>
+  <p>When you click a link on Catavel and complete a booking or purchase on the partner's website, we receive a small commission. This commission is paid by the partner company — not by you. Your booking price remains identical to what you would pay by visiting the partner site directly.</p>
+
+  <h2>Our Affiliate Partners</h2>
+  <p>Catavel participates in affiliate programs with the following travel companies:</p>
+
+  <table class="partner-table">
+    <thead>
+      <tr><th>Partner</th><th>Category</th><th>How We Earn</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Klook</td><td>Activities & attractions</td><td>Commission on completed bookings</td></tr>
+      <tr><td>Trip.com</td><td>Flights, hotels & packages</td><td>Commission on completed bookings</td></tr>
+      <tr><td>Agoda</td><td>Hotels & accommodation</td><td>Commission on completed stays</td></tr>
+      <tr><td>Aviasales</td><td>Flight search & comparison</td><td>Revenue share on bookings</td></tr>
+      <tr><td>Airalo</td><td>Travel eSIM</td><td>Commission on eSIM purchases</td></tr>
+      <tr><td>Yesim</td><td>Travel eSIM</td><td>Commission on eSIM purchases</td></tr>
+      <tr><td>Saily</td><td>Travel eSIM</td><td>Commission on eSIM purchases</td></tr>
+      <tr><td>AirHelp</td><td>Flight compensation claims</td><td>Commission on successful claims</td></tr>
+      <tr><td>QEEQ</td><td>Car rental</td><td>Commission on completed rentals</td></tr>
+      <tr><td>Welcome Pickups</td><td>Airport transfers</td><td>Commission on completed transfers</td></tr>
+      <tr><td>Tiqets</td><td>Museum & attraction tickets</td><td>Commission on ticket sales</td></tr>
+      <tr><td>GetTransfer</td><td>Airport transfers</td><td>Commission on completed transfers</td></tr>
+      <tr><td>NordVPN</td><td>Travel VPN</td><td>Commission on subscriptions</td></tr>
+      <tr><td>EKTA</td><td>Travel insurance</td><td>Commission on policy purchases</td></tr>
+    </tbody>
+  </table>
+
+  <p>We primarily use <strong>Travelpayouts</strong> as our affiliate network, which connects us with 60+ travel brands. Some partnerships (such as Trip.com and Klook) are maintained both through Travelpayouts and directly.</p>
+
+  <h2>How Affiliate Links Work</h2>
+  <p>Affiliate links on Catavel look and function like regular links. When you click one, you are redirected to the partner's website with a small tracking parameter in the URL. This parameter tells the partner that the referral came from Catavel. If you complete a booking, the partner records the referral and pays us a commission — typically between 1% and 20% depending on the product category.</p>
+  <p>These tracking parameters do not collect your personal information, do not affect the price you pay, and do not install software on your device.</p>
+
+  <h2>Our Editorial Independence</h2>
+  <p>Affiliate partnerships do not influence which deals we feature, how we rank them, or what we recommend. Our deal pipeline uses an automated algorithm that selects deals based on discount percentage, route popularity, and price benchmarks — not on commission rates.</p>
+  <p>When we recommend a specific product or service (such as an eSIM provider), our recommendation is based on value, coverage, and user experience — not on which partner pays the highest commission.</p>
+
+  <h2>What This Means for You</h2>
+  <ul>
+    <li><strong>No extra cost:</strong> You never pay more by booking through Catavel. Prices are sourced directly from partners in real time.</li>
+    <li><strong>Free to use:</strong> Catavel is completely free. No sign-ups, no subscriptions, no paywalls.</li>
+    <li><strong>You support us:</strong> Every booking through our links helps keep Catavel running, updated, and ad-free.</li>
+    <li><strong>You can opt out:</strong> If you prefer not to use affiliate links, you can visit any partner's website directly. We won't earn a commission, but you'll still find the same deals.</li>
+  </ul>
+
+  <h2>FTC Compliance</h2>
+  <p>This disclosure is provided in accordance with the U.S. Federal Trade Commission's guidelines on affiliate marketing (16 CFR Part 255). While Catavel is based in Southeast Asia, we adhere to international best practices for transparency in affiliate marketing.</p>
+
+  <h2>Questions?</h2>
+  <p>If you have questions about our affiliate partnerships or how we earn revenue, feel free to reach out at <strong>hello@catavel.com</strong>.</p>
+
+  <p class="last-updated">Last updated: March 2026</p>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">Catavel</div>
+  <div class="footer-links">
+    <a href="https://catavel.com/">Deals</a>
+    <a href="https://catavel.com/klook-promo-codes/">Klook</a>
+    <a href="https://catavel.com/trip-com-promo-codes/">Trip.com</a>
+    <a href="https://catavel.com/agoda-promo-codes/">Agoda</a>
+    <a href="https://catavel.com/about/">About</a>
+    <a href="https://catavel.com/privacy-policy/">Privacy Policy</a>
+  </div>
+  <div class="footer-copy">© 2026 Catavel — Travel deals for SEAblings</div>
+</footer>
+
+</body>
+</html>
