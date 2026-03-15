@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Catavel — Travel Deals for SEAblings</title>
+<meta name="description" content="Catavel is a free travel deal platform for Southeast Asia travelers. Flights, hotels, activities, and promo codes — updated every 6 hours.">
+<meta property="og:title" content="About Catavel — Travel Deals for SEAblings">
+<meta property="og:description" content="How Catavel helps Southeast Asia travelers find the best flight deals, hotel discounts, and promo codes.">
+<meta property="og:url" content="https://catavel.com/about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Catavel">
+<link rel="canonical" href="https://catavel.com/about/">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal: #00897B;
+  --teal-dark: #00695C;
+  --teal-light: #E0F2F1;
+  --orange: #E8622A;
+  --orange-light: #FFF3ED;
+  --bg: #F8FAFB;
+  --white: #FFFFFF;
+  --text: #1A1A2E;
+  --text2: #4A5568;
+  --muted: #94A3B8;
+  --border: #E2E8F0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.8; }
+
+.header { background: var(--white); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.header-logo { font-size: 20px; font-weight: 800; color: var(--teal); text-decoration: none; letter-spacing: -0.5px; }
+.header-nav { display: flex; gap: 8px; }
+.header-nav a { font-size: 13px; color: var(--text2); text-decoration: none; padding: 6px 12px; border-radius: 8px; font-weight: 500; transition: background 0.2s; }
+.header-nav a:hover { background: var(--teal-light); color: var(--teal-dark); }
+
+.breadcrumb { max-width: 720px; margin: 0 auto; padding: 20px 24px 0; font-size: 13px; color: var(--muted); }
+.breadcrumb a { color: var(--teal); text-decoration: none; font-weight: 500; }
+
+.content { max-width: 720px; margin: 0 auto; padding: 24px 24px 60px; }
+.content h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.8px; line-height: 1.25; margin-bottom: 8px; color: var(--text); }
+.content .subtitle { font-size: 15px; color: var(--text2); margin-bottom: 32px; line-height: 1.7; }
+.content h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.3px; margin: 36px 0 12px; color: var(--text); }
+.content p { color: var(--text2); margin-bottom: 16px; }
+.content a { color: var(--teal); text-decoration: underline; text-underline-offset: 2px; }
+.content a:hover { color: var(--teal-dark); }
+.content ul { color: var(--text2); margin: 0 0 16px 20px; }
+.content li { margin-bottom: 6px; }
+.content strong { color: var(--text); font-weight: 600; }
+
+/* ── Hero banner ── */
+.about-hero { background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%); border-radius: 16px; padding: 36px 32px; margin-bottom: 36px; color: white; position: relative; overflow: hidden; }
+.about-hero::after { content: '✈'; position: absolute; right: 28px; bottom: -10px; font-size: 100px; opacity: 0.08; }
+.about-hero h2 { color: white; margin: 0 0 8px; font-size: 22px; }
+.about-hero p { color: rgba(255,255,255,0.8); margin-bottom: 0; font-size: 15px; }
+
+/* ── Stat row ── */
+.stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 28px 0; }
+.stat-box { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 18px 16px; text-align: center; box-shadow: var(--shadow); }
+.stat-val { font-size: 24px; font-weight: 800; color: var(--teal-dark); letter-spacing: -0.5px; }
+.stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+
+/* ── How it works ── */
+.steps { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0; }
+.step { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: var(--shadow); }
+.step-num { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: var(--teal-light); color: var(--teal-dark); font-size: 13px; font-weight: 800; border-radius: 8px; margin-bottom: 10px; }
+.step h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; color: var(--text); }
+.step p { font-size: 13px; color: var(--text2); margin-bottom: 0; line-height: 1.65; }
+
+/* ── Market cards ── */
+.markets { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0; }
+.market-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 18px 14px; text-align: center; box-shadow: var(--shadow); }
+.market-flag { font-size: 28px; margin-bottom: 6px; }
+.market-name { font-size: 13px; font-weight: 700; color: var(--text); }
+.market-sub { font-size: 11px; color: var(--muted); }
+
+/* ── CTA box ── */
+.cta-box { background: var(--orange-light); border: 1px solid rgba(232,98,42,0.15); border-radius: 14px; padding: 24px 28px; margin: 32px 0; text-align: center; }
+.cta-box h3 { font-size: 18px; font-weight: 800; color: var(--orange); margin-bottom: 8px; }
+.cta-box p { font-size: 14px; color: var(--text2); margin-bottom: 16px; }
+.cta-links { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.cta-link { display: inline-block; padding: 10px 20px; border-radius: 10px; font-size: 13px; font-weight: 700; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+.cta-link:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.cta-link-teal { background: var(--teal); color: white; }
+.cta-link-outline { background: var(--white); color: var(--teal); border: 1.5px solid var(--teal); }
+
+.last-updated { font-size: 13px; color: var(--muted); margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
+
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; }
+.footer-brand { font-size: 18px; font-weight: 800; color: var(--teal); margin-bottom: 12px; }
+.footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; }
+.footer-links a { font-size: 13px; color: var(--text2); text-decoration: none; }
+.footer-links a:hover { color: var(--teal); }
+.footer-copy { font-size: 12px; color: var(--muted); }
+
+@media (max-width: 640px) {
+  .content h1 { font-size: 26px; }
+  .header-nav { display: none; }
+  .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .steps { grid-template-columns: 1fr; }
+  .markets { grid-template-columns: repeat(2, 1fr); }
+  .about-hero { padding: 28px 22px; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a href="https://catavel.com/" class="header-logo">Catavel</a>
+  <nav class="header-nav">
+    <a href="https://catavel.com/">Deals</a>
+    <a href="https://catavel.com/klook-promo-codes/">Klook</a>
+    <a href="https://catavel.com/trip-com-promo-codes/">Trip.com</a>
+    <a href="https://catavel.com/agoda-promo-codes/">Agoda</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="https://catavel.com/">Home</a> › About
+</div>
+
+<main class="content">
+  <h1>About Catavel</h1>
+  <p class="subtitle">We find the travel deals. You do the traveling.</p>
+
+  <div class="about-hero">
+    <h2>Travel deals, simplified.</h2>
+    <p>Catavel is a free travel deal platform for Southeast Asia travelers. We scan 60+ travel platforms every 6 hours to surface the best flight deals, hotel discounts, activity vouchers, and promo codes — so you don't have to.</p>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat-box"><div class="stat-val">60+</div><div class="stat-label">OTA Partners</div></div>
+    <div class="stat-box"><div class="stat-val">6hr</div><div class="stat-label">Update Cycle</div></div>
+    <div class="stat-box"><div class="stat-val">4</div><div class="stat-label">Markets</div></div>
+    <div class="stat-box"><div class="stat-val">Free</div><div class="stat-label">Always</div></div>
+  </div>
+
+  <h2>The Problem We Solve</h2>
+  <p>Flight prices change constantly. Promo codes expire without warning. Hotel deals are scattered across dozens of platforms. For travelers in Singapore, Malaysia, Hong Kong, and the Philippines, finding a genuinely good deal means checking multiple sites, comparing prices, and hoping you didn't miss a flash sale.</p>
+  <p>Catavel does this work automatically. Our pipeline scans major OTAs — including Klook, Trip.com, Agoda, and Aviasales — and surfaces only the deals worth your attention. No noise, no clickbait, no fake discounts.</p>
+
+  <h2>How Catavel Works</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Scan</h3>
+      <p>Our automated pipeline checks flight prices, promo codes, and hotel deals from 60+ OTAs every 6 hours.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Filter</h3>
+      <p>Deals are scored against historical price benchmarks. Only genuine discounts make the cut — no inflated "50% off" tricks.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Publish</h3>
+      <p>Selected deals go live on catavel.com and are pushed to our Telegram channels within minutes.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Book</h3>
+      <p>You click through to the OTA and book directly at their listed price. We earn a small affiliate commission — you pay nothing extra.</p>
+    </div>
+  </div>
+
+  <h2>Markets We Serve</h2>
+  <p>Catavel focuses on travelers departing from four major Southeast and East Asian hubs:</p>
+  <div class="markets">
+    <div class="market-card">
+      <div class="market-flag">🇸🇬</div>
+      <div class="market-name">Singapore</div>
+      <div class="market-sub">SIN · SGD</div>
+    </div>
+    <div class="market-card">
+      <div class="market-flag">🇲🇾</div>
+      <div class="market-name">Malaysia</div>
+      <div class="market-sub">KUL · MYR</div>
+    </div>
+    <div class="market-card">
+      <div class="market-flag">🇭🇰</div>
+      <div class="market-name">Hong Kong</div>
+      <div class="market-sub">HKG · HKD</div>
+    </div>
+    <div class="market-card">
+      <div class="market-flag">🇵🇭</div>
+      <div class="market-name">Philippines</div>
+      <div class="market-sub">MNL · PHP</div>
+    </div>
+  </div>
+
+  <h2>What You'll Find on Catavel</h2>
+  <ul>
+    <li><strong>Flight deals:</strong> Discounted fares from SIN, KUL, HKG, and MNL — updated every 6 hours with real pricing from Aviasales</li>
+    <li><strong>Promo codes:</strong> Verified voucher codes for <a href="https://catavel.com/klook-promo-codes/">Klook</a>, <a href="https://catavel.com/trip-com-promo-codes/">Trip.com</a>, and <a href="https://catavel.com/agoda-promo-codes/">Agoda</a> — refreshed regularly</li>
+    <li><strong>Destination guides:</strong> Activity recommendations and booking tips for popular destinations like Bali, Bangkok, Tokyo, and more</li>
+    <li><strong>Travel essentials:</strong> Curated tools every traveler needs — eSIMs, airport transfers, car rentals, travel insurance, and VPNs</li>
+    <li><strong>Telegram alerts:</strong> Real-time deal alerts pushed to 4 market-specific channels so you never miss a price drop</li>
+  </ul>
+
+  <h2>How We Make Money</h2>
+  <p>Catavel is free to use and always will be. We earn revenue through <strong>affiliate commissions</strong> — when you book through a link on Catavel, the travel company pays us a small commission at no extra cost to you. This keeps the site free, ad-free, and independent.</p>
+  <p>For full details, see our <a href="https://catavel.com/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
+
+  <h2>Our Telegram Channels</h2>
+  <p>Join our free Telegram channels for real-time deal alerts. No spam — just the best deals, pushed automatically when our pipeline detects a genuine discount.</p>
+  <ul>
+    <li><strong>🇸🇬 Singapore:</strong> <a href="https://t.me/CatavelSGTravelDeals" target="_blank" rel="noopener">@CatavelSGTravelDeals</a></li>
+    <li><strong>🇲🇾 Malaysia:</strong> <a href="https://t.me/CatavelMYTravelDeals" target="_blank" rel="noopener">@CatavelMYTravelDeals</a></li>
+    <li><strong>🇭🇰 Hong Kong:</strong> <a href="https://t.me/CatavelHKTravelDeals" target="_blank" rel="noopener">@CatavelHKTravelDeals</a></li>
+    <li><strong>🇵🇭 Philippines:</strong> <a href="https://t.me/CatavelPHTravelDeals" target="_blank" rel="noopener">@CatavelPHTravelDeals</a></li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions, feedback, or partnership inquiries? Reach us at <strong>hello@catavel.com</strong>.</p>
+
+  <div class="cta-box">
+    <h3>Start exploring deals</h3>
+    <p>Find your next trip — flights, hotels, activities, and promo codes from 60+ travel platforms.</p>
+    <div class="cta-links">
+      <a href="https://catavel.com/" class="cta-link cta-link-teal">Browse Deals</a>
+      <a href="https://catavel.com/klook-promo-codes/" class="cta-link cta-link-outline">Promo Codes</a>
+    </div>
+  </div>
+
+  <p class="last-updated">Last updated: March 2026</p>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">Catavel</div>
+  <div class="footer-links">
+    <a href="https://catavel.com/">Deals</a>
+    <a href="https://catavel.com/klook-promo-codes/">Klook</a>
+    <a href="https://catavel.com/trip-com-promo-codes/">Trip.com</a>
+    <a href="https://catavel.com/agoda-promo-codes/">Agoda</a>
+    <a href="https://catavel.com/affiliate-disclosure/">Affiliate Disclosure</a>
+    <a href="https://catavel.com/privacy-policy/">Privacy Policy</a>
+  </div>
+  <div class="footer-copy">© 2026 Catavel — Travel deals for SEAblings</div>
+</footer>
+
+</body>
+</html>
