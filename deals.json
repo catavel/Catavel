@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-18T11:07:29.802Z",
-  "totalDeals": 21,
+  "lastUpdated": "2026-03-18T17:07:30.982Z",
+  "totalDeals": 22,
   "generatedBy": "Catavel Pipeline v12.2",
   "deals": [
     {
@@ -257,6 +257,23 @@
       "valid_until": "2026-03-25T05:07:29.820Z",
       "created_at": "2026-03-18T05:07:29.820Z",
       "market": "MYR"
+    },
+    {
+      "id": "flight_MNL_SYD_1773853648697_m6x3",
+      "title": "Manila → Sydney from PHP 372",
+      "destination": "Sydney",
+      "origin": "Manila",
+      "original_price": 400,
+      "discounted_price": 372,
+      "discount_percent": 7,
+      "currency": "PHP",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FMNL091126SYD1",
+      "valid_until": "2026-03-25T17:07:29.505Z",
+      "created_at": "2026-03-18T17:07:29.505Z",
+      "market": "PHP"
     },
     {
       "id": "flight_SIN_OSA_1773810445341_g1zh",
