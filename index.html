@@ -694,27 +694,20 @@ ul,ol{list-style:none}
 .tg-menu a .tg-ch-name{font-size:12.5px;font-weight:600}
 .tg-menu a .tg-ch-handle{font-size:11px;color:var(--muted)}
 .tg-menu a .tg-ch-arrow{margin-left:auto;font-size:11px;color:var(--muted)}
-@media(max-width:600px){.curr-sw{display:none}.hd-i.mob-open .curr-sw{display:flex}}
+@media(max-width:600px){.curr-sw{display:none}}
 
 /* Nav voucher dropdown */
-   /* Mobile hamburger menu */
+/* Mobile hamburger menu */
 .mob-menu-btn{display:none;background:none;border:none;font-size:22px;color:var(--text);cursor:pointer;padding:4px 8px;line-height:1}
+#mobNav{display:none;position:absolute;top:48px;left:0;right:0;background:#fff;border-bottom:2px solid #e2e8f0;box-shadow:0 8px 24px rgba(0,0,0,0.12);z-index:300;padding:8px 0}
+#mobNav.open{display:block}
+#mobNav a{display:block;padding:12px 20px;font-size:15px;font-weight:500;color:#1a1a2e;text-decoration:none;border-bottom:1px solid #f1f5f9}
+#mobNav a:last-child{border-bottom:none}
+#mobNav a:active{background:#f1f5f9}
+#mobNav .mn-section{padding:8px 20px 4px;font-size:10px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px}
 @media(max-width:700px){
   .mob-menu-btn{display:block}
   .nav,.hd-r{display:none}
-  .hd-i{flex-wrap:wrap}
-  .hd-i.mob-open .nav,
-  .hd-i.mob-open .hd-r{display:flex!important;width:100%;flex-direction:column;padding:8px 0;gap:6px;border-top:1px solid var(--bdr);background:var(--bg)}
-  .hd-i.mob-open .nav{order:3}
-  .hd-i.mob-open .hd-r{order:4;align-items:flex-start}
-  .hd-i.mob-open .nav a{padding:10px 0;font-size:14px}
-  .hd-i.mob-open .nav-vd{width:100%}
-  .hd-i.mob-open .nav-vd-btn{padding:10px 0;font-size:14px}
-  .hd-i.mob-open .nav-vd-menu{position:static;box-shadow:none;border:none;border-radius:0;border-top:1px solid var(--bdr)}
-  .hd-i.mob-open .curr-sw{padding:6px 0}
-  .hd-i.mob-open .tg-drop{width:100%}
-  .hd-i.mob-open .tg-drop-btn{padding:10px 0;font-size:14px;width:100%;justify-content:flex-start}
-  .hd-i.mob-open .tg-menu{position:static;box-shadow:none;border:none;border-radius:0;border-top:1px solid var(--bdr);width:100%}
 }
 .nav-vd{position:relative}
 .nav-vd-btn{font-size:13px;font-weight:500;color:var(--muted);padding:5px 10px;border-radius:4px;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:3px;transition:color .12s}
@@ -767,7 +760,7 @@ ul,ol{list-style:none}
 <header class="hd" role="banner">
   <div class="w hd-i">
     <a href="/" class="logo" aria-label="Catavel home">Catavel<em aria-hidden="true"></em></a>
-     <button class="mob-menu-btn" onclick="document.querySelector('.hd-i').classList.toggle('mob-open')" aria-label="Menu">☰</button>
+     <button class="mob-menu-btn" onclick="var m=document.getElementById('mobNav');m.classList.toggle('open');this.textContent=m.classList.contains('open')?'✕':'☰'" aria-label="Menu">☰</button>
     <nav class="nav" aria-label="Primary">
       <a href="/" aria-current="page">Deals</a>
       <div class="nav-vd" id="navVd">
@@ -820,6 +813,22 @@ ul,ol{list-style:none}
       </div>
     </div>
   </div>
+  <nav id="mobNav" aria-label="Mobile navigation">
+    <a href="/">Deals</a>
+    <div class="mn-section">Promo Codes</div>
+    <a href="/klook-promo-codes/">Klook Promo Codes</a>
+    <a href="/trip-com-promo-codes/">Trip.com Promo Codes</a>
+    <a href="/agoda-promo-codes/">Agoda Promo Codes</a>
+    <div class="mn-section">Destinations</div>
+    <a href="/destinations/bali/">Bali</a>
+    <a href="/destinations/bangkok/">Bangkok</a>
+    <a href="/destinations/tokyo/">Tokyo</a>
+    <a href="/destinations/singapore/">Singapore</a>
+    <a href="/destinations/hong-kong/">Hong Kong</a>
+    <div class="mn-section">More</div>
+    <a href="/esim-guide/">eSIM Guide</a>
+    <a href="/about/">About</a>
+  </nav>
 </header>
 
 <!-- ══════════════════════════════════
