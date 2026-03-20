@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-20T11:07:31.173Z",
-  "totalDeals": 22,
+  "lastUpdated": "2026-03-20T17:07:30.530Z",
+  "totalDeals": 23,
   "generatedBy": "Catavel Pipeline v12.2",
   "deals": [
     {
@@ -290,6 +290,23 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN111026OSA1",
       "valid_until": "2026-03-25T05:07:29.820Z",
       "created_at": "2026-03-18T05:07:29.820Z",
+      "market": "SGD"
+    },
+    {
+      "id": "flight_SIN_SYD_1774026444805_cquw",
+      "title": "Singapore → Sydney from SGD 384",
+      "destination": "Sydney",
+      "origin": "Singapore",
+      "original_price": 400,
+      "discounted_price": 384,
+      "discount_percent": 4,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN270326SYD1",
+      "valid_until": "2026-03-27T17:07:29.282Z",
+      "created_at": "2026-03-20T17:07:29.282Z",
       "market": "SGD"
     },
     {
