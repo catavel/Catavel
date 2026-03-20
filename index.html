@@ -698,6 +698,25 @@ ul,ol{list-style:none}
 @media(max-width:600px){.curr-sw{display:none}}
 
 /* Nav voucher dropdown */
+   /* Mobile hamburger menu */
+.mob-menu-btn{display:none;background:none;border:none;font-size:22px;color:var(--text);cursor:pointer;padding:4px 8px;line-height:1}
+@media(max-width:700px){
+  .mob-menu-btn{display:block}
+  .nav,.hd-r{display:none}
+  .hd-i{flex-wrap:wrap}
+  .hd-i.mob-open .nav,
+  .hd-i.mob-open .hd-r{display:flex;width:100%;flex-direction:column;padding:8px 0;gap:6px;border-top:1px solid var(--bdr)}
+  .hd-i.mob-open .nav{order:3}
+  .hd-i.mob-open .hd-r{order:4;align-items:flex-start}
+  .hd-i.mob-open .nav a{padding:10px 0;font-size:14px}
+  .hd-i.mob-open .nav-vd{width:100%}
+  .hd-i.mob-open .nav-vd-btn{padding:10px 0;font-size:14px}
+  .hd-i.mob-open .nav-vd-menu{position:static;box-shadow:none;border:none;border-radius:0;border-top:1px solid var(--bdr)}
+  .hd-i.mob-open .curr-sw{padding:6px 0}
+  .hd-i.mob-open .tg-drop{width:100%}
+  .hd-i.mob-open .tg-drop-btn{padding:10px 0;font-size:14px;width:100%;justify-content:flex-start}
+  .hd-i.mob-open .tg-menu{position:static;box-shadow:none;border:none;border-radius:0;border-top:1px solid var(--bdr);width:100%}
+}
 .nav-vd{position:relative}
 .nav-vd-btn{font-size:13px;font-weight:500;color:var(--muted);padding:5px 10px;border-radius:4px;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:3px;transition:color .12s}
 .nav-vd-btn:hover,.nav-vd.open .nav-vd-btn{color:var(--teal)}
@@ -749,6 +768,7 @@ ul,ol{list-style:none}
 <header class="hd" role="banner">
   <div class="w hd-i">
     <a href="/" class="logo" aria-label="Catavel home">Catavel<em aria-hidden="true"></em></a>
+     <button class="mob-menu-btn" onclick="document.querySelector('.hd-i').classList.toggle('mob-open')" aria-label="Menu">☰</button>
     <nav class="nav" aria-label="Primary">
       <a href="/" aria-current="page">Deals</a>
       <div class="nav-vd" id="navVd">
