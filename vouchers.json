@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-22T17:14:01.638Z",
+  "lastUpdated": "2026-03-22T17:14:21.214Z",
   "count": 51,
   "vouchers": [
     {
@@ -737,7 +737,7 @@
       "id": "vc_adamandlindsklook",
       "ota": "Klook",
       "code": "ADAMANDLINDSKLOOK",
-      "description": "5% off theme parks ? USS, USJ, Tokyo Disney, teamLab",
+      "description": "5% off theme parks - USS, USJ, Tokyo Disney, teamLab",
       "discount_type": "percent",
       "discount": "5%",
       "min_spend": "USD 60",
@@ -788,7 +788,7 @@
       "id": "vc_tripflight26",
       "ota": "Trip.com",
       "code": "TRIPFLIGHT26",
-      "description": "Discount on flight bookings ? value varies",
+      "description": "Discount on flight bookings - value varies",
       "discount_type": "flat",
       "discount": "Varies",
       "min_spend": "",
@@ -839,7 +839,7 @@
       "id": "vc_agodatpt",
       "ota": "Agoda",
       "code": "AGODATPT",
-      "description": "10% off hotels ? up to $100 off, reusable 5 times",
+      "description": "10% off hotels - up to $100 off, reusable 5 times",
       "discount_type": "percent",
       "discount": "10%",
       "min_spend": "",
@@ -856,7 +856,7 @@
       "id": "vc_aatpt",
       "ota": "Agoda",
       "code": "AATPT",
-      "description": "5% off Agoda activities ? up to $30 off",
+      "description": "5% off Agoda activities - up to $30 off",
       "discount_type": "percent",
       "discount": "5%",
       "min_spend": "",
