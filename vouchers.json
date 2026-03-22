@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-11T04:04:02.827Z",
-  "count": 42,
+  "lastUpdated": "2026-03-22T17:04:04.086Z",
+  "count": 51,
   "vouchers": [
     {
       "id": "vc_taiwanjoy8",
@@ -272,7 +272,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/15-singapore-things-to-do/?aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to Klook Platinum Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use. Applicable for 72920 - Genting Dream Cruise by Dream Cruises, 77698 - 1-Way Genting Dream Cruises by Dream Cruises, 164709 - Genting Dream Cruise by Dream Cruises (April 2026 Onwards Sailing) and 195027 - 1-Way Genting Dream Cruises by Dream Cruises (April 2026 Onwards Sailing) only.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_sdcgoldm80",
@@ -289,7 +289,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/15-singapore-things-to-do/?aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to Klook Gold Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use. Applicable for 72920 - Genting Dream Cruise by Dream Cruises, 77698 - 1-Way Genting Dream Cruises by Dream Cruises, 164709 - Genting Dream Cruise by Dream Cruises (April 2026 Onwards Sailing) and 195027 - 1-Way Genting Dream Cruises by Dream Cruises (April 2026 Onwards Sailing) only.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_kizxecnx10",
@@ -323,7 +323,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/10-south-korea-things-to-do/?aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_krblossom15",
@@ -340,7 +340,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/10-south-korea-things-to-do/?aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_ytklookh30wk2",
@@ -357,7 +357,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/10-south-korea-things-to-do/?aid=115333",
       "tc": "YouTrip cardmembers with Singapore residence and phone number only. Valid with min. spend S$500 on Hotels (https://www.klook.com/en-SG/hotels/). Available for use on first-come, first-served basis; code redemption does not guarantee availability for use. One-time use per user account.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_2026hkdl12",
@@ -425,7 +425,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/sg-cherryblossom/?aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_hanami50",
@@ -442,7 +442,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/sg-cherryblossom/?aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_gocnmar15",
@@ -459,7 +459,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/sg-cherryblossom/?aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_gocnmar50",
@@ -476,7 +476,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/sg-cherryblossom/?aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_krspring15",
@@ -612,7 +612,7 @@
       "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/sg-cherryblossom/?aid=115333",
       "tc": "Citi Mastercard Cardmembers with Singapore phone number and residence only. Valid with min. spend S$400. Available for use on first-come, first-served basis; code redemption does not guarantee availability for use. One-time use per user account.",
       "status": "active",
-      "is_expiring": true
+      "is_expiring": false
     },
     {
       "id": "vc_dbs267offmar",
@@ -713,6 +713,159 @@
       "market": "SGD",
       "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/sg-cherryblossom/?aid=115333",
       "tc": "UOB cardmembers with Singapore phone number and residence only. Valid with min. spend S$150. Available for use on first-come, first-served basis; code redemption does not guarantee availability for use. One-time use per user account.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_klooknew",
+      "ota": "Klook",
+      "code": "KLOOKNEW",
+      "description": "10% off first booking for new users (5% for existing)",
+      "discount_type": "percent",
+      "discount": "10%",
+      "min_spend": "",
+      "max_discount": "",
+      "applicable_for": "All activities & products",
+      "valid_until": "",
+      "market": "SGD",
+      "affiliate_link": "https://www.klook.com/?aid=115333",
+      "tc": "New users only. One-time use. Cannot combine with other codes.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_adamandlindsklook",
+      "ota": "Klook",
+      "code": "ADAMANDLINDSKLOOK",
+      "description": "5% off theme parks ? USS, USJ, Tokyo Disney, teamLab",
+      "discount_type": "percent",
+      "discount": "5%",
+      "min_spend": "USD 60",
+      "max_discount": "USD 300",
+      "applicable_for": "Theme parks & attractions",
+      "valid_until": "2026-12-30",
+      "market": "SGD",
+      "affiliate_link": "https://www.klook.com/?aid=115333",
+      "tc": "Valid for new users in selected regions. One per customer.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_omgfirstt3",
+      "ota": "Klook",
+      "code": "OMGFIRSTT3",
+      "description": "5% off Singapore, Thailand & Malaysia attractions",
+      "discount_type": "percent",
+      "discount": "5%",
+      "min_spend": "",
+      "max_discount": "",
+      "applicable_for": "Singapore, Thailand, Malaysia attractions",
+      "valid_until": "2026-04-11",
+      "market": "SGD",
+      "affiliate_link": "https://www.klook.com/?aid=115333",
+      "tc": "Cannot combine with other promo codes.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_tripcar8",
+      "ota": "Trip.com",
+      "code": "TRIPCAR8",
+      "description": "8% off your first car rental booking",
+      "discount_type": "percent",
+      "discount": "8%",
+      "min_spend": "",
+      "max_discount": "",
+      "applicable_for": "Car rental",
+      "valid_until": "2026-12-30",
+      "market": "MYR",
+      "affiliate_link": "https://www.trip.com/?Allianceid=7924337&SID=catavel",
+      "tc": "Verified working March 2026. One-time use.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_tripflight26",
+      "ota": "Trip.com",
+      "code": "TRIPFLIGHT26",
+      "description": "Discount on flight bookings ? value varies",
+      "discount_type": "flat",
+      "discount": "Varies",
+      "min_spend": "",
+      "max_discount": "",
+      "applicable_for": "Flights",
+      "valid_until": "",
+      "market": "MYR",
+      "affiliate_link": "https://www.trip.com/?Allianceid=7924337&SID=catavel",
+      "tc": "Community-verified March 2026. Check Trip.com for current value.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_agodadeal8",
+      "ota": "Agoda",
+      "code": "AGODADEAL8",
+      "description": "8% off hotel bookings (min. spend $120)",
+      "discount_type": "percent",
+      "discount": "8%",
+      "min_spend": "USD 120",
+      "max_discount": "",
+      "applicable_for": "Hotels",
+      "valid_until": "2026-03-30",
+      "market": "SGD",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com",
+      "tc": "Verified Jan-Mar 2026. One-time use per user.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_agodadeal5",
+      "ota": "Agoda",
+      "code": "AGODADEAL5",
+      "description": "5% off hotel bookings (min. spend $60)",
+      "discount_type": "percent",
+      "discount": "5%",
+      "min_spend": "USD 60",
+      "max_discount": "USD 3",
+      "applicable_for": "Hotels",
+      "valid_until": "2026-03-30",
+      "market": "SGD",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com",
+      "tc": "Verified March 2026. Max discount capped at USD 3.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_agodatpt",
+      "ota": "Agoda",
+      "code": "AGODATPT",
+      "description": "10% off hotels ? up to $100 off, reusable 5 times",
+      "discount_type": "percent",
+      "discount": "10%",
+      "min_spend": "",
+      "max_discount": "USD 100",
+      "applicable_for": "Hotels",
+      "valid_until": "",
+      "market": "SGD",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com",
+      "tc": "Redeem at Agoda Deals page first. 30-day validity after redeem. Up to 5 uses.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_aatpt",
+      "ota": "Agoda",
+      "code": "AATPT",
+      "description": "5% off Agoda activities ? up to $30 off",
+      "discount_type": "percent",
+      "discount": "5%",
+      "min_spend": "",
+      "max_discount": "USD 30",
+      "applicable_for": "Activities",
+      "valid_until": "",
+      "market": "SGD",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com",
+      "tc": "Redeem at Agoda Deals page. Up to 5 uses per user.",
       "status": "active",
       "is_expiring": false
     }
