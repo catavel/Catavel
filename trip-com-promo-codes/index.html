@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trip.com Promo Codes April 2026 — Malaysia &amp; Singapore | Catavel</title>
+<title>Trip.com Promo Codes April 2026 - Malaysia &amp; Singapore | Catavel</title>
 <meta name="description" content="Latest verified Trip.com promo codes &amp; deals for Malaysia &amp; Singapore (April 2026). Reveal codes instantly, copied to clipboard, redirected to Trip.com.">
 <meta name="robots" content="index, follow, max-snippet:-1">
 <link rel="canonical" href="https://catavel.com/trip-com-promo-codes/">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://catavel.com/trip-com-promo-codes/">
-<meta property="og:title" content="Trip.com Promo Codes April 2026 — Malaysia &amp; Singapore">
+<meta property="og:title" content="Trip.com Promo Codes April 2026 - Malaysia &amp; Singapore">
 <meta property="og:description" content="Verified Trip.com promo codes &amp; codeless deals for MY &amp; SG. Copy &amp; save instantly.">
 <meta property="og:site_name" content="Catavel">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Trip.com Promo Codes April 2026 — Malaysia & Singapore","description":"Latest verified Trip.com promo codes and codeless deals for Malaysia and Singapore travelers.","url":"https://catavel.com/trip-com-promo-codes/","publisher":{"@type":"Organization","name":"Catavel","url":"https://catavel.com"},"dateModified":"2026-03-24","datePublished":"2026-03-10"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Trip.com Promo Codes April 2026 - Malaysia & Singapore","description":"Latest verified Trip.com promo codes and codeless deals for Malaysia and Singapore travelers.","url":"https://catavel.com/trip-com-promo-codes/","publisher":{"@type":"Organization","name":"Catavel","url":"https://catavel.com"},"dateModified":"2026-03-24","datePublished":"2026-03-10"}</script>
 <style>
 :root{
   --teal:#00897B;--teal-d:#00695C;--teal-lt:#E6F4F2;--teal-bd:#B2DFDB;
@@ -205,28 +205,28 @@ ul,ol{list-style:none}
           <input type="checkbox" value="MYR" checked onchange="onMktChange()">
           <div class="mkt-row-info">
             <span class="mkt-row-name">&#127474;&#127486; Malaysia</span>
-            <span class="mkt-row-ct" id="ct-MYR">— codes</span>
+            <span class="mkt-row-ct" id="ct-MYR">- codes</span>
           </div>
         </label>
         <label class="mkt-row" id="lbl-SGD">
           <input type="checkbox" value="SGD" checked onchange="onMktChange()">
           <div class="mkt-row-info">
             <span class="mkt-row-name">&#127480;&#127468; Singapore</span>
-            <span class="mkt-row-ct" id="ct-SGD">— codes</span>
+            <span class="mkt-row-ct" id="ct-SGD">- codes</span>
           </div>
         </label>
         <label class="mkt-row" id="lbl-HKD">
           <input type="checkbox" value="HKD" checked onchange="onMktChange()">
           <div class="mkt-row-info">
             <span class="mkt-row-name">&#127469;&#127472; Hong Kong</span>
-            <span class="mkt-row-ct" id="ct-HKD">— codes</span>
+            <span class="mkt-row-ct" id="ct-HKD">- codes</span>
           </div>
         </label>
         <label class="mkt-row" id="lbl-ALL">
           <input type="checkbox" value="ALL" checked onchange="onMktChange()">
           <div class="mkt-row-info">
             <span class="mkt-row-name">&#127757; All Markets</span>
-            <span class="mkt-row-ct" id="ct-ALL">— codes</span>
+            <span class="mkt-row-ct" id="ct-ALL">- codes</span>
           </div>
         </label>
       </div>
@@ -328,7 +328,7 @@ ul,ol{list-style:none}
 'use strict';
 
 /* ══════════════════════════════════════════════
-   PAGE CONFIG — Trip.com
+   PAGE CONFIG - Trip.com
    ══════════════════════════════════════════════ */
 const PAGE_OTA      = 'Trip.com';
 const AFF_BASE      = 'https://www.trip.com/?Allianceid=7924337&SID=catavel';
@@ -416,7 +416,7 @@ function render() {
 function cardHTML(v) {
   const hasCode   = v.code && v.code.trim() !== '';
   const expiring  = v.is_expiring;
-  const discLabel = v.discount || '—';
+  const discLabel = v.discount || '-';
   const affLink   = (v.affiliate_link && v.affiliate_link.trim()) ? v.affiliate_link : AFF_BASE;
   const expStr    = v.valid_until ? fmtDate(v.valid_until) : 'Ongoing';
 
@@ -442,7 +442,7 @@ function cardHTML(v) {
     const cid = v.code.replace(/[^A-Z0-9]/g, '_');
     codeWidget = `<div><div class="vc-discount">${esc(discLabel)}</div><div class="vc-discount-sub">with this code</div></div>
       <div class="cw" id="cw-${cid}" data-code="${esc(v.code)}" data-link="${esc(affLink)}">
-        <span class="ch" aria-label="Code hidden — click Reveal">${esc(v.code)}</span>
+        <span class="ch" aria-label="Code hidden - click Reveal">${esc(v.code)}</span>
         <button class="btn-rv" onclick="reveal('${cid}')" aria-label="Reveal ${esc(v.code)}">Reveal</button>
       </div>`;
   } else {
@@ -470,7 +470,7 @@ function reveal(cid) {
   w.classList.add('open');
   if (btn) btn.textContent = 'Copied! ✓';
   copyText(code);
-  showToast('Code copied: ' + code + ' — redirecting to ' + OTA_NAME + '…');
+  showToast('Code copied: ' + code + ' - redirecting to ' + OTA_NAME + '…');
   setTimeout(() => { if (link && link !== '#') window.open(link, '_blank', 'noopener,noreferrer'); }, 500);
   setTimeout(() => { if (w.classList.contains('open') && btn) btn.textContent = 'Copy'; }, 3200);
 }
@@ -486,12 +486,12 @@ function toggleFaq(btn) {
   btn.setAttribute('aria-expanded', open);
 }
 function updateStats() {
-  document.getElementById('activeCount').textContent = ALL.length || '—';
+  document.getElementById('activeCount').textContent = ALL.length || '-';
   const best = ALL.reduce((m, v) => {
     const n = parseFloat((v.discount || '').replace(/[^0-9.]/g, '')) || 0;
     return n > m ? n : m;
   }, 0);
-  document.getElementById('bestDiscount').textContent = best ? 'Up to ' + best + '%' : '—';
+  document.getElementById('bestDiscount').textContent = best ? 'Up to ' + best + '%' : '-';
 }
 function updateMonthYear() {
   const el = document.getElementById('monthYear');
@@ -506,7 +506,7 @@ function showToast(msg) { document.getElementById('toastMsg').textContent = msg;
 
 const SAMPLE = [
   {id:'vc_1',ota:'Trip.com',code:'TRIPCAR8',description:'8% off your first car rental booking',discount_type:'percent',discount:'8%',min_spend:'',max_discount:'',applicable_for:'Car rental',valid_until:'2026-12-31',market:'MYR',affiliate_link:'https://www.trip.com/?Allianceid=7924337&SID=catavel',tc:'Verified working March 2026. One-time use.',is_expiring:false},
-  {id:'vc_2',ota:'Trip.com',code:'',description:'New user pack — 20% off hotels, 6% off attractions, 12% off transfers',discount_type:'percent',discount:'Up to 20%',min_spend:'',max_discount:'',applicable_for:'Hotels, attractions, transfers',valid_until:'',market:'MYR',affiliate_link:'https://www.trip.com/?Allianceid=7924337&SID=catavel',tc:'Register and book first time. Auto-applied per product.',is_expiring:false},
+  {id:'vc_2',ota:'Trip.com',code:'',description:'New user pack - 20% off hotels, 6% off attractions, 12% off transfers',discount_type:'percent',discount:'Up to 20%',min_spend:'',max_discount:'',applicable_for:'Hotels, attractions, transfers',valid_until:'',market:'MYR',affiliate_link:'https://www.trip.com/?Allianceid=7924337&SID=catavel',tc:'Register and book first time. Auto-applied per product.',is_expiring:false},
 ];
 
 document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
