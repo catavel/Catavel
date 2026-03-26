@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catavel Blog — Travel Tips, Promo Codes &amp; Guides for SEAblings</title>
+<meta name="description" content="Travel tips, promo code updates, eSIM guides and destination insights for Singapore, Malaysia, Hong Kong and Philippines travelers.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://catavel.com/blog/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://catavel.com/blog/">
+<meta property="og:title" content="Catavel Blog — Travel Tips &amp; Guides for SEAblings">
+<meta property="og:description" content="Travel tips, promo codes, eSIM guides and more for SEA travelers.">
+<meta property="og:site_name" content="Catavel">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<style>
+:root{
+  --teal:#00897B;--teal-d:#00695C;--teal-lt:#E6F4F2;--teal-bd:#B2DFDB;
+  --orange:#E8622A;--orange-d:#D4561E;--orange-lt:#FFF0E8;--orange-bd:#FFCFB8;
+  --white:#fff;--bg:#F6F6F4;--text:#111;--text2:#444;--muted:#999;
+  --bdr:#E5E5E2;--bdr2:#D0D0CB;--r:6px;
+  --f:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --fh:'Plus Jakarta Sans',-apple-system,sans-serif;
+}
+html{box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
+body{font-family:var(--f);font-size:14px;line-height:1.5;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:860px;margin:0 auto;padding:0 16px}
+
+/* HEADER */
+.hd{position:sticky;top:0;z-index:200;background:var(--white);border-bottom:1px solid var(--bdr)}
+.hd-i{display:flex;align-items:center;gap:14px;height:48px}
+.logo{font-family:var(--fh);font-size:18px;letter-spacing:-.3px;display:flex;align-items:center;gap:5px;flex-shrink:0}
+.logo em{font-style:normal;display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--orange);margin-bottom:2px}
+.hd-r{margin-left:auto;display:flex;gap:6px;align-items:center}
+.hd-back{font-size:12.5px;color:var(--muted);padding:5px 10px;border-radius:4px;transition:color .12s}
+.hd-back:hover{color:var(--teal)}
+
+/* HERO */
+.hero{background:var(--white);border-bottom:1px solid var(--bdr);padding:28px 0 24px}
+.bc{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-bottom:14px}
+.bc a{color:var(--muted)}.bc a:hover{color:var(--teal)}
+.bc-sep{color:var(--bdr2)}
+.hero h1{font-family:var(--fh);font-size:clamp(22px,3.5vw,30px);font-weight:400;letter-spacing:-.5px;line-height:1.2;margin-bottom:6px}
+.hero h1 strong{font-weight:700}
+.hero p{font-size:13.5px;color:var(--text2);max-width:520px;line-height:1.6}
+.hero-stats{display:flex;gap:20px;flex-wrap:wrap;padding-top:14px;margin-top:14px;border-top:1px solid var(--bdr)}
+.hero-stat-n{font-family:var(--fh);font-size:17px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.hero-stat-l{font-size:11px;color:var(--muted);margin-top:1px}
+
+/* FILTERS */
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;padding-top:20px}
+.fil-btn{padding:5px 14px;border-radius:20px;font-size:12px;font-weight:600;background:var(--white);border:1px solid var(--bdr);color:var(--text2);cursor:pointer;transition:all .15s}
+.fil-btn:hover{border-color:var(--teal-bd);color:var(--teal)}
+.fil-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+/* POST CARDS */
+.posts{display:flex;flex-direction:column;gap:10px;padding-bottom:48px}
+.post{background:var(--white);border:1.5px solid var(--bdr);border-radius:var(--r);overflow:hidden;transition:border-color .15s,box-shadow .15s}
+.post:hover{border-color:var(--teal-bd);box-shadow:0 3px 14px rgba(0,137,123,.08)}
+.post-link{display:block;padding:18px 20px;text-decoration:none;color:inherit}
+.post-top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.post-cat{font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;background:var(--teal-lt);color:var(--teal-d);white-space:nowrap}
+.post-featured{font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;background:var(--orange-lt);color:var(--orange-d);white-space:nowrap}
+.post-date{font-size:11px;color:var(--muted);margin-left:auto}
+.post-title{font-family:var(--fh);font-size:16px;font-weight:600;color:var(--text);line-height:1.35;margin-bottom:6px;letter-spacing:-.2px}
+.post:hover .post-title{color:var(--teal)}
+.post-excerpt{font-size:13px;color:var(--text2);line-height:1.6}
+.post-read{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;color:var(--teal);margin-top:8px}
+.post-read-arrow{transition:transform .15s}
+.post:hover .post-read-arrow{transform:translateX(3px)}
+
+/* EMPTY */
+.empty{padding:48px 16px;text-align:center}
+.empty p{font-size:14px;color:var(--muted)}
+
+/* SKELETON */
+.skel{background:linear-gradient(90deg,#f0f0ee 25%,#e8e8e5 50%,#f0f0ee 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;border-radius:var(--r)}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* RELATED */
+.related{background:var(--white);border-top:1px solid var(--bdr);padding:22px 0 36px}
+.related h2{font-size:15px;font-weight:600;margin-bottom:10px}
+.related-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:7px}
+.related-a{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--bdr);border-radius:var(--r);font-size:12.5px;font-weight:500;color:var(--text2);min-height:44px;transition:border-color .12s,color .12s}
+.related-a:hover{border-color:var(--teal);color:var(--teal)}
+.related-a img{width:15px;height:15px;border-radius:2px;object-fit:contain}
+
+/* FOOTER */
+.ft{background:var(--text);padding:24px 0 20px}
+.ft-top{display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.07)}
+.ft-brand .logo{color:#fff;margin-bottom:5px}
+.ft-brand p{font-size:11.5px;color:rgba(255,255,255,.35);line-height:1.6;max-width:230px}
+.ft-links{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
+.ft-links a{font-size:12px;color:rgba(255,255,255,.4);transition:color .12s}
+.ft-links a:hover{color:rgba(255,255,255,.8)}
+.ft-btm{display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.ft-disc{font-size:11px;color:rgba(255,255,255,.22);line-height:1.6;flex:1}
+.ft-copy{font-size:11px;color:rgba(255,255,255,.18);white-space:nowrap}
+</style>
+</head>
+<body>
+
+<header class="hd" role="banner">
+  <div class="w hd-i">
+    <a href="/" class="logo" aria-label="Catavel home">Catavel<em aria-hidden="true"></em></a>
+    <div class="hd-r">
+      <a href="/" class="hd-back">&#8592; Home</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="w">
+    <nav class="bc" aria-label="Breadcrumb">
+      <a href="/">Home</a><span class="bc-sep">&#8250;</span><span>Blog</span>
+    </nav>
+    <h1><strong>Catavel Blog</strong></h1>
+    <p>Travel tips, promo code updates, eSIM guides and destination insights for Singapore, Malaysia, HK &amp; Philippines travelers.</p>
+    <div class="hero-stats">
+      <div><div class="hero-stat-n" id="postCount">&#8212;</div><div class="hero-stat-l">Articles</div></div>
+      <div><div class="hero-stat-n" id="catCount">&#8212;</div><div class="hero-stat-l">Categories</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="w">
+  <!-- Category filters -->
+  <div class="filters" id="filters">
+    <button class="fil-btn active" data-cat="all" onclick="filterCat('all')">All</button>
+  </div>
+
+  <!-- Skeletons -->
+  <div id="skeletons">
+    <div class="skel" style="height:110px;margin-bottom:10px"></div>
+    <div class="skel" style="height:110px;margin-bottom:10px"></div>
+    <div class="skel" style="height:110px"></div>
+  </div>
+
+  <!-- Posts rendered by JS -->
+  <div class="posts" id="posts"></div>
+</div>
+
+<section class="related">
+  <div class="w">
+    <h2>Quick Links</h2>
+    <div class="related-g">
+      <a href="/klook-promo-codes/" class="related-a"><img src="https://www.google.com/s2/favicons?domain=klook.com&sz=32" alt="" loading="lazy">Klook Codes</a>
+      <a href="/trip-com-promo-codes/" class="related-a"><img src="https://www.google.com/s2/favicons?domain=trip.com&sz=32" alt="" loading="lazy">Trip.com Codes</a>
+      <a href="/agoda-promo-codes/" class="related-a"><img src="https://www.google.com/s2/favicons?domain=agoda.com&sz=32" alt="" loading="lazy">Agoda Codes</a>
+      <a href="/travel-essentials/" class="related-a">&#128188; Travel Essentials</a>
+      <a href="/" class="related-a">&#9992;&#65039; Flight Deals</a>
+    </div>
+  </div>
+</section>
+
+<footer class="ft" role="contentinfo">
+  <div class="w">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="/" class="logo" style="color:#fff">Catavel<em style="background:#E8622A"></em></a>
+        <p>Travel deal aggregator for SEAblings. Updated every 6 hours.</p>
+      </div>
+      <nav class="ft-links" aria-label="Footer links">
+        <a href="/blog/">Blog</a>
+        <a href="/klook-promo-codes/">Klook</a>
+        <a href="/trip-com-promo-codes/">Trip.com</a>
+        <a href="/agoda-promo-codes/">Agoda</a>
+        <a href="/affiliate-disclosure/">Disclosure</a>
+        <a href="/privacy-policy/">Privacy</a>
+      </nav>
+    </div>
+    <div class="ft-btm">
+      <p class="ft-disc"><strong>Affiliate Disclosure:</strong> Catavel earns a commission when you book through our links, at no extra cost to you.</p>
+      <p class="ft-copy">&#169; 2026 Catavel</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+'use strict';
+const INDEX_JSON = '/blog-index.json';
+
+const CAT_LABELS = {
+  'promo-codes': '🏷️ Promo Codes',
+  'esim': '📱 eSIM & Data',
+  'guides': '📖 Guides',
+  'deals': '✈️ Deals',
+  'destinations': '🌏 Destinations',
+  'tips': '💡 Tips'
+};
+
+let ALL_POSTS = [];
+let activeCat = 'all';
+
+async function init() {
+  try {
+    const res = await fetch(INDEX_JSON, { cache: 'no-cache' });
+    if (!res.ok) throw 0;
+    const data = await res.json();
+    ALL_POSTS = data.posts || [];
+  } catch(_) {
+    ALL_POSTS = [];
+  }
+  document.getElementById('skeletons').style.display = 'none';
+  buildFilters();
+  render();
+  updateStats();
+}
+
+function buildFilters() {
+  const cats = [...new Set(ALL_POSTS.map(p => p.category).filter(Boolean))];
+  const container = document.getElementById('filters');
+  cats.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'fil-btn';
+    btn.dataset.cat = cat;
+    btn.textContent = CAT_LABELS[cat] || cat;
+    btn.onclick = () => filterCat(cat);
+    container.appendChild(btn);
+  });
+}
+
+function filterCat(cat) {
+  activeCat = cat;
+  document.querySelectorAll('.fil-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.cat === cat);
+  });
+  render();
+}
+
+function render() {
+  const container = document.getElementById('posts');
+  const filtered = activeCat === 'all'
+    ? ALL_POSTS
+    : ALL_POSTS.filter(p => p.category === activeCat);
+
+  if (!filtered.length) {
+    container.innerHTML = '<div class="empty"><p>No articles yet. Check back soon!</p></div>';
+    return;
+  }
+
+  container.innerHTML = filtered.map(p => {
+    const catLabel = CAT_LABELS[p.category] || p.category;
+    const dateStr = p.published ? fmtDate(p.published) : '';
+    const featBadge = p.featured ? '<span class="post-featured">★ Featured</span>' : '';
+    return `<article class="post">
+      <a class="post-link" href="${esc(p.url)}">
+        <div class="post-top">
+          <span class="post-cat">${esc(catLabel)}</span>
+          ${featBadge}
+          <span class="post-date">${esc(dateStr)}</span>
+        </div>
+        <h2 class="post-title">${esc(p.title)}</h2>
+        <p class="post-excerpt">${esc(p.excerpt)}</p>
+        <span class="post-read">Read article <span class="post-read-arrow">&#8594;</span></span>
+      </a>
+    </article>`;
+  }).join('');
+}
+
+function updateStats() {
+  document.getElementById('postCount').textContent = ALL_POSTS.length || '0';
+  const cats = new Set(ALL_POSTS.map(p => p.category).filter(Boolean));
+  document.getElementById('catCount').textContent = cats.size || '0';
+}
+
+function fmtDate(s) {
+  const d = new Date(s);
+  return isNaN(d) ? s : d.toLocaleDateString('en', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+function esc(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+document.readyState === 'loading'
+  ? document.addEventListener('DOMContentLoaded', init)
+  : init();
+</script>
+</body>
+</html>
