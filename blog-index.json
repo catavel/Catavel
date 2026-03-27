@@ -1,20 +1,7 @@
 {
-  "lastUpdated": "2026-03-27T19:12:00.547Z",
-  "count": 2,
+  "lastUpdated": "2026-03-27T19:41:38.514Z",
+  "count": 3,
   "posts": [
-    {
-      "slug": "best-esim-for-travel-2026",
-      "title": "Best eSIM for Travel in 2026 - Airalo vs Yesim vs Saily",
-      "excerpt": "Updated March 2026: Compare Airalo, Yesim, and Saily eSIM side by side - pricing, coverage, and features for international travelers.",
-      "category": "esim",
-      "keyword": "best esim for travel 2026",
-      "author": "Catavel",
-      "published": "2026-03-28",
-      "updated": "2026-03-28",
-      "source": "manual",
-      "featured": true,
-      "url": "/blog/best-esim-for-travel-2026/"
-    },
     {
       "slug": "klook-promo-code-singapore-april-2026",
       "title": "Klook Promo Code Singapore - April 2026 (Working Codes)",
@@ -22,11 +9,37 @@
       "category": "promo-codes",
       "keyword": "klook promo code singapore",
       "author": "Catavel",
-      "published": "2026-03-28",
+      "published": "2026-03-27",
       "updated": "2026-03-28",
       "source": "programmatic",
       "featured": false,
       "url": "/blog/klook-promo-code-singapore-april-2026/"
+    },
+    {
+      "slug": "trip-com-promo-code-malaysia-2026",
+      "title": "Trip.com Promo Code Malaysia 2026 - Updated Monthly",
+      "excerpt": "Updated March 2026: The latest working Trip.com promo codes for Malaysia. Verified discounts on hotels, flights, and holiday packages from Kuala Lumpur and beyond.",
+      "category": "promo-codes",
+      "keyword": "trip com promo code malaysia",
+      "author": "Catavel",
+      "published": "2026-03-27",
+      "updated": "2026-03-28",
+      "source": "programmatic",
+      "featured": false,
+      "url": "/blog/trip-com-promo-code-malaysia-2026/"
+    },
+    {
+      "slug": "agoda-promo-code-2026",
+      "title": "Agoda Promo Code 2026 - Working Discount Codes for Hotels",
+      "excerpt": "Updated March 2026: The latest working Agoda promo codes for hotels in Singapore, Malaysia, Thailand, and across Southeast Asia. Verified and updated monthly.",
+      "category": "promo-codes",
+      "keyword": "agoda promo code",
+      "author": "Catavel",
+      "published": "2026-03-27",
+      "updated": "2026-03-28",
+      "source": "programmatic",
+      "featured": false,
+      "url": "/blog/agoda-promo-code-2026/"
     }
   ]
 }
