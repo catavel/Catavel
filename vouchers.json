@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-28T14:41:13.295Z",
-  "count": 68,
+  "lastUpdated": "2026-03-28T14:42:23.285Z",
+  "count": 71,
   "vouchers": [
     {
       "id": "vc_taiwanjoy8",
@@ -1155,6 +1155,57 @@
       "market": "SGD",
       "affiliate_link": "https://www.klook.com/deals/coureg/10-south-korea-things-to-do/?aid=115333",
       "tc": "1. Limited redemptions available, subject to a first-come, first-served basis. 2. Bookings made outside the promotional period will not qualify. 3. When you use the promo code, you will see it applied to the final price and displayed on the payment page. You won't be able to enjoy the Promotion if you didn't apply the promo code at checkout. 4. Bookings made outside the promotional period shall not qualify. 5. The Promotions are valid only for bookings made via Klook?s website and mobile app, excluding listings from and on third-party platforms. 6. The Promotions do not apply to activities in the Non-Applicable Activity List, including flights, Klook Gift Cards etc, unless otherwise stated. 7. The Promotions are valid for one-time use per user account only. 8. The Promotions are limited and may differ in each market. The Promotions may be subject to additional terms and conditions, including but not limited to validity period. 9. Discount will be applied on the final price and displayed on the payment page if any of the Promotions are successfully applied. No discount will be given if any of the Promotions fail to apply. 10. Prices listed may be subject to service charge and prevailing government taxes where applicable. 11. The Promotions cannot be exchanged for cash or used in conjunction with other promotional programmes, offers, discount cards, vouchers or VIP privileges, unless otherwise stated. 12. Klook reserves the right to require payment of fees or charges for any services offered by Klook. 13. You shall pay all applicable fees or charges, as described on Klook?s website and mobile app in connection with such services selected by you. 14. Klook reserves the right to change its price list for fees or charges at any time, upon notice to you, which may be sent to you by email or posted on Klook?s website and mobile app. 15. Your use (or continued use) of the services offered by Klook following such notification constitutes your acceptance of any new or revised fees or charges. 16. Klook supports payment in different currencies and rates can be converted into different currencies for your convenience. 17. Activity rates indicated in a certain currency are at a rate determined by Klook, estimated using market spot rates. Payment currency will be clearly indicated at time of payment. Depending on your payment method and bank, you may incur foreign transaction fees when making purchases in different currencies. Please contact your bank for more information. 18. The Promotions are non-refundable and cannot be transferred or sold to third parties. 19. Klook reserves the right to suspend, cancel or modify any part of the Promotions (including but not limited to any amendment of these Terms and Conditions) at any time without prior notice. All decisions by Klook in conjunction with the Promotions, including but not limited to the offers, deals, terms of redemption and conduct, are final and binding and no discussions will be entered into or correspondences entertained in this regard. 20. The Promotions may be subject to additional terms and conditions as specified by Klook in its sole discretion from time to time. 21. By participating in the Promotions, you hereby expressly acknowledge to be by bound by these Terms and Conditions, Klook?s General Terms of Use (https://www.klook.com/en-US/conditions/) and KLOOK?s Privacy Policy (https://www.klook.com/en-US/policy/), as may be amended or modified from time to time at Klook?s sole discretion. 22. The Promo Code is valid from 15 March 2026 GMT+8 12:00:00 till 12 April 2026 GMT+8 23:59:59 or until fully redeemed, whichever is earlier.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_2026hkdl12",
+      "ota": "Klook",
+      "code": "2026HKDL12",
+      "description": "Selected packages 6 USD OFF",
+      "discount_type": "flat",
+      "discount": "USD 6",
+      "min_spend": "USD 100",
+      "max_discount": "",
+      "applicable_for": "All activities & products",
+      "valid_until": "2026-08-30",
+      "market": "HKD",
+      "affiliate_link": "https://www.klook.com/deals/coureg/2-hong-kong-macau-things-to-do/?aid=115333",
+      "tc": "This discount coupon is valid only for the following packages of Hong Kong Disneyland Park Ticket: \"1-Day Ticket + 20th Anniversary Special Edition LinaBell Plush & Godiva Gift Set\" \"1-Day Ticket + Arendelle Royal Breakfast Buffet\" Min spend of 100 USD, for 6 USD discount. Max discount at 12 USD with a min spending of 200 USD The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: August 31st",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_cnhsr20",
+      "ota": "Klook",
+      "code": "CNHSR20",
+      "description": "China Rail Hong Kong Routes 20HKD off",
+      "discount_type": "flat",
+      "discount": "HKD 20",
+      "min_spend": "",
+      "max_discount": "",
+      "applicable_for": "All activities & products",
+      "valid_until": "2026-04-29",
+      "market": "HKD",
+      "affiliate_link": "https://www.klook.com/deals/coureg/2-hong-kong-macau-things-to-do/?aid=115333",
+      "tc": "HKD 20 off on China High Speed Rail (Hong Kong West Kowloon <> Futian/Guangzhou South) Discount: HKD $20 off Limit: One-time use per user; first-come, first-served Validity: Book by April 30th Note: Cannot be combined with other offers",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_cnhsrb1g1",
+      "ota": "Klook",
+      "code": "CNHSRB1G1",
+      "description": "China Rail Hong Kong <> Futian Second Seat B1G1",
+      "discount_type": "percent",
+      "discount": "50%",
+      "min_spend": "HKD 154",
+      "max_discount": "SGD12.75",
+      "applicable_for": "All activities & products",
+      "valid_until": "2026-04-29",
+      "market": "HKD",
+      "affiliate_link": "https://www.klook.com/deals/coureg/2-hong-kong-macau-things-to-do/?aid=115333",
+      "tc": "Buy 1 Get 1 Free on China High Speed Rail Second Class Seats (Hong Kong West Kowloon <> Futian) Discount: Min. spend 2 second seat tickets of Hong Kong West Kowloon <> Futian, get HKD $77 off Limit: One-time use per user; first-come, first-served Validity: Book by April 30th Note: Only for designated routes; cannot be combined with other offers",
       "status": "active",
       "is_expiring": false
     }
