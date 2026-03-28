@@ -417,7 +417,10 @@ function render() {
 function cardHTML(v) {
   const hasCode   = v.code && v.code.trim() !== '';
   const expiring  = v.is_expiring;
-  const discLabel = v.discount || '-';
+  const raw = parseFloat(v.discount);
+const discLabel = v.discount
+  ? (isNaN(raw) ? v.discount : (raw < 1 ? Math.round(raw * 100) + '%' : Math.round(raw) + '%'))
+  : '-';
   const affLink   = (v.affiliate_link && v.affiliate_link.trim()) ? v.affiliate_link : AFF_BASE;
   const expStr    = v.valid_until ? fmtDate(v.valid_until) : 'Ongoing';
 
