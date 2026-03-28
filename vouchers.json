@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-28T14:36:23.505Z",
-  "count": 58,
+  "lastUpdated": "2026-03-28T14:37:03.197Z",
+  "count": 60,
   "vouchers": [
     {
       "id": "vc_taiwanjoy8",
@@ -985,6 +985,40 @@
       "market": "SGD",
       "affiliate_link": "https://www.klook.com/deals/coureg/14-taiwan-things-to-do/?aid=115333",
       "tc": "One-time use, limited checkouts available. Applicable to Klook Members residing in Singapore only. T&Cs apply. Available for use on a first-come, first-served basis, code redemption does not guarantee availability for use.",
+      "status": "active",
+      "is_expiring": true
+    },
+    {
+      "id": "vc_myid15mar26",
+      "ota": "Klook",
+      "code": "MYID15MAR26",
+      "description": "Maybank 15% off on MY & ID bookings",
+      "discount_type": "percent",
+      "discount": "15%",
+      "min_spend": "",
+      "max_discount": "SGD20",
+      "applicable_for": "All activities & products",
+      "valid_until": "2026-03-30",
+      "market": "MYR",
+      "affiliate_link": "https://www.klook.com/deals/coureg/19-malaysia-things-to-do/?aid=115333",
+      "tc": "Maybank Cardmembers with Singapore phone number and residence only. Valid on Malaysia (https://www.klook.com/en-SG/destination/co1019-malaysia/) and Indonesia (https://www.klook.com/en-SG/destination/co1006-indonesia/) bookings. Discount capped at S$20. Available for use on first-come, first-served basis; code redemption does not guarantee availability for use. One-time use per user account.",
+      "status": "active",
+      "is_expiring": true
+    },
+    {
+      "id": "vc_kizxecnx10",
+      "ota": "Klook",
+      "code": "KIZXECNX10",
+      "description": "Kiztopia & Bouncetopia 10% off",
+      "discount_type": "percent",
+      "discount": "10%",
+      "min_spend": "",
+      "max_discount": "SGD18.15",
+      "applicable_for": "All activities & products",
+      "valid_until": "2026-03-30",
+      "market": "MYR",
+      "affiliate_link": "https://www.klook.com/deals/coureg/19-malaysia-things-to-do/?aid=115333",
+      "tc": "This \"10%\" discount coupon is valid only for the following activities. Max discount at 14 USD. \"Bouncetopia Ticket at Setia City Mall Malaysia - Single Admission (2 Hours)\" \"Kiztopia Ticket at Mid Valley Megamall Malaysia - Single Admission (2 Hours)\" Each user is allowed to use it only once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: March 31st 2026",
       "status": "active",
       "is_expiring": true
     }
