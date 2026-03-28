@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-28T14:28:21.651Z",
-  "count": 53,
+  "lastUpdated": "2026-03-28T14:28:28.599Z",
+  "count": 49,
   "vouchers": [
     {
       "id": "vc_taiwanjoy8",
@@ -717,23 +717,6 @@
       "is_expiring": true
     },
     {
-      "id": "vc_klooknew",
-      "ota": "Klook",
-      "code": "KLOOKNEW",
-      "description": "10% off first booking for new users (5% for existing)",
-      "discount_type": "percent",
-      "discount": "10%",
-      "min_spend": "",
-      "max_discount": "",
-      "applicable_for": "All activities & products",
-      "valid_until": "",
-      "market": "SGD",
-      "affiliate_link": "https://www.klook.com/?aid=115333",
-      "tc": "New users only. One-time use. Cannot combine with other codes.",
-      "status": "active",
-      "is_expiring": false
-    },
-    {
       "id": "vc_adamandlindsklook",
       "ota": "Klook",
       "code": "ADAMANDLINDSKLOOK",
@@ -785,23 +768,6 @@
       "is_expiring": false
     },
     {
-      "id": "vc_tripflight26",
-      "ota": "Trip.com",
-      "code": "TRIPFLIGHT26",
-      "description": "Discount on flight bookings - value varies",
-      "discount_type": "flat",
-      "discount": "Varies",
-      "min_spend": "",
-      "max_discount": "",
-      "applicable_for": "Flights",
-      "valid_until": "",
-      "market": "MYR",
-      "affiliate_link": "https://www.trip.com/?Allianceid=7924337&SID=catavel",
-      "tc": "Community-verified March 2026. Check Trip.com for current value.",
-      "status": "active",
-      "is_expiring": false
-    },
-    {
       "id": "vc_agodadeal8",
       "ota": "Agoda",
       "code": "AGODADEAL8",
@@ -834,40 +800,6 @@
       "tc": "Verified March 2026. Max discount capped at USD 3.",
       "status": "active",
       "is_expiring": true
-    },
-    {
-      "id": "vc_agodatpt",
-      "ota": "Agoda",
-      "code": "AGODATPT",
-      "description": "10% off hotels - up to $100 off, reusable 5 times",
-      "discount_type": "percent",
-      "discount": "10%",
-      "min_spend": "",
-      "max_discount": "USD 100",
-      "applicable_for": "Hotels",
-      "valid_until": "",
-      "market": "SGD",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com",
-      "tc": "Redeem at Agoda Deals page first. 30-day validity after redeem. Up to 5 uses.",
-      "status": "active",
-      "is_expiring": false
-    },
-    {
-      "id": "vc_aatpt",
-      "ota": "Agoda",
-      "code": "AATPT",
-      "description": "5% off Agoda activities - up to $30 off",
-      "discount_type": "percent",
-      "discount": "5%",
-      "min_spend": "",
-      "max_discount": "USD 30",
-      "applicable_for": "Activities",
-      "valid_until": "",
-      "market": "SGD",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com",
-      "tc": "Redeem at Agoda Deals page. Up to 5 uses per user.",
-      "status": "active",
-      "is_expiring": false
     },
     {
       "id": "vc_myid15mar26",
