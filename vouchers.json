@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-28T14:35:41.210Z",
-  "count": 59,
+  "lastUpdated": "2026-03-28T14:36:23.505Z",
+  "count": 58,
   "vouchers": [
     {
       "id": "vc_taiwanjoy8",
@@ -870,23 +870,6 @@
       "is_expiring": false
     },
     {
-      "id": "vc_myid15mar26",
-      "ota": "Klook",
-      "code": "MYID15MAR26",
-      "description": "Maybank 15% off on MY & ID bookings",
-      "discount_type": "percent",
-      "discount": "15%",
-      "min_spend": "",
-      "max_discount": "SGD20",
-      "applicable_for": "All activities & products",
-      "valid_until": "2026-03-30",
-      "market": "MYR",
-      "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/goplay/?aid=115333",
-      "tc": "Maybank Cardmembers with Singapore phone number and residence only. Valid on Malaysia (https://www.klook.com/en-SG/destination/co1019-malaysia/) and Indonesia (https://www.klook.com/en-SG/destination/co1006-indonesia/) bookings. Discount capped at S$20. Available for use on first-come, first-served basis; code redemption does not guarantee availability for use. One-time use per user account.",
-      "status": "active",
-      "is_expiring": true
-    },
-    {
       "id": "vc_protectsg26",
       "ota": "Klook",
       "code": "PROTECTSG26",
@@ -900,7 +883,7 @@
       "market": "SGD",
       "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/goplay/?aid=115333",
       "tc": "No stacking with other promotions (direct discounts on product, promocodes, discount codes, special rate packages etc.). First-come-first-serve basis. Limited check-outs only.",
-      "status": "active",
+      "status": "#ref!",
       "is_expiring": false
     },
     {
