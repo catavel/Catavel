@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-28T14:38:10.503Z",
-  "count": 61,
+  "lastUpdated": "2026-03-28T14:38:56.709Z",
+  "count": 62,
   "vouchers": [
     {
       "id": "vc_taiwanjoy8",
@@ -1038,6 +1038,23 @@
       "tc": "1. Limited redemptions available, subject to a first-come, first-served basis. 2. Bookings made outside the promotional period will not qualify. 3. When you use the promo code, you will see it applied to the final price and displayed on the payment page. You won't be able to enjoy the Promotion if you didn't apply the promo code at checkout. 4. This promo code is applicable only to standard-priced packages and cannot be combined with already discounted items or other ongoing promotion. 5. Bookings made outside the promotional period shall not qualify. 6. The Promotions are valid only for bookings made via Klook?s website and mobile app, excluding listings from and on third-party platforms. 7. The Promotions do not apply to activities in the Non-Applicable Activity List, including flights, Klook Gift Cards etc, unless otherwise stated. 8. The Promotions are valid for one-time use per user account only. 9. The Promotions are limited and may differ in each market. The Promotions may be subject to additional terms and conditions, including but not limited to validity period. 10. Discount will be applied on the final price and displayed on the payment page if any of the Promotions are successfully applied. No discount will be given if any of the Promotions fail to apply. 11. Prices listed may be subject to service charge and prevailing government taxes where applicable. 12. The Promotions cannot be exchanged for cash or used in conjunction with other promotional programmes, offers, discount cards, vouchers or VIP privileges, unless otherwise stated. 13. Klook reserves the right to require payment of fees or charges for any services offered by Klook. 14. You shall pay all applicable fees or charges, as described on Klook?s website and mobile app in connection with such services selected by you. 15. Klook reserves the right to change its price list for fees or charges at any time, upon notice to you, which may be sent to you by email or posted on Klook?s website and mobile app. 16. Your use (or continued use) of the services offered by Klook following such notification constitutes your acceptance of any new or revised fees or charges. 17. Klook supports payment in different currencies and rates can be converted into different currencies for your convenience. 18. Activity rates indicated in a certain currency are at a rate determined by Klook, estimated using market spot rates. Payment currency will be clearly indicated at time of payment. Depending on your payment method and bank, you may incur foreign transaction fees when making purchases in different currencies. Please contact your bank for more information. 19. The Promotions are non-refundable and cannot be transferred or sold to third parties. 20. Klook reserves the right to suspend, cancel or modify any part of the Promotions (including but not limited to any amendment of these Terms and Conditions) at any time without prior notice. All decisions by Klook in conjunction with the Promotions, including but not limited to the offers, deals, terms of redemption and conduct, are final and binding and no discussions will be entered into or correspondences entertained in this regard. 21. The Promotions may be subject to additional terms and conditions as specified by Klook in its sole discretion from time to time. 22. By participating in the Promotions, you hereby expressly acknowledge to be by bound by these Terms and Conditions, Klook?s General Terms of Use (https://www.klook.com/en-US/conditions/) and KLOOK?s Privacy Policy (https://www.klook.com/en-US/policy/), as may be amended or modified from time to time at Klook?s sole discretion. 23. The Promo Code is valid from 2 March 2026 GMT+8 00:00:00 till 14 March 2026 GMT+8 23:59:59 or until fully redeemed, whichever is earlier.",
       "status": "active",
       "is_expiring": false
+    },
+    {
+      "id": "vc_royal100klk26",
+      "ota": "Klook",
+      "code": "ROYAL100KLK26",
+      "description": "SGD100 off Royal Caribbean Cruises",
+      "discount_type": "flat",
+      "discount": "SGD 100",
+      "min_spend": "SGD 1",
+      "max_discount": "",
+      "applicable_for": "All activities & products",
+      "valid_until": "2026-03-30",
+      "market": "SGD",
+      "affiliate_link": "https://www.klook.com/deals/coureg/15-singapore-things-to-do?aid=115333",
+      "tc": "Valid for all Royal Caribbean sailings from Singapore & Shanghai on Klook only, with no min spend. Available for use on first-come, first-served basis; code redemption does not guarantee availability for use.",
+      "status": "active",
+      "is_expiring": true
     }
   ]
 }
