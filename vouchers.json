@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-28T14:46:05.342Z",
+  "lastUpdated": "2026-03-28T14:46:17.305Z",
   "count": 70,
   "vouchers": [
     {
@@ -883,7 +883,7 @@
       "market": "SGD",
       "affiliate_link": "https://www.klook.com/en-SG/tetris/promo/goplay/?aid=115333",
       "tc": "No stacking with other promotions (direct discounts on product, promocodes, discount codes, special rate packages etc.). First-come-first-serve basis. Limited check-outs only.",
-      "status": "#ref!",
+      "status": "active",
       "is_expiring": false
     },
     {
