@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-05T23:07:31.667Z",
-  "totalDeals": 14,
+  "lastUpdated": "2026-04-06T05:07:34.642Z",
+  "totalDeals": 15,
   "generatedBy": "Catavel Pipeline v12.2",
   "deals": [
     {
@@ -138,6 +138,23 @@
       "valid_until": "2026-04-08T05:07:34.819Z",
       "created_at": "2026-04-01T05:07:34.819Z",
       "market": "PHP"
+    },
+    {
+      "id": "flight_KUL_DPS_1775452050026_g412",
+      "title": "Kuala Lumpur → Bali from MYR 132",
+      "destination": "Bali",
+      "origin": "Kuala Lumpur",
+      "original_price": 150,
+      "discounted_price": 132,
+      "discount_percent": 12,
+      "currency": "MYR",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL021026DPS1",
+      "valid_until": "2026-04-13T05:07:32.994Z",
+      "created_at": "2026-04-06T05:07:32.994Z",
+      "market": "MYR"
     },
     {
       "id": "flight_HKG_TPE_1775020052301_tw7q",
