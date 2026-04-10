@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Deals - Up to 57% Off Hotels in Asia | Catavel</title>
+<meta name="description" content="Curated hotel deals across Japan, Malaysia, and Southeast Asia. Save up to 57% on verified Klook hotel deals. Updated weekly.">
+<meta property="og:title" content="Hotel Deals - Up to 57% Off Hotels in Asia | Catavel">
+<meta property="og:description" content="Curated hotel deals across Japan, Malaysia, and Southeast Asia. Save up to 57% on verified Klook hotel deals. Updated weekly.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://catavel.com/hotel-deals/">
+<link rel="canonical" href="https://catavel.com/hotel-deals/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMQ9BN5CRX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SMQ9BN5CRX');
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal: #00897B;
+    --teal-dark: #00695C;
+    --teal-light: #E0F2F1;
+    --orange: #E8622A;
+    --orange-light: #FFF3EE;
+    --bg: #F6F6F4;
+    --white: #FFFFFF;
+    --text: #111111;
+    --text2: #444444;
+    --muted: #999999;
+    --border: #E5E5E2;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --nav-height: 60px;
+    --filter-height: 60px;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── NAV ── */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: var(--nav-height);
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 0;
+  }
+
+  .nav-logo {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--teal);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    margin-right: 32px;
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex: 1;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text2);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+  }
+
+  .nav-link:hover { background: var(--bg); color: var(--text); }
+  .nav-link.active { background: var(--teal-light); color: var(--teal); font-weight: 600; }
+
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: auto;
+  }
+
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: var(--nav-height);
+    left: 0; right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 20px;
+    z-index: 99;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .mobile-menu.open { display: flex; }
+  .mobile-menu .nav-link { padding: 10px 12px; font-size: 14px; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #004D40 0%, #00695C 40%, #00897B 100%);
+    padding: 48px 20px 40px;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -80px;
+    width: 320px; height: 320px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 50%;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 200px; height: 200px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 50%;
+  }
+
+  .hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.9);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 28px;
+    max-width: 540px;
+  }
+
+  .stats-bar {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .stat-val {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--white);
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-updated {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* ── FILTER BAR ── */
+  .filter-bar-wrap {
+    position: sticky;
+    top: var(--nav-height);
+    z-index: 90;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .filter-bar {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .filter-group {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .filter-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  .filter-pill {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text2);
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  .filter-pill:hover { border-color: var(--teal); color: var(--teal); }
+  .filter-pill.active { background: var(--teal); border-color: var(--teal); color: var(--white); }
+
+  .filter-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--border);
+    margin: 0 4px;
+  }
+
+  .filter-sort {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sort-select {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text2);
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 4px 10px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .sort-select:focus { border-color: var(--teal); }
+
+  .results-count {
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  /* ── MAIN CONTENT ── */
+  .main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+
+  /* ── DEAL LIST ── */
+  .deals-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  /* ── DEAL CARD (list row) ── */
+  .deal-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s ease;
+  }
+
+  .deal-card:hover { box-shadow: var(--shadow-md); }
+
+  /* Colored left accent bar based on discount */
+  .deal-card::before {
+    content: '';
+    width: 4px;
+    min-width: 4px;
+    align-self: stretch;
+    background: var(--teal);
+  }
+
+  .deal-card.hot::before { background: var(--orange); }
+
+  .card-top {
+    padding: 14px 16px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* Left: name + location */
+  .card-info {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .card-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .badge-location {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--teal);
+    background: var(--teal-light);
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .badge-stars {
+    font-size: 11px;
+    font-weight: 600;
+    color: #B8860B;
+  }
+
+  .card-source {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .card-source span { color: #FF6B35; font-weight: 700; }
+
+  /* Right: pricing */
+  .card-pricing {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+
+  .badge-discount {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 9px;
+    border-radius: 20px;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+  }
+
+  .badge-discount.hot { background: var(--orange); color: var(--white); }
+  .badge-discount.normal { background: var(--teal); color: var(--white); }
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1px;
+  }
+
+  .price-deal {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--teal-dark);
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+  }
+
+  .price-currency {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  .price-original {
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: line-through;
+    white-space: nowrap;
+  }
+
+  .card-cta {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    padding: 0 20px;
+    background: var(--orange);
+    color: var(--white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s;
+    flex-shrink: 0;
+  }
+
+  .card-cta:hover { background: #D4551F; }
+
+  @media (max-width: 640px) {
+    .card-top { gap: 10px; padding: 12px 14px; }
+    .card-cta { padding: 10px 14px; font-size: 12px; }
+    .prices { align-items: flex-start; }
+  }
+
+  /* ── EMPTY STATE ── */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    grid-column: 1 / -1;
+  }
+
+  .empty-state-icon { font-size: 40px; margin-bottom: 12px; }
+  .empty-state h3 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+  .empty-state p { font-size: 13px; color: var(--muted); }
+
+  /* ── ERROR STATE ── */
+  .error-state {
+    text-align: center;
+    padding: 48px 20px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin: 24px 0;
+  }
+
+  .error-state h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+  .error-state p { font-size: 13px; color: var(--muted); }
+
+  /* ── LOADING ── */
+  .loading-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skeleton {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    height: 72px;
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  /* ── HOW IT WORKS ── */
+  .how-it-works {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+
+  .how-it-works h2 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 640px) { .steps { grid-template-columns: 1fr; gap: 14px; } }
+
+  .step {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .step-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--teal-light);
+    color: var(--teal);
+    font-size: 12px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step-text {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.6;
+  }
+
+  /* ── SEO BLOCK ── */
+  .seo-block {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+
+  .seo-block h2 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    color: var(--text);
+  }
+
+  .seo-block p {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+
+  .seo-block p:last-child { margin-bottom: 0; }
+
+  .faq { margin-top: 20px; }
+  .faq-item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .faq-item strong {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .faq-item p { font-size: 13px; color: var(--text2); margin: 0; }
+
+  /* ── INTERNAL LINKS BOX ── */
+  .internal-links-box {
+    background: var(--teal-light);
+    border-radius: var(--radius-md);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .internal-links-box strong {
+    color: var(--teal);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .internal-links-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .internal-links-box a {
+    color: var(--teal);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: opacity 0.15s;
+  }
+
+  .internal-links-box a:hover { opacity: 0.7; }
+
+  /* ── DISCLOSURE ── */
+  .disclosure {
+    background: var(--bg);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .disclosure strong { color: #666; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    padding: 28px 20px;
+    text-align: center;
+  }
+
+  .footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-logo {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--teal);
+    text-decoration: none;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .footer-links a:hover { color: var(--teal); }
+
+  .footer-copy { font-size: 11px; color: var(--muted); }
+
+  /* ── RESPONSIVE NAV ── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .filter-sort { margin-left: 0; width: 100%; }
+    .results-count { margin-left: auto; }
+    .filter-divider { display: none; }
+  }
+
+  @media (max-width: 480px) {
+    .hero { padding: 36px 16px 32px; }
+    .filter-bar { padding: 8px 16px; gap: 6px; }
+    .main { padding: 16px 16px 48px; }
+    .how-it-works, .seo-block { padding: 20px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="nav-logo">Catavel</a>
+  <div class="nav-links">
+    <a href="/" class="nav-link">Home</a>
+    <a href="/klook-promo-codes/" class="nav-link">Klook Codes</a>
+    <a href="/trip-com-promo-codes/" class="nav-link">Trip.com Codes</a>
+    <a href="/agoda-promo-codes/" class="nav-link">Agoda Codes</a>
+    <a href="/hotel-deals/" class="nav-link active">Hotel Deals</a>
+    <a href="/blog/" class="nav-link">Blog</a>
+  </div>
+  <div class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/" class="nav-link">Home</a>
+  <a href="/klook-promo-codes/" class="nav-link">Klook Codes</a>
+  <a href="/trip-com-promo-codes/" class="nav-link">Trip.com Codes</a>
+  <a href="/agoda-promo-codes/" class="nav-link">Agoda Codes</a>
+  <a href="/hotel-deals/" class="nav-link active">Hotel Deals</a>
+  <a href="/blog/" class="nav-link">Blog</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Updated Weekly</div>
+    <h1>Hotel Deals - Save Up to <span id="heroMaxDiscount">57</span>% on Hotels Across Asia</h1>
+    <p class="hero-sub">Curated hotel deals from Klook, verified against original prices. Japan, Malaysia, and beyond.</p>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-val" id="statDeals">-</span>
+        <span class="stat-label">Deals Live</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val" id="statCountries">-</span>
+        <span class="stat-label">Countries</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val" id="statMaxDiscount">-</span>
+        <span class="stat-label">Max Savings</span>
+      </div>
+    </div>
+    <p class="hero-updated" id="heroUpdated"></p>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar-wrap">
+  <div class="filter-bar" id="filterBar">
+    <span class="filter-label">Country</span>
+    <div class="filter-group" id="countryFilters"></div>
+    <div class="filter-divider"></div>
+    <span class="filter-label">Stars</span>
+    <div class="filter-group" id="starFilters">
+      <div class="filter-pill active" data-star="all" onclick="setFilter('star','all',this)">All</div>
+      <div class="filter-pill" data-star="3" onclick="setFilter('star','3',this)">3★</div>
+      <div class="filter-pill" data-star="4" onclick="setFilter('star','4',this)">4★</div>
+      <div class="filter-pill" data-star="5" onclick="setFilter('star','5',this)">5★</div>
+    </div>
+    <div class="filter-sort">
+      <span class="results-count" id="resultsCount"></span>
+      <select class="sort-select" id="sortSelect" onchange="applyFilters()">
+        <option value="discount">Highest Discount</option>
+        <option value="price_low">Lowest Price</option>
+        <option value="price_high">Highest Price</option>
+        <option value="stars">Star Rating</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- LOADING STATE -->
+  <div id="loadingState" class="loading-grid">
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+  </div>
+
+  <!-- DEAL CARDS -->
+  <div class="deals-grid" id="dealsGrid" style="display:none;"></div>
+
+  <!-- HOW IT WORKS -->
+  <div class="how-it-works">
+    <h2>How Catavel Hotel Deals Work</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">We source deals from Klook and partner OTAs weekly, pulling verified hotel prices directly from affiliate data.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">Only genuine discounts make the cut. Each deal is verified against the original sell price before it appears here.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">Click "Book Now" to go directly to Klook at the deal price. No extra steps, no hidden fees.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEO CONTENT -->
+  <div class="seo-block">
+    <h2>Find the Best Hotel Deals Across Asia</h2>
+
+    <p>Catavel curates hotel deals from Klook every week so you don't have to manually hunt across dozens of tabs. Every deal on this page is sourced directly from Klook's affiliate data and cross-checked against the original sell price - so the discount you see is real.</p>
+
+    <p>Our current hotel deals coverage spans Japan and Malaysia, with cities like Osaka, Tokyo, Kuala Lumpur, Penang, and Sabah. We focus on properties where the discount is genuine and meaningful - not the kind of inflated "original price" tricks you see elsewhere. Expect a rotating mix of business hotels, beach resorts, and city stays across 3-star to 5-star properties.</p>
+
+    <p>All hotel deals link directly to Klook where you can check room availability, read guest reviews, and complete your booking securely. Prices are displayed in SGD for consistency across markets. We update our hotel deals every week as Klook refreshes their promotions - bookmark this page and check back regularly for new additions.</p>
+
+    <p>Looking for more ways to save? Pair these hotel deals with our Klook promo codes for activities and tours at your destination - and don't forget to grab a travel eSIM before you fly.</p>
+
+    <div class="faq">
+      <div class="faq-item">
+        <strong>How often are hotel deals updated?</strong>
+        <p>Hotel deals are updated weekly. Widy manually sources and verifies each deal from Klook's affiliate data, so every listing you see has been checked for accuracy. The "Last Updated" date in the hero section tells you when the current batch was published.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Are these hotel deals available for booking now?</strong>
+        <p>Yes - all deals on this page are available for booking on Klook at the time of our last update. However, hotel availability changes quickly, especially for popular properties. We recommend booking promptly if you see a deal you like. Prices and availability are confirmed on Klook's side when you click "Book Now."</p>
+      </div>
+      <div class="faq-item">
+        <strong>Which countries have hotel deals?</strong>
+        <p>We currently cover Japan (Tokyo, Osaka, Fukuoka, Kamakura, Narita, Saitama) and Malaysia (Kuala Lumpur, Penang, Sabah, Sarawak, Terengganu, Kedah, Negeri Sembilan). We're expanding coverage to Singapore, Hong Kong, Thailand, and South Korea - check back soon.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Why are hotel prices shown in SGD?</strong>
+        <p>All prices are displayed in Singapore Dollars (SGD) because our primary audience travels from Singapore, Malaysia, and the wider Southeast Asia region. SGD gives a consistent reference point across different markets. Klook will show prices in your local currency when you click through to book.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERNAL LINKS -->
+  <div class="internal-links-box">
+    <strong>More Travel Deals from Catavel</strong>
+    <ul>
+      <li><a href="/klook-promo-codes/">All Klook Promo Codes 2026 -></a></li>
+      <li><a href="/trip-com-promo-codes/">Trip.com Promo Codes 2026 -></a></li>
+      <li><a href="/agoda-promo-codes/">Agoda Promo Codes 2026 -></a></li>
+      <li><a href="/blog/best-esim-for-travel-2026/">Best eSIM for Travel 2026 -></a></li>
+      <li><a href="/blog/">All Travel Guides -></a></li>
+    </ul>
+  </div>
+
+  <!-- DISCLOSURE -->
+  <div class="disclosure">
+    <strong>Disclosure:</strong> This page contains affiliate links. When you book through our links, Catavel may earn a small commission at no extra cost to you. All deals are verified against original prices at time of update. Prices and availability may change.
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="/" class="footer-logo">Catavel</a>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/hotel-deals/">Hotel Deals</a>
+      <a href="/klook-promo-codes/">Klook Codes</a>
+      <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+      <a href="/privacy-policy/">Privacy Policy</a>
+    </div>
+    <p class="footer-copy">© 2026 Catavel. Travel smarter across Southeast Asia.</p>
+  </div>
+</footer>
+
+<script>
+// ── STATE ──
+let allDeals = [];
+let activeCountry = 'all';
+let activeStar = 'all';
+
+// ── FALLBACK DATA (used if JSON fetch fails) ──
+const FALLBACK_DATA = [
+  {"id":"241967","name":"Sotetsu Fresa Inn Kitahama","country":"Japan","city":"Osaka","stars":3,"currency":"SGD","deal_price":50.99,"original_price":53.08,"discount_percent":4,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F241967%2F","source":"Klook","last_updated":"2026-04-11"},
+  {"id":"450322","name":"The Upper House Hotel","country":"Malaysia","city":"Penang","stars":3,"currency":"SGD","deal_price":60.09,"original_price":141.29,"discount_percent":57,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F450322%2F","source":"Klook","last_updated":"2026-04-11"},
+  {"id":"304057","name":"Redang Island Resort","country":"Malaysia","city":"Redang","stars":3,"currency":"SGD","deal_price":85.65,"original_price":133.30,"discount_percent":36,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F304057%2F","source":"Klook","last_updated":"2026-04-11"},
+  {"id":"561371","name":"Candeo Hotels Omiya","country":"Japan","city":"Saitama","stars":4,"currency":"SGD","deal_price":111.89,"original_price":122.04,"discount_percent":8,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F561371%2F","source":"Klook","last_updated":"2026-04-11"},
+  {"id":"483541","name":"Sotetsu Fresa Inn Kamakura-Ofuna","country":"Japan","city":"Kamakura","stars":3,"currency":"SGD","deal_price":89.29,"original_price":100.38,"discount_percent":11,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F483541%2F","source":"Klook","last_updated":"2026-04-11"},
+  {"id":"393514","name":"The Pacific Sutera Hotel","country":"Malaysia","city":"Kota Kinabalu","stars":5,"currency":"SGD","deal_price":140.99,"original_price":159.28,"discount_percent":11,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F393514%2F","source":"Klook","last_updated":"2026-04-11"},
+  {"id":"572089","name":"Citadines Uplands Kuching","country":"Malaysia","city":"Kuching","stars":4,"currency":"SGD","deal_price":74.90,"original_price":83.25,"discount_percent":10,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F572089%2F","source":"Klook","last_updated":"2026-04-11"},
+  {"id":"115375","name":"Narita Tobu Hotel Airport","country":"Japan","city":"Narita","stars":4,"currency":"SGD","deal_price":95.75,"original_price":102.80,"discount_percent":7,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F115375%2F","source":"Klook","last_updated":"2026-04-11"},
+  {"id":"675861","name":"Angsana Teluk Bahang, Penang","country":"Malaysia","city":"Penang","stars":5,"currency":"SGD","deal_price":239.35,"original_price":268.80,"discount_percent":11,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F675861%2F","source":"Klook","last_updated":"2026-04-11"},
+  {"id":"395733","name":"Rihga Place Higobashi","country":"Japan","city":"Osaka","stars":4,"currency":"SGD","deal_price":129.45,"original_price":211.10,"discount_percent":39,"category":"Big sale","url":"https://affiliate.klook.com/redirect?aid=115333&_currency=SGD&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fhotels%2Fdetail%2F395733%2F","source":"Klook","last_updated":"2026-04-11"}
+];
+
+// ── INIT ──
+document.addEventListener('DOMContentLoaded', () => {
+  loadDeals();
+});
+
+async function loadDeals() {
+  try {
+    const res = await fetch('/data/hotel-deals.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (!Array.isArray(data) || data.length === 0) throw new Error('Empty data');
+    allDeals = data;
+  } catch (err) {
+    console.warn('Could not load /data/hotel-deals.json, using fallback:', err.message);
+    allDeals = FALLBACK_DATA;
+  }
+
+  document.getElementById('loadingState').style.display = 'none';
+  document.getElementById('dealsGrid').style.display = 'grid';
+
+  buildCountryFilters();
+  updateHeroStats();
+  applyFilters();
+}
+
+// ── BUILD COUNTRY FILTERS (dynamic from data) ──
+function buildCountryFilters() {
+  const countries = [...new Set(allDeals.map(d => d.country))].sort();
+  const container = document.getElementById('countryFilters');
+  container.innerHTML = '';
+
+  const allPill = document.createElement('div');
+  allPill.className = 'filter-pill active';
+  allPill.dataset.country = 'all';
+  allPill.textContent = 'All';
+  allPill.onclick = function() { setFilter('country', 'all', this); };
+  container.appendChild(allPill);
+
+  countries.forEach(c => {
+    const pill = document.createElement('div');
+    pill.className = 'filter-pill';
+    pill.dataset.country = c;
+    pill.textContent = c;
+    pill.onclick = function() { setFilter('country', c, this); };
+    container.appendChild(pill);
+  });
+}
+
+// ── HERO STATS ──
+function updateHeroStats() {
+  const maxDiscount = Math.max(...allDeals.map(d => d.discount_percent));
+  const countries = [...new Set(allDeals.map(d => d.country))];
+  const lastUpdated = allDeals[0]?.last_updated || '';
+
+  document.getElementById('statDeals').textContent = allDeals.length;
+  document.getElementById('statCountries').textContent = countries.length;
+  document.getElementById('statMaxDiscount').textContent = maxDiscount + '% off';
+  document.getElementById('heroMaxDiscount').textContent = maxDiscount;
+
+  if (lastUpdated) {
+    const d = new Date(lastUpdated);
+    const fmt = d.toLocaleDateString('en-SG', { day: 'numeric', month: 'long', year: 'numeric' });
+    document.getElementById('heroUpdated').textContent = 'Last updated: ' + fmt;
+  }
+}
+
+// ── FILTER LOGIC ──
+function setFilter(type, value, el) {
+  if (type === 'country') {
+    activeCountry = value;
+    document.querySelectorAll('#countryFilters .filter-pill').forEach(p => p.classList.remove('active'));
+  } else {
+    activeStar = value;
+    document.querySelectorAll('#starFilters .filter-pill').forEach(p => p.classList.remove('active'));
+  }
+  el.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  const sort = document.getElementById('sortSelect').value;
+
+  let filtered = allDeals.filter(d => {
+    const countryOk = activeCountry === 'all' || d.country === activeCountry;
+    const starOk = activeStar === 'all' || String(d.stars) === activeStar;
+    return countryOk && starOk;
+  });
+
+  if (sort === 'discount') filtered.sort((a, b) => b.discount_percent - a.discount_percent);
+  else if (sort === 'price_low') filtered.sort((a, b) => a.deal_price - b.deal_price);
+  else if (sort === 'price_high') filtered.sort((a, b) => b.deal_price - a.deal_price);
+  else if (sort === 'stars') filtered.sort((a, b) => b.stars - a.stars);
+
+  renderCards(filtered);
+
+  const total = allDeals.length;
+  document.getElementById('resultsCount').textContent =
+    filtered.length === total
+      ? filtered.length + ' deals'
+      : filtered.length + ' of ' + total + ' deals';
+}
+
+// ── RENDER ──
+function renderCards(deals) {
+  const grid = document.getElementById('dealsGrid');
+
+  if (deals.length === 0) {
+    grid.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-state-icon">🏨</div>
+        <h3>No deals match your filters</h3>
+        <p>Try selecting a different country or star rating.</p>
+      </div>`;
+    return;
+  }
+
+  grid.innerHTML = deals.map(deal => {
+    const isHot = deal.discount_percent >= 25;
+    const stars = '★'.repeat(deal.stars);
+    const city = (deal.city || '').trim();
+    const country = (deal.country || '').trim();
+    const name = (deal.name || '').trim();
+    const dealPrice = Number(deal.deal_price).toFixed(2);
+    const origPrice = Number(deal.original_price).toFixed(2);
+    const currency = deal.currency || 'SGD';
+
+    return `
+      <div class="deal-card ${isHot ? 'hot' : ''}">
+        <div class="card-top">
+          <div class="card-info">
+            <div class="card-name">${escHtml(name)}</div>
+            <div class="card-meta">
+              <span class="badge-location">${escHtml(city)}, ${escHtml(country)}</span>
+              <span class="badge-stars">${stars}</span>
+              <span class="card-source">via <span>${escHtml(deal.source || 'Klook')}</span></span>
+            </div>
+          </div>
+          <div class="card-pricing">
+            <span class="badge-discount ${isHot ? 'hot' : 'normal'}">-${deal.discount_percent}% OFF</span>
+            <div class="prices">
+              <span class="price-deal">${escHtml(currency)} ${escHtml(dealPrice)}</span>
+              <span class="price-original">${escHtml(currency)} ${escHtml(origPrice)}</span>
+            </div>
+          </div>
+        </div>
+        <a
+          href="${escAttr(deal.url)}"
+          class="card-cta"
+          target="_blank"
+          rel="nofollow sponsored"
+          onclick="trackClick(${JSON.stringify({name, country, discount_percent: deal.discount_percent, deal_price: deal.deal_price, source: deal.source || 'Klook'})})"
+        >Book Now -></a>
+      </div>`;
+  }).join('');
+}
+
+// ── GA TRACKING ──
+function trackClick(deal) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'hotel_deal_click', {
+      hotel_name: deal.name,
+      country: deal.country,
+      discount_percent: deal.discount_percent,
+      deal_price: deal.deal_price,
+      source: deal.source
+    });
+  }
+}
+
+// ── MOBILE NAV ──
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// ── HELPERS ──
+function escHtml(str) {
+  return String(str ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function escAttr(str) {
+  return String(str ?? '').replace(/"/g, '&quot;');
+}
+</script>
+
+</body>
+</html>
