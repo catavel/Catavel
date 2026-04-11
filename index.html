@@ -1518,6 +1518,9 @@ document.querySelectorAll('.pill[data-cat]').forEach(el=>{
     activeCat=el.dataset.cat;
     activeDest=null;
     document.querySelectorAll('.pill[data-dest]').forEach(x=>{x.setAttribute('aria-selected','false');x.classList.remove('on');});
+    /* Sync #scat dropdown */
+    const scat=document.getElementById('scat');
+    if(scat) scat.value=el.dataset.cat;
     applyFilters();
   });
 });
@@ -1537,6 +1540,15 @@ function doSearch(e){
   e.preventDefault();
   const q=document.getElementById('q').value.toLowerCase().trim();
   const cat=document.getElementById('scat')?.value||'all';
+  /* Sync category pill with #scat selection */
+  if(cat!=='all'){
+    document.querySelectorAll('.pill[data-cat]').forEach(x=>{
+      x.setAttribute('aria-selected','false');x.classList.remove('on');
+    });
+    const matchPill=document.querySelector('.pill[data-cat="'+cat+'"]');
+    if(matchPill){matchPill.setAttribute('aria-selected','true');matchPill.classList.add('on');}
+    activeCat=cat;
+  }
   let r=[...DEALS];
   if(q) r=r.filter(d=>d.title.toLowerCase().includes(q)||d.destination.toLowerCase().includes(q)||d.ota.toLowerCase().includes(q));
   if(cat!=='all') r=r.filter(d=>d.category===cat);
@@ -1596,6 +1608,26 @@ function showToast(msg){
 }
 
 /* ─── INIT ─── */
+/* ─── NORMALISE hotel-deals.json → homepage deal format ─── */
+function normaliseHotelDeal(h){
+  return {
+    id:               'hotel-' + h.id,
+    title:            h.name + ' — ' + h.city + ', ' + h.country,
+    category:         'hotel',
+    destination:      h.country,
+    ota:              h.source || 'Klook',
+    market:           'SGD',
+    currency:         h.currency || 'SGD',
+    original_price:   parseFloat(h.original_price)  || 0,
+    discounted_price: parseFloat(h.deal_price)       || 0,
+    discount_percent: parseInt(h.discount_percent)   || 0,
+    valid_until:      h.last_updated || '2099-12-31',
+    link:             h.url || '#',
+    is_hot:           (parseInt(h.discount_percent) || 0) >= 25,
+    is_expiring:      false
+  };
+}
+
 /* ─── NORMALISE deal from pipeline → website field names ─── */
 function normaliseDeal(x){
   if(!x.link && x.affiliate_link) x.link = x.affiliate_link;
@@ -1615,40 +1647,60 @@ function normaliseDeal(x){
 }
 
 async function init(){
+  /* Fetch deals.json + hotel-deals.json in parallel */
+  const [dealsRes, hotelRes] = await Promise.allSettled([
+    fetch('deals.json',            {cache:'no-cache'}),
+    fetch('/data/hotel-deals.json',{cache:'no-cache'})
+  ]);
+
+  /* ── deals.json ── */
   try{
-    const r=await fetch('deals.json',{cache:'no-cache'});
-    if(!r.ok) throw 0;
-    const raw=await r.json();
-    const arr = Array.isArray(raw) ? raw
-              : (raw.deals && Array.isArray(raw.deals)) ? raw.deals
-              : null;
-    if(arr && arr.length){
-      DEALS.length=0;
-      arr.forEach(x=>DEALS.push(normaliseDeal(x)));
-    }
-    if(raw.lastUpdated){
-      const lu=document.getElementById('last-updated');
-      const dhUpd=document.getElementById('dh-upd');
-      if(lu||dhUpd){
-        const d=new Date(raw.lastUpdated);
-        const str=d.toLocaleString('en-SG',{hour:'2-digit',minute:'2-digit',hour12:true,day:'numeric',month:'short'});
-        if(lu) lu.textContent=str;
-        if(dhUpd) dhUpd.innerHTML='<span class="dot" aria-hidden="true"></span>'+str;
+    if(dealsRes.status==='fulfilled' && dealsRes.value.ok){
+      const raw=await dealsRes.value.json();
+      const arr = Array.isArray(raw) ? raw
+                : (raw.deals && Array.isArray(raw.deals)) ? raw.deals
+                : null;
+      if(arr && arr.length){
+        DEALS.length=0;
+        arr.forEach(x=>DEALS.push(normaliseDeal(x)));
+      }
+      if(raw.lastUpdated){
+        const lu=document.getElementById('last-updated');
+        const dhUpd=document.getElementById('dh-upd');
+        if(lu||dhUpd){
+          const d=new Date(raw.lastUpdated);
+          const str=d.toLocaleString('en-SG',{hour:'2-digit',minute:'2-digit',hour12:true,day:'numeric',month:'short'});
+          if(lu) lu.textContent=str;
+          if(dhUpd) dhUpd.innerHTML='<span class="dot" aria-hidden="true"></span>'+str;
+        }
       }
     }
-  }catch(_){/* use built-in sample data */}
-  finally{
-    cur=[...DEALS];
-    render(DEALS);
-    const sn=document.getElementById('sn');
-    if(sn) sn.textContent=DEALS.length;
-    const smax=document.getElementById('smax');
-    if(smax){
-      const maxDisc=DEALS.reduce((m,d)=>Math.max(m,d.discount_percent||0),0);
-      smax.textContent=maxDisc>0?'Up to '+maxDisc+'% off':'—';
+  }catch(_){/* keep built-in sample data */}
+
+  /* ── hotel-deals.json — merge into DEALS ── */
+  try{
+    if(hotelRes.status==='fulfilled' && hotelRes.value.ok){
+      const hotels=await hotelRes.value.json();
+      if(Array.isArray(hotels) && hotels.length){
+        /* Remove any previously merged hotel deals (prevents duplication on re-init) */
+        for(let i=DEALS.length-1;i>=0;i--){
+          if(DEALS[i].id && String(DEALS[i].id).startsWith('hotel-')) DEALS.splice(i,1);
+        }
+        hotels.forEach(h=>DEALS.push(normaliseHotelDeal(h)));
+      }
     }
-    buildOtaList();
+  }catch(_){/* hotel-deals.json not available yet, skip silently */}
+
+  cur=[...DEALS];
+  render(DEALS);
+  const sn=document.getElementById('sn');
+  if(sn) sn.textContent=DEALS.length;
+  const smax=document.getElementById('smax');
+  if(smax){
+    const maxDisc=DEALS.reduce((m,d)=>Math.max(m,d.discount_percent||0),0);
+    smax.textContent=maxDisc>0?'Up to '+maxDisc+'% off':'—';
   }
+  buildOtaList();
 }
 document.readyState==='loading'
   ?document.addEventListener('DOMContentLoaded',init)
