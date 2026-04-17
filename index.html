@@ -112,20 +112,21 @@ ul,ol{list-style:none}
    CATEGORY NAV (sticky)
    =========================================== */
 .cat-nav{background:var(--white);border-bottom:1px solid var(--bdr);position:sticky;top:48px;z-index:90}
-.cat-nav-i{display:flex;gap:2px;align-items:center;height:42px;overflow-x:auto;scrollbar-width:none;padding:0 2px}
+.cat-nav-i{display:flex;gap:6px;align-items:center;height:58px;overflow-x:auto;scrollbar-width:none;padding:0 2px}
 .cat-nav-i::-webkit-scrollbar{display:none}
-/* Pills — visually 42px, touch target extended 8px via pseudo-element */
+/* Pills — primary navigation, prominent size */
 .pill{
-  display:inline-flex;align-items:center;gap:5px;
-  padding:0 11px;height:32px;
-  border-radius:4px;font-size:12.5px;font-weight:500;
-  color:var(--muted);white-space:nowrap;flex-shrink:0;
-  border:1px solid transparent;position:relative;
-  transition:color .12s,background .12s;
+  display:inline-flex;align-items:center;gap:6px;
+  padding:0 18px;height:42px;
+  border-radius:var(--r);font-size:14px;font-weight:600;
+  color:var(--text2);white-space:nowrap;flex-shrink:0;
+  border:1px solid var(--bdr);position:relative;
+  background:var(--white);
+  transition:color .12s,background .12s,border-color .12s;
 }
 /* Extended touch target — does not interfere with neighbours */
-.pill::before{content:'';position:absolute;inset:-8px 0}
-.pill:hover{color:var(--text);background:var(--bg)}
+.pill::before{content:'';position:absolute;inset:-4px 0}
+.pill:hover{color:var(--teal);border-color:var(--teal-bd);background:var(--teal-lt)}
 .pill.on{color:var(--teal);background:var(--teal-lt);border-color:var(--teal-bd)}
 .cat-sep{width:1px;height:14px;background:var(--bdr);flex-shrink:0;margin:0 4px}
 
@@ -614,10 +615,10 @@ ul,ol{list-style:none}
   .sf-in{border-right:none}
   .stats{display:none}
 
-  /* CAT NAV — slightly taller pills for thumb comfort */
+  /* CAT NAV — primary navigation on mobile too */
   .cat-nav{top:48px}
-  .cat-nav-i{height:46px;padding:0 4px}
-  .pill{height:34px;padding:0 12px;font-size:13px}
+  .cat-nav-i{height:52px;padding:0 4px;gap:5px}
+  .pill{height:38px;padding:0 14px;font-size:13px}
 
   /* DEAL CARD LAYOUT on mobile:
      Grid becomes 2 rows:
@@ -667,7 +668,7 @@ ul,ol{list-style:none}
    =========================================== */
 @media(max-width:380px){
   .hero h1{font-size:17px}
-  .pill{padding:0 9px;font-size:12px}
+  .pill{padding:0 11px;font-size:12.5px;height:36px}
   .mc-book{padding:0 15px;font-size:14px}
 }
 
@@ -731,13 +732,13 @@ ul,ol{list-style:none}
 .nav-vd-sep{height:1px;background:var(--bdr);margin:3px 0}
 
 /* Voucher Directory strip */
-.vd-s{background:var(--white);border-bottom:1px solid var(--bdr);padding:10px 0}
-.vd-grid{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 0}
+.vd-s{background:var(--white);border-bottom:1px solid var(--bdr);padding:6px 0}
+.vd-grid{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:2px 0}
 .vd-grid::-webkit-scrollbar{display:none}
-.vd-card{display:flex;flex-direction:column;gap:2px;flex-shrink:0;padding:8px 16px;border:1.5px solid var(--bdr);border-radius:var(--r);text-decoration:none;transition:border-color .12s,background .12s;min-width:100px;text-align:center}
+.vd-card{display:flex;flex-direction:column;gap:1px;flex-shrink:0;padding:5px 11px;border:1px solid var(--bdr);border-radius:var(--r);text-decoration:none;transition:border-color .12s,background .12s;min-width:auto;text-align:center}
 .vd-card:hover{border-color:var(--teal);background:var(--teal-lt)}
-.vd-name{font-size:13px;font-weight:600;color:var(--text)}
-.vd-tag{font-size:11px;color:var(--muted)}
+.vd-name{font-size:12px;font-weight:600;color:var(--text)}
+.vd-tag{font-size:10px;color:var(--muted)}
 .vd-card:hover .vd-name{color:var(--teal)}
 .vd-card:hover .vd-tag{color:var(--teal)}
 
@@ -860,6 +861,7 @@ ul,ol{list-style:none}
         <option value="all">All</option>
         <option value="flight">Flights</option>
         <option value="hotel">Hotels</option>
+        <option value="voucher">Promo Codes</option>
         <option value="activity">Activities</option>
       </select>
       <button type="submit" class="sf-btn">Search</button>
@@ -873,7 +875,20 @@ ul,ol{list-style:none}
 </section>
 
 <!-- ══════════════════════════════════
-     VOUCHER DIRECTORY
+     CATEGORY NAV — primary filter navigation
+     ══════════════════════════════════ -->
+<nav class="cat-nav" aria-label="Filter deals by category">
+  <div class="w cat-nav-i" role="list">
+    <a href="/?type=all"      class="pill on" role="listitem" aria-selected="true"  data-cat="all">All</a>
+    <a href="/?type=flight"   class="pill"    role="listitem" aria-selected="false" data-cat="flight">✈ Flights</a>
+    <a href="/?type=hotel"    class="pill"    role="listitem" aria-selected="false" data-cat="hotel">🏨 Hotels</a>
+    <a href="/?type=voucher"  class="pill"    role="listitem" aria-selected="false" data-cat="voucher">🏷️ Promo Codes</a>
+    <a href="/?type=activity" class="pill"    role="listitem" aria-selected="false" data-cat="activity">🎡 Activities</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════
+     VOUCHER DIRECTORY — secondary shortcuts to OTA pages
      ══════════════════════════════════ -->
 <section class="vd-s" aria-labelledby="vd-h">
   <div class="w">
@@ -905,22 +920,6 @@ ul,ol{list-style:none}
     </div>
   </div>
 </section>
-
-<!-- ══════════════════════════════════
-     CATEGORY NAV
-     ══════════════════════════════════ -->
-<nav class="cat-nav" aria-label="Filter by category or destination">
-  <div class="w cat-nav-i" role="list">
-    <a href="/?type=all"      class="pill on" role="listitem" aria-selected="true"  data-cat="all">All</a>
-    <a href="/?type=flight"   class="pill"    role="listitem" aria-selected="false" data-cat="flight">✈ Flights</a>
-    <a href="/?type=hotel"    class="pill"    role="listitem" aria-selected="false" data-cat="hotel">🏨 Hotels</a>
-    <a href="/?type=activity" class="pill"    role="listitem" aria-selected="false" data-cat="activity">🎡 Activities</a>
-    <span class="cat-sep" aria-hidden="true"></span>
-    <a href="/destinations/bali/"      class="pill" role="listitem" data-dest="Bali">Bali</a>
-    <a href="/destinations/bangkok/"   class="pill" role="listitem" data-dest="Bangkok">Bangkok</a>
-    <a href="/destinations/tokyo/"     class="pill" role="listitem" data-dest="Tokyo">Tokyo</a>
-  </div>
-</nav>
 
 <!-- ══════════════════════════════════
      MAIN CONTENT
@@ -1651,11 +1650,54 @@ function normaliseDeal(x){
   return x;
 }
 
+/* ─── NORMALISE vouchers.json → homepage deal format ─── */
+function normaliseVoucher(v, idx){
+  /* Parse discount percent from "8%" or "Up to 15%" string; flat discounts default to 0 */
+  let pct = 0;
+  const dStr = String(v.discount || v.Discount || '');
+  const pctMatch = dStr.match(/(\d+(?:\.\d+)?)\s*%/);
+  if(pctMatch) pct = parseInt(pctMatch[1]) || 0;
+
+  /* Build title: "OTA Description" with code appended if manual */
+  const ota   = v.ota || v.OTA || 'Other';
+  const desc  = v.description || v.Description || v.title || '';
+  const code  = v['promo_code'] || v['Promo Code'] || '';
+  const isManualCode = code && code !== 'No code - via link';
+  const title = desc || (ota + ' Promo');
+
+  /* Market: first code before any slash (e.g. "SGD", "HKD", or "All" → 'SGD' default) */
+  let market = (v.market || v.Market || 'SGD').split('/')[0].trim();
+  if(market === 'All' || !market) market = 'SGD';
+
+  /* Destination: vouchers usually apply across destinations */
+  const destination = v.destination || 'All Destinations';
+
+  return {
+    id:               'voucher-' + (v.id || idx || Math.random().toString(36).slice(2,8)),
+    title:            title,
+    category:         'voucher',
+    destination:      destination,
+    ota:              ota,
+    market:           market,
+    currency:         market,
+    original_price:   null,
+    discounted_price: null,
+    discount_percent: pct,
+    valid_until:      v.valid_until || v['Valid Until'] || '2099-12-31',
+    link:             v.affiliate_link || v['Affiliate Link'] || '#',
+    voucher_code:     isManualCode ? code : null,
+    voucher_type:     v.type || v.Type || 'percent',
+    is_hot:           pct >= 15,
+    is_expiring:      v.valid_until ? isUrgent(v.valid_until) : (v['Valid Until'] ? isUrgent(v['Valid Until']) : false)
+  };
+}
+
 async function init(){
-  /* Fetch deals.json + hotel-deals.json in parallel */
-  const [dealsRes, hotelRes] = await Promise.allSettled([
-    fetch('deals.json',            {cache:'no-cache'}),
-    fetch('/data/hotel-deals.json',{cache:'no-cache'})
+  /* Fetch deals.json + hotel-deals.json + vouchers.json in parallel */
+  const [dealsRes, hotelRes, voucherRes] = await Promise.allSettled([
+    fetch('deals.json',             {cache:'no-cache'}),
+    fetch('/data/hotel-deals.json', {cache:'no-cache'}),
+    fetch('/data/vouchers.json',    {cache:'no-cache'})
   ]);
 
   /* ── deals.json ── */
@@ -1695,6 +1737,28 @@ async function init(){
       }
     }
   }catch(_){/* hotel-deals.json not available yet, skip silently */}
+
+  /* ── vouchers.json — merge into DEALS as category 'voucher' ── */
+  try{
+    if(voucherRes.status==='fulfilled' && voucherRes.value.ok){
+      const vouchers=await voucherRes.value.json();
+      if(Array.isArray(vouchers) && vouchers.length){
+        /* Remove any previously merged vouchers (prevents duplication on re-init) */
+        for(let i=DEALS.length-1;i>=0;i--){
+          if(DEALS[i].id && String(DEALS[i].id).startsWith('voucher-')) DEALS.splice(i,1);
+        }
+        /* Filter: only Active + not yet expired */
+        const today = new Date().toISOString().slice(0,10);
+        vouchers
+          .filter(v=>{
+            const status = (v.status || v.Status || 'Active').toLowerCase();
+            const validUntil = v.valid_until || v['Valid Until'] || '2099-12-31';
+            return status === 'active' && validUntil >= today;
+          })
+          .forEach((v,idx)=>DEALS.push(normaliseVoucher(v,idx)));
+      }
+    }
+  }catch(_){/* vouchers.json not available yet, skip silently */}
 
   cur=[...DEALS];
   render(DEALS);
