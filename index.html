@@ -1652,25 +1652,45 @@ function normaliseDeal(x){
 
 /* ─── NORMALISE vouchers.json → homepage deal format ─── */
 function normaliseVoucher(v, idx){
-  /* Parse discount percent from "8%" or "Up to 15%" string; flat discounts default to 0 */
-  let pct = 0;
-  const dStr = String(v.discount || v.Discount || '');
-  const pctMatch = dStr.match(/(\d+(?:\.\d+)?)\s*%/);
-  if(pctMatch) pct = parseInt(pctMatch[1]) || 0;
+  /* Parse discount value + type from strings like "8%", "Up to 15%",
+     "HKD 100", "MYR 15", "SGD 7", "USD 3".
+     Priority: explicit 'type' field from JSON > auto-detect from discount string. */
+  const dStr = String(v.discount || v.Discount || '').trim();
+  let discValue = 0;
+  let voucherType = String(v.type || v.Type || '').trim().toLowerCase();
 
-  /* Build title: "OTA Description" with code appended if manual */
+  const pctMatch = dStr.match(/(\d+(?:\.\d+)?)\s*%/);
+  const currMatch = dStr.match(/([A-Z]{3})\s*(\d+(?:\.\d+)?)/i);
+
+  if(pctMatch){
+    discValue = parseInt(pctMatch[1]) || 0;
+    if(!voucherType) voucherType = 'percent';
+  } else if(currMatch){
+    discValue = parseInt(currMatch[2]) || 0;
+    if(!voucherType) voucherType = 'flat';
+  } else {
+    const numMatch = dStr.match(/(\d+(?:\.\d+)?)/);
+    if(numMatch) discValue = parseInt(numMatch[1]) || 0;
+    if(!voucherType) voucherType = 'percent';
+  }
+
+  /* OTA, description, code */
   const ota   = v.ota || v.OTA || 'Other';
   const desc  = v.description || v.Description || v.title || '';
-  const code  = v['promo_code'] || v['Promo Code'] || '';
+  const code  = v.promo_code || v['Promo Code'] || '';
   const isManualCode = code && code !== 'No code - via link';
   const title = desc || (ota + ' Promo');
 
   /* Market: first code before any slash (e.g. "SGD", "HKD", or "All" → 'SGD' default) */
-  let market = (v.market || v.Market || 'SGD').split('/')[0].trim();
-  if(market === 'All' || !market) market = 'SGD';
+  let market = String(v.market || v.Market || 'SGD').split('/')[0].trim().toUpperCase();
+  if(market === 'ALL' || !market) market = 'SGD';
 
   /* Destination: vouchers usually apply across destinations */
   const destination = v.destination || 'All Destinations';
+
+  /* discount_percent used by filters + is_hot flag.
+     For flat discounts, set to 0 (percent-based hot logic doesn't apply). */
+  const pct = voucherType === 'percent' ? discValue : 0;
 
   return {
     id:               'voucher-' + (v.id || idx || Math.random().toString(36).slice(2,8)),
@@ -1683,10 +1703,11 @@ function normaliseVoucher(v, idx){
     original_price:   null,
     discounted_price: null,
     discount_percent: pct,
+    discount_value:   discValue,
     valid_until:      v.valid_until || v['Valid Until'] || '2099-12-31',
     link:             v.affiliate_link || v['Affiliate Link'] || '#',
-    voucher_code:     isManualCode ? code : null,
-    voucher_type:     v.type || v.Type || 'percent',
+    voucher_code:     isManualCode ? code : 'NO CODE NEEDED',
+    voucher_type:     voucherType,
     is_hot:           pct >= 15,
     is_expiring:      v.valid_until ? isUrgent(v.valid_until) : (v['Valid Until'] ? isUrgent(v['Valid Until']) : false)
   };
