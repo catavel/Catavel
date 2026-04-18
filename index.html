@@ -187,8 +187,8 @@ ul,ol{list-style:none}
 .di{list-style:none}
 .dc{
   display:grid;
-  /* [accent 30px] [body 1fr] [price/action auto] */
-  grid-template-columns:30px 1fr auto;
+  /* [accent 30px] [body 1fr] [price/action 230px] */
+  grid-template-columns:30px 1fr 230px;
   grid-template-rows:auto;
   align-items:stretch;
   background:var(--white);
@@ -233,56 +233,103 @@ ul,ol{list-style:none}
 .d-exp{font-size:11px;color:var(--muted);margin-left:auto;white-space:nowrap}
 .d-exp.urg{color:#DC2626;font-weight:600}
 
+/* T&Cs toggle link */
+.d-tcs-toggle{
+  color:var(--teal);font-size:10.5px;font-weight:500;
+  cursor:pointer;white-space:nowrap;
+  background:none;border:none;padding:0;font-family:var(--f);
+  display:inline-flex;align-items:center;gap:2px;
+}
+.d-tcs-toggle:hover{color:var(--teal-d);text-decoration:underline}
+.d-tcs-toggle .caret{
+  display:inline-block;font-size:8px;
+  transition:transform .2s ease;
+}
+.d-tcs-toggle.open .caret{transform:rotate(180deg)}
+/* T&Cs expanded row */
+.d-tcs{
+  grid-column:1 / -1;
+  max-height:0;overflow:hidden;
+  transition:max-height .25s ease;
+}
+.d-tcs.open{max-height:200px}
+.d-tcs-inner{
+  padding:8px 13px 10px 43px;
+  border-top:1px solid var(--bdr);
+  font-size:11px;line-height:1.6;color:var(--text2);
+  background:var(--bg);
+}
+@media(max-width:600px){
+  .d-tcs-inner{padding-left:13px}
+}
+
 /* RIGHT: price + book (desktop) */
 .dp{
-  display:flex;align-items:center;gap:12px;
-  padding:10px 14px;border-left:1px solid var(--bdr);flex-shrink:0;
-  min-width:200px;justify-content:flex-end;
+  display:flex;align-items:stretch;
+  border-left:1px solid var(--bdr);
 }
-.dp-g{display:flex;flex-direction:column;align-items:flex-end;gap:1px}
+.dp-g{
+  flex:1;padding:10px 12px;
+  display:flex;flex-direction:column;justify-content:center;align-items:flex-end;gap:1px;
+}
 .dp-orig{font-size:11px;color:var(--muted);text-decoration:line-through}
-.dp-price{font-family:var(--fh);font-size:17px;color:var(--text);letter-spacing:-.3px;line-height:1;white-space:nowrap}
+.dp-price{font-family:var(--fh);font-size:17px;color:var(--text);letter-spacing:-.3px;line-height:1;white-space:nowrap;font-weight:500}
 .dp-save{font-size:10.5px;color:#15803D;font-weight:500}
-/* Book CTA — 44×44 minimum touch target */
+/* Book CTA — 88px fixed width, full height */
 .btn-bk{
-  display:inline-flex;align-items:center;justify-content:center;gap:4px;
-  min-width:72px;min-height:44px;padding:0 14px;
+  width:88px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;gap:4px;
   background:var(--teal);color:#fff;
-  font-size:13px;font-weight:500;border-radius:var(--r);
-  white-space:nowrap;flex-shrink:0;transition:background .12s;
+  font-size:13px;font-weight:500;
+  border-left:1px solid rgba(0,0,0,.06);
+  transition:background .12s;
+  border:none;font-family:var(--f);cursor:pointer;
 }
 .btn-bk:hover{background:var(--teal-d)}
 .btn-bk svg{width:10px;height:10px}
 
-/* RIGHT: voucher reveal widget (desktop) — same width as .dp for layout consistency */
+/* RIGHT: voucher reveal widget — vertical 2-row (code + button) */
 .dv{
-  display:flex;align-items:center;gap:10px;
-  padding:10px 14px;border-left:1px solid var(--bdr);flex-shrink:0;
-  min-width:200px;width:200px;
+  display:flex;flex-direction:column;
+  border-left:1px solid var(--bdr);
 }
-.vch-lbl{font-size:11px;color:var(--muted);line-height:1.4;flex-shrink:0;text-align:right}
-.vch-lbl strong{display:block;font-family:var(--fh);font-size:16px;color:var(--orange);letter-spacing:-.2px}
-/* Code blur widget */
-.cw{display:flex;align-items:stretch;border:1.5px solid var(--bdr2);border-radius:var(--r);overflow:hidden;width:100%}
-.ch{
-  flex:1;padding:0 10px;
-  font-family:monospace;font-size:12.5px;font-weight:700;letter-spacing:1.5px;
-  color:var(--text);background:var(--bg);
+.dv-code{
+  flex:1;
+  display:flex;align-items:center;
+  padding:0 14px;
+  background:var(--bg);
+}
+.dv-code span{
+  width:100%;
+  font-family:'Courier New',monospace;font-size:13px;font-weight:700;letter-spacing:1.5px;
+  color:var(--text);
   user-select:none;pointer-events:none;
-  filter:blur(4px);transition:filter .25s ease;
-  white-space:nowrap;overflow:hidden;
-  display:flex;align-items:center;min-height:40px;
+  filter:blur(4.5px);transition:filter .25s ease;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
-.cw.open .ch{filter:none;user-select:text;pointer-events:auto}
-.btn-rv{
-  padding:0 11px;min-height:40px;
+.dv.open .dv-code span{filter:none;user-select:text;pointer-events:auto}
+.dv-btn{
+  padding:0;height:34px;flex-shrink:0;
   background:var(--orange);color:#fff;
-  font-size:11.5px;font-weight:700;white-space:nowrap;flex-shrink:0;
-  border-left:1.5px solid rgba(0,0,0,.09);
-  transition:background .15s;display:flex;align-items:center;
+  font-size:12.5px;font-weight:600;
+  border-top:1px solid rgba(0,0,0,.06);
+  transition:background .15s;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;border:none;
+  font-family:var(--f);
 }
-.btn-rv:hover{background:var(--orange-d)}
-.cw.open .btn-rv{background:var(--teal)}
+.dv-btn:hover{background:var(--orange-d)}
+.dv.open .dv-btn{background:var(--teal)}
+.dv.open .dv-btn:hover{background:var(--teal-d)}
+/* No-code variant */
+.dv.no-code .dv-code{background:transparent}
+.dv.no-code .dv-code span{
+  filter:none;
+  font-family:var(--f);font-size:11px;font-weight:400;letter-spacing:0;
+  color:var(--muted);
+}
+.dv.no-code .dv-btn{background:var(--teal)}
+.dv.no-code .dv-btn:hover{background:var(--teal-d)}
 
 /* ===========================================
    MOBILE CTA ROW
@@ -1137,18 +1184,15 @@ ul,ol{list-style:none}
           <option value="all">All Markets</option>
           <option value="SGD">🇸🇬 Singapore (SGD)</option>
           <option value="MYR">🇲🇾 Malaysia (MYR)</option>
+          <option value="HKD">🇭🇰 Hong Kong (HKD)</option>
+          <option value="PHP">🇵🇭 Philippines (PHP)</option>
         </select>
       </div>
       <!-- Platform checkboxes -->
       <div>
         <p class="mf-lbl" id="mf-ota-g">Platform</p>
-        <div class="mf-ota" role="group" aria-labelledby="mf-ota-g">
-          <label class="mf-ota-lbl"><input type="checkbox" checked value="Agoda"> Agoda</label>
-          <label class="mf-ota-lbl"><input type="checkbox" checked value="Booking.com"> Booking.com</label>
-          <label class="mf-ota-lbl"><input type="checkbox" checked value="Trip.com"> Trip.com</label>
-          <label class="mf-ota-lbl"><input type="checkbox" checked value="Klook"> Klook</label>
-          <label class="mf-ota-lbl"><input type="checkbox" checked value="Skyscanner"> Skyscanner</label>
-          <label class="mf-ota-lbl"><input type="checkbox" value="Airpaz"> Airpaz</label>
+        <div class="mf-ota" role="group" aria-labelledby="mf-ota-g" id="mf-ota-list">
+          <!-- populated dynamically by buildOtaList() -->
         </div>
       </div>
       <!-- Sort -->
@@ -1207,42 +1251,44 @@ ul,ol{list-style:none}
 /* ─── SAMPLE DATA ─── */
 const DEALS=[
   {
-    id:'d001',title:'3D2N Bali Pool Villa with Breakfast — Seminyak',
+    id:'d001',title:'3D2N Bali Pool Villa with Breakfast - Seminyak',
     destination:'Bali',original_price:450,discounted_price:299,discount_percent:34,
     currency:'SGD',ota:'Agoda',link:'#',valid_until:'2026-04-30',
     category:'hotel',is_hot:true,is_expiring:false,market:'SGD'
   },{
-    id:'d002',title:'SIN → Tokyo Return — Scoot Economy Class',
+    id:'d002',title:'SIN - Tokyo Return - Scoot Economy Class',
     destination:'Tokyo',original_price:520,discounted_price:312,discount_percent:40,
     currency:'SGD',ota:'Skyscanner',link:'#',valid_until:'2026-04-15',
     category:'flight',is_hot:true,is_expiring:true,market:'SGD'
   },{
-    id:'d003',title:'Bangkok 4D3N Package — Hotel + Flight from KUL',
+    id:'d003',title:'Bangkok 4D3N Package - Hotel + Flight from KUL',
     destination:'Bangkok',original_price:1890,discounted_price:1190,discount_percent:37,
     currency:'MYR',ota:'Trip.com',link:'#',valid_until:'2026-05-15',
     category:'package',is_hot:false,is_expiring:false,market:'MYR'
   },{
-    id:'d004',title:'Universal Studios Singapore — 1-Day Adult E-Ticket',
+    id:'d004',title:'Universal Studios Singapore - 1-Day Adult E-Ticket',
     destination:'Singapore',original_price:88,discounted_price:63,discount_percent:28,
     currency:'SGD',ota:'Klook',link:'#',valid_until:'2026-06-30',
     category:'activity',is_hot:false,is_expiring:false,market:'SGD'
   },{
-    id:'d005',title:'KUL → Melbourne Return — AirAsia with 20kg Baggage Included',
+    id:'d005',title:'KUL - Melbourne Return - AirAsia with 20kg Baggage Included',
     destination:'Melbourne',original_price:1650,discounted_price:1090,discount_percent:34,
     currency:'MYR',ota:'Airpaz',link:'#',valid_until:'2026-04-20',
     category:'flight',is_hot:false,is_expiring:true,market:'MYR'
   },{
-    id:'d006',title:'Agoda Extra 15% Off Hotels — Singapore Users',
+    id:'d006',title:'Agoda Extra 15% Off Hotels - Singapore Users',
     destination:'All Destinations',original_price:null,discounted_price:null,discount_percent:15,
     currency:'SGD',ota:'Agoda',link:'https://www.agoda.com',valid_until:'2026-04-30',
     category:'voucher',is_hot:true,is_expiring:false,market:'SGD',
-    voucher_code:'AGODA15SG',voucher_type:'percent',discount_value:15
+    voucher_code:'AGODA15SG',voucher_type:'percent',discount_value:15,
+    tcs:'Min spend SGD 80. Valid for Singapore users only. One-time use per account.'
   },{
     id:'d007',title:'Klook SGD 12 Off Any Activity Booking',
     destination:'All Destinations',original_price:null,discounted_price:null,discount_percent:null,
     currency:'SGD',ota:'Klook',link:'https://www.klook.com',valid_until:'2026-04-25',
     category:'voucher',is_hot:false,is_expiring:true,market:'SGD',
-    voucher_code:'KLOOK12SG',voucher_type:'flat',discount_value:12
+    voucher_code:'KLOOK12SG',voucher_type:'flat',discount_value:12,
+    tcs:''
   }
 ];
 
@@ -1283,45 +1329,48 @@ function injectSchema(deals){
    The .mc row is rendered always in HTML; shown/hidden via CSS display.
 */
 function cardNormal(d){
-  const sv=d.original_price-d.discounted_price;
+  const sv=(d.original_price||0)-(d.discounted_price||0);
   const urg=isUrgent(d.valid_until);
   const urgCls=urg?' urg':'';
   const hot=d.is_hot?'<span class="tag-hot">Hot</span>':'';
   const exp=d.is_expiring?'<span class="tag-exp">Expiring</span>':'';
+  const flagMap={SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'};
+  const flag=flagMap[d.market]||'🌐';
   return`<li class="di">
-<article class="dc" data-cat="${d.category}" itemscope itemtype="https://schema.org/Offer">
-  <meta itemprop="price" content="${d.discounted_price}">
-  <meta itemprop="priceCurrency" content="${d.currency}">
-  <meta itemprop="validThrough" content="${d.valid_until}">
+<article class="dc" data-cat="${escAttr(d.category)}" itemscope itemtype="https://schema.org/Offer">
+  <meta itemprop="price" content="${escAttr(d.discounted_price)}">
+  <meta itemprop="priceCurrency" content="${escAttr(d.currency)}">
+  <meta itemprop="validThrough" content="${escAttr(d.valid_until)}">
   <!-- accent strip -->
   <div class="da" aria-hidden="true">
     <span class="da-ico">${ICON[d.category]||'🌐'}</span>
-    <span class="da-pct">−${d.discount_percent}%</span>
+    <span class="da-pct">−${esc(d.discount_percent)}%</span>
   </div>
   <!-- body -->
   <div class="db">
     <div class="dr1">
-      <h3 class="dtitle" itemprop="name">${d.title}</h3>${hot}${exp}
+      <h3 class="dtitle" itemprop="name">${esc(d.title)}</h3>${hot}${exp}
     </div>
     <div class="dr2">
       <span class="d-dest">
         <svg viewBox="0 0 24 24" fill="currentColor" width="9" height="9" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-        ${d.destination}
+        ${esc(d.destination)}
       </span>
-      <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
-      <span class="d-mkt">${d.market==='SGD'?'🇸🇬':'🇲🇾'}</span>
-      <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
+      <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${esc(d.ota)}</span></b></span>
+      <span class="d-mkt">${flag}</span>
+      <span class="d-exp${urgCls}">Ends <time datetime="${escAttr(d.valid_until)}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
   <!-- desktop: price + CTA (hidden on mobile via CSS) -->
   <div class="dp">
     <div class="dp-g">
-      <span class="dp-orig">${d.currency} ${d.original_price.toLocaleString()}</span>
-      <span class="dp-price" itemprop="price">${d.currency} ${d.discounted_price.toLocaleString()}</span>
-      <span class="dp-save">Save ${d.currency} ${sv.toLocaleString()}</span>
+      <span class="dp-orig">${esc(d.currency)} ${(d.original_price||0).toLocaleString()}</span>
+      <span class="dp-price" itemprop="price">${esc(d.currency)} ${(d.discounted_price||0).toLocaleString()}</span>
+      <span class="dp-save">Save ${esc(d.currency)} ${sv.toLocaleString()}</span>
     </div>
-    <a href="${d.link}" class="btn-bk" target="_blank" rel="noopener noreferrer sponsored"
-       aria-label="Book ${d.title} on ${d.ota}" itemprop="url">
+    <a href="${escAttr(d.link)}" class="btn-bk" target="_blank" rel="noopener noreferrer sponsored"
+       aria-label="Book ${esc(d.title)} on ${esc(d.ota)}" itemprop="url"
+       onclick="trackClick('${escAttr(d.title)}','${escAttr(d.ota)}',${d.discount_percent||0},${d.discounted_price||0})">
       Book
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
@@ -1329,12 +1378,13 @@ function cardNormal(d){
   <!-- mobile: CTA row (hidden on desktop, shown on ≤600px) -->
   <div class="mc">
     <div class="mc-price">
-      <span class="mc-orig">${d.currency} ${d.original_price.toLocaleString()}</span>
-      <span class="mc-val">${d.currency} ${d.discounted_price.toLocaleString()}</span>
-      <span class="mc-save">Save ${d.currency} ${sv.toLocaleString()}</span>
+      <span class="mc-orig">${esc(d.currency)} ${(d.original_price||0).toLocaleString()}</span>
+      <span class="mc-val">${esc(d.currency)} ${(d.discounted_price||0).toLocaleString()}</span>
+      <span class="mc-save">Save ${esc(d.currency)} ${sv.toLocaleString()}</span>
     </div>
-    <a href="${d.link}" class="mc-book" target="_blank" rel="noopener noreferrer sponsored"
-       aria-label="Book ${d.title} — ${d.currency} ${d.discounted_price}">
+    <a href="${escAttr(d.link)}" class="mc-book" target="_blank" rel="noopener noreferrer sponsored"
+       aria-label="Book ${esc(d.title)} - ${esc(d.currency)} ${d.discounted_price||0}"
+       onclick="trackClick('${escAttr(d.title)}','${escAttr(d.ota)}',${d.discount_percent||0},${d.discounted_price||0})">
       Book Now
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
@@ -1349,101 +1399,116 @@ function cardVoucher(d){
   const hot=d.is_hot?'<span class="tag-hot">Hot</span>':'';
   const exp=d.is_expiring?'<span class="tag-exp">Expiring</span>':'';
   const discLabel=d.voucher_type==='percent'?`${d.discount_value}% OFF`:`${d.currency} ${d.discount_value} OFF`;
-  /* Accent strip: short label to fit 36px column — omit currency for flat (shown in full label) */
   const accentLabel=d.voucher_type==='percent'?`−${d.discount_value}%`:`−${d.discount_value}`;
-  /* Market flag mapping */
   const flagMap={SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'};
   const flag=flagMap[d.market]||'🌐';
+  const isNoCode=d.voucher_code==='NO CODE NEEDED';
+  const btnLabel=isNoCode?'Get Deal':'Show Code';
+  const dvCls=isNoCode?'dv no-code open':'dv';
+  /* T&Cs toggle + row (only if tcs data exists) */
+  const tcsBtn=d.tcs
+    ?`<button class="d-tcs-toggle" onclick="toggleTcs(this)" aria-expanded="false">T&amp;Cs <span class="caret">▾</span></button>`
+    :'';
+  const tcsRow=d.tcs
+    ?`<div class="d-tcs"><div class="d-tcs-inner">${esc(d.tcs)}</div></div>`
+    :'';
   return`<li class="di">
 <article class="dc" data-cat="voucher" itemscope itemtype="https://schema.org/Offer">
-  <meta itemprop="name" content="${d.title}">
-  <meta itemprop="validThrough" content="${d.valid_until}">
+  <meta itemprop="name" content="${escAttr(d.title)}">
+  <meta itemprop="validThrough" content="${escAttr(d.valid_until)}">
   <!-- accent -->
   <div class="da" aria-hidden="true">
     <span class="da-ico">🏷️</span>
-    <span class="da-pct">${accentLabel}</span>
+    <span class="da-pct">${esc(accentLabel)}</span>
   </div>
   <!-- body -->
   <div class="db">
     <div class="dr1">
-      <h3 class="dtitle" itemprop="name">${d.title}</h3>${hot}${exp}
+      <h3 class="dtitle" itemprop="name">${esc(d.title)}</h3>${hot}${exp}
     </div>
     <div class="dr2">
-      <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
+      <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${esc(d.ota)}</span></b></span>
       <span class="d-mkt">${flag}</span>
-      <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
+      <span class="d-exp${urgCls}">Ends <time datetime="${escAttr(d.valid_until)}">${fmtDate(d.valid_until)}</time></span>
+      ${tcsBtn}
     </div>
   </div>
-  <!-- desktop voucher widget -->
-  <div class="dv">
-    <div class="vch-lbl"><strong>${discLabel}</strong>voucher</div>
-    <div class="cw" id="cw-${d.id}" data-code="${d.voucher_code}" data-link="${d.link}">
-      <span class="ch" id="ch-${d.id}" aria-label="Voucher code hidden">${d.voucher_code}</span>
-      <button class="btn-rv" onclick="reveal('${d.id}')" aria-label="Show voucher code for ${d.ota}">Show Code</button>
-    </div>
+  <!-- desktop voucher widget: vertical 2-row (code + button) -->
+  <div class="${dvCls}" id="dv-${escAttr(d.id)}" data-code="${escAttr(d.voucher_code)}" data-link="${escAttr(d.link)}" data-ota="${escAttr(d.ota)}" data-disc="${escAttr(d.discount_value)}">
+    <div class="dv-code"><span>${isNoCode?'NO CODE NEEDED':esc(d.voucher_code)}</span></div>
+    <button class="dv-btn" onclick="revealV('${escAttr(d.id)}')" aria-label="${esc(btnLabel)} for ${esc(d.ota)}">${btnLabel}</button>
   </div>
+  ${tcsRow}
   <!-- mobile voucher widget (shown ≤600px) -->
   <div class="mc">
     <div class="mc-vch">
-      <div class="mc-vch-lbl"><strong>${discLabel}</strong>voucher</div>
-      <div class="mcw" id="mcw-${d.id}" data-code="${d.voucher_code}" data-link="${d.link}">
-        <span class="mch" id="mch-${d.id}" aria-label="Voucher code hidden">${d.voucher_code}</span>
-        <button class="btn-mrv" onclick="reveal('${d.id}')" aria-label="Show voucher code for ${d.ota}">Show</button>
+      <div class="mc-vch-lbl"><strong>${esc(discLabel)}</strong>voucher</div>
+      <div class="mcw" id="mcw-${escAttr(d.id)}" data-code="${escAttr(d.voucher_code)}" data-link="${escAttr(d.link)}">
+        <span class="mch" aria-label="Voucher code hidden">${isNoCode?'NO CODE NEEDED':esc(d.voucher_code)}</span>
+        <button class="btn-mrv" onclick="revealV('${escAttr(d.id)}')" aria-label="${esc(btnLabel)} for ${esc(d.ota)}">${isNoCode?'Get Deal':'Show'}</button>
       </div>
     </div>
   </div>
 </article></li>`;
 }
 
-/* ─── REVEAL VOUCHER ───
-   - Syncs both desktop (.cw) and mobile (.mcw) widgets at once
-   - Clipboard via queueMicrotask → does not block INP frame
-   - window.open after 420ms → avoids popup blocker
+/* ─── T&Cs TOGGLE ─── */
+function toggleTcs(btn){
+  const card=btn.closest('.dc');
+  const tcs=card.querySelector('.d-tcs');
+  if(!tcs) return;
+  const isOpen=tcs.classList.toggle('open');
+  btn.classList.toggle('open',isOpen);
+  btn.setAttribute('aria-expanded',isOpen);
+}
+
+/* ─── REVEAL VOUCHER (v2) ───
+   Uses #dv-{id} on .dv element directly (new panel structure).
+   Mobile still uses #mcw-{id} (unchanged).
+   data-ota / data-disc attributes on .dv used for GA tracking.
 */
-function reveal(id){
-  const dw=document.getElementById('cw-'+id);   /* desktop widget */
-  const mw=document.getElementById('mcw-'+id);  /* mobile widget  */
-  const widgets=[dw,mw].filter(Boolean);
-  if(!widgets.length) return;
+function revealV(id){
+  const dv=document.getElementById('dv-'+id);
+  const mw=document.getElementById('mcw-'+id);
+  const code=dv?dv.dataset.code:'';
+  const link=dv?dv.dataset.link:'';
+  const ota=dv?dv.dataset.ota:'';
+  const disc=dv?parseInt(dv.dataset.disc)||0:0;
 
-  const code=widgets[0].dataset.code;
-  const link=widgets[0].dataset.link;
-  if(!code) return;
-
-  /* Already revealed: just re-copy */
-  if(widgets[0].classList.contains('open')){
-    queueMicrotask(()=>copy(code));
-    widgets.forEach(w=>{
-      const b=w.querySelector('button');
-      if(b){b.textContent='Copied!';setTimeout(()=>b.textContent='Copy Again',1800);}
-    });
+  /* Already revealed: re-copy */
+  if(dv && dv.classList.contains('open') && !dv.classList.contains('no-code')){
+    if(code) queueMicrotask(()=>copy(code));
+    const b=dv.querySelector('.dv-btn');
+    if(b){b.textContent='Copied!';setTimeout(()=>b.textContent='Copy Again',1800);}
+    if(mw){const mb=mw.querySelector('button');if(mb){mb.textContent='Copied!';setTimeout(()=>mb.textContent='Copy Again',1800);}}
     return;
   }
 
-  /* Reveal: add class to both widgets simultaneously */
-  widgets.forEach(w=>{
-    w.classList.add('open');
-    const b=w.querySelector('button');
+  /* Reveal desktop */
+  if(dv && !dv.classList.contains('no-code')){
+    dv.classList.add('open');
+    const b=dv.querySelector('.dv-btn');
     if(b) b.textContent='Copied! ✓';
-  });
+    setTimeout(()=>{const b2=dv.querySelector('.dv-btn');if(b2&&dv.classList.contains('open'))b2.textContent='Copy Again';},3200);
+  }
 
-  /* Clipboard write — queued to keep main thread free (INP fix) */
-  queueMicrotask(()=>copy(code));
+  /* Reveal mobile */
+  if(mw){
+    mw.classList.add('open');
+    const mb=mw.querySelector('button');
+    if(mb) mb.textContent='Copied! ✓';
+    setTimeout(()=>{const mb2=mw.querySelector('button');if(mb2&&mw.classList.contains('open'))mb2.textContent='Copy Again';},3200);
+  }
 
-  showToast('Code copied: '+code);
+  /* Clipboard */
+  if(code) queueMicrotask(()=>copy(code));
+  showToast(code?'Code copied: '+code:'Opening deal link...');
 
-  /* Open affiliate link — 420ms delay avoids popup blocker */
-  setTimeout(()=>{if(link&&link!=='#') window.open(link,'_blank','noopener,noreferrer');},420);
+  /* Open affiliate link */
+  if(link&&link!=='#') setTimeout(()=>window.open(link,'_blank','noopener,noreferrer'),420);
 
-  /* Reset label */
-  setTimeout(()=>{
-    widgets.forEach(w=>{
-      if(w.classList.contains('open')){
-        const b=w.querySelector('button');
-        if(b) b.textContent='Copy Again';
-      }
-    });
-  },3200);
+  /* GA tracking */
+  trackClick(code||'no-code',ota,disc,0);
 }
 
 /* Clipboard with textarea fallback for Android WebView */
@@ -1479,7 +1544,7 @@ function render(arr){
 }
 
 /* ─── FILTER ENGINE ─── */
-function runFilter(dest,mkt,maxSGD){
+function runFilter(dest,mkt,maxSGD,otas){
   let r=[...DEALS];
   /* Category pill */
   if(activeCat!=='all') r=r.filter(d=>d.category===activeCat);
@@ -1489,6 +1554,8 @@ function runFilter(dest,mkt,maxSGD){
   if(dest&&dest!=='all') r=r.filter(d=>d.destination===dest||d.destination==='All Destinations');
   /* Market */
   if(mkt&&mkt!=='all') r=r.filter(d=>d.market===mkt);
+  /* OTA filter */
+  if(otas&&otas.length>0) r=r.filter(d=>otas.includes(d.ota));
   /* Max price (normalise MYR → SGD at 3.3 rate) */
   r=r.filter(d=>{
     if(!d.discounted_price) return true;
@@ -1502,10 +1569,20 @@ function runFilter(dest,mkt,maxSGD){
 
 /* Desktop sidebar apply */
 function applyFilters(){
+  /* Collect checked OTAs from sidebar */
+  const otaChecks=[...document.querySelectorAll('#ota-list input[type="checkbox"]:checked')];
+  const otas=otaChecks.map(cb=>cb.value);
+  const allChecks=[...document.querySelectorAll('#ota-list input[type="checkbox"]')];
+  const otaFilter=(otas.length===allChecks.length||otas.length===0)?null:otas;
+  /* Sync OTA checkboxes to mobile sheet */
+  document.querySelectorAll('#mf-ota-list input[type="checkbox"]').forEach(cb=>{
+    cb.checked=otas.includes(cb.value);
+  });
   runFilter(
     document.getElementById('f-dest').value,
     document.getElementById('f-mkt').value,
-    parseInt(document.getElementById('f-pr').value||2000)
+    parseInt(document.getElementById('f-pr').value||2000),
+    otaFilter
   );
 }
 
@@ -1593,13 +1670,22 @@ function setMFSort(btn){
 function applyMF(){
   const dest=document.getElementById('mf-dest').value;
   const mkt=document.getElementById('mf-mkt').value;
-  /* Sync desktop selects to match */
+  /* Collect mobile OTA checkboxes */
+  const mfOtaChecks=[...document.querySelectorAll('#mf-ota-list input[type="checkbox"]:checked')];
+  const mfOtas=mfOtaChecks.map(cb=>cb.value);
+  const allMfChecks=[...document.querySelectorAll('#mf-ota-list input[type="checkbox"]')];
+  const otaFilter=(mfOtas.length===allMfChecks.length||mfOtas.length===0)?null:mfOtas;
+  /* Sync to desktop sidebar */
   const ds=document.getElementById('f-dest'); if(ds) ds.value=dest;
   const ms=document.getElementById('f-mkt');  if(ms) ms.value=mkt;
+  /* Sync OTA checkboxes to sidebar */
+  document.querySelectorAll('#ota-list input[type="checkbox"]').forEach(cb=>{
+    cb.checked=mfOtas.includes(cb.value);
+  });
   /* Update desktop sort select */
   const sr=document.getElementById('srt'); if(sr) sr.value=mfSort;
   closeMF();
-  runFilter(dest,mkt,2000);
+  runFilter(dest,mkt,2000,otaFilter);
   /* Apply sort after filter */
   sortDeals(mfSort);
 }
@@ -1616,12 +1702,23 @@ function showToast(msg){
   _tt=setTimeout(()=>t.classList.remove('on'),2800);
 }
 
+/* ─── XSS PREVENTION ─── */
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function escAttr(s){return String(s||'').replace(/"/g,'&quot;');}
+
+/* ─── GA TRACKING ─── */
+function trackClick(name,ota,discount,price){
+  if(typeof gtag==='function'){
+    gtag('event','deal_click',{deal_name:name,deal_ota:ota,deal_discount:discount,deal_price:price});
+  }
+}
+
 /* ─── INIT ─── */
 /* ─── NORMALISE hotel-deals.json → homepage deal format ─── */
 function normaliseHotelDeal(h){
   return {
     id:               'hotel-' + h.id,
-    title:            h.name + ' — ' + h.city + ', ' + h.country,
+    title:            h.name + ' - ' + h.city + ', ' + h.country,
     category:         'hotel',
     destination:      h.country,
     ota:              h.source || 'Klook',
@@ -1725,7 +1822,8 @@ function normaliseVoucher(v, idx){
     voucher_code:     isManualCode ? code : 'NO CODE NEEDED',
     voucher_type:     voucherType,
     is_hot:           pct >= 15,
-    is_expiring:      v.valid_until ? isUrgent(v.valid_until) : (v['Valid Until'] ? isUrgent(v['Valid Until']) : false)
+    is_expiring:      v.valid_until ? isUrgent(v.valid_until) : (v['Valid Until'] ? isUrgent(v['Valid Until']) : false),
+    tcs:              v.tcs || v['T&Cs'] || v.terms || ''
   };
 }
 
@@ -1814,30 +1912,39 @@ document.readyState==='loading'
 
 // ── Dynamic OTA list ──────────────────────────────────────────
 function buildOtaList() {
-  const container = document.getElementById('ota-list');
-  if (!container) return;
-
-  // Count deals per OTA
   const counts = {};
   DEALS.forEach(d => {
     const ota = d.ota || 'Other';
     counts[ota] = (counts[ota] || 0) + 1;
   });
-
-  // Sort by count descending
   const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
 
-  if (sorted.length === 0) {
-    container.innerHTML = '<p style="font-size:12px;color:var(--muted);padding:4px 3px">No platforms available</p>';
-    return;
+  /* Desktop sidebar */
+  const container = document.getElementById('ota-list');
+  if (container) {
+    if (sorted.length === 0) {
+      container.innerHTML = '<p style="font-size:12px;color:var(--muted);padding:4px 3px">No platforms available</p>';
+    } else {
+      container.innerHTML = sorted.map(([ota, count]) => `
+        <label class="ota-row">
+          <input type="checkbox" checked value="${esc(ota)}"> ${esc(ota)}
+          <span class="ota-ct">${count}</span>
+        </label>
+      `).join('');
+    }
   }
 
-  container.innerHTML = sorted.map(([ota, count]) => `
-    <label class="ota-row">
-      <input type="checkbox" checked value="${ota}"> ${ota}
-      <span class="ota-ct">${count}</span>
-    </label>
-  `).join('');
+  /* Mobile filter sheet */
+  const mfContainer = document.getElementById('mf-ota-list');
+  if (mfContainer) {
+    if (sorted.length === 0) {
+      mfContainer.innerHTML = '<p style="font-size:12px;color:var(--muted);padding:4px 3px">No platforms available</p>';
+    } else {
+      mfContainer.innerHTML = sorted.map(([ota]) => `
+        <label class="mf-ota-lbl"><input type="checkbox" checked value="${esc(ota)}"> ${esc(ota)}</label>
+      `).join('');
+    }
+  }
 }
 
 // ── Travel Essentials filter ──────────────────────────────────
@@ -1861,7 +1968,8 @@ window.setCurr = function(curr) {
   runFilter(
     document.getElementById('f-dest')?.value || 'all',
     curr,
-    parseInt(document.getElementById('f-pr')?.value || '2000')
+    parseInt(document.getElementById('f-pr')?.value || '2000'),
+    null /* don't filter by OTA when using currency switcher */
   );
 };
 
