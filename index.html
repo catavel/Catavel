@@ -187,8 +187,8 @@ ul,ol{list-style:none}
 .di{list-style:none}
 .dc{
   display:grid;
-  /* [accent 30px] [body 1fr] [price/action auto] */
-  grid-template-columns:30px 1fr auto;
+  /* [accent 30px] [body 1fr] [price/action 230px] */
+  grid-template-columns:30px 1fr 230px;
   grid-template-rows:auto;
   align-items:stretch;
   background:var(--white);
@@ -235,54 +235,43 @@ ul,ol{list-style:none}
 
 /* RIGHT: price + book (desktop) */
 .dp{
-  display:flex;align-items:center;gap:12px;
-  padding:10px 14px;border-left:1px solid var(--bdr);flex-shrink:0;
-  min-width:200px;justify-content:flex-end;
+  display:flex;align-items:stretch;
+  border-left:1px solid var(--bdr);
 }
-.dp-g{display:flex;flex-direction:column;align-items:flex-end;gap:1px}
+.dp-g{flex:1;padding:10px 12px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1px}
 .dp-orig{font-size:11px;color:var(--muted);text-decoration:line-through}
 .dp-price{font-family:var(--fh);font-size:17px;color:var(--text);letter-spacing:-.3px;line-height:1;white-space:nowrap}
 .dp-save{font-size:10.5px;color:#15803D;font-weight:500}
-/* Book CTA — 44×44 minimum touch target */
+/* Book CTA — fixed 88px, full height */
 .btn-bk{
-  display:inline-flex;align-items:center;justify-content:center;gap:4px;
-  min-width:72px;min-height:44px;padding:0 14px;
+  width:88px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;gap:4px;
   background:var(--teal);color:#fff;
-  font-size:13px;font-weight:500;border-radius:var(--r);
-  white-space:nowrap;flex-shrink:0;transition:background .12s;
+  font-size:13px;font-weight:500;
+  border:none;border-left:1px solid rgba(0,0,0,.06);
+  transition:background .12s;
 }
 .btn-bk:hover{background:var(--teal-d)}
 .btn-bk svg{width:10px;height:10px}
 
-/* RIGHT: voucher reveal widget (desktop) — same width as .dp for layout consistency */
+/* RIGHT: voucher widget (desktop) — same structure as .dp */
 .dv{
-  display:flex;align-items:center;gap:10px;
-  padding:10px 14px;border-left:1px solid var(--bdr);flex-shrink:0;
-  min-width:200px;width:200px;
+  display:flex;align-items:stretch;
+  border-left:1px solid var(--bdr);
 }
-.vch-lbl{font-size:11px;color:var(--muted);line-height:1.4;flex-shrink:0;text-align:right}
-.vch-lbl strong{display:block;font-family:var(--fh);font-size:16px;color:var(--orange);letter-spacing:-.2px}
-/* Code blur widget */
-.cw{display:flex;align-items:stretch;border:1.5px solid var(--bdr2);border-radius:var(--r);overflow:hidden;width:100%}
-.ch{
-  flex:1;padding:0 10px;
-  font-family:monospace;font-size:12.5px;font-weight:700;letter-spacing:1.5px;
-  color:var(--text);background:var(--bg);
-  user-select:none;pointer-events:none;
-  filter:blur(4px);transition:filter .25s ease;
-  white-space:nowrap;overflow:hidden;
-  display:flex;align-items:center;min-height:40px;
-}
-.cw.open .ch{filter:none;user-select:text;pointer-events:auto}
+.dv-g{flex:1;padding:10px 12px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1px}
+.dv-top{font-size:11px;color:var(--muted);line-height:1}
+.dv-mid{font-family:var(--fh);font-size:17px;color:var(--orange);letter-spacing:-.3px;line-height:1;white-space:nowrap;font-weight:500}
+.dv-bot{font-size:10.5px;color:var(--muted)}
 .btn-rv{
-  padding:0 11px;min-height:40px;
+  width:88px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
   background:var(--orange);color:#fff;
-  font-size:11.5px;font-weight:700;white-space:nowrap;flex-shrink:0;
-  border-left:1.5px solid rgba(0,0,0,.09);
-  transition:background .15s;display:flex;align-items:center;
+  font-size:13px;font-weight:500;
+  border:none;border-left:1px solid rgba(0,0,0,.06);
+  transition:background .15s;
 }
 .btn-rv:hover{background:var(--orange-d)}
-.cw.open .btn-rv{background:var(--teal)}
 
 /* ===========================================
    MOBILE CTA ROW
@@ -321,27 +310,15 @@ ul,ol{list-style:none}
 .mc-vch{flex:1;display:flex;align-items:center;gap:10px;padding:8px 13px}
 .mc-vch-lbl{font-size:11px;color:var(--muted);line-height:1.3;flex-shrink:0}
 .mc-vch-lbl strong{display:block;font-family:var(--fh);font-size:16px;color:var(--orange)}
-/* Mobile code widget */
-.mcw{display:flex;align-items:stretch;border:1.5px solid var(--bdr2);border-radius:var(--r);overflow:hidden;flex:1;min-height:44px}
-.mch{
-  flex:1;padding:0 9px;
-  font-family:monospace;font-size:11.5px;font-weight:700;letter-spacing:1.5px;
-  color:var(--text);background:var(--bg);
-  user-select:none;pointer-events:none;
-  filter:blur(4px);transition:filter .25s;
-  white-space:nowrap;overflow:hidden;
-  display:flex;align-items:center;
-}
-.mcw.open .mch{filter:none;user-select:text;pointer-events:auto}
+/* Mobile show code button */
 .btn-mrv{
-  padding:0 11px;min-height:44px;
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:0 16px;min-height:38px;border-radius:var(--r);
   background:var(--orange);color:#fff;
-  font-size:12px;font-weight:700;white-space:nowrap;flex-shrink:0;
-  border-left:1.5px solid rgba(0,0,0,.08);
-  transition:background .15s;display:flex;align-items:center;
+  font-size:13px;font-weight:500;white-space:nowrap;flex-shrink:0;
+  border:none;transition:background .15s;
 }
 .btn-mrv:hover{background:var(--orange-d)}
-.mcw.open .btn-mrv{background:var(--teal)}
 
 /* Empty state */
 .empty{padding:36px 16px;text-align:center;background:var(--white);border:1px solid var(--bdr);border-radius:var(--r)}
@@ -1309,7 +1286,7 @@ function cardNormal(d){
         ${d.destination}
       </span>
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
-      <span class="d-mkt">${d.market==='SGD'?'🇸🇬':'🇲🇾'}</span>
+      <span class="d-mkt">${{SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'}[d.market]||'🌐'}</span>
       <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
@@ -1349,101 +1326,82 @@ function cardVoucher(d){
   const hot=d.is_hot?'<span class="tag-hot">Hot</span>':'';
   const exp=d.is_expiring?'<span class="tag-exp">Expiring</span>':'';
   const discLabel=d.voucher_type==='percent'?`${d.discount_value}% OFF`:`${d.currency} ${d.discount_value} OFF`;
-  /* Accent strip: short label to fit 36px column — omit currency for flat (shown in full label) */
   const accentLabel=d.voucher_type==='percent'?`−${d.discount_value}%`:`−${d.discount_value}`;
-  /* Market flag mapping */
+  const subLabel=d.voucher_code==='NO CODE NEEDED'?'no code needed':'promo code';
   const flagMap={SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'};
   const flag=flagMap[d.market]||'🌐';
+  const btnLabel=d.voucher_code==='NO CODE NEEDED'?'Get Deal':'Show Code';
   return`<li class="di">
 <article class="dc" data-cat="voucher" itemscope itemtype="https://schema.org/Offer">
-  <meta itemprop="name" content="${d.title}">
-  <meta itemprop="validThrough" content="${d.valid_until}">
+  <meta itemprop="name" content="${esc(d.title)}">
+  <meta itemprop="validThrough" content="${esc(d.valid_until)}">
   <!-- accent -->
   <div class="da" aria-hidden="true">
     <span class="da-ico">🏷️</span>
-    <span class="da-pct">${accentLabel}</span>
+    <span class="da-pct">${esc(accentLabel)}</span>
   </div>
   <!-- body -->
   <div class="db">
     <div class="dr1">
-      <h3 class="dtitle" itemprop="name">${d.title}</h3>${hot}${exp}
+      <h3 class="dtitle" itemprop="name">${esc(d.title)}</h3>${hot}${exp}
     </div>
     <div class="dr2">
-      <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${d.ota}</span></b></span>
+      <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${esc(d.ota)}</span></b></span>
       <span class="d-mkt">${flag}</span>
-      <span class="d-exp${urgCls}">Ends <time datetime="${d.valid_until}">${fmtDate(d.valid_until)}</time></span>
+      <span class="d-exp${urgCls}">Ends <time datetime="${esc(d.valid_until)}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
-  <!-- desktop voucher widget -->
+  <!-- desktop voucher panel -->
   <div class="dv">
-    <div class="vch-lbl"><strong>${discLabel}</strong>voucher</div>
-    <div class="cw" id="cw-${d.id}" data-code="${d.voucher_code}" data-link="${d.link}">
-      <span class="ch" id="ch-${d.id}" aria-label="Voucher code hidden">${d.voucher_code}</span>
-      <button class="btn-rv" onclick="reveal('${d.id}')" aria-label="Show voucher code for ${d.ota}">Show Code</button>
+    <div class="dv-g">
+      <span class="dv-top">${subLabel}</span>
+      <span class="dv-mid">${esc(discLabel)}</span>
+      <span class="dv-bot">all destinations</span>
     </div>
+    <button class="btn-rv" onclick="reveal('${escAttr(d.id)}')" data-code="${escAttr(d.voucher_code)}" data-link="${escAttr(d.link)}" aria-label="${btnLabel} for ${esc(d.ota)}">${btnLabel}</button>
   </div>
   <!-- mobile voucher widget (shown ≤600px) -->
   <div class="mc">
     <div class="mc-vch">
-      <div class="mc-vch-lbl"><strong>${discLabel}</strong>voucher</div>
-      <div class="mcw" id="mcw-${d.id}" data-code="${d.voucher_code}" data-link="${d.link}">
-        <span class="mch" id="mch-${d.id}" aria-label="Voucher code hidden">${d.voucher_code}</span>
-        <button class="btn-mrv" onclick="reveal('${d.id}')" aria-label="Show voucher code for ${d.ota}">Show</button>
-      </div>
+      <div class="mc-vch-lbl"><strong>${esc(discLabel)}</strong>${subLabel}</div>
+      <button class="btn-mrv" onclick="reveal('${escAttr(d.id)}')" data-code="${escAttr(d.voucher_code)}" data-link="${escAttr(d.link)}" aria-label="${btnLabel} for ${esc(d.ota)}">${btnLabel}</button>
     </div>
   </div>
 </article></li>`;
 }
 
 /* ─── REVEAL VOUCHER ───
-   - Syncs both desktop (.cw) and mobile (.mcw) widgets at once
-   - Clipboard via queueMicrotask → does not block INP frame
-   - window.open after 420ms → avoids popup blocker
+   Buttons now hold data-code and data-link directly.
+   On click: copy code to clipboard + open affiliate link.
 */
 function reveal(id){
-  const dw=document.getElementById('cw-'+id);   /* desktop widget */
-  const mw=document.getElementById('mcw-'+id);  /* mobile widget  */
-  const widgets=[dw,mw].filter(Boolean);
-  if(!widgets.length) return;
+  /* Find all buttons with this voucher id (desktop + mobile) */
+  const btns=[...document.querySelectorAll(`[onclick*="reveal('${id}')"]`)];
+  if(!btns.length) return;
 
-  const code=widgets[0].dataset.code;
-  const link=widgets[0].dataset.link;
+  const code=btns[0].dataset.code;
+  const link=btns[0].dataset.link;
   if(!code) return;
 
-  /* Already revealed: just re-copy */
-  if(widgets[0].classList.contains('open')){
+  /* Already revealed: re-copy */
+  if(btns[0].dataset.revealed){
     queueMicrotask(()=>copy(code));
-    widgets.forEach(w=>{
-      const b=w.querySelector('button');
-      if(b){b.textContent='Copied!';setTimeout(()=>b.textContent='Copy Again',1800);}
-    });
+    btns.forEach(b=>{b.textContent='Copied! ✓';setTimeout(()=>b.textContent='Copy Again',1800);});
     return;
   }
 
-  /* Reveal: add class to both widgets simultaneously */
-  widgets.forEach(w=>{
-    w.classList.add('open');
-    const b=w.querySelector('button');
-    if(b) b.textContent='Copied! ✓';
+  /* Mark revealed + update label */
+  btns.forEach(b=>{
+    b.dataset.revealed='1';
+    b.textContent='Copied! ✓';
+    setTimeout(()=>b.textContent='Copy Again',1800);
   });
 
-  /* Clipboard write — queued to keep main thread free (INP fix) */
   queueMicrotask(()=>copy(code));
+  showToast(code==='NO CODE NEEDED'?'Opening deal link...':'Code copied: '+code);
 
-  showToast('Code copied: '+code);
-
-  /* Open affiliate link — 420ms delay avoids popup blocker */
+  /* Open affiliate link */
   setTimeout(()=>{if(link&&link!=='#') window.open(link,'_blank','noopener,noreferrer');},420);
-
-  /* Reset label */
-  setTimeout(()=>{
-    widgets.forEach(w=>{
-      if(w.classList.contains('open')){
-        const b=w.querySelector('button');
-        if(b) b.textContent='Copy Again';
-      }
-    });
-  },3200);
 }
 
 /* Clipboard with textarea fallback for Android WebView */
