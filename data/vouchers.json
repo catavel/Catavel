@@ -2431,9 +2431,9 @@
     "is_expiring": false
   },
   {
-    "id": "vc_https_ph_trip_com_sale_w_7849_palsummersale_html",
+    "id": "vc_no_code_needed_1",
     "ota": "Trip.com",
-    "promo_code": "https://ph.trip.com/sale/w/7849/palsummersale.html",
+    "promo_code": "NO CODE NEEDED",
     "description": "PAL Summer Seat Sale",
     "type": "deal",
     "discount": "",
@@ -2448,7 +2448,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_1",
+    "id": "vc_no_code_needed_2",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "PAL Summer Seat Sale",
@@ -2465,7 +2465,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_2",
+    "id": "vc_no_code_needed_3",
     "ota": "Radisson Hotels",
     "promo_code": "NO CODE NEEDED",
     "description": "Park, Stay & Fly",
@@ -2482,7 +2482,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_3",
+    "id": "vc_no_code_needed_4",
     "ota": "Radisson Hotels",
     "promo_code": "NO CODE NEEDED",
     "description": "Gourmet Experience",
@@ -2601,7 +2601,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_4",
+    "id": "vc_no_code_needed_5",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "PAL Summer Seat Sale - PH",
@@ -2635,7 +2635,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_5",
+    "id": "vc_no_code_needed_6",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Trip weekdays deals!",
@@ -2669,7 +2669,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_6",
+    "id": "vc_no_code_needed_7",
     "ota": "Klook",
     "promo_code": "NO CODE NEEDED",
     "description": "[Klook Exclusive] Central FoodPark Cash Voucher at Central Phuket with FREE Aquaria Phuket Admission",
