@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T11:07:30.327Z",
+  "lastUpdated": "2026-04-19T17:07:33.143Z",
   "totalDeals": 13,
   "generatedBy": "Catavel Pipeline v12.2",
   "deals": [
@@ -53,6 +53,23 @@
       "valid_until": "2026-04-22T17:07:29.202Z",
       "created_at": "2026-04-15T17:07:29.202Z",
       "market": "HKD"
+    },
+    {
+      "id": "flight_MNL_OSA_1776618447554_qsys",
+      "title": "Manila → Osaka from PHP 267",
+      "destination": "Osaka",
+      "origin": "Manila",
+      "original_price": 420,
+      "discounted_price": 267,
+      "discount_percent": 36,
+      "currency": "PHP",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FMNL280726OSA1",
+      "valid_until": "2026-04-26T17:07:28.365Z",
+      "created_at": "2026-04-19T17:07:28.365Z",
+      "market": "PHP"
     },
     {
       "id": "flight_MNL_TPE_1776272848328_l6ws",
@@ -138,23 +155,6 @@
       "valid_until": "2026-04-22T17:07:29.201Z",
       "created_at": "2026-04-15T17:07:29.201Z",
       "market": "SGD"
-    },
-    {
-      "id": "flight_MNL_OSA_1775992049819_kazq",
-      "title": "Manila → Osaka from PHP 338",
-      "destination": "Osaka",
-      "origin": "Manila",
-      "original_price": 420,
-      "discounted_price": 338,
-      "discount_percent": 20,
-      "currency": "PHP",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FMNL091226OSA1",
-      "valid_until": "2026-04-19T11:07:30.720Z",
-      "created_at": "2026-04-12T11:07:30.720Z",
-      "market": "PHP"
     },
     {
       "id": "flight_KUL_HKT_1776272846149_c3zv",
