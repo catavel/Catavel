@@ -14,7 +14,7 @@
     "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/12-japan-things-to-do/?city_id=&category_id=0&aid=115333",
     "tcs": "By entering the designated discount code on the payment page, you can enjoy an immediate 5% discount on ticket price with a min. spend of USD 20. Max cap at 4 USD. This coupon does not apply to Shinkansen; please refer to the tagging on the search result page for eligible products. The offer is limited in quantity and will end once it is fully redeemed.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_dbs10offklk2026",
@@ -30,23 +30,6 @@
     "market": "SGD",
     "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/15-singapore-things-to-do/?aid=115333",
     "tcs": "DBS/POSB Cardmembers with Singapore phone number and residence only. Valid with no min. spend on StarDream Cruises. Max discount of SGD870. Available for use on a first-come, first-served basis; code redemption does not guarantee availability for use.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_dbs5klk2026",
-    "ota": "Klook",
-    "promo_code": "DBS5KLK2026",
-    "description": "StarDream Cruises DBS 5% Off",
-    "type": "percent",
-    "discount": "5%",
-    "min_spend": "",
-    "max_discount": "USD5",
-    "applicable_for": "All activities & products",
-    "valid_until": "2026-04-30",
-    "market": "SGD",
-    "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/15-singapore-things-to-do/?aid=115333",
-    "tcs": "DBS/POSB Cardmembers with Singapore phone number and residence only. Valid with no min. spend on StarCruises and Dream Cruises. Max discount of 6760 SGD Available for use on a first-come, first-served basis; code redemption does not guarantee availability for use.",
     "status": "active",
     "is_expiring": false
   },
@@ -81,40 +64,6 @@
     "market": "HKD",
     "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/2-hong-kong-macau-things-to-do/?aid=115333",
     "tcs": "This discount coupon is valid only for the following packages of Hong Kong Disneyland Park Ticket: \"1-Day Ticket + 20th Anniversary Special Edition LinaBell Plush & Godiva Gift Set\" \"1-Day Ticket + Arendelle Royal Breakfast Buffet\" Min spend of 100 USD, for 6 USD discount. Max discount at 12 USD with a min spending of 200 USD The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: August 31st",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_cnhsr20",
-    "ota": "Klook",
-    "promo_code": "CNHSR20",
-    "description": "China High Speed Rail 20HKD off",
-    "type": "flat",
-    "discount": "HKD 20",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities & products",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/2-hong-kong-macau-things-to-do/?aid=115333",
-    "tcs": "HKD 20 off on China High Speed Rail (Hong Kong West Kowloon <> Futian/Guangzhou South) Discount: HKD $20 off Limit: One-time use per user; first-come, first-served Validity: Book by April 30th Note: Cannot be combined with other offers",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_cnhsrb1g1",
-    "ota": "Klook",
-    "promo_code": "CNHSRB1G1",
-    "description": "China High Speed Rail Second Class Seat B1G1",
-    "type": "percent",
-    "discount": "50%",
-    "min_spend": "HKD 150",
-    "max_discount": "USD9.59",
-    "applicable_for": "All activities & products",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/en-SG/deals/coureg/2-hong-kong-macau-things-to-do/?aid=115333",
-    "tcs": "Buy 1 Get 1 Free on China High Speed Rail Second Class Seats (Hong Kong West Kowloon <> Futian) Discount: Min. spend 2 second seat tickets of Hong Kong West Kowloon <> Futian, get HKD $75 off Limit: One-time use per user; first-come, first-served Validity: Book by April 30th Note: Only for designated routes; cannot be combined with other offers",
     "status": "active",
     "is_expiring": false
   },
@@ -255,40 +204,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_jindobus",
-    "ota": "Klook",
-    "promo_code": "JINDOBUS",
-    "description": "Korea Intercity Express Bus Ticket 50%",
-    "type": "percent",
-    "discount": "50%",
-    "min_spend": "",
-    "max_discount": "SGD23.29",
-    "applicable_for": "All activities & products",
-    "valid_until": "2026-04-30",
-    "market": "SGD",
-    "affiliate_link": "https://www.klook.com/deals/coureg/10-south-korea-things-to-do/?aid=115333",
-    "tcs": "This \"50%\" discount coupon is valid only for \"Korea Intercity Express Bus Ticket\" on routes with Jindo Bus Terminal as the final destination. Max discount of 18 USD. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: April 30th.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_jpincity1",
-    "ota": "Klook",
-    "promo_code": "JPINCITY1",
-    "description": "Japan In-city Experience Top Picks",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "SGD6.49",
-    "applicable_for": "All activities & products",
-    "valid_until": "2026-04-30",
-    "market": "SGD",
-    "affiliate_link": "https://www.klook.com/deals/coureg/12-japan-things-to-do/?aid=115333",
-    "tcs": "Get 10% off (maximum $5 USD off) when book selected Japan Experience products. Each Klook user can only use this code once. Limited coupon, first come first serve. Please refer to the payment page for the actual discount amount.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
     "id": "vc_sea5shinkansen",
     "ota": "Klook",
     "promo_code": "SEA5SHINKANSEN",
@@ -303,7 +218,7 @@
     "affiliate_link": "https://www.klook.com/deals/coureg/12-japan-things-to-do/?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Japan Shinkansen Ticket\". Min spend of 80 USD. Max discount of 8 USD. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_pt24higo",
@@ -387,23 +302,6 @@
     "market": "HKD",
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Book Japan Activities and get HK150 off when making a single net transaction of HK$1,000 or more with AlipayHK. Offer is not applicable to certain products as specified by Klook from time to time. Each User can enjoy this offer ONCE. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_usbhotel100",
-    "ota": "Klook",
-    "promo_code": "USBHOTEL100",
-    "description": "The Universal Studios Grand Hotel｜$100 OFF",
-    "type": "flat",
-    "discount": "HKD 100",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Promotion period: 2026 March 5 to 2026 April 30. Applicable to HK users enjoy $100 off upon purchasing The Universal Studios Grand Hotel. Maximum discount is HK$100. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
     "status": "active",
     "is_expiring": false
   },
@@ -493,57 +391,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_hkteq10off",
-    "ota": "Klook",
-    "promo_code": "HKTEQ10OFF",
-    "description": "Queensland Travel Products 10% OFF",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Applicable to HK users enjoy 10% off upon spending HK$800 or above on Australia Queensland Travel Products (only applicable to instant confirmation and non-refundable car service bookings and hotel bookings), max discount HK100. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_euatt5off",
-    "ota": "Klook",
-    "promo_code": "EUATT5OFF",
-    "description": "Europe Attractions 5% off",
-    "type": "percent",
-    "discount": "5%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Get 5% off (maximum $70 HKD off) when book Europe attraction products worth more than HK$700. Each Klook user can only use this code once. Limited coupon, first come first serve. Please refer to the payment page for the actual discount amount.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_anz09off",
-    "ota": "Klook",
-    "promo_code": "ANZ09OFF",
-    "description": "9％ off ANZ Travel Product",
-    "type": "percent",
-    "discount": "9%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Applicable to HK users enjoy 9％ off upon spending HK$1,099 or above on Australia and New Zealand Travel Products - Attractions,Activities,Tours,Hotels (only applicable to instant confirmation and non-refundable hotel bookings), max discount HK$120. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
     "id": "vc_hsbc25ht100",
     "ota": "Klook",
     "promo_code": "HSBC25HT100",
@@ -612,91 +459,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_cherrysc125",
-    "ota": "Klook",
-    "promo_code": "CHERRYSC125",
-    "description": "SGD125 off Royal Caribbean Cruises",
-    "type": "flat",
-    "discount": "SGD 125",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "ALL",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "This \"125SGD\" discount coupon is valid only for the following selected Royal Caribbean Cruises. Min spend of 1000 SGD.\nApplicable Cruises:\n\"Spectrum of the Seas Cruise to Kyushu from Shanghai by Royal Caribbean\"\n\"Spectrum of the Seas Cruise to Okinawa from Shanghai by Royal Caribbean\"\n\"Spectrum of the Seas Cruise to South Korea from Shanghai by Royal Caribbean\"\n\"Spectrum of the Seas Cruise to Central Japan from Shanghai by Royal Caribbean\"\nEach user is allowed to use for five times. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: April 30th",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_pm26apr15",
-    "ota": "Klook",
-    "promo_code": "PM26APR15",
-    "description": "[PayMe] HK$15 off",
-    "type": "flat",
-    "discount": "HKD 15",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Book Klook Activities and get HKD 15 off when making a single net transaction of HKD 300 or more with PayMe. To redeem the offer, enter promo code: PM26APR15. Offer is not applicable to certain products as specified by Klook from time to time. Each User can enjoy this offer ONCE. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_pm26apr40",
-    "ota": "Klook",
-    "promo_code": "PM26APR40",
-    "description": "[PayMe] HK$40 off",
-    "type": "flat",
-    "discount": "HKD 40",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Book Klook Activities and get HKD 40 off when making a single net transaction of HKD 888 or more with PayMe. To redeem the offer, enter promo code: PM26APR40. Offer is not applicable to certain products as specified by Klook from time to time. Each User can enjoy this offer ONCE. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_chimelongfun",
-    "ota": "Klook",
-    "promo_code": "CHIMELONGFUN",
-    "description": "Chimelong Staycation $120 OFF",
-    "type": "flat",
-    "discount": "HKD 120",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "1. Promotion period from April 10, 2026 16:00 to April 30, 2026 23:59, both dates inclusive.\n2. Promo code(s) are valid till April 30, 2026 23:599.\n3. Applicable to HK users enjoy $120 OFF discount on Chimelong Hotels (Staycation Package) without minimum spend.\n4. Each user can use this discount only once.\n5. Limited quota. Discount is available on a first-come-first-served basis and while stocks last.\n6. Discount code will become invalid once it reaches the usage limit.\n7. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_chimelongparkfun",
-    "ota": "Klook",
-    "promo_code": "CHIMELONGPARKFUN",
-    "description": "Chimelong Ticket 10% OFF",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "1. Promotion period from April 10, 2026 16:00 to April 30, 2026 23:59.\n2. Promo code(s) are valid till April 30, 2026 23:59.\n3. Applicable to HK users enjoy 10% OFF discount on Chimelong tickets. Maximum discount is HK$30.\n4. Each user can use this discount only once.\n5. Limited quota. Discount is available on a first-come-first-served basis and while stocks last.\n6. Discount code will become invalid once it reaches the usage limit.\n7. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
     "id": "vc_springeuptp",
     "ota": "Klook",
     "promo_code": "SPRINGEUPTP",
@@ -748,23 +510,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_cfmobklook",
-    "ota": "Klook",
-    "promo_code": "CFMOBKLOOK",
-    "description": "Switzerland Mobility 5% OFF",
-    "type": "percent",
-    "discount": "5%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-04-30",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "1. Promotion period from April 8, 2026 18:00 to April 30, 2026 23:59, both dates inclusive.\n2. Promo code(s) are valid till  April 30, 2026 23:59.\n3. Applicable to HK users enjoy 5% OFF discount on Switzerland Transportation when purchase over HK$1250. Maximum discount is HK$160.\n4. Each user can use this discount only once.\n5. Limited quota. Discount is available on a first-come-first-served basis and while stocks last.\n6. Discount code will become invalid once it reaches the usage limit.\n7. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
     "id": "vc_gwvinwonders",
     "ota": "Klook",
     "promo_code": "GWVINWONDERS",
@@ -779,7 +524,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"VinWonders Phu Quoc Ticket\". Max discount of 5 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwumeda",
@@ -796,7 +541,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"10%\" discount coupon is only applicable to \"Umeda Sky Building Kuchu Teien Observatory Tickets\". The maximum discount is US$3. The number of discount codes is limited. Discount codes will be applied according to the checkout order. If a warning appears during checkout that the discount code is not applicable, it means that the code has reached its usage limit. The final discount will be displayed on the final checkout page. Expiry date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwgarden",
@@ -813,7 +558,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"10%\" discount coupon is valid only for \"teamLab Botanical Garden Osaka Ticket\". Max discount of 2 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwbiovortex",
@@ -830,7 +575,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"teamLab Biovortex Kyoto Ticket\". Max discount of 3 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwhtb0413",
@@ -847,7 +592,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Huis Ten Bosch Ticket\". Max discount of 5 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwush0413",
@@ -864,7 +609,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Universal Studios Hollywood Tickets\". Max discount of 12 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwsunwayla",
@@ -881,7 +626,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"10%\" discount coupon is valid only for \"Sunway Lagoon Ticket\". Max discount of 10 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwsunwaylo",
@@ -898,7 +643,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"10%\" discount coupon is valid only for \"Sunway Lost World of Tambun Ticket\". Max discount of 8 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwsanrio",
@@ -915,7 +660,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"10%\" discount coupon is valid only for \"Sanrio Puroland Tickets in Tokyo\". Max discount of 4 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_goldwush",
@@ -932,7 +677,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Universal Studios Hollywood Tickets\". Max discount of 15 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5jppark",
@@ -949,7 +694,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for the following Selected Japan Theme Park. Max discount of 3 USD.\n\"Tokyo Disney Resort - Tokyo Disneyland & Tokyo DisneySea Park Tickets\"\n\"Warner Bros. Studio Tour Tokyo - The Making of Harry Potter\"\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5garden",
@@ -966,7 +711,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Gardens by the Bay Ticket\". Max discount of 3 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5shibuya",
@@ -983,7 +728,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"SHIBUYA SKY Ticket\". Max discount of 1 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5dlcali",
@@ -1000,7 +745,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Disneyland California Ticket\". Max discount of 4 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5lotte",
@@ -1017,7 +762,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Lotte World Ticket in Seoul\". Max discount of 3 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5planets",
@@ -1034,7 +779,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"teamLab Planets TOKYO Ticket\". Max discount of 3 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5jpoap",
@@ -1051,7 +796,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Osaka Amazing Pass\". Max discount of 2 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5cnusb",
@@ -1068,7 +813,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Universal Studios Beijing Ticket\". Max discount of 1 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5skytree",
@@ -1085,7 +830,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"TOKYO SKYTREE® Ticket\". Max discount of 2 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5walt",
@@ -1102,7 +847,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Walt Disney World Resort Ticket\". Max discount of 10 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gworlando",
@@ -1119,7 +864,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Universal Studios Orlando Ticket\". Max discount of 10 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwwildlife",
@@ -1136,7 +881,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Night Safari Ticket | Mandai Wildlife Reserve, Singapore\". Max discount of 5 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwtaipei101",
@@ -1153,7 +898,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Taipei 101 Observatory Ticket\". Max discount of 2 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwgenting",
@@ -1170,7 +915,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Genting SkyWorlds Theme Park Ticket\". Max discount of 5 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_sanriogw",
@@ -1187,7 +932,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Sanrio Puroland Tokyo Ticket\". Max discount of 2 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwtokyotower",
@@ -1204,7 +949,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Tokyo Tower Ticket\". Max discount of 2 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwmarinabay",
@@ -1221,7 +966,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Marina Bay Sands Skypark Observation Deck Ticket\". Max discount of 3 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_bkksealife",
@@ -1238,7 +983,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Sea Life Bangkok Ocean World Ticket\". Max discount of 2 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_myarexb1g1",
@@ -1255,7 +1000,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Min spend $23,000KRW. Valid for Thailand residents only. Code is for single use only. Valid for trains departing Incheon Airport → Seoul Station between 05:00-10:00 or 18:00–22:00 KST only. Not stackable with any other promotion. Code valid until 3rd May 2026 or until quantity exhausted, whichever comes first. If the order is cancelled for any reason (including force majeure), the coupon cannot be returned.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5lego",
@@ -1272,7 +1017,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"LEGOLAND® Japan Ticket\". Max discount of 4 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwvinwonder",
@@ -1289,7 +1034,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"VinWonders Nha Trang Ticket\". Max discount of 4 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwvinpearl",
@@ -1306,7 +1051,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Vinpearl Safari Phu Quoc Ticket\". Max discount of 4 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gweverland",
@@ -1323,7 +1068,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Everland Korea Ticket\". Max discount of 4 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_aquariagw",
@@ -1340,7 +1085,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Aquaria KLCC Ticket\". Max discount of 2 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwtaipeifp",
@@ -1357,7 +1102,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Taipei Fun Pass\". Max discount of 4 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwsgcable",
@@ -1374,7 +1119,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Singapore Cable Car SkyPass\". Max discount of 3 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwartscience",
@@ -1391,7 +1136,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"ArtScience Museum at Marina Bay Sands Ticket\". Max discount of 3 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwsgskyline",
@@ -1408,7 +1153,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Skyline Luge Singapore Ticket\". Max discount of 3 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwpattaya",
@@ -1425,7 +1170,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"The Sanctuary of Truth Ticket in Pattaya\". Max discount of 2 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwkissofsea",
@@ -1442,7 +1187,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Kiss of the Sea Ticket in Phu Quoc\". Max discount of 4 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwgentingcar",
@@ -1459,7 +1204,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Genting Highlands Premium Outlets Cable Car Ticket\". Max discount of 1 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gw5jphtb",
@@ -1476,7 +1221,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Huis Ten Bosch Ticket\". Max discount of 4 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwklbus",
@@ -1493,7 +1238,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"KL City of Lights Tour with Hop-on Hop-off Bus\". Max discount of 2 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_gwmaokong",
@@ -1510,7 +1255,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid only for \"Maokong Gondola Ticket in Taipei\". Max discount of 1 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: May 3rd",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_zhcmlbusb1g1",
@@ -1868,23 +1613,6 @@
     "tcs": "New Trip.com users only. Up to 20% off first hotel booking plus up to S$20 off flight booking. Activated upon sign-up.",
     "status": "active",
     "is_expiring": false
-  },
-  {
-    "id": "vc_trip_com_my_monday_10_off_flights",
-    "ota": "Trip.com",
-    "promo_code": "",
-    "description": "Trip.com MY Monday 10% Off Flights",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "MYR 50",
-    "applicable_for": "Flights",
-    "valid_until": "2026-04-27",
-    "market": "MYR",
-    "affiliate_link": "https://www.trip.com/?Allianceid=7924337&SID=297781555",
-    "tcs": "Malaysia users only. 10% off up to RM50 on 2 round-trip tickets on Mondays. Weekly Monday promo. 2 pax round-trip required.",
-    "status": "active",
-    "is_expiring": true
   },
   {
     "id": "vc_agodadeal8",
@@ -2343,7 +2071,7 @@
     "affiliate_link": "https://clk.omgt6.com/?PID=12747&AID=2361654&Type=21&r=https%3A%2F%2Fph.trip.com%2Fsale%2Fw%2F7849%2Fpalsummersale.html%3Flocale%3Den-ph%26curr%3Dphp",
     "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_no_code_needed_1",
@@ -2360,7 +2088,7 @@
     "affiliate_link": "https://clk.omgt6.com/?PID=12746&AID=2361654&Type=21&r=",
     "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_no_code_needed_2",
@@ -2377,7 +2105,7 @@
     "affiliate_link": "https://clk.omgt6.com/?PID=33626&AID=2361654&Type=21&r=https%3A%2F%2Fph.trip.com%2Fsale%2Fw%2F7849%2Fpalsummersale.html%3Flocale%3Den-ph%26curr%3Dphp",
     "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_no_code_needed_3",
@@ -2530,7 +2258,7 @@
     "affiliate_link": "https://clk.omgt6.com/?PID=56282&AID=2361654&Type=21&r=https%3A%2F%2Fph.trip.com%2Fsale%2Fw%2F7849%2Fpalsummersale.html%3Flocale%3Den-ph%26curr%3Dphp",
     "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_mespooky8",
@@ -2632,7 +2360,7 @@
     "affiliate_link": "https://clk.omgt6.com/?PID=12746&AID=2361654&Type=21&r=",
     "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_no_code_needed_8",
@@ -2784,6 +2512,23 @@
     "market": "ALL",
     "affiliate_link": "https://clk.omgt6.com/?PID=56314&AID=2361654&Type=21&r=https%3A%2F%2Fmy.trip.com%2Fsale%2Fw%2F24663%2Fsuperlokal.html%3Flocale%3Den-my%26curr%3Dmyr%26transparentBar%3D1",
     "tcs": "10% OFF (Cap RM50) Flights (Min 2 Pax Return)\n\n20% Car Rental (Cap RM40)\n\nDrop time - 12:00 PM",
+    "status": "active",
+    "is_expiring": false
+  },
+  {
+    "id": "vc_tripantjp95",
+    "ota": "Trip.com",
+    "promo_code": "TRIPANTJP95",
+    "description": "Trip.com Japan Attraction Coupon 5% Off",
+    "type": "percent",
+    "discount": "5%",
+    "min_spend": "",
+    "max_discount": "$9",
+    "applicable_for": "Other - Tours & Tickets",
+    "valid_until": "2026-06-30",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=35143&AID=2361654&Type=21&r=https%3A%2F%2Fjp.trip.com%2Fsale%2Fw%2F26630%2Fsuper-attraction-day.html%3Flocale%3Dja-JP%26promo_referer%3D10021832_null_2",
+    "tcs": "Mechanics:\n\nAttractions & Tours - Japan Destination 5% OFF (eligible to all JP destination products, except for USJ/Osaka Aquarium Kaiyukan/some JP passes)\n\nSG: Capped 9 SGD\nMY: Capped30 MYR\nHK: Capped 55 HKD\nTW: Capped 220 TWD\nJP: Capped 1100 JPY\nKR: Capped 10000 KRW\nPH : Capped 420 PHP\nID; Capped 118000 IDR\nVN: Capped 180000 VND\nTH: Capped 220 THB\nAU: Capped 10 AUD\nUS: Capped 7 USD\nGB: Capped 5 GBP\n\nT&Cs:\n\n1. Promo code validity: 1 April to 30 June 2026 (GMT+8), or while stocks last. Redemptions (upon a successful booking) are based on first-come, first-served basis.\n2. Eligible users: This promotion is only available to Trip.com members.\n3. During the promotion period, members who book designated Attractions & Tours products on Trip.com via App, mobile & PC site will be eligible to receive 5% off. Discounts will be applied directly on all available products after claiming the promo code.\n4. If you cancel or modify your booking, the promo code will be invalid, and you may not be able to enjoy the promo code again if promo code quota has been used up.\n5. Only one promo code can be applied to each booking and every member can only use each promo code 5 times during the promotion period. This promo code cannot be used together with other discounts and offers.\n6. The prices of specific dates, conditions and policies of tickets may vary. Please check the relevant product page for availability and prices and read the relevant terms and conditions.\n7. Trip.com reserves all rights of final interpretation.\n8. To the extent permitted by law, Trip.com will not be liable for any losses, damages, costs or claims arising out of or relating to this promotion, whether in contract, tort, breach of statutory duty or otherwise.\n9. You may not use multiple email addresses or devices to circumvent the rules. Trip.com reserves the right to cancel, suspend, or amend the promotion or cancel any bookings of users who engage in fraudulent or abusive behavior or who violate these terms. These terms are governed by the law of Singapore, and the courts of Singapore will have jurisdiction over any dispute.\n10. Promo code is operated by Trip.com Travel Singapore Pte. Ltd., 30 Raffles Place, #29-01 Singapore 048622. By using a Promo code, you agree to these terms and our General T&Cs.\n11.These terms are governed by the law of Singapore, and the courts of Singapore will have jurisdiction over any dispute.",
     "status": "active",
     "is_expiring": false
   }
