@@ -2058,57 +2058,6 @@
   },
   {
     "id": "vc_no_code_needed",
-    "ota": "Trip.com",
-    "promo_code": "NO CODE NEEDED",
-    "description": "PH - PAL Summer Seat Sale",
-    "type": "deal",
-    "discount": "",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Train",
-    "valid_until": "2026-04-30",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=12747&AID=2361654&Type=21&r=https%3A%2F%2Fph.trip.com%2Fsale%2Fw%2F7849%2Fpalsummersale.html%3Flocale%3Den-ph%26curr%3Dphp",
-    "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_no_code_needed_1",
-    "ota": "Trip.com",
-    "promo_code": "NO CODE NEEDED",
-    "description": "PAL Summer Seat Sale",
-    "type": "deal",
-    "discount": "",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Hotels",
-    "valid_until": "2026-04-30",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=12746&AID=2361654&Type=21&r=",
-    "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_no_code_needed_2",
-    "ota": "Trip.com",
-    "promo_code": "NO CODE NEEDED",
-    "description": "PAL Summer Seat Sale",
-    "type": "deal",
-    "discount": "",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Domestic Flights",
-    "valid_until": "2026-04-30",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=33626&AID=2361654&Type=21&r=https%3A%2F%2Fph.trip.com%2Fsale%2Fw%2F7849%2Fpalsummersale.html%3Flocale%3Den-ph%26curr%3Dphp",
-    "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_no_code_needed_3",
     "ota": "Radisson Hotels",
     "promo_code": "NO CODE NEEDED",
     "description": "Park, Stay & Fly",
@@ -2125,7 +2074,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_4",
+    "id": "vc_no_code_needed_1",
     "ota": "Radisson Hotels",
     "promo_code": "NO CODE NEEDED",
     "description": "Gourmet Experience",
@@ -2244,23 +2193,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_5",
-    "ota": "Trip.com",
-    "promo_code": "NO CODE NEEDED",
-    "description": "PAL Summer Seat Sale - PH",
-    "type": "deal",
-    "discount": "",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Car Rentals",
-    "valid_until": "2026-04-30",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=56282&AID=2361654&Type=21&r=https%3A%2F%2Fph.trip.com%2Fsale%2Fw%2F7849%2Fpalsummersale.html%3Flocale%3Den-ph%26curr%3Dphp",
-    "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_mespooky8",
     "ota": "Klook",
     "promo_code": "MESPOOKY8",
@@ -2278,7 +2210,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_6",
+    "id": "vc_no_code_needed_2",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Trip weekdays deals!",
@@ -2312,7 +2244,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_7",
+    "id": "vc_no_code_needed_3",
     "ota": "Klook",
     "promo_code": "NO CODE NEEDED",
     "description": "[Klook Exclusive] Central FoodPark Cash Voucher at Central Phuket with FREE Aquaria Phuket Admission",
@@ -2346,24 +2278,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_https_ph_trip_com_sale_w_7849_palsummersale_html",
-    "ota": "Trip.com",
-    "promo_code": "https://ph.trip.com/sale/w/7849/palsummersale.html",
-    "description": "PAL Summer Seat Sale",
-    "type": "deal",
-    "discount": "",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Hotels",
-    "valid_until": "2026-04-30",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=12746&AID=2361654&Type=21&r=",
-    "tcs": "> All-in Fare from ₱499 Cebu, Boracay, Tacloban, Tagbilaran (April 16, 12NN)",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_no_code_needed_8",
+    "id": "vc_no_code_needed_4",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Go Vietnam - Friday (weekday)",
@@ -2380,7 +2295,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_9",
+    "id": "vc_no_code_needed_5",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Family Istimewa - Friday (weekday)",
@@ -2397,7 +2312,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_10",
+    "id": "vc_no_code_needed_6",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Super Staycation - Thursday (weekday)",
@@ -2414,7 +2329,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_11",
+    "id": "vc_no_code_needed_7",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Super Lokal - Thursday (weekday)",
@@ -2431,7 +2346,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_12",
+    "id": "vc_no_code_needed_8",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Go Thailand - Wednesday (weekday)",
@@ -2448,7 +2363,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_13",
+    "id": "vc_no_code_needed_9",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "HQ Super Destination - Wednesday (Weekday)",
@@ -2465,7 +2380,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_14",
+    "id": "vc_no_code_needed_10",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Family Istimewa - Tuesday (Weekday)",
@@ -2482,7 +2397,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_15",
+    "id": "vc_no_code_needed_11",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Go China - Tuesday (Weekday)",
@@ -2499,7 +2414,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_16",
+    "id": "vc_no_code_needed_12",
     "ota": "Trip.com",
     "promo_code": "NO CODE NEEDED",
     "description": "Super Lokal - Monday (weekday)",
@@ -2529,6 +2444,23 @@
     "market": "ALL",
     "affiliate_link": "https://clk.omgt6.com/?PID=35143&AID=2361654&Type=21&r=https%3A%2F%2Fjp.trip.com%2Fsale%2Fw%2F26630%2Fsuper-attraction-day.html%3Flocale%3Dja-JP%26promo_referer%3D10021832_null_2",
     "tcs": "Mechanics:\n\nAttractions & Tours - Japan Destination 5% OFF (eligible to all JP destination products, except for USJ/Osaka Aquarium Kaiyukan/some JP passes)\n\nSG: Capped 9 SGD\nMY: Capped30 MYR\nHK: Capped 55 HKD\nTW: Capped 220 TWD\nJP: Capped 1100 JPY\nKR: Capped 10000 KRW\nPH : Capped 420 PHP\nID; Capped 118000 IDR\nVN: Capped 180000 VND\nTH: Capped 220 THB\nAU: Capped 10 AUD\nUS: Capped 7 USD\nGB: Capped 5 GBP\n\nT&Cs:\n\n1. Promo code validity: 1 April to 30 June 2026 (GMT+8), or while stocks last. Redemptions (upon a successful booking) are based on first-come, first-served basis.\n2. Eligible users: This promotion is only available to Trip.com members.\n3. During the promotion period, members who book designated Attractions & Tours products on Trip.com via App, mobile & PC site will be eligible to receive 5% off. Discounts will be applied directly on all available products after claiming the promo code.\n4. If you cancel or modify your booking, the promo code will be invalid, and you may not be able to enjoy the promo code again if promo code quota has been used up.\n5. Only one promo code can be applied to each booking and every member can only use each promo code 5 times during the promotion period. This promo code cannot be used together with other discounts and offers.\n6. The prices of specific dates, conditions and policies of tickets may vary. Please check the relevant product page for availability and prices and read the relevant terms and conditions.\n7. Trip.com reserves all rights of final interpretation.\n8. To the extent permitted by law, Trip.com will not be liable for any losses, damages, costs or claims arising out of or relating to this promotion, whether in contract, tort, breach of statutory duty or otherwise.\n9. You may not use multiple email addresses or devices to circumvent the rules. Trip.com reserves the right to cancel, suspend, or amend the promotion or cancel any bookings of users who engage in fraudulent or abusive behavior or who violate these terms. These terms are governed by the law of Singapore, and the courts of Singapore will have jurisdiction over any dispute.\n10. Promo code is operated by Trip.com Travel Singapore Pte. Ltd., 30 Raffles Place, #29-01 Singapore 048622. By using a Promo code, you agree to these terms and our General T&Cs.\n11.These terms are governed by the law of Singapore, and the courts of Singapore will have jurisdiction over any dispute.",
+    "status": "active",
+    "is_expiring": false
+  },
+  {
+    "id": "vc_summer26",
+    "ota": "Radisson Hotels",
+    "promo_code": "SUMMER26",
+    "description": "Summer Sale",
+    "type": "percent",
+    "discount": "35%",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
+    "valid_until": "2026-09-10",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fsummer-sale",
+    "tcs": "Offer Details: Up to 35% off on participating hotels, Additional 3,000 Radisson Rewards bonus points per stay\nBooking Window: April 30, 2026 – May 28, 2026\nStay Window: July 1, 2026 – September 10, 2026",
     "status": "active",
     "is_expiring": false
   }
