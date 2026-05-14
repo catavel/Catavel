@@ -782,15 +782,7 @@ ul,ol{list-style:none}
 .nav-vd-sep{height:1px;background:var(--bdr);margin:3px 0}
 
 /* Voucher Directory strip */
-.vd-s{background:var(--white);border-bottom:1px solid var(--bdr);padding:6px 0}
-.vd-grid{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:2px 0}
-.vd-grid::-webkit-scrollbar{display:none}
-.vd-card{display:flex;flex-direction:column;gap:1px;flex-shrink:0;padding:5px 11px;border:1px solid var(--bdr);border-radius:var(--r);text-decoration:none;transition:border-color .12s,background .12s;min-width:auto;text-align:center}
-.vd-card:hover{border-color:var(--teal);background:var(--teal-lt)}
-.vd-name{font-size:12px;font-weight:600;color:var(--text)}
-.vd-tag{font-size:10px;color:var(--muted)}
-.vd-card:hover .vd-name{color:var(--teal)}
-.vd-card:hover .vd-tag{color:var(--teal)}
+
 
 /* ── TRAVEL ESSENTIALS HIGHLIGHT ── */
 .ess-s{padding:28px 0;border-top:1px solid var(--bdr);background:var(--white)}
@@ -940,36 +932,7 @@ ul,ol{list-style:none}
 <!-- ══════════════════════════════════
      VOUCHER DIRECTORY — secondary shortcuts to OTA pages
      ══════════════════════════════════ -->
-<section class="vd-s" aria-labelledby="vd-h">
-  <div class="w">
-    <div class="vd-grid">
-      <a href="/hotel-deals/" class="vd-card">
-        <span class="vd-name">Hotel Deals</span>
-        <span class="vd-tag">Up to 57% off</span>
-      </a>
-      <a href="/klook-promo-codes/" class="vd-card">
-        <span class="vd-name">Klook</span>
-        <span class="vd-tag">Promo Codes</span>
-      </a>
-      <a href="/trip-com-promo-codes/" class="vd-card">
-        <span class="vd-name">Trip.com</span>
-        <span class="vd-tag">Promo Codes</span>
-      </a>
-      <a href="/agoda-promo-codes/" class="vd-card">
-        <span class="vd-name">Agoda</span>
-        <span class="vd-tag">Promo Codes</span>
-      </a>
-      <a href="https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fspecial-offers" class="vd-card" target="_blank" rel="noopener sponsored">
-        <span class="vd-name">Aviasales</span>
-        <span class="vd-tag">Flight Deals ↗</span>
-      </a>
-      <a href="https://tp.media/r?marker=709139&trs=505880&p=4057&u=https%3A%2F%2Fwww.trip.com%2Fsale%2F" class="vd-card" target="_blank" rel="noopener sponsored">
-        <span class="vd-name">Flash Sales</span>
-        <span class="vd-tag">Trip.com ↗</span>
-      </a>
-    </div>
-  </div>
-</section>
+
 
 <!-- ══════════════════════════════════
      MAIN CONTENT
@@ -1319,7 +1282,7 @@ function injectSchema(deals){
       '@type':'Offer',name:d.title,
       price:d.discounted_price||0,priceCurrency:d.currency,
       availability:'https://schema.org/InStock',validThrough:d.valid_until,
-      url:'https://catavel.com/'+d.id+'/',
+      url:'https://catavel.com/',
       seller:{'@type':'Organization',name:d.ota}
     }}))
   });
