@@ -22,13 +22,13 @@
 <link rel="canonical" href="https://catavel.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://catavel.com/">
-<meta property="og:title" content="Catavel — Best Travel Deals for SG &amp; MY">
+<meta property="og:title" content="Catavel - Best Travel Deals for SG &amp; MY">
 <meta property="og:description" content="Curated flight, hotel and activity deals from 60+ OTAs. Updated every 6 hours.">
 <meta property="og:image" content="https://catavel.com/og-image.jpg">
 <meta property="og:locale" content="en_SG">
 <meta property="og:site_name" content="Catavel">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Catavel — Best Travel Deals for SG &amp; MY">
+<meta name="twitter:title" content="Catavel - Best Travel Deals for SG &amp; MY">
 <meta name="twitter:description" content="Curated deals from 60+ OTAs. Updated every 6 hours.">
 <meta name="twitter:image" content="https://catavel.com/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,7 +116,7 @@ ul,ol{list-style:none}
 .cat-nav{background:var(--white);border-bottom:1px solid var(--bdr);position:sticky;top:48px;z-index:90}
 .cat-nav-i{display:flex;gap:4px;align-items:center;height:52px;overflow-x:auto;scrollbar-width:none;padding:0 2px}
 .cat-nav-i::-webkit-scrollbar{display:none}
-/* Pills — primary navigation, old aesthetic (transparent border) but prominent size */
+/* Pills - primary navigation, old aesthetic (transparent border) but prominent size */
 .pill{
   display:inline-flex;align-items:center;gap:5px;
   padding:0 14px;height:38px;
@@ -125,7 +125,7 @@ ul,ol{list-style:none}
   border:1px solid transparent;position:relative;
   transition:color .12s,background .12s;
 }
-/* Extended touch target — does not interfere with neighbours */
+/* Extended touch target - does not interfere with neighbours */
 .pill::before{content:'';position:absolute;inset:-6px 0}
 .pill:hover{color:var(--text);background:var(--bg)}
 .pill.on{color:var(--teal);background:var(--teal-lt);border-color:var(--teal-bd)}
@@ -137,7 +137,7 @@ ul,ol{list-style:none}
 .grid{display:grid;grid-template-columns:188px 1fr;gap:20px;padding:16px 0 60px;align-items:start}
 
 /* ===========================================
-   SIDEBAR (desktop only — hidden ≤860px)
+   SIDEBAR (desktop only - hidden ≤860px)
    =========================================== */
 .sb{display:flex;flex-direction:column;gap:14px}
 .sb-lbl{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:4px}
@@ -150,7 +150,7 @@ ul,ol{list-style:none}
   -webkit-appearance:none;appearance:none;cursor:pointer;outline:none;
 }
 .sb-sel:focus{border-color:var(--teal)}
-/* OTA checkbox rows — min 36px each */
+/* OTA checkbox rows - min 36px each */
 .ota-row{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text2);cursor:pointer;min-height:36px;padding:0 3px;border-radius:4px}
 .ota-row:hover{background:var(--bg)}
 .ota-row input{accent-color:var(--teal);width:14px;height:14px;flex-shrink:0}
@@ -183,7 +183,7 @@ ul,ol{list-style:none}
 .dh-sort select{border:1px solid var(--bdr2);border-radius:4px;padding:4px 8px;font:inherit;font-size:12px;color:var(--text2);background:var(--white);outline:none;cursor:pointer;min-height:30px}
 
 /* ===========================================
-   DEAL CARD — BASE (desktop: 3 columns)
+   DEAL CARD - BASE (desktop: 3 columns)
    =========================================== */
 .dl{display:flex;flex-direction:column;gap:2px}
 .di{list-style:none}
@@ -218,7 +218,7 @@ ul,ol{list-style:none}
 /* CENTRE: deal info body */
 .db{padding:10px 13px;display:flex;flex-direction:column;gap:3px;min-width:0}
 .dr1{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
-/* Title: 2-line max on desktop, no truncation — preserves full context */
+/* Title: 2-line max on desktop, no truncation - preserves full context */
 .dtitle{
   font-family:var(--fh);font-size:13.5px;font-weight:400;color:var(--text);
   line-height:1.3;word-break:break-word;overflow-wrap:anywhere;
@@ -277,7 +277,7 @@ ul,ol{list-style:none}
 .dp-orig{font-size:11px;color:var(--muted);text-decoration:line-through}
 .dp-price{font-family:var(--fh);font-size:17px;color:var(--text);letter-spacing:-.3px;line-height:1;white-space:nowrap;font-weight:500}
 .dp-save{font-size:10.5px;color:#15803D;font-weight:500}
-/* Book CTA — 88px fixed width, full height */
+/* Book CTA - 88px fixed width, full height */
 .btn-bk{
   width:88px;flex-shrink:0;
   display:flex;align-items:center;justify-content:center;gap:4px;
@@ -290,7 +290,7 @@ ul,ol{list-style:none}
 .btn-bk:hover{background:var(--teal-d)}
 .btn-bk svg{width:10px;height:10px}
 
-/* RIGHT: voucher reveal widget — vertical 2-row (code + button) */
+/* RIGHT: voucher reveal widget - vertical 2-row (code + button) */
 .dv{
   display:flex;flex-direction:column;
   border-left:1px solid var(--bdr);
@@ -335,9 +335,9 @@ ul,ol{list-style:none}
 
 /* ===========================================
    MOBILE CTA ROW
-   — Always rendered in HTML, hidden via display:none on desktop.
-   — On mobile (≤600px): shown as full-width bottom row of each card.
-   — Contains: price stack (left) + CTA button (right).
+   - Always rendered in HTML, hidden via display:none on desktop.
+   - On mobile (≤600px): shown as full-width bottom row of each card.
+   - Contains: price stack (left) + CTA button (right).
    =========================================== */
 .mc{
   /* Hidden on desktop */
@@ -355,7 +355,7 @@ ul,ol{list-style:none}
 .mc-orig{font-size:10.5px;color:var(--muted);text-decoration:line-through;line-height:1}
 .mc-val{font-family:var(--fh);font-size:18px;color:var(--text);letter-spacing:-.4px;line-height:1.1}
 .mc-save{font-size:10.5px;color:#15803D;font-weight:500;line-height:1}
-/* Book button — full height of row, minimum 52px */
+/* Book button - full height of row, minimum 52px */
 .mc-book{
   display:flex;align-items:center;justify-content:center;gap:5px;
   padding:0 20px;min-height:52px;flex-shrink:0;
@@ -536,7 +536,7 @@ ul,ol{list-style:none}
 /* Sheet header */
 .mf-hd{display:flex;align-items:center;justify-content:space-between;padding:14px 20px 8px}
 .mf-hd h2{font-family:var(--fh);font-size:17px;font-weight:400}
-/* Close button — 44×44 touch target */
+/* Close button - 44×44 touch target */
 .mf-close{
   width:44px;height:44px;border-radius:50%;
   background:var(--bg);display:flex;align-items:center;justify-content:center;
@@ -546,7 +546,7 @@ ul,ol{list-style:none}
 /* Sheet body */
 .mf-bd{padding:0 20px 20px;display:flex;flex-direction:column;gap:18px}
 .mf-lbl{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;display:block;margin-bottom:7px}
-/* Sheet selects — 50px height for comfortable touch */
+/* Sheet selects - 50px height for comfortable touch */
 .mf-sel{
   width:100%;height:50px;padding:0 40px 0 14px;
   border:1.5px solid var(--bdr2);border-radius:var(--r);
@@ -555,7 +555,7 @@ ul,ol{list-style:none}
   -webkit-appearance:none;appearance:none;cursor:pointer;outline:none;
 }
 .mf-sel:focus{border-color:var(--teal)}
-/* OTA grid checkboxes — 48px each */
+/* OTA grid checkboxes - 48px each */
 .mf-ota{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .mf-ota-lbl{
   display:flex;align-items:center;gap:8px;
@@ -585,12 +585,12 @@ ul,ol{list-style:none}
 
 /* ===========================================
    MOBILE BOTTOM BAR
-   — Shown only on ≤860px via @media.
-   — 3 actions: Filter | SG Deals | MY Deals.
-   — Safe-area-aware padding for iPhone home bar.
+   - Shown only on ≤860px via @media.
+   - 3 actions: Filter | SG Deals | MY Deals.
+   - Safe-area-aware padding for iPhone home bar.
    =========================================== */
 .mob-bar{
-  /* Default hidden — shown by media query below */
+  /* Default hidden - shown by media query below */
   display:none;
   position:fixed;left:0;right:0;bottom:0;z-index:300;
   background:var(--white);border-top:1px solid var(--bdr);
@@ -599,7 +599,7 @@ ul,ol{list-style:none}
   gap:8px;
   box-shadow:0 -1px 12px rgba(0,0,0,.06);
 }
-/* Each button — flex col, min 48px height */
+/* Each button - flex col, min 48px height */
 .mob-bar a,
 .mob-bar button{
   flex:1;
@@ -626,7 +626,7 @@ ul,ol{list-style:none}
 .mb-ph{background:#0038A8!important;color:#fff!important;border-color:#0038A8!important}
 
 /* ===========================================
-   RESPONSIVE — 860px (tablet, sidebar gone)
+   RESPONSIVE - 860px (tablet, sidebar gone)
    =========================================== */
 @media(max-width:860px){
   /* Single column layout */
@@ -639,20 +639,20 @@ ul,ol{list-style:none}
   .ft-g{grid-template-columns:1fr 1fr}
   /* Push footer content above bottom bar */
   .ft{padding-bottom:calc(20px + var(--bh))}
-  /* SHOW bottom bar — must be display:flex (not just display:block) */
+  /* SHOW bottom bar - must be display:flex (not just display:block) */
   .mob-bar{display:flex}
   /* Toast: lift above bottom bar */
   .toast{bottom:calc(var(--bh) + 10px);right:16px}
 }
 
 /* ===========================================
-   RESPONSIVE — 600px (phone)
+   RESPONSIVE - 600px (phone)
    =========================================== */
 @media(max-width:600px){
-  /* HEADER — nav handled by hamburger menu CSS */
+  /* HEADER - nav handled by hamburger menu CSS */
   .btn-tg-my{display:none}
 
-  /* HERO — ultra-compact, get deals above fold fast */
+  /* HERO - ultra-compact, get deals above fold fast */
   .hero{padding:12px 0 10px}
   .hero-live{margin-bottom:5px;font-size:11px}
   .hero h1{font-size:19px;margin-bottom:0;line-height:1.2;
@@ -665,7 +665,7 @@ ul,ol{list-style:none}
   .sf-in{border-right:none}
   .stats{display:none}
 
-  /* CAT NAV — primary navigation on mobile too */
+  /* CAT NAV - primary navigation on mobile too */
   .cat-nav{top:48px}
   .cat-nav-i{height:48px;padding:0 4px;gap:3px}
   .pill{height:34px;padding:0 11px;font-size:12px}
@@ -709,12 +709,12 @@ ul,ol{list-style:none}
   /* FOOTER */
   .ft-g{grid-template-columns:1fr}
 
-  /* TOAST — full width, centred above bar */
+  /* TOAST - full width, centred above bar */
   .toast{bottom:calc(var(--bh) + 8px);right:12px;left:12px;justify-content:center;text-align:center}
 }
 
 /* ===========================================
-   RESPONSIVE — 380px (small Android phones)
+   RESPONSIVE - 380px (small Android phones)
    =========================================== */
 @media(max-width:380px){
   .hero h1{font-size:17px}
@@ -841,7 +841,7 @@ ul,ol{list-style:none}
           <span>Telegram</span><span class="tg-caret">▾</span>
         </button>
         <div class="tg-menu" role="menu">
-          <div class="tg-menu-hd">Join our channels — free</div>
+          <div class="tg-menu-hd">Join our channels - free</div>
           <a href="https://t.me/CatavelSGTravelDeals" target="_blank" rel="noopener noreferrer" role="menuitem">
             <span class="tg-ch-flag">🇸🇬</span>
             <span class="tg-ch-info"><span class="tg-ch-name">Singapore Deals</span><span class="tg-ch-handle">@CatavelSGTravelDeals</span></span>
@@ -909,15 +909,15 @@ ul,ol{list-style:none}
       <button type="submit" class="sf-btn">Search</button>
     </form>
     <div class="stats" aria-label="Summary stats">
-      <div><span class="stat-n" id="sn">—</span><br><span class="stat-l">Live deals</span></div>
-      <div><span class="stat-n" id="smax">—</span><br><span class="stat-l">Max savings</span></div>
-      <div><span class="stat-n" id="last-updated">—</span><br><span class="stat-l">Last updated</span></div>
+      <div><span class="stat-n" id="sn">-</span><br><span class="stat-l">Live deals</span></div>
+      <div><span class="stat-n" id="smax">-</span><br><span class="stat-l">Max savings</span></div>
+      <div><span class="stat-n" id="last-updated">-</span><br><span class="stat-l">Last updated</span></div>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════
-     CATEGORY NAV — primary filter navigation
+     CATEGORY NAV - primary filter navigation
      ══════════════════════════════════ -->
 <nav class="cat-nav" aria-label="Filter deals by category">
   <div class="w cat-nav-i" role="list">
@@ -930,7 +930,7 @@ ul,ol{list-style:none}
 </nav>
 
 <!-- ══════════════════════════════════
-     VOUCHER DIRECTORY — secondary shortcuts to OTA pages
+     VOUCHER DIRECTORY - secondary shortcuts to OTA pages
      ══════════════════════════════════ -->
 
 
@@ -1011,7 +1011,7 @@ ul,ol{list-style:none}
     <div class="ess-hd">
       <div>
         <h2 class="ess-hd-title" id="ess-h">Travel Essentials</h2>
-        <p class="ess-hd-sub">The best tools & apps for every trip — handpicked by Catavel</p>
+        <p class="ess-hd-sub">The best tools & apps for every trip - handpicked by Catavel</p>
       </div>
       <a href="/travel-essentials/" class="ess-see-all">Browse all tools</a>
     </div>
@@ -1276,7 +1276,7 @@ function injectSchema(deals){
   if(!s){s=document.createElement('script');s.type='application/ld+json';s.id='_sc';document.head.appendChild(s);}
   s.textContent=JSON.stringify({
     '@context':'https://schema.org','@type':'ItemList',
-    name:'Best Travel Deals — Catavel',url:'https://catavel.com/',
+    name:'Best Travel Deals - Catavel',url:'https://catavel.com/',
     numberOfItems:deals.length,
     itemListElement:deals.map((d,i)=>({'@type':'ListItem',position:i+1,item:{
       '@type':'Offer',name:d.title,
@@ -1824,7 +1824,7 @@ async function init(){
     }
   }catch(_){/* keep built-in sample data */}
 
-  /* ── hotel-deals.json — merge into DEALS ── */
+  /* ── hotel-deals.json - merge into DEALS ── */
   try{
     if(hotelRes.status==='fulfilled' && hotelRes.value.ok){
       const hotels=await hotelRes.value.json();
@@ -1838,7 +1838,7 @@ async function init(){
     }
   }catch(_){/* hotel-deals.json not available yet, skip silently */}
 
-  /* ── vouchers.json — merge into DEALS as category 'voucher' ── */
+  /* ── vouchers.json - merge into DEALS as category 'voucher' ── */
   try{
     if(voucherRes.status==='fulfilled' && voucherRes.value.ok){
       const vouchers=await voucherRes.value.json();
@@ -1867,7 +1867,7 @@ async function init(){
   const smax=document.getElementById('smax');
   if(smax){
     const maxDisc=DEALS.reduce((m,d)=>Math.max(m,d.discount_percent||0),0);
-    smax.textContent=maxDisc>0?'Up to '+maxDisc+'% off':'—';
+    smax.textContent=maxDisc>0?'Up to '+maxDisc+'% off':'-';
   }
   buildOtaList();
 }
