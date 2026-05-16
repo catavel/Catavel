@@ -653,8 +653,9 @@ function updateMonthYear() {
   if (el) el.textContent = new Date().toLocaleString('en', { month: 'long', year: 'numeric' });
 }
 function fmtDate(s) {
+  if(!s) return 'Ongoing';
   const d = new Date(s);
-  return isNaN(d) ? s : d.getDate() + ' ' + d.toLocaleString('en', { month: 'short', year: 'numeric' });
+  return isNaN(d) ? 'Ongoing' : d.getDate() + ' ' + d.toLocaleString('en', { month: 'short', year: 'numeric' });
 }
 function esc(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
