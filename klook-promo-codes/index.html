@@ -122,6 +122,9 @@ ul,ol{list-style:none}
 .tag-flat{background:var(--green-lt);color:var(--green)}
 .tag-expiring{background:var(--yellow-lt);color:var(--yellow)}
 .tag-nocode{background:var(--purple-lt);color:var(--purple)}
+.tag-mkt{font-size:9.5px;font-weight:500;padding:0px 4px;border-radius:3px;white-space:nowrap;line-height:16px}
+.tag-mkt.mkt-all{background:#E6F4F2;color:#00695C}
+.tag-mkt.mkt-cc{background:#E8F0FE;color:#1A4D8F}
 
 .vc-desc{font-size:13.5px;font-weight:500;color:var(--text);line-height:1.35;margin-bottom:5px}
 .vc-meta{display:flex;gap:10px;flex-wrap:wrap}
@@ -456,10 +459,30 @@ function getCheckedMarkets() {
     .map(cb => cb.value);
 }
 
+/* ── MARKET HELPERS ── */
+const FLAG_MAP={SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'};
+const CODE_MAP={SGD:'SG',MYR:'MY',HKD:'HK',PHP:'PH'};
+function matchesMarket(vMarket, filterKey) {
+  if (!vMarket) return filterKey === 'ALL';
+  const vm = vMarket.toUpperCase();
+  if (filterKey === 'ALL') return vm === 'ALL';
+  return vm === 'ALL' || vm === filterKey || vm.indexOf(filterKey) > -1;
+}
+function mktPillTags(market) {
+  if (!market || market.toUpperCase() === 'ALL') return '<span class="tag tag-mkt mkt-all">🌐 All</span>';
+  const parts = market.split(',').map(s => s.trim()).filter(Boolean);
+  if (parts.length >= 4) return '<span class="tag tag-mkt mkt-all">🌐 All</span>';
+  return parts.map(m => {
+    const fl = FLAG_MAP[m] || '🌐';
+    const code = CODE_MAP[m] || m;
+    return '<span class="tag tag-mkt mkt-cc">' + fl + ' ' + code + '</span>';
+  }).join('');
+}
+
 /* ── UPDATE SIDEBAR COUNTS ── */
 function updateCountBadges() {
   MARKETS.forEach(m => {
-    const ct = ALL.filter(v => v.market === m.key).length;
+    const ct = ALL.filter(v => matchesMarket(v.market, m.key)).length;
     const el = document.getElementById('ct-' + m.key);
     if (el) el.textContent = ct + ' deal' + (ct !== 1 ? 's' : '');
     const lbl = document.getElementById('lbl-' + m.key);
@@ -475,12 +498,14 @@ function render() {
 
   let totalShown = 0;
   let html = '';
+  const seen = new Set();
 
   MARKETS.forEach(m => {
     if (!checked.includes(m.key)) return;
-    const codes = ALL.filter(v => v.market === m.key);
+    const codes = ALL.filter(v => matchesMarket(v.market, m.key));
     if (!codes.length) return;
-    totalShown += codes.length;
+    codes.forEach(v => seen.add(v.id || v.code));
+    totalShown = seen.size;
     html += `<div class="mkt-group" id="grp-${m.key}">
       <div class="mkt-group-hd">
         <span class="mkt-group-title">${m.label}</span>
@@ -516,6 +541,7 @@ const discLabel = v.discount
   else tags.push('<span class="tag tag-flat">Flat Off</span>');
   if (!hasCode) tags.push('<span class="tag tag-nocode">No Code Needed</span>');
   if (expiring) tags.push('<span class="tag tag-expiring">&#9889; Expiring</span>');
+  tags.push(mktPillTags(v.market));
 
   // Meta row
   const meta = [];
