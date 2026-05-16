@@ -1267,11 +1267,13 @@ const ICON={flight:'✈️',hotel:'🏨',activity:'🎡',package:'📦',voucher:
 
 /* Format date: "30 Apr" */
 function fmtDate(s){
+  if(!s) return 'Ongoing';
   const d=new Date(s);
+  if(isNaN(d)) return 'Ongoing';
   return d.getDate()+' '+d.toLocaleString('en',{month:'short'});
 }
 /* True if deal expires within 7 days */
-function isUrgent(s){return(new Date(s)-Date.now())<7*864e5;}
+function isUrgent(s){if(!s) return false;const d=new Date(s);return !isNaN(d)&&(d-Date.now())<7*864e5;}
 
 /* ─── SCHEMA INJECTION ─── */
 function injectSchema(deals){
