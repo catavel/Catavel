@@ -231,7 +231,10 @@ ul,ol{list-style:none}
 .d-dest svg{width:9px;height:9px;flex-shrink:0}
 .d-ota{font-size:11px;color:var(--muted)}
 .d-ota b{color:var(--text2);font-weight:500}
-.d-mkt{font-size:11px;color:var(--muted)}
+.d-mkt{font-size:11px;color:var(--muted);display:inline-flex;gap:3px;align-items:center;flex-wrap:wrap}
+.d-mkt-pill{font-size:9.5px;font-weight:500;padding:0px 4px;border-radius:3px;white-space:nowrap;line-height:16px}
+.d-mkt-pill.mkt-all{background:#E6F4F2;color:#00695C}
+.d-mkt-pill.mkt-cc{background:#E8F0FE;color:#1A4D8F}
 .d-exp{font-size:11px;color:var(--muted);margin-left:auto;white-space:nowrap}
 .d-exp.urg{color:#DC2626;font-weight:600}
 
@@ -1288,6 +1291,19 @@ function injectSchema(deals){
   });
 }
 
+/* ─── MARKET PILLS ─── */
+const FLAG_MAP={SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'};
+function mktPills(market){
+  if(!market||market==='All') return'<span class="d-mkt-pill mkt-all">🌐 All</span>';
+  const parts=market.split(',').map(s=>s.trim()).filter(Boolean);
+  if(parts.length>=4) return'<span class="d-mkt-pill mkt-all">🌐 All</span>';
+  return parts.map(m=>{
+    const fl=FLAG_MAP[m]||'🌐';
+    const code={SGD:'SG',MYR:'MY',HKD:'HK',PHP:'PH'}[m]||m;
+    return'<span class="d-mkt-pill mkt-cc">'+fl+' '+code+'</span>';
+  }).join('');
+}
+
 /* ─── CARD: NORMAL DEAL ───
    Desktop: 3-col grid (accent | body | price+CTA)
    Mobile : 2-col grid (accent | body) + .mc row spanning full width
@@ -1299,8 +1315,6 @@ function cardNormal(d){
   const urgCls=urg?' urg':'';
   const hot=d.is_hot?'<span class="tag-hot">Hot</span>':'';
   const exp=d.is_expiring?'<span class="tag-exp">Expiring</span>':'';
-  const flagMap={SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'};
-  const flag=flagMap[d.market]||'🌐';
   return`<li class="di">
 <article class="dc" data-cat="${escAttr(d.category)}" itemscope itemtype="https://schema.org/Offer">
   <meta itemprop="price" content="${escAttr(d.discounted_price)}">
@@ -1322,7 +1336,7 @@ function cardNormal(d){
         ${esc(d.destination)}
       </span>
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${esc(d.ota)}</span></b></span>
-      <span class="d-mkt">${flag}</span>
+      <span class="d-mkt">${mktPills(d.market)}</span>
       <span class="d-exp${urgCls}">Ends <time datetime="${escAttr(d.valid_until)}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
@@ -1365,8 +1379,6 @@ function cardVoucher(d){
   const exp=d.is_expiring?'<span class="tag-exp">Expiring</span>':'';
   const discLabel=d.voucher_type==='percent'?`${d.discount_value}% OFF`:`${d.currency} ${d.discount_value} OFF`;
   const accentLabel=d.voucher_type==='percent'?`−${d.discount_value}%`:`−${d.discount_value}`;
-  const flagMap={SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'};
-  const flag=flagMap[d.market]||'🌐';
   const isNoCode=d.voucher_code==='NO CODE NEEDED';
   const btnLabel=isNoCode?'Get Deal':'Show Code';
   const dvCls=isNoCode?'dv no-code open':'dv';
@@ -1393,7 +1405,7 @@ function cardVoucher(d){
     </div>
     <div class="dr2">
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${esc(d.ota)}</span></b></span>
-      <span class="d-mkt">${flag}</span>
+      <span class="d-mkt">${mktPills(d.market)}</span>
       <span class="d-exp${urgCls}">Ends <time datetime="${escAttr(d.valid_until)}">${fmtDate(d.valid_until)}</time></span>
       ${tcsBtn}
     </div>
@@ -1518,7 +1530,8 @@ function runFilter(dest,mkt,maxSGD,otas){
   /* Sidebar/sheet: destination dropdown */
   if(dest&&dest!=='all') r=r.filter(d=>d.destination===dest||d.destination==='All Destinations');
   /* Market */
-  if(mkt&&mkt!=='all') r=r.filter(d=>d.market===mkt);
+  /* Market: match if market==='All', or comma-separated list includes the filter */
+  if(mkt&&mkt!=='all') r=r.filter(d=>d.market==='All'||d.market===mkt||d.market.indexOf(mkt)>-1);
   /* OTA filter */
   if(otas&&otas.length>0) r=r.filter(d=>otas.includes(d.ota));
   /* Max price (normalise MYR → SGD at 3.3 rate) */
@@ -1759,9 +1772,11 @@ function normaliseVoucher(v, idx){
   const isManualCode = code && code !== 'No code - via link';
   const title = desc || (ota + ' Promo');
 
-  /* Market: first code before any slash (e.g. "SGD", "HKD", or "All" → 'SGD' default) */
-  let market = String(v.market || v.Market || 'SGD').split('/')[0].trim().toUpperCase();
-  if(market === 'ALL' || !market) market = 'SGD';
+  /* Market: preserve "All" and comma-separated markets (e.g. "SGD, MYR, PHP") */
+  let market = String(v.market || v.Market || 'All').trim();
+  if(market.toUpperCase() === 'ALL' || !market) market = 'All';
+  /* Currency: pick first market code for price display */
+  const currency = market === 'All' ? 'SGD' : market.split(',')[0].trim();
 
   /* Destination: vouchers usually apply across destinations */
   const destination = v.destination || 'All Destinations';
@@ -1777,7 +1792,7 @@ function normaliseVoucher(v, idx){
     destination:      destination,
     ota:              ota,
     market:           market,
-    currency:         market,
+    currency:         currency,
     original_price:   null,
     discounted_price: null,
     discount_percent: pct,
