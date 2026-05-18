@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-17T14:01:15.744Z",
-  "count": 50,
+  "lastUpdated": "2026-05-18T15:56:45.230Z",
+  "count": 49,
   "posts": [
     {
       "slug": "klook-promo-code",
@@ -29,19 +29,6 @@
       "url": "/blog/klook-vs-trip-com-which-is-better/"
     },
     {
-      "slug": "esim-guide",
-      "title": "Best eSIM for Travel 2026 - Compare Airalo, Yesim, Saily and More",
-      "excerpt": "Compare the top 4 travel eSIM providers for 2026. Side-by-side pricing for popular destinations, setup guide, phone compatibility check, and honest pros and cons for Airalo, Yesim, Saily, and Drimsim.",
-      "category": "esim",
-      "keyword": "best esim for travel",
-      "author": "Catavel",
-      "published": "2026-03-27",
-      "updated": "2026-03-27",
-      "source": "manual",
-      "featured": true,
-      "url": "/blog/esim-guide/"
-    },
-    {
       "slug": "best-esim-for-travel",
       "title": "Best eSIM for Travel in 2026 - Airalo vs Yesim vs Saily",
       "excerpt": "Stay connected anywhere without roaming fees. We compare pricing, coverage, and features of the top 3 eSIM providers for international travelers in 2026.",
@@ -49,8 +36,8 @@
       "keyword": "best esim for travel 2026",
       "author": "Catavel",
       "published": "2026-03-27",
-      "updated": "2026-03-27",
-      "source": "manual",
+      "updated": "2026-05-17",
+      "source": "programmatic",
       "featured": true,
       "url": "/blog/best-esim-for-travel/"
     },
