@@ -2854,5 +2854,22 @@
     "tcs": "> Everything you will need for your HK trip in 5-days\n- Mondays: Flight All-in Flash Sale and Fight Vouchers\n- Tuesdays: HK Hotel Flash Sale\n- Wednesday: Bundle and Save and HK Hotel Vouchers\n- Thursdays: Attractions and Tours Flash Sales\n- Fridays: e-Sims, Airport Transfer, Car rentals, etc",
     "status": "active",
     "is_expiring": false
+  },
+  {
+    "id": "vc_no_code_needed_15",
+    "ota": "Traveloka",
+    "promo_code": "NO CODE NEEDED",
+    "description": "Popular Destination Deals!",
+    "type": "percent",
+    "discount": "50%",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Traveloka_CPS_Web_App_ID",
+    "valid_until": "2026-09-30",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56551&AID=2361654&Type=21&r=https%3A%2F%2Fwww.traveloka.com%2Fid-id%2Fpromotion%2Ftravel-to-south-korea",
+    "tcs": "Travel to South Korea\nOffer: Up to 50% OFF\nCampaign Period: Until 30 September 2026\nPromo Page URL: https://www.traveloka.com/id-id/promotion/travel-to-south-korea",
+    "status": "active",
+    "is_expiring": false
   }
 ]
