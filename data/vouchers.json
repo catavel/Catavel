@@ -2584,23 +2584,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_ael35all",
-    "ota": "Klook",
-    "promo_code": "AEL35ALL",
-    "description": "Airport Express Hong Kong One-way Ticket 35% off",
-    "type": "percent",
-    "discount": "35%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-05-22",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Hong Kong Users only. Enjoy 35% off for Airport Express Hong Kong One-Way Ticket (max discount value HK$42). (Offer is not applicable to certain packages) during the promotional period and cannot be used in conjunction with other promotions. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit. If it is not used, no refund will be given. Terms and conditions apply. Klook reserves the right to suspend, cancel or modify the promotion at any time without prior notice.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_kraf0524b1g1",
     "ota": "Klook",
     "promo_code": "KRAF0524B1G1",
@@ -2869,6 +2852,23 @@
     "market": "ALL",
     "affiliate_link": "https://clk.omgt6.com/?PID=56551&AID=2361654&Type=21&r=https%3A%2F%2Fwww.traveloka.com%2Fid-id%2Fpromotion%2Ftravel-to-south-korea",
     "tcs": "Travel to South Korea\nOffer: Up to 50% OFF\nCampaign Period: Until 30 September 2026\nPromo Page URL: https://www.traveloka.com/id-id/promotion/travel-to-south-korea",
+    "status": "active",
+    "is_expiring": false
+  },
+  {
+    "id": "vc_no_code_needed_16",
+    "ota": "Radisson Hotels",
+    "promo_code": "NO CODE NEEDED",
+    "description": "Global Summer Sale",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
+    "valid_until": "2026-09-10",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fsummer-sale",
+    "tcs": "Save up to 35%\nBooking Window: Today – May 28, 2026\nStay Window: July 1, 2026 – September 10, 2026",
     "status": "active",
     "is_expiring": false
   }
