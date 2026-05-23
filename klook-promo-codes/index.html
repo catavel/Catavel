@@ -79,6 +79,13 @@ ul,ol{list-style:none}
 
 /* SIDEBAR */
 .sb{display:flex;flex-direction:column;gap:14px;position:sticky;top:66px}
+.sb-sort{display:flex;flex-direction:column;gap:6px;margin-top:12px}
+.sb-sort-lbl{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:2px}
+.sb-sort-btn{width:100%;padding:7px 10px;font-size:12px;font-weight:500;color:var(--text2);background:var(--bg);border:1px solid var(--bdr);border-radius:var(--r);text-align:left;cursor:pointer}
+.sb-sort-btn.on{border-color:var(--teal);background:var(--teal-lt);color:var(--teal);font-weight:600}
+.sb-sort-btn:hover:not(.on){border-color:var(--bdr2);color:var(--text)}
+.btn-clear-vc{width:100%;height:36px;background:none;color:var(--muted);font-size:12px;font-weight:500;border-radius:var(--r);border:1px solid var(--bdr);margin-top:8px;cursor:pointer}
+.btn-clear-vc:hover{color:var(--text2);border-color:var(--bdr2)}
 .sb-box{background:var(--white);border:1px solid var(--bdr);border-radius:var(--r);padding:14px}
 .sb-lbl{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:10px}
 
@@ -312,6 +319,15 @@ ul,ol{list-style:none}
         <div class="sb-tip-step"><div class="sb-tip-num">2</div><span>Code copied (if applicable)</span></div>
         <div class="sb-tip-step"><div class="sb-tip-num">3</div><span>You&#8217;re redirected to Klook</span></div>
         <div class="sb-tip-step"><div class="sb-tip-num">4</div><span>Paste code at checkout</span></div>
+
+      <div class="sb-box" style="margin-top:10px">
+        <span class="sb-sort-lbl">Sort by</span>
+        <div class="sb-sort">
+          <button class="sb-sort-btn on" data-sort="default" onclick="setSortVC(this)">Default</button>
+          <button class="sb-sort-btn" data-sort="exp_asc" onclick="setSortVC(this)">Expiring Soon</button>
+          <button class="sb-sort-btn" data-sort="exp_desc" onclick="setSortVC(this)">Expiring Last</button>
+        </div>
+        <button class="btn-clear-vc" onclick="clearVC()">Clear Filters</button>
       </div>
     </aside>
 
@@ -422,6 +438,7 @@ const MARKETS = [
 ];
 
 let ALL = [];
+let vcSort = 'default';
 
 /* ── INIT ── */
 async function init() {
@@ -489,6 +506,29 @@ function updateCountBadges() {
     if (lbl) lbl.style.display = ct === 0 ? 'none' : '';
   });
 }
+/* ── SORT ── */
+function setSortVC(btn){
+  document.querySelectorAll('.sb-sort-btn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  vcSort=btn.dataset.sort;
+  render();
+}
+
+function sortCodes(codes){
+  if(vcSort==='default') return codes;
+  const FAR='2099-12-31';
+  return [...codes].sort((a,b)=>{
+    const da=a.valid_until||FAR, db=b.valid_until||FAR;
+    return vcSort==='exp_asc'?(da<db?-1:da>db?1:0):(da>db?-1:da<db?1:0);
+  });
+}
+
+function clearVC(){
+  document.querySelectorAll('.sb input[type=checkbox]').forEach(cb=>cb.checked=true);
+  vcSort='default';
+  document.querySelectorAll('.sb-sort-btn').forEach(b=>{b.classList.remove('on');if(b.dataset.sort==='default')b.classList.add('on');});
+  render();
+}
 
 /* ── RENDER ── */
 function render() {
@@ -502,7 +542,7 @@ function render() {
 
   MARKETS.forEach(m => {
     if (!checked.includes(m.key)) return;
-    const codes = ALL.filter(v => matchesMarket(v.market, m.key));
+    const codes = sortCodes(ALL.filter(v => matchesMarket(v.market, m.key)));
     if (!codes.length) return;
     codes.forEach(v => seen.add(v.id || v.code));
     totalShown = seen.size;
