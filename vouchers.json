@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-23T13:09:14.053Z",
+  "lastUpdated": "2026-05-23T13:09:17.306Z",
   "count": 144,
   "vouchers": [
     {
@@ -37,9 +37,9 @@
       "is_expiring": false
     },
     {
-      "id": "vc_jm",
+      "id": "vc_2026hkdl12",
       "ota": "Klook",
-      "code": "JM",
+      "code": "2026HKDL12",
       "description": "Selected packages 6 USD OFF",
       "discount_type": "flat",
       "discount": "USD 6",
