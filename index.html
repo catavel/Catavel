@@ -163,6 +163,8 @@ ul,ol{list-style:none}
 /* Apply button */
 .btn-apply{width:100%;height:42px;background:var(--text);color:#fff;font-size:13px;font-weight:500;border-radius:var(--r)}
 .btn-apply:hover{background:#333}
+.btn-clear{width:100%;height:38px;background:none;color:var(--muted);font-size:13px;font-weight:500;border-radius:var(--r);border:1px solid var(--bdr2);margin-top:8px}
+.btn-clear:hover{color:var(--text2);border-color:var(--bdr2)}
 .sb-div{height:1px;background:var(--bdr)}
 /* Telegram widget in sidebar */
 .sb-tg{border:1px solid var(--bdr);border-radius:var(--r);padding:12px;background:var(--white)}
@@ -983,6 +985,7 @@ ul,ol{list-style:none}
         </div>
       </div>
       <button class="btn-apply" onclick="applyFilters()">Apply Filters</button>
+      <button class="btn-clear" onclick="clearFilters()">Clear Filters</button>
     </aside>
 
     <!-- DEALS LIST -->
@@ -997,6 +1000,8 @@ ul,ol{list-style:none}
             <option value="discount">Best Discount</option>
             <option value="price_asc">Price ↑</option>
             <option value="price_desc">Price ↓</option>
+            <option value="exp_asc">Expiring Soon</option>
+            <option value="exp_desc">Expiring Last</option>
           </select>
         </div>
       </div>
@@ -1170,10 +1175,13 @@ ul,ol{list-style:none}
           <button class="mf-sort-btn on" data-sort="discount" onclick="setMFSort(this)">Best Discount</button>
           <button class="mf-sort-btn"    data-sort="price_asc" onclick="setMFSort(this)">Price ↑</button>
           <button class="mf-sort-btn"    data-sort="price_desc" onclick="setMFSort(this)">Price ↓</button>
+          <button class="mf-sort-btn"    data-sort="exp_asc" onclick="setMFSort(this)">Expiring Soon</button>
+          <button class="mf-sort-btn"    data-sort="exp_desc" onclick="setMFSort(this)">Expiring Last</button>
         </div>
       </div>
       <!-- Apply -->
       <button class="mf-apply" onclick="applyMF()">Show Deals</button>
+      <button class="btn-clear" style="margin-top:8px;width:100%" onclick="clearMF()">Clear Filters</button>
     </div>
   </div>
 </div>
@@ -1566,12 +1574,40 @@ function applyFilters(){
   );
 }
 
+function clearFilters(){
+  const dest=document.getElementById('f-dest'); if(dest) dest.value='';
+  const mkt=document.getElementById('f-mkt');   if(mkt)  mkt.value='';
+  const pr=document.getElementById('f-pr');     if(pr)   pr.value=2000;
+  const prv=document.getElementById('f-pr-v');  if(prv)  prv.textContent='SGD 2,000';
+  document.querySelectorAll('#ota-list input[type="checkbox"]').forEach(cb=>cb.checked=true);
+  document.querySelectorAll('#mf-ota-list input[type="checkbox"]').forEach(cb=>cb.checked=true);
+  const sr=document.getElementById('srt'); if(sr) sr.value='discount';
+  mfSort='discount';
+  document.querySelectorAll('.mf-sort-btn').forEach(b=>{b.classList.remove('on');if(b.dataset.sort==='discount')b.classList.add('on');});
+  runFilter('','',2000,null);
+  sortDeals('discount');
+}
+
+function clearMF(){
+  const mfDest=document.getElementById('mf-dest'); if(mfDest) mfDest.value='';
+  const mfMkt=document.getElementById('mf-mkt');   if(mfMkt)  mfMkt.value='';
+  clearFilters();
+  closeMF();
+}
+
 /* ─── SORT ─── */
 function sortDeals(by){
   const s=[...cur];
   if(by==='discount')   s.sort((a,b)=>(b.discount_percent||0)-(a.discount_percent||0));
   if(by==='price_asc')  s.sort((a,b)=>(a.discounted_price||0)-(b.discounted_price||0));
   if(by==='price_desc') s.sort((a,b)=>(b.discounted_price||0)-(a.discounted_price||0));
+  if(by==='exp_asc'||by==='exp_desc'){
+    const FAR='2099-12-31';
+    s.sort((a,b)=>{
+      const da=a.valid_until||FAR, db=b.valid_until||FAR;
+      return by==='exp_asc'?(da<db?-1:da>db?1:0):(da>db?-1:da<db?1:0);
+    });
+  }
   render(s);
 }
 
