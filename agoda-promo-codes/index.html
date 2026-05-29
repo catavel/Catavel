@@ -378,7 +378,56 @@ async function init() {
     document.getElementById('skeletons').style.display = 'none';
     updateCountBadges();
     render();
+    autoRevealFromUrl_();
   }
+}
+
+/* ── AUTO-REVEAL FROM TELEGRAM LINK ──
+   Reads ?reveal=<CODE> from the URL (set by the Telegram bot link),
+   scrolls to that voucher card, shows + copies the code, and
+   highlights it. The affiliate link is NOT auto-opened (browsers block
+   non-user-initiated popups) - the user taps the button, which is a
+   reliable affiliate click. If the code's market is unchecked, we tick
+   all markets and re-render so the card is guaranteed to exist. */
+function autoRevealFromUrl_() {
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var want = (params.get('reveal') || '').trim();
+    if (!want) return;
+    var cid = want.toUpperCase().replace(/[^A-Z0-9]/g, '_');
+
+    var attempt = function(triedAllMarkets) {
+      var w = document.getElementById('cw-' + cid);
+      if (!w) {
+        if (!triedAllMarkets) {
+          document.querySelectorAll('.sb input[type=checkbox]').forEach(function(b){ b.checked = true; });
+          render();
+          setTimeout(function(){ attempt(true); }, 60);
+        }
+        return;
+      }
+
+      var card = w.closest('article') || w;
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      card.style.transition = 'box-shadow .3s, background-color .3s';
+      card.style.boxShadow = '0 0 0 3px var(--teal, #00897B)';
+      setTimeout(function(){ card.style.boxShadow = ''; }, 2600);
+
+      if (!w.classList.contains('open')) {
+        w.classList.add('open');
+        var code = w.dataset.code || '';
+        if (code) { try { copyText(code); } catch(e){} }
+        var btn = w.querySelector('.btn-rv');
+        if (btn) btn.textContent = 'Copied! ✓ Tap to use';
+        if (typeof showToast === 'function' && code) {
+          showToast('Code copied: ' + code + ' - tap the button to open ' + OTA_NAME);
+        }
+      }
+    };
+
+    setTimeout(function(){ attempt(false); }, 80);
+  } catch (e) { /* fail silent - never break the page */ }
 }
 
 function onMktChange() { render(); }
