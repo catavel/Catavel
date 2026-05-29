@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-23T13:09:17.306Z",
-  "count": 144,
+  "lastUpdated": "2026-05-29T02:20:50.708Z",
+  "count": 145,
   "vouchers": [
     {
       "id": "vc_dbs10offklk2026",
@@ -133,7 +133,7 @@
       "applicable_for": "Hotels",
       "valid_until": "",
       "market": "SGD",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com",
+      "affiliate_link": "https://www.agoda.com",
       "tc": "Redeem at Agoda Deals page first. 30-day validity after redeem. Up to 5 uses.",
       "status": "active",
       "is_expiring": false
@@ -150,7 +150,7 @@
       "applicable_for": "Activities",
       "valid_until": "",
       "market": "SGD",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com",
+      "affiliate_link": "https://www.agoda.com",
       "tc": "Redeem at Agoda Deals page. Up to 5 uses per user.",
       "status": "active",
       "is_expiring": false
@@ -2023,7 +2023,7 @@
       "affiliate_link": "https://www.klook.com/deals?aid=115333",
       "tc": "This \"6000 KRW\" discount coupon is valid only for: \"Korea Train Ticket\". \nEach user is allowed to use it only once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: June 3rd.",
       "status": "active",
-      "is_expiring": false
+      "is_expiring": true
     },
     {
       "id": "vc_scb26may100",
@@ -2092,23 +2092,6 @@
       "tc": "Enjoy HK$100 instant discount at Klook Platform upon making a Single Net Transaction of HK$1,000 on Local Food & Dining with Bank of Communications VISA Credit Card and UnionPay Dual Currency Credit Card issued by Bank of Communications (Hong Kong) Limited and must successfully enter the designated promo code at the checkout page. (Offer does not apply to Universal Studio Japan, Japan Rail Pass, and activities as specified by Klook from time to time). Each user can use this promo code ONCE a month only while the quota lasts. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion.",
       "status": "active",
       "is_expiring": false
-    },
-    {
-      "id": "vc_kraf0524b1g1",
-      "ota": "Klook",
-      "code": "KRAF0524B1G1",
-      "description": "AQAUFIELD Ticket B1G1",
-      "discount_type": "deal",
-      "discount": "2-for-1",
-      "min_spend": "",
-      "max_discount": "",
-      "applicable_for": "All activities",
-      "valid_until": "2026-05-23",
-      "market": "HKD",
-      "affiliate_link": "https://www.klook.com/deals?aid=115333",
-      "tc": "HK Users who purchase the designated package?Aquafield Jimjil Spa Ticket?, select quantity as 2, enter the promotion code can enjoy buy one get one free. Each user can use this discount only once. No minimum spend, no stacking with other promotions (direct discounts on product, promo codes, discount codes, special rate packages etc.). Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
-      "status": "active",
-      "is_expiring": true
     },
     {
       "id": "vc_eutour15",
@@ -2447,6 +2430,40 @@
       "market": "HKD",
       "affiliate_link": "https://www.klook.com/?aid=115333",
       "tc": "Valid for Hong Kong residents only. One-time use per account. Applicable to selected travel insurance products.",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_no_code_needed",
+      "ota": "Watsons Wine",
+      "code": "NO CODE NEEDED",
+      "description": "???: ????|?????",
+      "discount_type": "deal",
+      "discount": "",
+      "min_spend": "",
+      "max_discount": "",
+      "applicable_for": "Other - Watsonswine_CPS_Web",
+      "valid_until": "2026-05-24",
+      "market": "All",
+      "affiliate_link": "https://clk.omgt6.com/?PID=51257&AID=2361654&Type=21&r=https%3A%2F%2Fwww.watsonswine.com%2Fen%2Fc%2Fspiritsburg2026%3Futm_source%3Doptimise%26utm_medium%3Daffiliate%26utm_campaign%3D20260414_mp_burgundy_whisky%26utm_content%3Dsee-more-so",
+      "tc": "????????????????????????????????????????????????????????????????????????????????????!\n\n???????????????????????????????????????Watson?s Wine????????????????????!\n\n?????: ???????? $1,000????? 95 ?; ???????? $5,000????? 9 ??????!\n\n*????2026?5?25????????????????????????????",
+      "status": "active",
+      "is_expiring": false
+    },
+    {
+      "id": "vc_no_code_needed",
+      "ota": "Watsons Wine",
+      "code": "NO CODE NEEDED",
+      "description": "???????? | ??????",
+      "discount_type": "deal",
+      "discount": "",
+      "min_spend": "",
+      "max_discount": "",
+      "applicable_for": "Other - Watsonswine_CPS_Web",
+      "valid_until": "2026-05-24",
+      "market": "All",
+      "affiliate_link": "https://clk.omgt6.com/?PID=51257&AID=2361654&Type=21&r=https%3A%2F%2Fwww.watsonswine.com%2Fen%2Fc%2Fburgundyipboffer2026%3Futm_source%3Doptimise%26utm_medium%3Daffiliate%26utm_campaign%3D20260414_mp_burgundy_hot_picks%26utm_content%3Dsee-more-so",
+      "tc": "?????????????????????????????????????????????????????????????\n\n??????????????????????????????????Chandon de Briailles????????Domaine Mia??????Domaine de Villaine?Arnaud et Sophie????$220?! ????????! \n\n?????: ?? 3 ?????????????? 95 ? ; ?? 6 ?????????????? 92 ??????????????????????! \n\n*????????????????????????2026?5?25????????????????????????????",
       "status": "active",
       "is_expiring": false
     }
