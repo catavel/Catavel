@@ -1302,15 +1302,24 @@ function injectSchema(deals){
 }
 
 /* ─── MARKET PILLS ─── */
-const FLAG_MAP={SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'};
+const FLAG_MAP={
+  AED:'🇦🇪',ARS:'🇦🇷',AUD:'🇦🇺',BDT:'🇧🇩',BGN:'🇧🇬',BND:'🇧🇳',
+  BRL:'🇧🇷',BTN:'🇧🇹',CAD:'🇨🇦',CHF:'🇨🇭',CNY:'🇨🇳',CZK:'🇨🇿',
+  DKK:'🇩🇰',EGP:'🇪🇬',EUR:'🇪🇺',GBP:'🇬🇧',HKD:'🇭🇰',HUF:'🇭🇺',
+  IDR:'🇮🇩',ILS:'🇮🇱',INR:'🇮🇳',IRR:'🇮🇷',ISK:'🇮🇸',JPY:'🇯🇵',
+  KHR:'🇰🇭',KRW:'🇰🇷',KWD:'🇰🇼',LAK:'🇱🇦',MMK:'🇲🇲',MOP:'🇲🇴',
+  MUR:'🇲🇺',MXN:'🇲🇽',MYR:'🇲🇾',NGN:'🇳🇬',NOK:'🇳🇴',NPR:'🇳🇵',
+  NZD:'🇳🇿',PHP:'🇵🇭',PKR:'🇵🇰',PLN:'🇵🇱',QAR:'🇶🇦',RON:'🇷🇴',
+  RSD:'🇷🇸',RUB:'🇷🇺',SAR:'🇸🇦',SEK:'🇸🇪',SGD:'🇸🇬',THB:'🇹🇭',
+  TRY:'🇹🇷',TWD:'🇹🇼',UAH:'🇺🇦',USD:'🇺🇸',VND:'🇻🇳'
+};
 function mktPills(market){
   if(!market||market==='All') return'<span class="d-mkt-pill mkt-all">🌐 All</span>';
   const parts=market.split(',').map(s=>s.trim()).filter(Boolean);
   if(parts.length>=4) return'<span class="d-mkt-pill mkt-all">🌐 All</span>';
   return parts.map(m=>{
     const fl=FLAG_MAP[m]||'🌐';
-    const code={SGD:'SG',MYR:'MY',HKD:'HK',PHP:'PH'}[m]||m;
-    return'<span class="d-mkt-pill mkt-cc">'+fl+' '+code+'</span>';
+    return'<span class="d-mkt-pill mkt-cc">'+fl+' '+m+'</span>';
   }).join('');
 }
 
@@ -1923,10 +1932,51 @@ async function init(){
     smax.textContent=maxDisc>0?'Up to '+maxDisc+'% off':'-';
   }
   buildOtaList();
+  buildMarketDropdowns();
 }
 document.readyState==='loading'
   ?document.addEventListener('DOMContentLoaded',init)
   :init();
+
+// ── Dynamic market dropdowns ──────────────────────────────────
+// Curated markets always shown first (if present in data), then
+// any other markets sorted by voucher count descending.
+// Vouchers tagged 'All' do NOT trigger a specific currency pill.
+const CURATED_MKTS=['SGD','MYR','HKD','PHP'];
+function buildMarketDropdowns(){
+  // Count specific-market vouchers only (not 'All')
+  const counts={};
+  DEALS.forEach(d=>{
+    const mkt=(d.market||'').trim();
+    if(!mkt||mkt==='All') return;
+    mkt.split(',').map(s=>s.trim()).filter(Boolean).forEach(cur=>{
+      counts[cur]=(counts[cur]||0)+1;
+    });
+  });
+
+  // Build ordered list: curated first (if present), then others by count
+  const curated=CURATED_MKTS.filter(c=>counts[c]>0);
+  const others=Object.keys(counts)
+    .filter(c=>!CURATED_MKTS.includes(c))
+    .sort((a,b)=>counts[b]-counts[a]);
+  const ordered=[...curated,...others];
+
+  if(ordered.length===0) return; // no specific markets - keep hardcoded defaults
+
+  const makeOptions=()=>{
+    let html='<option value="all">All Markets</option>';
+    ordered.forEach(cur=>{
+      const fl=FLAG_MAP[cur]||'🌐';
+      html+=`<option value="${cur}">${fl} ${cur}</option>`;
+    });
+    return html;
+  };
+
+  const sb=document.getElementById('f-mkt');
+  const mf=document.getElementById('mf-mkt');
+  if(sb) sb.innerHTML=makeOptions();
+  if(mf) mf.innerHTML=makeOptions();
+}
 
 // ── Dynamic OTA list ──────────────────────────────────────────
 function buildOtaList() {
