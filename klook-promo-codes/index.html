@@ -236,6 +236,10 @@ ul,ol{list-style:none}
   .sb{position:static;flex-direction:row;flex-wrap:wrap;gap:8px}
   .sb-box{flex:1;min-width:140px}
   .sb-tip{display:none}
+  /* Market checkboxes on mobile: scroll horizontally so many markets don't break layout */
+  #mkt-checkbox-container{display:flex;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:4px;scrollbar-width:none;padding-bottom:2px}
+  #mkt-checkbox-container::-webkit-scrollbar{display:none}
+  #mkt-checkbox-container .mkt-row{flex-shrink:0;min-width:120px}
 }
 @media(max-width:500px){
   .vc-inner{grid-template-columns:1fr;gap:10px}
@@ -283,34 +287,11 @@ ul,ol{list-style:none}
     <aside class="sb" aria-label="Filter by market">
       <div class="sb-box">
         <span class="sb-lbl">Market</span>
-        <label class="mkt-row" id="lbl-SGD">
-          <input type="checkbox" value="SGD" checked onchange="onMktChange()">
-          <div class="mkt-row-info">
-            <span class="mkt-row-name">&#127480;&#127468; Singapore</span>
-            <span class="mkt-row-ct" id="ct-SGD">- codes</span>
-          </div>
-        </label>
-        <label class="mkt-row" id="lbl-MYR">
-          <input type="checkbox" value="MYR" checked onchange="onMktChange()">
-          <div class="mkt-row-info">
-            <span class="mkt-row-name">&#127474;&#127486; Malaysia</span>
-            <span class="mkt-row-ct" id="ct-MYR">- codes</span>
-          </div>
-        </label>
-        <label class="mkt-row" id="lbl-HKD">
-          <input type="checkbox" value="HKD" checked onchange="onMktChange()">
-          <div class="mkt-row-info">
-            <span class="mkt-row-name">&#127469;&#127472; Hong Kong</span>
-            <span class="mkt-row-ct" id="ct-HKD">- codes</span>
-          </div>
-        </label>
-        <label class="mkt-row" id="lbl-ALL">
-          <input type="checkbox" value="ALL" checked onchange="onMktChange()">
-          <div class="mkt-row-info">
-            <span class="mkt-row-name">&#127757; All Markets</span>
-            <span class="mkt-row-ct" id="ct-ALL">- codes</span>
-          </div>
-        </label>
+        <!-- Populated dynamically by buildSidebarCheckboxes() after data loads -->
+        <div id="mkt-checkbox-container">
+          <!-- fallback: show skeleton hint while loading -->
+          <div style="font-size:12px;color:var(--muted);padding:4px 0">Loading markets...</div>
+        </div>
       </div>
 
       <div class="sb-box sb-tip">
@@ -429,13 +410,10 @@ const AFF_BASE      = 'https://www.klook.com/?aid=115333';
 const VOUCHERS_JSON = '/vouchers.json';
 const OTA_NAME      = 'Klook';
 
-// Markets to show, in display order
-const MARKETS = [
-  { key: 'SGD', label: '🇸🇬 Singapore (SGD)' },
-  { key: 'MYR', label: '🇲🇾 Malaysia (MYR)'  },
-  { key: 'HKD', label: '🇭🇰 Hong Kong (HKD)' },
-  { key: 'ALL', label: '🌏 All Markets'       },
-];
+// Curated markets: always shown first when present in data
+const CURATED_KEYS = ['SGD', 'MYR', 'HKD', 'PHP'];
+// MARKETS built dynamically after data loads - see buildMarkets()
+let MARKETS = [];
 
 let ALL = [];
 let vcSort = 'default';
@@ -462,7 +440,7 @@ async function init() {
     document.getElementById('secUpdated').textContent  = 'Sample data';
   } finally {
     document.getElementById('skeletons').style.display = 'none';
-    updateCountBadges();
+    buildMarkets();
     render();
     autoRevealFromUrl_();
   }
@@ -531,14 +509,62 @@ function getCheckedMarkets() {
     .map(cb => cb.value);
 }
 
+/* ── BUILD MARKETS (data-driven, called after fetch) ──
+   Order: ALL always last, curated (SGD/MYR/HKD/PHP) first if present,
+   then other specific markets sorted by voucher count descending.
+   A voucher tagged 'All' does NOT cause a specific currency pill to appear.
+*/
+function buildMarkets() {
+  // Count specific-market vouchers only
+  const counts = {};
+  ALL.forEach(v => {
+    const mkt = (v.market || '').trim();
+    if (!mkt || mkt.toUpperCase() === 'ALL') return;
+    mkt.split(',').map(s => s.trim()).filter(Boolean).forEach(cur => {
+      counts[cur] = (counts[cur] || 0) + 1;
+    });
+  });
+
+  const curated = CURATED_KEYS.filter(c => counts[c] > 0);
+  const others  = Object.keys(counts)
+    .filter(c => !CURATED_KEYS.includes(c))
+    .sort((a, b) => counts[b] - counts[a]);
+
+  // ALL bucket first (globals), then curated, then others by count
+  MARKETS = [{ key: 'ALL', label: '🌏 All Markets' }].concat(
+    [...curated, ...others].map(cur => ({
+      key:   cur,
+      label: (FLAG_MAP[cur] || '🌐') + ' ' + cur
+    }))
+  );
+
+  // Rebuild sidebar checkboxes from new MARKETS
+  buildSidebarCheckboxes();
+  // Update counts
+  updateCountBadges();
+}
+
 /* ── MARKET HELPERS ── */
-const FLAG_MAP={SGD:'🇸🇬',MYR:'🇲🇾',HKD:'🇭🇰',PHP:'🇵🇭'};
-const CODE_MAP={SGD:'SG',MYR:'MY',HKD:'HK',PHP:'PH'};
+const FLAG_MAP={
+  AED:'🇦🇪',ARS:'🇦🇷',AUD:'🇦🇺',BDT:'🇧🇩',BGN:'🇧🇬',BND:'🇧🇳',
+  BRL:'🇧🇷',BTN:'🇧🇹',CAD:'🇨🇦',CHF:'🇨🇭',CNY:'🇨🇳',CZK:'🇨🇿',
+  DKK:'🇩🇰',EGP:'🇪🇬',EUR:'🇪🇺',GBP:'🇬🇧',HKD:'🇭🇰',HUF:'🇭🇺',
+  IDR:'🇮🇩',ILS:'🇮🇱',INR:'🇮🇳',IRR:'🇮🇷',ISK:'🇮🇸',JPY:'🇯🇵',
+  KHR:'🇰🇭',KRW:'🇰🇷',KWD:'🇰🇼',LAK:'🇱🇦',MMK:'🇲🇲',MOP:'🇲🇴',
+  MUR:'🇲🇺',MXN:'🇲🇽',MYR:'🇲🇾',NGN:'🇳🇬',NOK:'🇳🇴',NPR:'🇳🇵',
+  NZD:'🇳🇿',PHP:'🇵🇭',PKR:'🇵🇰',PLN:'🇵🇱',QAR:'🇶🇦',RON:'🇷🇴',
+  RSD:'🇷🇸',RUB:'🇷🇺',SAR:'🇸🇦',SEK:'🇸🇪',SGD:'🇸🇬',THB:'🇹🇭',
+  TRY:'🇹🇷',TWD:'🇹🇼',UAH:'🇺🇦',USD:'🇺🇸',VND:'🇻🇳'
+};
+const CODE_MAP={SGD:'SG',MYR:'MY',HKD:'HK',PHP:'PH',USD:'US',THB:'TH',TWD:'TW',MOP:'MO',KRW:'KR',CNY:'CN',JPY:'JP',AUD:'AU',EUR:'EU',GBP:'GB',IDR:'ID',INR:'IN',VND:'VN'};
 function matchesMarket(vMarket, filterKey) {
-  if (!vMarket) return filterKey === 'ALL';
-  const vm = vMarket.toUpperCase();
-  if (filterKey === 'ALL') return vm === 'ALL';
-  return vm === 'ALL' || vm === filterKey || vm.indexOf(filterKey) > -1;
+  const vm = (vMarket || '').trim().toUpperCase();
+  // ALL group = globally-valid codes only (blank or "All").
+  if (filterKey === 'ALL') return vm === 'ALL' || vm === '';
+  // Specific market group = codes tagged for that currency ONLY.
+  // Global ("All") codes are NOT duplicated into specific groups (option B).
+  if (vm === 'ALL' || vm === '') return false;
+  return vm.split(',').map(function(s){ return s.trim(); }).indexOf(filterKey) > -1;
 }
 function mktPillTags(market) {
   if (!market || market.toUpperCase() === 'ALL') return '<span class="tag tag-mkt mkt-all">🌐 All</span>';
@@ -549,6 +575,21 @@ function mktPillTags(market) {
     const code = CODE_MAP[m] || m;
     return '<span class="tag tag-mkt mkt-cc">' + fl + ' ' + code + '</span>';
   }).join('');
+}
+
+/* ── BUILD SIDEBAR CHECKBOXES (data-driven) ── */
+function buildSidebarCheckboxes() {
+  const container = document.getElementById('mkt-checkbox-container');
+  if (!container) return;
+  container.innerHTML = MARKETS.map(m => `
+    <label class="mkt-row" id="lbl-${m.key}">
+      <input type="checkbox" value="${m.key}" checked onchange="onMktChange()">
+      <div class="mkt-row-info">
+        <span class="mkt-row-name">${m.label}</span>
+        <span class="mkt-row-ct" id="ct-${m.key}">- codes</span>
+      </div>
+    </label>
+  `).join('');
 }
 
 /* ── UPDATE SIDEBAR COUNTS ── */
