@@ -886,7 +886,7 @@ ul,ol{list-style:none}
     <div class="mn-section">More</div>
     <a href="/hotel-deals/">Hotel Deals</a>
     <a href="/blog/">Blog</a>
-    <a href="/blog/esim-guide/">eSIM Guide</a>
+    <a href="/blog/best-esim-for-travel/">eSIM Guide</a>
     <a href="/about/">About</a>
   </nav>
 </header>
@@ -953,8 +953,7 @@ ul,ol{list-style:none}
           <option value="all">All Destinations</option>
           <option value="Bali">Bali</option>
           <option value="Bangkok">Bangkok</option>
-          <option value="Tokyo">Tokyo</option>
-          <option value="Melbourne">Melbourne</option>
+          <option value="Tokyo">Tokyo</option>         
           <option value="Istanbul">Istanbul</option>
           <option value="London">London</option>
           <option value="Singapore">Singapore</option>
@@ -1108,7 +1107,7 @@ ul,ol{list-style:none}
         <a href="/destinations/tokyo/">Tokyo</a>
         <a href="/destinations/singapore/">Singapore</a>
         <a href="/destinations/hong-kong/">Hong Kong</a>
-        <a href="/blog/esim-guide/">eSIM Guide</a>
+        <a href="/blog/best-esim-for-travel/">eSIM Guide</a>
         <a href="/about/">About Catavel</a>
       </nav>
       <nav aria-label="Legal" class="ft-col">
@@ -1144,7 +1143,6 @@ ul,ol{list-style:none}
           <option value="Bali">🌴 Bali</option>
           <option value="Bangkok">🇹🇭 Bangkok</option>
           <option value="Tokyo">🗼 Tokyo</option>
-          <option value="Melbourne">🦘 Melbourne</option>
           <option value="Istanbul">🕌 Istanbul</option>
           <option value="London">🎡 London</option>
           <option value="Singapore">🇸🇬 Singapore</option>
@@ -1225,48 +1223,7 @@ ul,ol{list-style:none}
 'use strict';
 
 /* ─── SAMPLE DATA ─── */
-const DEALS=[
-  {
-    id:'d001',title:'3D2N Bali Pool Villa with Breakfast - Seminyak',
-    destination:'Bali',original_price:450,discounted_price:299,discount_percent:34,
-    currency:'SGD',ota:'Agoda',link:'#',valid_until:'2026-04-30',
-    category:'hotel',is_hot:true,is_expiring:false,market:'SGD'
-  },{
-    id:'d002',title:'SIN - Tokyo Return - Scoot Economy Class',
-    destination:'Tokyo',original_price:520,discounted_price:312,discount_percent:40,
-    currency:'SGD',ota:'Skyscanner',link:'#',valid_until:'2026-04-15',
-    category:'flight',is_hot:true,is_expiring:true,market:'SGD'
-  },{
-    id:'d003',title:'Bangkok 4D3N Package - Hotel + Flight from KUL',
-    destination:'Bangkok',original_price:1890,discounted_price:1190,discount_percent:37,
-    currency:'MYR',ota:'Trip.com',link:'#',valid_until:'2026-05-15',
-    category:'package',is_hot:false,is_expiring:false,market:'MYR'
-  },{
-    id:'d004',title:'Universal Studios Singapore - 1-Day Adult E-Ticket',
-    destination:'Singapore',original_price:88,discounted_price:63,discount_percent:28,
-    currency:'SGD',ota:'Klook',link:'#',valid_until:'2026-06-30',
-    category:'activity',is_hot:false,is_expiring:false,market:'SGD'
-  },{
-    id:'d005',title:'KUL - Melbourne Return - AirAsia with 20kg Baggage Included',
-    destination:'Melbourne',original_price:1650,discounted_price:1090,discount_percent:34,
-    currency:'MYR',ota:'Airpaz',link:'#',valid_until:'2026-04-20',
-    category:'flight',is_hot:false,is_expiring:true,market:'MYR'
-  },{
-    id:'d006',title:'Agoda Extra 15% Off Hotels - Singapore Users',
-    destination:'All Destinations',original_price:null,discounted_price:null,discount_percent:15,
-    currency:'SGD',ota:'Agoda',link:'https://www.agoda.com',valid_until:'2026-04-30',
-    category:'voucher',is_hot:true,is_expiring:false,market:'SGD',
-    voucher_code:'AGODA15SG',voucher_type:'percent',discount_value:15,
-    tcs:'Min spend SGD 80. Valid for Singapore users only. One-time use per account.'
-  },{
-    id:'d007',title:'Klook SGD 12 Off Any Activity Booking',
-    destination:'All Destinations',original_price:null,discounted_price:null,discount_percent:null,
-    currency:'SGD',ota:'Klook',link:'https://www.klook.com',valid_until:'2026-04-25',
-    category:'voucher',is_hot:false,is_expiring:true,market:'SGD',
-    voucher_code:'KLOOK12SG',voucher_type:'flat',discount_value:12,
-    tcs:''
-  }
-];
+const DEALS=[];
 
 let cur=[...DEALS], activeCat='all', activeDest=null, mfSort='discount';
 
