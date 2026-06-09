@@ -482,7 +482,8 @@ function autoRevealFromUrl_() {
       setTimeout(function(){ card.style.boxShadow = ''; }, 2600);
 
       // Reveal + copy the code WITHOUT opening the affiliate link.
-      // (reveal() would window.open on its own; we replicate just the safe parts.)
+      // (autoRevealFromUrl_ replicates only the reveal + copy steps, not the affiliate open.
+      // reveal() no longer calls window.open - the native anchor href handles that on user tap.)
       if (!w.classList.contains('open')) {
         w.classList.add('open');
         var code = w.dataset.code || '';
@@ -706,7 +707,7 @@ const discLabel = v.discount
       </div>
       <div class="cw" id="cw-${cid}" data-code="${esc(v.code)}" data-link="${esc(affLink)}">
         <span class="ch" aria-label="Code hidden - click Reveal">${esc(v.code)}</span>
-        <button class="btn-rv" onclick="reveal('${cid}')" aria-label="Reveal ${esc(v.code)}">Reveal</button>
+        <a class="btn-rv" href="${esc(affLink)}" target="_blank" rel="nofollow noopener sponsored" onclick="reveal('${cid}')" aria-label="Reveal ${esc(v.code)} and open ${OTA_NAME}">Reveal</a>
       </div>`;
   } else {
     codeWidget = `
@@ -714,7 +715,7 @@ const discLabel = v.discount
         <div class="vc-discount">${esc(discLabel)}</div>
         <div class="vc-discount-sub">no code needed</div>
       </div>
-      <a class="btn-promo" href="${esc(affLink)}" target="_blank" rel="noopener sponsored" onclick="showToast('Redirecting to ${OTA_NAME}…')">
+      <a class="btn-promo" href="${esc(affLink)}" target="_blank" rel="nofollow noopener sponsored" onclick="showToast('Redirecting to ${OTA_NAME}...');trackAffiliate('','use_promo')">
         Use Promo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>`;
   }
@@ -735,28 +736,23 @@ const discLabel = v.discount
 </article></li>`;
 }
 
-/* ── REVEAL (for codes only) ── */
+/* ── REVEAL (coded deals) ──
+   The button is now an <a href=affiliate target=_blank>; the native click
+   opens the OTA reliably (survives the Telegram in-app browser, no popup
+   blocker). This handler only reveals + copies the code so it is ready to
+   paste at checkout. NO window.open here - the native href handles the open;
+   calling window.open would spawn a duplicate second tab. */
 function reveal(cid) {
   const w = document.getElementById('cw-' + cid);
-  if (!w) return;
-  const code = w.dataset.code;
-  const link = w.dataset.link;
+  if (!w) return; // anchor native href still fires even if this returns
+  const code = w.dataset.code || '';
   const btn  = w.querySelector('.btn-rv');
 
-  if (w.classList.contains('open')) {
-    copyText(code);
-    showToast('Copied: ' + code);
-    if (btn) { btn.textContent = 'Copied!'; setTimeout(() => btn.textContent = 'Copy', 1800); }
-    return;
-  }
-
+  try { if (code) copyText(code); } catch (e) {}
   w.classList.add('open');
-  if (btn) btn.textContent = 'Copied! ✓';
-  copyText(code);
-  showToast('Code copied: ' + code + ' - redirecting to ' + OTA_NAME + '…');
-
-  setTimeout(() => { if (link && link !== '#') window.open(link, '_blank', 'noopener,noreferrer'); }, 500);
-  setTimeout(() => { if (w.classList.contains('open') && btn) btn.textContent = 'Copy'; }, 3200);
+  if (btn) { btn.textContent = 'Copied'; setTimeout(() => { btn.textContent = 'Copy'; }, 3200); }
+  showToast('Code copied: ' + code + ' - opening ' + OTA_NAME + '...');
+  trackAffiliate(code, 'reveal_button');
 }
 
 /* ── T&Cs TOGGLE ── */
@@ -807,6 +803,20 @@ function fbCopy(t) {
     document.body.appendChild(el); el.focus(); el.select();
     document.execCommand('copy'); document.body.removeChild(el);
   } catch(_) {}
+}
+/* ── GA: affiliate-open event ──
+   Fires only on a real user tap (Reveal or Use Promo), never on auto-reveal,
+   so GA4 measures genuine affiliate clicks coming from the Telegram funnel. */
+function trackAffiliate(code, source) {
+  try {
+    if (typeof gtag === 'function') {
+      gtag('event', 'reveal_affiliate_click', {
+        ota: OTA_NAME,
+        promo_code: code || '',
+        source: source || ''
+      });
+    }
+  } catch (e) {}
 }
 let _tt;
 function showToast(msg) {
