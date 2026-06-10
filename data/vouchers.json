@@ -1476,7 +1476,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Cardholders who spend HK$300 on Taiwan Food & Dining in a single net transaction with Fubon Visa Credit Cards, can enjoy HK$50 instant discount at Klook Platform and must successfully enter the designated promo code at the checkout page.  (Offer does not apply to Universal Studio Japan, Japan Rail Pass, and activities as specified by Klook from time to time). Each user can use this promo code ONCE only while the quota lasts. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion. To borrow or not to borrow? Borrow only if you can repay!",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_fb26apr150",
@@ -1493,7 +1493,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Cardholders who spend HK$1,000 on a single net transaction with Fubon Visa Credit Cards, can enjoy HK$150 instant discount at Klook Platform and must successfully enter the designated promo code at the checkout page.  (Offer does not apply to Universal Studio Japan, Japan Rail Pass, and activities as specified by Klook from time to time). Each user can use this promo code ONCE only while the quota lasts. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion. To borrow or not to borrow? Borrow only if you can repay!",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_fb26twh150",
@@ -1510,7 +1510,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Cardholders who spend HK$800 on Taiwan Hotel in a single net transaction with Fubon Visa Credit Cards, can enjoy HK$150 instant discount at Klook Platform and must successfully enter the designated promo code at the checkout page.  (Offer does not apply to Universal Studio Japan, Japan Rail Pass, and activities as specified by Klook from time to time). Each user can use this promo code ONCE only while the quota lasts. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion. To borrow or not to borrow? Borrow only if you can repay!",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_fb26twa150",
@@ -1527,7 +1527,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Cardholders who spend HK$300 on Taiwan Hotel in a single net transaction with Fubon Visa Credit Cards, can enjoy HK$150 instant discount at Klook Platform and must successfully enter the designated promo code at the checkout page.  (Offer does not apply to Universal Studio Japan, Japan Rail Pass, and activities as specified by Klook from time to time). Each user can use this promo code ONCE only while the quota lasts. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion. To borrow or not to borrow? Borrow only if you can repay!",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_pm26sgatt80",
@@ -2006,40 +2006,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_15",
-    "ota": "Lazada TH",
-    "promo_code": "NO CODE NEEDED",
-    "description": "Lazada TH: 6.6 SUPER WOW SALE!",
-    "type": "deal",
-    "discount": "",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Lazada_CPS_WebAPP_TH",
-    "valid_until": "2026-06-08",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=56303&AID=2361654&Type=21&r=https%3A%2F%2Fpages.lazada.co.th%2Fwow%2Fgcp%2Froute%2Flazada%2Fth%2Fupr_1000345_lazada%2Fchannel%2Fth%2Fupr-router%2Fth%3Fwx_navbar_transparent%3Dtrue%26hybrid%3D1%26data_prefetch%3Dtrue%26at_iframe%3D1%26lzd_navbar_hidden%3Dtrue%26use_skeleton%3Dfalse%26prefetch_replace%3D1%26wh_pid%3D%2Flazada%2Fmegascenario%2Fth%2FD6_WowSale_2026%2F66SuperWowSale%26pha%3Dtrue%26itemId%3D1",
-    "tcs": "1. 6.6 Voucher up to ฿10,000.-*\n\n2. Lazflash 90%*\n\n3. Crazy Brand Mega Offer\n\n>> 6 hrs. (8PM-2AM)",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_no_code_needed_16",
-    "ota": "Trip.com",
-    "promo_code": "NO CODE NEEDED",
-    "description": "Ultimate Hotel Sale",
-    "type": "flat",
-    "discount": "0",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - CPS_Bundle_[Flight+Hotels]",
-    "valid_until": "2026-06-10",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=56314&AID=2361654&Type=21&r=https%3A%2F%2Fph.trip.com%2Fsale%2Fw%2F37655%2Fultimatehotelsale.html%3Flocale%3Den-ph%26curr%3Dphp",
-    "tcs": "> Hotel New User Coupons\n> Hotel discount of 10% (Max cap ₱1,500) for all hotels\n> Bundle & Save Voucher discount up to ₱3,000\n> Daily 9PM drop of up to ₱1,000 OFF on any hotel boooking worldwide\n> Special 12NN Coupon Drops:\n- 01 Jun: ₱2,000 2 roomnights min voucher\n- 02-05 Jun: City vouchers (Cebu, Boracay, Metro Manila)\n- 08-10 Jun: Country vouchers (TH, VN, CN)",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_springeuptp",
     "ota": "Klook",
     "promo_code": "SPRINGEUPTP",
@@ -2193,74 +2159,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_visa5all",
-    "ota": "Klook",
-    "promo_code": "VISA5ALL",
-    "description": "Exclusively for All Visa Cardholders - For bookings outside of Malaysia only",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "MYR",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Exclusively for All Visa Cardholders - For bookings outside of Malaysia only",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_visa5signature",
-    "ota": "Klook",
-    "promo_code": "VISA5SIGNATURE",
-    "description": "Exclusively for Visa Signature Cardholders - For bookings outside of Malaysia only",
-    "type": "percent",
-    "discount": "14%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "MYR",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Exclusively for Visa Signature Cardholders - For bookings outside of Malaysia only",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_visa5infinite",
-    "ota": "Klook",
-    "promo_code": "VISA5INFINITE",
-    "description": "Exclusively for Visa Infinite Cardholders only - For bookings outside of Malaysia only",
-    "type": "percent",
-    "discount": "16%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "MYR",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Exclusively for Visa Infinite Cardholders only - For bookings outside of Malaysia only",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_bmmb15holiday",
-    "ota": "Klook",
-    "promo_code": "BMMB15HOLIDAY",
-    "description": "Exclusively for Bank Muamalat cardholders only - For All Activities",
-    "type": "percent",
-    "discount": "15%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-08",
-    "market": "MYR",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Exclusively for Bank Muamalat cardholders only - For All Activities",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_klk12mbb",
     "ota": "Klook",
     "promo_code": "KLK12MBB",
@@ -2293,91 +2191,6 @@
     "tcs": "Exclusively for AmBank cardholders only - Minimum spend RM800 on all activities",
     "status": "active",
     "is_expiring": false
-  },
-  {
-    "id": "vc_qianhai0606",
-    "ota": "Klook",
-    "promo_code": "QIANHAI0606",
-    "description": "[6.6 10PM] Qian Hai Snow World B1G1",
-    "type": "deal",
-    "discount": "2-for-1",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "HKD, MOP",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "1. This voucher can be used enjoy buy 1 get 1 free from Qian Hai Snow World. Applicable package: [Unlimited Ski Pass for Intermediate/Advanced Trails] .\n2. Voucher validity period: Jun 6, 2026 22:00 - Jun 7, 2026 23:59.\n3. It will be available on a first-come, first-served basis, and the quantity is limited.\n4. This voucher is for personal use only and cannot be exchanged for cash or used in conjunction with other offers. It will automatically expire if unused.\n5. Refund instructions: If an order using a voucher is canceled, not paid on time, or the purchase fails, the voucher will be returned to the original account if it has not expired. If the voucher has expired, it will not be returned.\n6. For malicious users, including but not limited to malicious order placement, malicious registration, and using program vulnerabilities, the platform has the right to cancel their voucher eligibility and related reserved products without prior notice.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_shdisney0606",
-    "ota": "Klook",
-    "promo_code": "SHDISNEY0606",
-    "description": "[6.6 10PM] Shanghai Disneyland B1G1",
-    "type": "deal",
-    "discount": "2-for-1",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "HKD, MOP",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "1. This voucher can be used enjoy buy 1 get 1 free from Shanghai Disneyland Ticket. Applicable package: [1-Day Ticket] .\n2. Voucher validity period: Jun 6, 2026 22:00 - Jun 7, 2026 23:59.\n3. It will be available on a first-come, first-served basis, and the quantity is limited.\n4. This voucher is for personal use only and cannot be exchanged for cash or used in conjunction with other offers. It will automatically expire if unused.\n5. Refund instructions: If an order using a voucher is canceled, not paid on time, or the purchase fails, the voucher will be returned to the original account if it has not expired. If the voucher has expired, it will not be returned.\n6. For malicious users, including but not limited to malicious order placement, malicious registration, and using program vulnerabilities, the platform has the right to cancel their voucher eligibility and related reserved products without prior notice.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_ubr0606",
-    "ota": "Klook",
-    "promo_code": "UBR0606",
-    "description": "[6.6 10PM] Universal Studios Beijing B1G1",
-    "type": "deal",
-    "discount": "2-for-1",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "HKD, MOP",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "1. This voucher can be used enjoy buy 1 get 1 free from Universal Studios Beijing. Applicable package: [1-Day Ticket - Adult] .\n2. Voucher validity period: Jun 6, 2026 22:00 - Jun 7, 2026 23:59.\n3. It will be available on a first-come, first-served basis, and the quantity is limited.\n4. This voucher is for personal use only and cannot be exchanged for cash or used in conjunction with other offers. It will automatically expire if unused.\n5. Refund instructions: If an order using a voucher is canceled, not paid on time, or the purchase fails, the voucher will be returned to the original account if it has not expired. If the voucher has expired, it will not be returned.\n6. For malicious users, including but not limited to malicious order placement, malicious registration, and using program vulnerabilities, the platform has the right to cancel their voucher eligibility and related reserved products without prior notice.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_szmatilda06",
-    "ota": "Klook",
-    "promo_code": "SZMATILDA06",
-    "description": "[6.6 10PM] SZ Matilda 50% OFF",
-    "type": "percent",
-    "discount": "50%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "HKD, MOP",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "1. Promotion period from Jun 6, 2026 22:00 to Jun 7, 2026 23:59, both dates inclusive.\n2. Promo code(s) are valid till June 7, 2026 23:59.\n3. Applicable to HK users enjoy 50% OFF discount,capped at $610, on all Musical \"Matilda\" Shenzhen Station Ticket packages.\n4. Each user can use this discount only once.\n5. Limited quota. Discount is available on a first-come-first-served basis and while stocks last.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_hengqin0606",
-    "ota": "Klook",
-    "promo_code": "HENGQIN0606",
-    "description": "[6.6 12AM] Chimelong Hengqin Bay Hotel Staycation 90% OFF",
-    "type": "percent",
-    "discount": "90%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "HKD, MOP",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "1. Promotion period from Jun 6, 2026 00:00 to Jun 7, 2026 23:59, both dates inclusive.\n2. Promo code(s) are valid till Jun 7, 2026 23:59.\n3. Applicable to HK users enjoy 90% OFF discount on Chimelong Hengqin Bay Hotel Zhuhai. Applicable package: [1-Night stay+ Ocean Kingdom + Water World Tickets] .\n4. Each user can use this discount only once.\n5. Limited quota. Discount is available on a first-come-first-served basis and while stocks last.\n6. Discount code will become invalid once it reaches the usage limit.\n7. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": true
   },
   {
     "id": "vc_staybar30",
@@ -2907,23 +2720,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_db6166off",
-    "ota": "Klook",
-    "promo_code": "DB6166OFF",
-    "description": "【6/6 00:00 Exclusive】All Activities HK$166 off",
-    "type": "flat",
-    "discount": "HKD 166",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Applicable to Hong Kong users only. Enjoy HK$166 off upon purchasing HK$1,500 on Klook activities (Offer is not applicable to Klook pass ,certain products as specified by Klook from time to time) Each user can enjoy offer once during the promotional period and cannot be used in conjunction with other promotions.Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_esjpkrtw055o",
     "ota": "Klook",
     "promo_code": "ESJPKRTW055O",
@@ -2938,7 +2734,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Applicable to HK users enjoy HK$50 off upon spending HK$599 or above on Japan,Korea,Taiwan Travel Products (excluding WiFi,SIM cards,JR pass,USJ,USJ Express Pass,Tokyo Disney or other exclusions determined by Klook. Applicable to instant confirmation and non-refundable car service bookings and hotel bookings), max discount HK$50. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_matildahk",
@@ -3179,57 +2975,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_doubleksb1g1",
-    "ota": "Klook",
-    "promo_code": "DOUBLEKSB1G1",
-    "description": "B1G1 Keisei Skyliner Narita Airport Express Ticket (One-way)",
-    "type": "percent",
-    "discount": "50%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "B1G1 Keisei Skyliner Narita Airport Express Ticket (One-way) starts from 6 June 2026 (12.00 am.) Limited offer. T&Cs Apply.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_doubleubr",
-    "ota": "Klook",
-    "promo_code": "DOUBLEUBR",
-    "description": "B1G1 when booking Universal Studios Beijing Ticket 1 Day Ticket (Early bird)",
-    "type": "deal",
-    "discount": "2-for-1",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable 8 June 2026 (06.00 pm.) B1G1 when booking Universal Studios Beijing Ticket 1 Day Ticket. Adult ticket (Early bird). Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_doubleshdl",
-    "ota": "Klook",
-    "promo_code": "DOUBLESHDL",
-    "description": "Buy 1 Get 1 when booking Shanghai Disneyland 1 Day Ticket",
-    "type": "deal",
-    "discount": "2-for-1",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable 6 June 2026 (10.00 am.) Buy 1 Get 1 when booking Shanghai Disneyland 1 Day Ticket. Adult ticket. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_cnaopt10off02",
     "ota": "Klook",
     "promo_code": "CNAOPT10OFF02",
@@ -3313,57 +3058,6 @@
     "tcs": "Limited Offer. Only applicable on 1 Jan - 31 Dec 2026. T&Cs apply.",
     "status": "active",
     "is_expiring": false
-  },
-  {
-    "id": "vc_doublehfpp",
-    "ota": "Klook",
-    "promo_code": "DOUBLEHFPP",
-    "description": "B1G1 when booking Have Fun in Kansai Premium Pass package",
-    "type": "deal",
-    "discount": "2-for-1",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable 6 June 2026 (2.00 pm.) B1G1 when booking Have Fun in Kansai Premium Pass package (not included SUPER NINTENDO WORLD™). Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_doublehkdl",
-    "ota": "Klook",
-    "promo_code": "DOUBLEHKDL",
-    "description": "Buy 1 Get 1 when booking Hong Kong Disneyland 1 Day Ticket",
-    "type": "deal",
-    "discount": "2-for-1",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable 6 June 2026 (06.00 pm.) Buy 1 Get 1 free when booking Hong Kong Disneyland 1 Day Ticket. Adult ticket. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_doublejr50off",
-    "ota": "Klook",
-    "promo_code": "DOUBLEJR50OFF",
-    "description": "[JR Kyushu] 50%off max capped 1,500.- no min spend when booking 3 Days JR Kyushu Rail Pass",
-    "type": "percent",
-    "discount": "50%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-09",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable from 6-8 June 2026. Get 50%off max cap 1,500.- no min spend when booking JR Kyushu Rail Pass (All Package). Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
   },
   {
     "id": "vc_klookpvt",
@@ -3485,74 +3179,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_sun1sla",
-    "ota": "Klook",
-    "promo_code": "SUN1SLA",
-    "description": "Sunway Lagoon Ticket 10%off",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "ALL",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "This \"10%\" discount coupon is valid only for \"Sunway Lagoon Ticket\". Max discount of 12 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: June 7th",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_sun1slt",
-    "ota": "Klook",
-    "promo_code": "SUN1SLT",
-    "description": "Sunway Lost World of Tambun Ticket 15%off",
-    "type": "percent",
-    "discount": "15%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "ALL",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "This \"15%\" discount coupon is valid only for \"Sunway Lost World of Tambun Ticket\". Max discount of 10 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: June 7th",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_sun1klcc",
-    "ota": "Klook",
-    "promo_code": "SUN1KLCC",
-    "description": "Aquaria KLCC Ticket 5%off",
-    "type": "percent",
-    "discount": "5%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "ALL",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "This \"5%\" discount coupon is valid only for \"Aquaria KLCC Ticket\". Max discount of 1.5 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: June 7th",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_post264000511",
-    "ota": "Klook",
-    "promo_code": "POST264000511",
-    "description": "刷中華郵政VISA金融卡 全站商品滿$2500折$400",
-    "type": "flat",
-    "discount": "TWD 400",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-10",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_usj0515",
     "ota": "Klook",
     "promo_code": "USJ0515",
@@ -3567,7 +3193,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購日本環球影城門票，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_dis0515",
@@ -3584,7 +3210,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購東京迪士尼、香港迪士尼門票，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_kvbp0515",
@@ -3601,7 +3227,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購釜山通行證，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_usj0516",
@@ -3618,7 +3244,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購日本環球影城門票，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_kusj0517",
@@ -3635,7 +3261,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購日本環球影城門票，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_usj0522",
@@ -3652,7 +3278,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購日本環球影城門票，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_kdis0516",
@@ -3669,7 +3295,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購東京迪士尼、香港迪士尼門票，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_dis0517",
@@ -3686,7 +3312,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購東京迪士尼、香港迪士尼門票，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_kdis0522",
@@ -3703,7 +3329,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購東京迪士尼、香港迪士尼門票，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_dsn0529",
@@ -3720,7 +3346,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購東京迪士尼、香港迪士尼門票，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_vbp0516",
@@ -3737,7 +3363,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購釜山通行證，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_kvbp0517",
@@ -3754,7 +3380,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購釜山通行證，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_vbp0522",
@@ -3771,7 +3397,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購釜山通行證，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_vbp0529",
@@ -3788,7 +3414,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "11:00開搶，僅限台灣用戶，使用Klook訂購釜山通行證，購買相同方案兩張，輸入指定優惠碼，可享買一送一優惠，使用期限為2026/6/14 23:59 使用完畢。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_post264000518",
@@ -3805,7 +3431,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_post264000525",
@@ -4386,23 +4012,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc__15_2606w1",
-    "ota": "Klook",
-    "promo_code": "일본호텔15%할인_2606W1",
-    "description": "일본 호텔 15% 할인",
-    "type": "percent",
-    "discount": "15%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-06-07",
-    "market": "KRW",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "일본 호텔 15%할인 (30만원 이상 구매 시, 4만 5천원까지 할인) / 본 쿠폰은 결제 선착순 마감으로 쿠폰 등록후 미사용시 다른 고객이 사용 가능하며 별도 고지 없이 마감됩니다 / 호텔 업체측의 취소 또는 고객 요청으로 인한 환불 발생시 본 쿠폰은 반환되지 않습니다 / 타 쿠폰과 중복 적용 불가",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_ctbclp26ch2",
     "ota": "Klook",
     "promo_code": "CTBCLP26CH2",
@@ -4471,20 +4080,20 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_17",
-    "ota": "Trip.com",
+    "id": "vc_no_code_needed_15",
+    "ota": "Traveloka",
     "promo_code": "NO CODE NEEDED",
-    "description": "SG 6.6 Family Getaway Sale",
+    "description": "Traveloka Indonesia: School Holiday Sale",
     "type": "percent",
-    "discount": "$66",
+    "discount": "30%",
     "min_spend": "",
     "max_discount": "",
-    "applicable_for": "Other - CPS_Bundle_[Flight+Hotels]",
-    "valid_until": "2026-06-09",
+    "applicable_for": "Other - Traveloka_CPS_Web_App_ID",
+    "valid_until": "2026-07-03",
     "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=56314&AID=2361654&Type=21&r=https%3A%2F%2Fsg.trip.com%2Fsale%2Fw%2Ftravelpromotion.html%3Flocale%3Den-SG",
-    "tcs": "Daily S$66 OFF Vouchers\nThai Airways All-In Fare to Bangkok @ S$450\nSG Hotel & Attraction Flash Sale – up to 50% OFF/B1G1\n50% OFF Package Tours, Cruise, Airport Transfer\nMission Task: Book your Bangkok trip (flight & hotel stay) and get a $50 Airport Transfer promo code\n\nZH link - https://sg.trip.com/sale/w/travelpromotion.html?locale=zh-SG",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56551&AID=2361654&Type=21&r=https%3A%2F%2Fwww.traveloka.com%2Fid-id%2Fpromotion%2Fpromo-liburan-sekolah-special",
+    "tcs": "🏨 Up to 30% OFF Hotels\n🎡 Attraction Tickets – Buy 2 Get 1 Free\n✈️ Flights from Jakarta to Singapore starting from IDR 500,000",
     "status": "active",
-    "is_expiring": true
+    "is_expiring": false
   }
 ]
