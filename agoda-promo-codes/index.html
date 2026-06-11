@@ -42,11 +42,12 @@
   /* Agoda brand accent */
   --brand:#DC2626;--brand-d:#B91C1C;--brand-lt:#FEF2F2;--brand-bd:#FECACA;
 }
-html{box-sizing:border-box}
+html{box-sizing:border-box;overflow-x:clip}
 *,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
 body{font-family:var(--f);font-size:14px;line-height:1.5;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 button{cursor:pointer;font:inherit;border:none;background:none;-webkit-tap-highlight-color:transparent}
+a.btn-rv,a.btn-promo{-webkit-tap-highlight-color:transparent}
 ul,ol{list-style:none}
 .w{max-width:1000px;margin:0 auto;padding:0 16px}
 .hd{position:sticky;top:0;z-index:200;background:var(--white);border-bottom:1px solid var(--bdr)}
@@ -73,6 +74,7 @@ ul,ol{list-style:none}
 .dot{width:5px;height:5px;border-radius:50%;background:#22C55E;animation:pulse 2.5s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
 .layout{display:grid;grid-template-columns:188px 1fr;gap:20px;padding:20px 0 60px;align-items:start}
+.sb,main{min-width:0}
 .sb{display:flex;flex-direction:column;gap:14px;position:sticky;top:66px}
 .sb-box{background:var(--white);border:1px solid var(--bdr);border-radius:var(--r);padding:14px}
 .sb-lbl{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:10px}
@@ -117,12 +119,12 @@ ul,ol{list-style:none}
 .cw{display:flex;align-items:stretch;border:1.5px solid var(--bdr2);border-radius:var(--r);overflow:hidden;width:190px;transition:border-color .2s}
 .cw:hover{border-color:var(--brand-bd)}
 .cw.open{border-color:var(--teal-bd)}
-.ch{flex:1;padding:0 9px;font-family:'Courier New',monospace;font-size:12.5px;font-weight:700;letter-spacing:1.5px;color:var(--text);background:var(--bg);filter:blur(5px);-webkit-user-select:none;user-select:none;pointer-events:none;white-space:nowrap;overflow:hidden;display:flex;align-items:center;min-height:38px;transition:filter .25s ease}
+.ch{flex:1;padding:0 9px;font-family:'Courier New',monospace;font-size:12.5px;font-weight:700;letter-spacing:1.5px;color:var(--text);background:var(--bg);filter:blur(5px);-webkit-user-select:none;user-select:none;pointer-events:none;white-space:nowrap;overflow:hidden;display:flex;align-items:center;min-height:44px;transition:filter .25s ease}
 .cw.open .ch{filter:none;-webkit-user-select:text;user-select:text;pointer-events:auto;background:var(--white)}
-.btn-rv{padding:0 11px;min-height:38px;background:var(--brand);color:#fff;font-size:11.5px;font-weight:700;white-space:nowrap;flex-shrink:0;border-left:1.5px solid rgba(0,0,0,.08);transition:background .15s;display:flex;align-items:center}
+.btn-rv{padding:0 11px;min-height:44px;background:var(--brand);color:#fff;font-size:11.5px;font-weight:700;white-space:nowrap;flex-shrink:0;border-left:1.5px solid rgba(0,0,0,.08);transition:background .15s;display:flex;align-items:center}
 .btn-rv:hover{background:var(--brand-d)}
 .cw.open .btn-rv{background:var(--teal)}.cw.open .btn-rv:hover{background:var(--teal-d)}
-.btn-promo{display:flex;align-items:center;justify-content:center;gap:6px;width:190px;min-height:38px;background:var(--teal);color:#fff;font-size:12px;font-weight:700;white-space:nowrap;border-radius:var(--r);transition:background .15s}
+.btn-promo{display:flex;align-items:center;justify-content:center;gap:6px;width:190px;min-height:44px;background:var(--teal);color:#fff;font-size:12px;font-weight:700;white-space:nowrap;border-radius:var(--r);transition:background .15s}
 .btn-promo:hover{background:var(--teal-d)}
 .btn-promo svg{width:13px;height:13px;flex-shrink:0}
 .vc-tc-toggle{width:100%;text-align:left;padding:7px 14px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--bdr);display:flex;align-items:center;justify-content:space-between;transition:color .12s,background .12s}
@@ -164,7 +166,7 @@ ul,ol{list-style:none}
 @media(max-width:760px){
   .layout{grid-template-columns:1fr}
   .sb{position:static;flex-direction:row;flex-wrap:wrap;gap:8px}
-  .sb-box{flex:1;min-width:140px}
+  .sb-box{flex:1 1 140px;min-width:0}
   .sb-tip{display:none}
 }
 @media(max-width:500px){
@@ -196,11 +198,11 @@ ul,ol{list-style:none}
       <img class="brand-logo" src="https://www.google.com/s2/favicons?domain=agoda.com&sz=32" alt="Agoda" loading="lazy">
       Agoda Promo Codes
     </div>
-    <h1><strong>Agoda Promo Codes</strong> &#8212; <span id="monthYear">May 2026</span></h1>
-    <p class="pg-sub">Verified promo codes and hotel deals for Singapore &amp; Malaysia travelers. Click &#8220;Reveal&#8221; to copy a code, or &#8220;Use Promo&#8221; for codeless deals &#8212; you&#8217;ll be redirected to Agoda automatically.</p>
+    <h1><strong>Agoda Promo Codes</strong> - <span id="monthYear">May 2026</span></h1>
+    <p class="pg-sub">Verified promo codes and hotel deals for Singapore &amp; Malaysia travelers. Click &#8220;Reveal&#8221; to copy a code, or &#8220;Use Promo&#8221; for codeless deals - you&#8217;ll be redirected to Agoda automatically.</p>
     <div class="pg-stats">
-      <div><div class="pg-stat-n" id="activeCount">&#8212;</div><div class="pg-stat-l">Active codes &amp; deals</div></div>
-      <div><div class="pg-stat-n" id="bestDiscount">&#8212;</div><div class="pg-stat-l">Best discount</div></div>
+      <div><div class="pg-stat-n" id="activeCount">-</div><div class="pg-stat-l">Active codes &amp; deals</div></div>
+      <div><div class="pg-stat-n" id="bestDiscount">-</div><div class="pg-stat-l">Best discount</div></div>
       <div><div class="live-dot"><span class="dot"></span><span id="lastUpdated">Loading&#8230;</span></div></div>
     </div>
   </div>
@@ -255,7 +257,7 @@ ul,ol{list-style:none}
       <div class="sec-hd">
         <span class="sec-title">Active Codes &amp; Deals</span>
         <span class="sec-ct" id="listCount" aria-live="polite">Loading&#8230;</span>
-        <span class="sec-upd"><span class="dot"></span><span id="secUpdated">&#8212;</span></span>
+        <span class="sec-upd"><span class="dot"></span><span id="secUpdated">-</span></span>
       </div>
 
       <div id="skeletons">
@@ -276,23 +278,23 @@ ul,ol{list-style:none}
     <h2 id="faq-h">Frequently Asked Questions</h2>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">How do I use an Agoda promo code?<span class="faq-caret">&#9660;</span></button>
-      <div class="faq-a">Click &#8220;Reveal&#8221; on any code &#8212; it&#8217;s automatically copied to your clipboard and you&#8217;re redirected to Agoda. Search for your hotel, then paste the code in the &#8220;Have a coupon?&#8221; field at checkout.</div>
+      <div class="faq-a">Click &#8220;Reveal&#8221; on any code - it&#8217;s automatically copied to your clipboard and you&#8217;re redirected to Agoda. Search for your hotel, then paste the code in the &#8220;Have a coupon?&#8221; field at checkout.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">What does &#8220;Use Promo&#8221; mean?<span class="faq-caret">&#9660;</span></button>
-      <div class="faq-a">Some Agoda deals don&#8217;t require a promo code &#8212; for example, app-only discounts, VIP member pricing, or &#8220;Welcome Back&#8221; deals. The discount is applied automatically when you meet the criteria. Click &#8220;Use Promo&#8221; to go directly to Agoda.</div>
+      <div class="faq-a">Some Agoda deals don&#8217;t require a promo code - for example, app-only discounts, VIP member pricing, or &#8220;Welcome Back&#8221; deals. The discount is applied automatically when you meet the criteria. Click &#8220;Use Promo&#8221; to go directly to Agoda.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">How do codes like AGODATPT work?<span class="faq-caret">&#9660;</span></button>
       <div class="faq-a">AGODATPT and similar codes need to be redeemed first on Agoda&#8217;s Deals page. Once redeemed, the coupon sits in your account and is automatically applied on your next booking within 30 days. You can use it up to 5 times.</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">The code didn&#8217;t work &#8212; why?<span class="faq-caret">&#9660;</span></button>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">The code didn&#8217;t work - why?<span class="faq-caret">&#9660;</span></button>
       <div class="faq-a">Agoda codes can fail if the hotel or date isn&#8217;t eligible, or if you&#8217;ve already used the code. Some codes also require a minimum spend or specific payment method. Check the T&amp;Cs on each card for details.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Does Catavel earn a commission?<span class="faq-caret">&#9660;</span></button>
-      <div class="faq-a">Yes &#8212; Catavel is an Agoda affiliate partner via Travelpayouts (marker: 709139). When you book through our links, we earn a small commission at no extra cost to you. This keeps the site free and updated.</div>
+      <div class="faq-a">Yes - Catavel is an Agoda affiliate partner via Travelpayouts (marker: 709139). When you book through our links, we earn a small commission at no extra cost to you. This keeps the site free and updated.</div>
     </div>
   </section>
 </div>
@@ -303,7 +305,7 @@ ul,ol{list-style:none}
     <div class="related-g">
       <a href="/klook-promo-codes/" class="related-a"><img src="https://www.google.com/s2/favicons?domain=klook.com&sz=32" alt="" loading="lazy">Klook Codes</a>
       <a href="/trip-com-promo-codes/" class="related-a"><img src="https://www.google.com/s2/favicons?domain=trip.com&sz=32" alt="" loading="lazy">Trip.com Codes</a>
-      <a href="https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com" class="related-a" target="_blank" rel="noopener sponsored"><img src="https://www.google.com/s2/favicons?domain=agoda.com&sz=32" alt="" loading="lazy">Browse Agoda &#8599;</a>
+      <a href="https://www.agoda.com" class="related-a" target="_blank" rel="noopener nofollow"><img src="https://www.google.com/s2/favicons?domain=agoda.com&sz=32" alt="" loading="lazy">Browse Agoda &#8599;</a>
       <a href="/" class="related-a">&#127991; All Deals</a>
     </div>
   </div>
@@ -342,7 +344,7 @@ ul,ol{list-style:none}
    PAGE CONFIG - Agoda
    ══════════════════════════════════════════════ */
 const PAGE_OTA      = 'Agoda';
-const AFF_BASE      = 'https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com';
+const AFF_BASE      = 'https://www.agoda.com';
 const VOUCHERS_JSON = '/vouchers.json';
 const OTA_NAME      = 'Agoda';
 
@@ -502,15 +504,15 @@ const discLabel = v.discount
 
   let codeWidget;
   if (hasCode) {
-    const cid = v.code.replace(/[^A-Z0-9]/g, '_');
+    const cid = v.code.toUpperCase().replace(/[^A-Z0-9]/g, '_');
     codeWidget = `<div><div class="vc-discount">${esc(discLabel)}</div><div class="vc-discount-sub">with this code</div></div>
       <div class="cw" id="cw-${cid}" data-code="${esc(v.code)}" data-link="${esc(affLink)}">
         <span class="ch" aria-label="Code hidden - click Reveal">${esc(v.code)}</span>
-        <button class="btn-rv" onclick="reveal('${cid}')" aria-label="Reveal ${esc(v.code)}">Reveal</button>
+        <a class="btn-rv" href="${esc(affLink)}" target="_blank" rel="noopener nofollow" onclick="reveal('${cid}')" aria-label="Reveal ${esc(v.code)} and open ${OTA_NAME}">Reveal</a>
       </div>`;
   } else {
     codeWidget = `<div><div class="vc-discount">${esc(discLabel)}</div><div class="vc-discount-sub">no code needed</div></div>
-      <a class="btn-promo" href="${esc(affLink)}" target="_blank" rel="noopener sponsored" onclick="showToast('Redirecting to ${OTA_NAME}…')">
+      <a class="btn-promo" href="${esc(affLink)}" target="_blank" rel="noopener nofollow" onclick="showToast('Redirecting to ${OTA_NAME}...');trackAffiliate('','use_promo')">
         Use Promo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>`;
   }
@@ -521,21 +523,20 @@ const discLabel = v.discount
   </div>${tcHTML}</article></li>`;
 }
 
+/* Button is now an <a href=affiliate target=_blank>; the native click opens
+   the OTA reliably (survives Telegram in-app browser, no popup blocker).
+   This handler only reveals + copies the code. NO window.open here - the
+   native href handles the open; window.open would spawn a duplicate tab. */
 function reveal(cid) {
   const w = document.getElementById('cw-' + cid);
-  if (!w) return;
-  const code = w.dataset.code, link = w.dataset.link, btn = w.querySelector('.btn-rv');
-  if (w.classList.contains('open')) {
-    copyText(code); showToast('Copied: ' + code);
-    if (btn) { btn.textContent = 'Copied!'; setTimeout(() => btn.textContent = 'Copy', 1800); }
-    return;
-  }
+  if (!w) return; // native href still fires
+  const code = w.dataset.code || '';
+  const btn  = w.querySelector('.btn-rv');
+  try { if (code) copyText(code); } catch (e) {}
   w.classList.add('open');
-  if (btn) btn.textContent = 'Copied! ✓';
-  copyText(code);
-  showToast('Code copied: ' + code + ' - redirecting to ' + OTA_NAME + '…');
-  setTimeout(() => { if (link && link !== '#') window.open(link, '_blank', 'noopener,noreferrer'); }, 500);
-  setTimeout(() => { if (w.classList.contains('open') && btn) btn.textContent = 'Copy'; }, 3200);
+  if (btn) { btn.textContent = 'Copied'; setTimeout(() => { btn.textContent = 'Copy'; }, 3200); }
+  showToast('Code copied: ' + code + ' - opening ' + OTA_NAME + '...');
+  trackAffiliate(code, 'reveal_button');
 }
 
 function toggleTC(btn) {
@@ -548,10 +549,21 @@ function toggleFaq(btn) {
   const open = btn.closest('.faq-item').classList.toggle('open');
   btn.setAttribute('aria-expanded', open);
 }
+/* GA: affiliate-open event. Fires only on a real user tap, never on auto-reveal. */
+function trackAffiliate(code, source) {
+  try {
+    if (typeof gtag === 'function') {
+      gtag('event', 'reveal_affiliate_click', { ota: OTA_NAME, promo_code: code || '', source: source || '' });
+    }
+  } catch (e) {}
+}
+
 function updateStats() {
   document.getElementById('activeCount').textContent = ALL.length || '-';
   const best = ALL.reduce((m, v) => {
-    const n = parseFloat((v.discount || '').replace(/[^0-9.]/g, '')) || 0;
+    const d = String(v.discount || '');
+    if (d.indexOf('%') === -1) return m; // skip flat amounts (KRW 6000 etc)
+    const n = parseFloat(d.replace(/[^0-9.]/g, '')) || 0;
     return n > m ? n : m;
   }, 0);
   document.getElementById('bestDiscount').textContent = best ? 'Up to ' + best + '%' : '-';
@@ -568,8 +580,8 @@ let _tt;
 function showToast(msg) { document.getElementById('toastMsg').textContent = msg; const t = document.getElementById('toast'); t.classList.add('on'); clearTimeout(_tt); _tt = setTimeout(() => t.classList.remove('on'), 3000); }
 
 const SAMPLE = [
-  {id:'vc_1',ota:'Agoda',code:'AGODATPT',description:'10% off hotels - up to $100 off, reusable 5 times',discount_type:'percent',discount:'10%',min_spend:'',max_discount:'USD 100',applicable_for:'Hotels',valid_until:'',market:'SGD',affiliate_link:'https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com',tc:'Redeem at Agoda Deals page first. 30-day validity after redeem. Up to 5 uses.',is_expiring:false},
-  {id:'vc_2',ota:'Agoda',code:'',description:'First Agoda app booking - 10% off automatically',discount_type:'percent',discount:'10%',min_spend:'',max_discount:'',applicable_for:'Hotels, flights, activities',valid_until:'',market:'SGD',affiliate_link:'https://tp.media/r?marker=709139&trs=505880&p=4065&u=https%3A%2F%2Fwww.agoda.com',tc:'Download Agoda app. Auto-applied on first booking.',is_expiring:false},
+  {id:'vc_1',ota:'Agoda',code:'AGODATPT',description:'10% off hotels - up to $100 off, reusable 5 times',discount_type:'percent',discount:'10%',min_spend:'',max_discount:'USD 100',applicable_for:'Hotels',valid_until:'',market:'SGD',affiliate_link:'https://www.agoda.com',tc:'Redeem at Agoda Deals page first. 30-day validity after redeem. Up to 5 uses.',is_expiring:false},
+  {id:'vc_2',ota:'Agoda',code:'',description:'First Agoda app booking - 10% off automatically',discount_type:'percent',discount:'10%',min_spend:'',max_discount:'',applicable_for:'Hotels, flights, activities',valid_until:'',market:'SGD',affiliate_link:'https://www.agoda.com',tc:'Download Agoda app. Auto-applied on first booking.',is_expiring:false},
 ];
 
 document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
