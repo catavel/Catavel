@@ -57,7 +57,7 @@
 /* ===========================================
    RESET & BASE
    =========================================== */
-html{box-sizing:border-box}
+html{box-sizing:border-box;overflow-x:clip}
 *,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
 body{font-family:var(--f);font-size:14px;line-height:1.5;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
@@ -1497,10 +1497,25 @@ function render(arr){
 }
 
 /* ─── FILTER ENGINE ─── */
+/* Cross-list: a voucher also appears under Activities / Flights when its
+   applicable_for matches, while still showing under Promo Codes (category
+   stays 'voucher'). Hotels are intentionally NOT cross-listed. Keyword sets
+   validated against the live applicable_for values. Note: flight uses
+   'flight' only (NOT 'air') so "Airport Transfer" is not miscounted. */
+function catMatch_(d, cat){
+  if (d.category === cat) return true;
+  if (d.category === 'voucher') {
+    const a = String(d.applicable_for || '').toLowerCase();
+    if (cat === 'activity') return /activit|tour|ticket|attraction|experience|theme park/.test(a);
+    if (cat === 'flight')   return /flight/.test(a);
+  }
+  return false;
+}
+
 function runFilter(dest,mkt,maxSGD,otas){
   let r=[...DEALS];
   /* Category pill */
-  if(activeCat!=='all') r=r.filter(d=>d.category===activeCat);
+  if(activeCat!=='all') r=r.filter(d=>catMatch_(d,activeCat));
   /* Destination pill */
   if(activeDest) r=r.filter(d=>d.destination===activeDest||d.destination==='All Destinations');
   /* Sidebar/sheet: destination dropdown */
@@ -1619,7 +1634,7 @@ function doSearch(e){
   }
   let r=[...DEALS];
   if(q) r=r.filter(d=>d.title.toLowerCase().includes(q)||d.destination.toLowerCase().includes(q)||d.ota.toLowerCase().includes(q));
-  if(cat!=='all') r=r.filter(d=>d.category===cat);
+  if(cat!=='all') r=r.filter(d=>catMatch_(d,cat));
   cur=r;render(r);
 }
 
@@ -1807,7 +1822,8 @@ function normaliseVoucher(v, idx){
     voucher_type:     voucherType,
     is_hot:           pct >= 15,
     is_expiring:      v.valid_until ? isUrgent(v.valid_until) : (v['Valid Until'] ? isUrgent(v['Valid Until']) : false),
-    tcs:              v.tcs || v['T&Cs'] || v.terms || ''
+    tcs:              v.tcs || v['T&Cs'] || v.terms || '',
+    applicable_for:   v.applicable_for || v['Applicable For'] || ''
   };
 }
 
