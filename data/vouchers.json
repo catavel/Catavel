@@ -1901,7 +1901,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"KRW5000\" discount coupon is valid only for \"Korea Intercity Express Bus Ticket\"\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: July 15th.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_eusummerptp",
@@ -1936,23 +1936,6 @@
     "tcs": "This \"8%\" discount coupon is only valid for the following selected packages of JR Tokyo Wide Pass. Max discount of 1500 JPY.\n\"3-day pass + One-way Skyliner ticket\"\n\"3-day pass + 24-hour Tokyo Subway ticket\"\n\"3-day pass + 48-hour Tokyo Subway ticket\"\n\"3-day pass + 72-hour Tokyo Subway ticket\"\nEach user is allowed to use it only once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: August 2nd 2026",
     "status": "active",
     "is_expiring": false
-  },
-  {
-    "id": "vc_atome10mys",
-    "ota": "Klook",
-    "promo_code": "ATOME10MYS",
-    "description": "Exclusively for Atome app users only - Minimum spend RM500 on all activities",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-07-07",
-    "market": "MYR",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Exclusively for Atome app users only - Minimum spend RM500 on all activities",
-    "status": "active",
-    "is_expiring": true
   },
   {
     "id": "vc_amb10jul",
@@ -2207,7 +2190,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Cardholders who spend HK$1,000 on a single net transaction with Fubon Visa Credit Cards, can enjoy HK$300 instant discount at Klook Platform and must successfully enter the designated promo code at the checkout page.  (Offer does not apply to Universal Studio Japan, Japan Rail Pass, and activities as specified by Klook from time to time). Each user can use this promo code ONCE only while the quota lasts. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion. To borrow or not to borrow? Borrow only if you can repay!",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_fb26tw150b",
@@ -2224,7 +2207,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Cardholders who spend HK$300 on Taiwan Hotel in a single net transaction with Fubon Visa Credit Cards, can enjoy HK$150 instant discount at Klook Platform and must successfully enter the designated promo code at the checkout page.  (Offer does not apply to Universal Studio Japan, Japan Rail Pass, and activities as specified by Klook from time to time). Each user can use this promo code ONCE only while the quota lasts. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion. To borrow or not to borrow? Borrow only if you can repay!",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_mobeusummer",
@@ -2580,6 +2563,74 @@
     "market": "ALL",
     "affiliate_link": "https://clk.omgt6.com/?PID=56303&AID=2361654&Type=21&r=https%3A%2F%2Fpages.lazada.co.th%2Fwow%2Fgcp%2Froute%2Flazada%2Fth%2Fupr_1000345_lazada%2Fchannel%2Fth%2Fupr-router%2Fth%3Fpha%3Dtrue%26wx_navbar_transparent%3Dtrue%26hybrid%3D1%26data_prefetch%3Dtrue%26at_iframe%3D1%26lzd_navbar_hidden%3Dtrue%26prefetch_replace%3D1%26wh_pid%3D%2Flazada%2Fmegascenario%2Fth%2FTH_D7__2026%2F77sale%26pha%3Dtrue%26itemId%3D1",
     "tcs": "EN :\n\n1.7.7 Voucher up to 5,000.-\n2. Lazflash 80%\n3. CBMO 6 hrs. (8PM-2AM)\n\nTH :\n\n1. คูปอง 7.7 ลดสูงสุด  5,000.-\n2. LazFlash ลดสูงสุด 80%\n3. แบรนด์ดังลดแรง 6 ชั่วโมงแรก (2ทุ่ม-ตี2)",
+    "status": "active",
+    "is_expiring": true
+  },
+  {
+    "id": "vc_no_code_needed_15",
+    "ota": "Trip.com",
+    "promo_code": "NO CODE NEEDED",
+    "description": "7.7 Mega Sale",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - CPS_Bundle_[Flight+Hotels]",
+    "valid_until": "2026-07-10",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56314&AID=2361654&Type=21&r=https%3A%2F%2Ftw.trip.com%2Fsale%2Fw%2F4497%2Fmega-sale.html%3Flocale%3Dzh_tw",
+    "tcs": "活動主題：7.7 盛夏旅展｜整趟旅行，一站搞定\n✅限量機票/ 飯店 $99 起\n✅長榮航空一口價｜機票 $3,999 起\n✅首爾機加酒一口價｜ 每人$5,555 起\n✅家庭旅遊賺 2,500 Trip Coins (約790 TWD)\n✅長榮航空｜預訂累積 Trip Coins + 哩程，出發歐美澳再賺2000 Trip Coins\n✅日韓限定｜機票折$500、飯店折$1200\n✅票券買1送1/ 半價\n⭐️升級搭乘體驗：商務艙折高達$3,200",
+    "status": "active",
+    "is_expiring": true
+  },
+  {
+    "id": "vc_no_code_needed_16",
+    "ota": "Trip.com",
+    "promo_code": "NO CODE NEEDED",
+    "description": "7.7 Global Mega Sale",
+    "type": "percent",
+    "discount": "50%",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - CPS_Bundle_[Flight+Hotels]",
+    "valid_until": "2026-07-10",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56314&AID=2361654&Type=21&r=https%3A%2F%2Fph.trip.com%2Fsale%2Fw%2F29948%2Fmegasale.html%3Flocale%3Den-ph%26curr%3Dphp",
+    "tcs": "> All-in flash sales from ₱77 for Manila to Cebu/Boracay at 12MN\n> ₱499 all-in flash sale for domestic routes\n> ₱999 all-in flash sale for international destinations\n> MNL-CEB, MNL-MPH B1G1 Flights!\n> Hotel Flash Sale from ₱77/night at 12MN, 12NN, 04PM, 05PM, & 9PM\n> VN & TH Hotel from ₱1,499/night flash sale\n> Discount vouchers of up to ₱1,000 almost every hour\n> B1G1 and 50% off on HK, TW, JP, AU, CN, KR, and more attractions and tours!\n> e-sim flash sale!",
+    "status": "active",
+    "is_expiring": true
+  },
+  {
+    "id": "vc_no_code_needed_17",
+    "ota": "Trip.com",
+    "promo_code": "NO CODE NEEDED",
+    "description": "MY 7.7 Travel Bonanza",
+    "type": "flat",
+    "discount": "400",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Hotels",
+    "valid_until": "2026-07-10",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=12746&AID=2361654&Type=21&r=https%3A%2F%2Fmy.trip.com%2Fsale%2Fw%2F3195%2Fmega.html%3Flocale%3Den-MY%26transparentBar%3D1%26wkp%3D1",
+    "tcs": "Get up to RM400 OFF vouchers, hotel deals from RM177 and more now on Trip.com!",
+    "status": "active",
+    "is_expiring": true
+  },
+  {
+    "id": "vc_no_code_needed_18",
+    "ota": "Trip.com",
+    "promo_code": "NO CODE NEEDED",
+    "description": "ID BOOMBASTRIP 7.7 MEGA SALE",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - International Flights",
+    "valid_until": "2026-07-10",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=12745&AID=2361654&Type=21&r=https%3A%2F%2Fid.trip.com%2Fsale%2Fw%2F40342%2Fboombastrip77.html%3Flocale%3Den-ID%26transparentBar%3D1%26wkp%3D1",
+    "tcs": "Nikmati Beli 1 Gratis 1, Harga All In ke Malaysia, Tokyo,dan Bangkok, Kode Promo Top up 5x sehari s/d 1.7JT! Hotel Flash Sale mulai dari Rp277rb, beli 1 gratis 1 Atraksi hanya di BOOMBASTRIP 5.5!",
     "status": "active",
     "is_expiring": true
   }
