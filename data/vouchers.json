@@ -2499,23 +2499,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_thmegasale",
-    "ota": "Klook",
-    "promo_code": "THMEGASALE",
-    "description": "7% off max capped 200.- when booking activities in Thailand at least 2,000",
-    "type": "percent",
-    "discount": "7%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-07-09",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable from 1-8 July 2026. Get 7% off max capped 200.- when booking activities in Thailand at least 2,000.-. Excludes hotels, flights, gift cards, and discounted activities. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_loveatfirstride",
     "ota": "Klook",
     "promo_code": "LOVEATFIRSTRIDE",
@@ -2633,5 +2616,22 @@
     "tcs": "Nikmati Beli 1 Gratis 1, Harga All In ke Malaysia, Tokyo,dan Bangkok, Kode Promo Top up 5x sehari s/d 1.7JT! Hotel Flash Sale mulai dari Rp277rb, beli 1 gratis 1 Atraksi hanya di BOOMBASTRIP 5.5!",
     "status": "active",
     "is_expiring": true
+  },
+  {
+    "id": "vc_no_code_needed_19",
+    "ota": "Samsung Singapore",
+    "promo_code": "NO CODE NEEDED",
+    "description": "SAMSUNG SINGAPORE – EVOUCHER FOR GALAXY FOLDABLES and WATCH",
+    "type": "flat",
+    "discount": "$60",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Samsung_CPS_Web_SG",
+    "valid_until": "2026-07-22",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=52252&AID=2361654&Type=21&r=https%3A%2F%2Fwww.samsung.com%2Fsg%2Fgift-card%2Fe-vouchers%2Fpre-registration-evoucher-z-code-evoucher",
+    "tcs": "E-Voucher\nPeriod: 8 July, 7:00am SGT - 22 July 2026, 8:59pm SGT\n\nHeadline: \n\nPurchase a $20 e-voucher to get: $60 off the next Galaxy Foldables or Watch \n\nOR \n\n$100 off when you purchase your next Galaxy Foldable and Watch together.\n\nDescription:\nThe $20 Samsung Registration+ e-voucher is available for purchase from 8 July 2026, 7:00 a.m. SGT to 22 July 2026, 11:59 p.m. SGT, and will entitle you to get:\n\n(i) $60 off the next Galaxy Foldables or Watch if bought separately (redeemable from 22 July 2026, 9:00 p.m. SGT to 13 Aug 2026, 11:59 p.m. SGT); or\n(ii) $100 off the next Galaxy Foldables and Watch when purchased together (redeemable from 22 July 2026, 9:00 p.m. SGT to 13 Aug 2026, 11:59 p.m. SGT) \n(iii) $30 off any other Samsung product (redeemable from 14 Aug 2026, 12:00 a.m. SGT to 30 Sep. 12:00 a.m. 2026).\n\nIn respect of the foregoing: redemption of the Samsung Registration+ e-voucher is valid via Samsung Online Store, Samsung Shop App and/or Samsung Experience Stores only.\n\nThe Samsung Registration+ e-voucher is available for purchase at $20 and is valid for one-time redemption only. The Samsung Registration+ e-voucher is non-transferable, non-refundable and non-exchangeable for cash. Any unused, expired or forfeited e-voucher will not be refunded or replaced.\n\nSamsung reserves the right to amend these Terms and Conditions and/or amend or withdraw this Promo at any time without prior notice and without assigning any reasons.",
+    "status": "active",
+    "is_expiring": false
   }
 ]
