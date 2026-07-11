@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T17:07:45.891Z",
+  "lastUpdated": "2026-07-11T23:07:39.682Z",
   "totalDeals": 200,
   "generatedBy": "Catavel Pipeline v13.1",
   "deals": [
@@ -239,6 +239,23 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL220726SIN1",
       "valid_until": "2026-07-18T17:07:33.031Z",
       "created_at": "2026-07-11T17:07:33.031Z",
+      "market": "MYR"
+    },
+    {
+      "id": "flight_KUL_SIN_1783811245828_0phh",
+      "title": "Kuala Lumpur to Singapore from MYR 133",
+      "destination": "Singapore",
+      "origin": "Kuala Lumpur",
+      "original_price": 250,
+      "discounted_price": 133,
+      "discount_percent": 47,
+      "currency": "MYR",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL220726SIN1",
+      "valid_until": "2026-07-18T23:07:31.887Z",
+      "created_at": "2026-07-11T23:07:31.887Z",
       "market": "MYR"
     },
     {
@@ -562,6 +579,23 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG240826OSA1",
       "valid_until": "2026-07-18T17:07:33.032Z",
       "created_at": "2026-07-11T17:07:33.032Z",
+      "market": "HKD"
+    },
+    {
+      "id": "flight_HKG_OSA_1783811246872_417w",
+      "title": "Hong Kong to Osaka from HKD 1770",
+      "destination": "Osaka",
+      "origin": "Hong Kong",
+      "original_price": 2600,
+      "discounted_price": 1770,
+      "discount_percent": 32,
+      "currency": "HKD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG240826OSA1",
+      "valid_until": "2026-07-18T23:07:31.888Z",
+      "created_at": "2026-07-11T23:07:31.888Z",
       "market": "HKD"
     },
     {
@@ -956,21 +990,21 @@
       "market": "SGD"
     },
     {
-      "id": "flight_HKG_TYO_1783206446766_brd6",
-      "title": "Hong Kong to Tokyo from HKD 2008",
-      "destination": "Tokyo",
-      "origin": "Hong Kong",
-      "original_price": 2800,
-      "discounted_price": 2008,
-      "discount_percent": 28,
-      "currency": "HKD",
+      "id": "flight_SIN_SEL_1783811244790_tutj",
+      "title": "Singapore to Seoul from SGD 278",
+      "destination": "Seoul",
+      "origin": "Singapore",
+      "original_price": 400,
+      "discounted_price": 278,
+      "discount_percent": 31,
+      "currency": "SGD",
       "ota": "Aviasales",
       "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG160926TYO1",
-      "valid_until": "2026-07-11T23:07:31.682Z",
-      "created_at": "2026-07-04T23:07:31.682Z",
-      "market": "HKD"
+      "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN230826SEL1",
+      "valid_until": "2026-07-18T23:07:31.887Z",
+      "created_at": "2026-07-11T23:07:31.887Z",
+      "market": "SGD"
     },
     {
       "id": "flight_HKG_TYO_1783228046846_ks44",
@@ -1429,23 +1463,6 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG160926TYO1",
       "valid_until": "2026-07-18T17:07:33.032Z",
       "created_at": "2026-07-11T17:07:33.032Z",
-      "market": "HKD"
-    },
-    {
-      "id": "flight_HKG_OSA_1783206446765_da1b",
-      "title": "Hong Kong to Osaka from HKD 1910",
-      "destination": "Osaka",
-      "origin": "Hong Kong",
-      "original_price": 2600,
-      "discounted_price": 1910,
-      "discount_percent": 27,
-      "currency": "HKD",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG180926OSA1",
-      "valid_until": "2026-07-11T23:07:31.682Z",
-      "created_at": "2026-07-04T23:07:31.682Z",
       "market": "HKD"
     },
     {
@@ -1925,21 +1942,21 @@
       "market": "HKD"
     },
     {
-      "id": "flight_SIN_TYO_1783206444674_mpgs",
-      "title": "Singapore to Tokyo from SGD 412",
-      "destination": "Tokyo",
-      "origin": "Singapore",
-      "original_price": 550,
-      "discounted_price": 412,
-      "discount_percent": 25,
-      "currency": "SGD",
+      "id": "flight_HKG_SEL_1783811246872_ghcq",
+      "title": "Hong Kong to Seoul from HKD 1326",
+      "destination": "Seoul",
+      "origin": "Hong Kong",
+      "original_price": 1800,
+      "discounted_price": 1326,
+      "discount_percent": 26,
+      "currency": "HKD",
       "ota": "Aviasales",
       "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN160926TYO1",
-      "valid_until": "2026-07-11T23:07:31.680Z",
-      "created_at": "2026-07-04T23:07:31.680Z",
-      "market": "SGD"
+      "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG130826SEL1",
+      "valid_until": "2026-07-18T23:07:31.888Z",
+      "created_at": "2026-07-11T23:07:31.888Z",
+      "market": "HKD"
     },
     {
       "id": "flight_SIN_TYO_1783228044755_xyn7",
@@ -2144,6 +2161,23 @@
       "valid_until": "2026-07-14T23:07:35.637Z",
       "created_at": "2026-07-07T23:07:35.637Z",
       "market": "SGD"
+    },
+    {
+      "id": "flight_HKG_TYO_1783811246872_7dw0",
+      "title": "Hong Kong to Tokyo from HKD 2109",
+      "destination": "Tokyo",
+      "origin": "Hong Kong",
+      "original_price": 2800,
+      "discounted_price": 2109,
+      "discount_percent": 25,
+      "currency": "HKD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG310826TYO1",
+      "valid_until": "2026-07-18T23:07:31.888Z",
+      "created_at": "2026-07-11T23:07:31.888Z",
+      "market": "HKD"
     },
     {
       "id": "flight_KUL_DPS_1783487251991_jti6",
@@ -2418,6 +2452,23 @@
       "market": "MYR"
     },
     {
+      "id": "flight_KUL_SEL_1783811245828_k7v0",
+      "title": "Kuala Lumpur to Seoul from MYR 1082",
+      "destination": "Seoul",
+      "origin": "Kuala Lumpur",
+      "original_price": 1400,
+      "discounted_price": 1082,
+      "discount_percent": 23,
+      "currency": "MYR",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL150826SEL1",
+      "valid_until": "2026-07-18T23:07:31.887Z",
+      "created_at": "2026-07-11T23:07:31.887Z",
+      "market": "MYR"
+    },
+    {
       "id": "flight_BKK_HKT_1783508853480_jezz",
       "title": "Bangkok to Phuket from THB 1181",
       "destination": "Phuket",
@@ -2568,23 +2619,6 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL031026DPS1",
       "valid_until": "2026-07-17T05:07:32.076Z",
       "created_at": "2026-07-10T05:07:32.076Z",
-      "market": "MYR"
-    },
-    {
-      "id": "flight_KUL_SEL_1783206445763_6rsb",
-      "title": "Kuala Lumpur to Seoul from MYR 1135",
-      "destination": "Seoul",
-      "origin": "Kuala Lumpur",
-      "original_price": 1400,
-      "discounted_price": 1135,
-      "discount_percent": 19,
-      "currency": "MYR",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL060826SEL1",
-      "valid_until": "2026-07-11T23:07:31.681Z",
-      "created_at": "2026-07-04T23:07:31.681Z",
       "market": "MYR"
     },
     {
@@ -3098,6 +3132,23 @@
       "market": "SGD"
     },
     {
+      "id": "flight_SIN_TYO_1783811244791_kynx",
+      "title": "Singapore to Tokyo from SGD 447",
+      "destination": "Tokyo",
+      "origin": "Singapore",
+      "original_price": 550,
+      "discounted_price": 447,
+      "discount_percent": 19,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN120726TYO1",
+      "valid_until": "2026-07-18T23:07:31.887Z",
+      "created_at": "2026-07-11T23:07:31.887Z",
+      "market": "SGD"
+    },
+    {
       "id": "flight_KUL_OSA_1783336048350_a1gm",
       "title": "Kuala Lumpur to Osaka from MYR 1399",
       "destination": "Osaka",
@@ -3350,57 +3401,6 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL020227OSA1",
       "valid_until": "2026-07-16T11:07:33.731Z",
       "created_at": "2026-07-09T11:07:33.731Z",
-      "market": "MYR"
-    },
-    {
-      "id": "flight_KUL_OSA_1783616846207_vlf5",
-      "title": "Kuala Lumpur to Osaka from MYR 1400",
-      "destination": "Osaka",
-      "origin": "Kuala Lumpur",
-      "original_price": 1700,
-      "discounted_price": 1400,
-      "discount_percent": 18,
-      "currency": "MYR",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL020227OSA1",
-      "valid_until": "2026-07-16T17:07:32.744Z",
-      "created_at": "2026-07-09T17:07:32.744Z",
-      "market": "MYR"
-    },
-    {
-      "id": "flight_KUL_OSA_1783638447499_uym7",
-      "title": "Kuala Lumpur to Osaka from MYR 1400",
-      "destination": "Osaka",
-      "origin": "Kuala Lumpur",
-      "original_price": 1700,
-      "discounted_price": 1400,
-      "discount_percent": 18,
-      "currency": "MYR",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL020227OSA1",
-      "valid_until": "2026-07-16T23:07:35.479Z",
-      "created_at": "2026-07-09T23:07:35.479Z",
-      "market": "MYR"
-    },
-    {
-      "id": "flight_KUL_OSA_1783660045871_21m9",
-      "title": "Kuala Lumpur to Osaka from MYR 1400",
-      "destination": "Osaka",
-      "origin": "Kuala Lumpur",
-      "original_price": 1700,
-      "discounted_price": 1400,
-      "discount_percent": 18,
-      "currency": "MYR",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL020227OSA1",
-      "valid_until": "2026-07-17T05:07:32.076Z",
-      "created_at": "2026-07-10T05:07:32.076Z",
       "market": "MYR"
     }
   ]
