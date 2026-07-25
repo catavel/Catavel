@@ -1289,7 +1289,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid for Europe Mobility Products. Min spend of 180USD. Max discount of 10 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: July 31st 2026",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_hotelonapp",
@@ -1527,7 +1527,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "By entering the designated discount code on the payment page, you can enjoy an immediate 5% discount on ticket price. Max cap at 25 USD. The offer is limited in quantity and will end once it is fully redeemed. Expiration date: July 31st.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_eusummermob",
@@ -1544,7 +1544,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid for Europe Mobility Products. Min spend of 180USD. Max discount of 10 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: July 31st 2026",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_alp26jun60",
@@ -1816,7 +1816,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "By entering the designated discount code on the payment page, you can enjoy an immediate 5% discount on ticket price. Max cap at 25 USD. The offer is limited in quantity and will end once it is fully redeemed. Expiration date: July 31st.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_eumobus5off",
@@ -1833,7 +1833,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is applicable to European transportation products. A minimum spend of US$180 is required, with a maximum discount of US$20.\nEach user is limited to one use. The number of discount codes is limited and will be applied on a first-come, first-served basis at checkout. If a warning appears at checkout indicating that the discount code is not applicable, it means the usage limit for that discount code has been reached. The final discount amount will be subject to what is displayed on the checkout page. Valid until: July 31, 2026",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_ctbclp2642",
@@ -1901,7 +1901,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "By entering the designated discount code on the payment page, you can enjoy an immediate 5% discount on ticket price. Max cap at 25 USD. The offer is limited in quantity and will end once it is fully redeemed. Expiration date: July 31st.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_summer8twp",
@@ -1935,7 +1935,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Exclusively for AmBank cardholders only - Minimum spend RM800 on all activities",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_melcomcbe20",
@@ -2173,7 +2173,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is valid for Europe Mobility Products. Min spend of 180USD. Max discount of 30 USD.\nEach user is allowed to use it for once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: July 31st 2026",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_upi26jul20",
@@ -2190,7 +2190,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Book Klook Activities upon HKD 400 or above in a Single Net Transaction can enjoy HKD 20 off. Enter the Promo Code at checkout and pay with a UnionPay credit card or debit card. Offer does not apply to activities as specified by Klook from time to time. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_upi26jul50",
@@ -2207,7 +2207,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Book Klook Activities upon HKD 800 or above in a Single Net Transaction can enjoy HKD 50 off. Enter the Promo Code at checkout and pay with a UnionPay credit card or debit card. Offer does not apply to activities as specified by Klook from time to time. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_upi26jul120",
@@ -2224,7 +2224,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Book Klook Activities upon HKD 1,800 or above in a Single Net Transaction can enjoy HKD 120 off. Enter the Promo Code at checkout and pay with a UnionPay credit card or debit card. Offer does not apply to activities as specified by Klook from time to time. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_ysf26jul120",
@@ -2241,7 +2241,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Book Klook Activities upon HKD 1,800 or above in a Single Net Transaction can enjoy HKD 120 off. Enter the Promo Code at checkout and pay with a UnionPay credit card or debit card. Offer does not apply to activities as specified by Klook from time to time. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_pm26jul40",
@@ -2258,7 +2258,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Book Klook Activities and get HKD 40 off when making a single net transaction of HKD 888 or more with PayMe. To redeem the offer, enter promo code: PM26JUL40. Offer is not applicable to certain products as specified by Klook from time to time. Each User can enjoy this offer ONCE. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_aelsummer5",
@@ -2343,7 +2343,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Book Selected Japan, South Korea, Taiwan & Thailand Hotel upon HKD 1,000 or above in a Single Net Transaction can enjoy HKD 100 off. Enter the Promo Code at checkout and pay with a UnionPay credit card or debit card. Offer does not apply to activities as specified by Klook from time to time. The promo codes are available on a first-come, first-served basis while the quota lasts. All payment via eWallet or third party payment applications/ platforms are not applicable for the calculation of Eligible Transactions in the Promotion.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_hktvnewhotel200",
@@ -2360,7 +2360,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Discount is only available to selected users in Hong Kong. Discount is valid till 31 Jul, 2026 from the date of issuance. Each user is allowed to order and use this discount once only. Discount is only applicable to all bookings on Klook platforms for hotels booking only. Upon net spending of HK$1,500 discount is capped at HK$200 for each order. Limited quota is available for this discount and is on a first-come-first-served basis. Discount will be available when it reaches redemption quota or usage limit. Code will not be reissued in such circumstances. If users cannot receive a discount or promotion code for any reason, the code will not be reissued. Discount can only be applied at checkout on Klook platforms. In the cases of users failing to check out with discount or respective promotion codes, users cannot claim the discount after booking confirmation. No refunds, exchanges or adjustments will be made. Discount is non-transferable or exchanged for cash or any assets from Klook. Discount cannot be used in conjunction with other Klook’s promotion codes.  Klook reserves the right to vary conditions of use of the discount or respective coupon codes to withdraw the discount or coupon codes at any time.  In case of any disputes, Klook reserves the right of final decision. Terms and conditions apply.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_otp26car100",
@@ -2445,7 +2445,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"5%\" discount coupon is applicable to European transportation products. A minimum spend of $180 is required, with a maximum discount of $55.\nLimited to one use per user. The number of discount codes is limited and will be applied on a first-come, first-served basis at checkout. If a warning appears at checkout indicating that the discount code is not applicable, it means the usage limit for that discount code has been reached. The final discount amount will be subject to what is displayed on the checkout page. Valid until: July 31, 2026",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_loveatfirstride",
@@ -2462,7 +2462,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "[Limited Offer] Only applicable from 1-31 July 2026 [Private transfer New user] 15% off max capped 300.- no min spend when booking private transfer. Offer valid for one-time use per user. Can apply to applicable activities only.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_no_code_needed_13",
@@ -2531,5 +2531,22 @@
     "tcs": "炎炎夏日，唔好畀悶熱天氣影響心情！快啲參與屈臣氏酒窖「會員祭」啦！第2浪已經登場☀️ 超過180款人氣美酒任你揀！會員專享優惠，低至8折，立即選購！\n\n[🥘大牌檔之夜] 鑊氣十足嘅小炒，配上清新怡人Rieslings及 Chablis等， 先係最地道嘅香港味道!\n[⛵船P神器] 靚住出海，當然要配上打卡able 嘅 Cava 氣泡酒、 rose 玫瑰葡萄酒! \n[💻煲劇神伴] 濃郁嘅 Shiraz、絲滑嘅 Grenache 、優雅迷人嘅 Chardonnays ，最適合Chill住品嚐!\n[🎶深夜音樂室] 經典意大利佳釀、波爾多，在悠揚音樂中，靜靜品味每一口醇香!\n\n還有更多名莊佳釀、日常易飲之選等你發掘 🤩! 把握機會，約埋一班朋友暢飲吧！\n\n*優惠期至2026年8月24日，貨品數量有限，售完或送完即止。優惠受條款及細則約束。",
     "status": "active",
     "is_expiring": false
+  },
+  {
+    "id": "vc_no_code_needed_17",
+    "ota": "Lazada TH",
+    "promo_code": "NO CODE NEEDED",
+    "description": "PAYDAY ช้อปทุกวัน ยันสิ้นเดือน!",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Lazada_CPS_WebAPP_TH",
+    "valid_until": "2026-07-31",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56303&AID=2361654&Type=21&r=https%3A%2F%2Fpages.lazada.co.th%2Fwow%2Fgcp%2Froute%2Flazada%2Fth%2Fupr_1000345_lazada%2Fchannel%2Fth%2Fupr-router%2Fth%3Fpha%3Dtrue%26wx_navbar_transparent%3Dtrue%26hybrid%3D1%26data_prefetch%3Dtrue%26prefetch_replace%3D1%26at_iframe%3D1%26wh_pid%3D%2Flazada%2Fmegascenario%2Fth%2Fjul_payday_26%2FPAYDAY%26pha%3Dtrue%26itemId%3D1",
+    "tcs": "1. แจกคูปองทุกวันสูงสุด 3,500.-  \n2.เช็คอินรับเหรียญสูงสุด 77,777*\n\n3. ดีลเด็ดรายวัน 1 แถม 1\n\n\nCampaign Mechanics:\n1. Deals Up to 90%\nPeriod : 25 Jul from 00.00 - 02.00\n1.1) Crazy Brand Mega Offer (LazMall)\n1.2) Big Surprise Deals Up to 90% (Lazada & LazGlobal)\n\n2. Brand Mega Offer (LazMall)\n3. LazFlash ช่วยเปย์ Up to 70%\n4. Hot Deals ดีลเด็ดขายดี\n5. Free Shipping SKU ดีลส่งฟรี\n6. Coins SKU ส่วนลดเพิ่มจากเหรียญ\n7. Top Rated SKU",
+    "status": "active",
+    "is_expiring": true
   }
 ]
