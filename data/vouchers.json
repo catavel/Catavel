@@ -3126,5 +3126,39 @@
     "tcs": "1. คูปองแบรนด์ดังลดสูงสุด 50% / LazMall Voucher up to 50%\n2. ของแท้ถูกชัวร์ / 100% Authentic & Low Price Guarantee\n3. แบรนด์ดังลด50% / Half Price Brand Deals",
     "status": "active",
     "is_expiring": true
+  },
+  {
+    "id": "vc_no_code_needed_18",
+    "ota": "Radisson Hotels",
+    "promo_code": "NO CODE NEEDED",
+    "description": "Save up to 25% on your next Thailand escape",
+    "type": "percent",
+    "discount": "25%",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
+    "valid_until": "2026-09-30",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fthailand-offer",
+    "tcs": "Up to 25% off the Best Available Rate,20% off food & beverage during your stay\n\nTarget Market: Thailand",
+    "status": "active",
+    "is_expiring": false
+  },
+  {
+    "id": "vc_no_code_needed_19",
+    "ota": "Radisson Hotels",
+    "promo_code": "NO CODE NEEDED",
+    "description": "China Summer Sale",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
+    "valid_until": "2026-10-11",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fchina-summer-sale",
+    "tcs": "Save up to 20% + 2,000 bonus points\n\nTarget Market: China",
+    "status": "active",
+    "is_expiring": false
   }
 ]
