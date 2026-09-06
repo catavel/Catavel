@@ -1,25 +1,8 @@
 {
-  "lastUpdated": "2026-09-06T11:07:46.277Z",
+  "lastUpdated": "2026-09-06T17:07:44.022Z",
   "totalDeals": 200,
   "generatedBy": "Catavel Pipeline v13.1",
   "deals": [
-    {
-      "id": "flight_HKG_OSA_1788109646939_zady",
-      "title": "Hong Kong to Osaka from HKD 1592",
-      "destination": "Osaka",
-      "origin": "Hong Kong",
-      "original_price": 2600,
-      "discounted_price": 1592,
-      "discount_percent": 39,
-      "currency": "HKD",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG161226OSA1",
-      "valid_until": "2026-09-06T17:07:32.253Z",
-      "created_at": "2026-08-30T17:07:32.253Z",
-      "market": "HKD"
-    },
     {
       "id": "flight_HKG_OSA_1788131249698_p19z",
       "title": "Hong Kong to Osaka from HKD 1592",
@@ -446,6 +429,23 @@
       "market": "HKD"
     },
     {
+      "id": "flight_HKG_OSA_1788714447261_5gr2",
+      "title": "Hong Kong to Osaka from HKD 1599",
+      "destination": "Osaka",
+      "origin": "Hong Kong",
+      "original_price": 2600,
+      "discounted_price": 1599,
+      "discount_percent": 39,
+      "currency": "HKD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1589528978886-35a2a4e2d8f3?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG161226OSA1",
+      "valid_until": "2026-09-13T17:07:32.645Z",
+      "created_at": "2026-09-06T17:07:32.645Z",
+      "market": "HKD"
+    },
+    {
       "id": "flight_HKG_OSA_1788412046647_q35w",
       "title": "Hong Kong to Osaka from HKD 1600",
       "destination": "Osaka",
@@ -480,23 +480,6 @@
       "market": "HKD"
     },
     {
-      "id": "flight_SIN_TYO_1788109644727_sc63",
-      "title": "Singapore to Tokyo from SGD 360",
-      "destination": "Tokyo",
-      "origin": "Singapore",
-      "original_price": 550,
-      "discounted_price": 360,
-      "discount_percent": 35,
-      "currency": "SGD",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN140926TYO1",
-      "valid_until": "2026-09-06T17:07:32.252Z",
-      "created_at": "2026-08-30T17:07:32.252Z",
-      "market": "SGD"
-    },
-    {
       "id": "flight_SIN_TYO_1788131246758_9puk",
       "title": "Singapore to Tokyo from SGD 370",
       "destination": "Tokyo",
@@ -511,23 +494,6 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN150926TYO1",
       "valid_until": "2026-09-06T23:07:37.769Z",
       "created_at": "2026-08-30T23:07:37.769Z",
-      "market": "SGD"
-    },
-    {
-      "id": "flight_SIN_KUL_1788109644726_5spq",
-      "title": "Singapore to Kuala Lumpur from SGD 55",
-      "destination": "Kuala Lumpur",
-      "origin": "Singapore",
-      "original_price": 80,
-      "discounted_price": 55,
-      "discount_percent": 31,
-      "currency": "SGD",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN111126KUL1",
-      "valid_until": "2026-09-06T17:07:32.252Z",
-      "created_at": "2026-08-30T17:07:32.252Z",
       "market": "SGD"
     },
     {
@@ -990,6 +956,23 @@
       "market": "SGD"
     },
     {
+      "id": "flight_SIN_TYO_1788714445004_qxcr",
+      "title": "Singapore to Tokyo from SGD 382",
+      "destination": "Tokyo",
+      "origin": "Singapore",
+      "original_price": 550,
+      "discounted_price": 382,
+      "discount_percent": 31,
+      "currency": "SGD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN150926TYO1",
+      "valid_until": "2026-09-13T17:07:32.643Z",
+      "created_at": "2026-09-06T17:07:32.643Z",
+      "market": "SGD"
+    },
+    {
       "id": "flight_SIN_TYO_1788152844989_jp4r",
       "title": "Singapore to Tokyo from SGD 389",
       "destination": "Tokyo",
@@ -1021,23 +1004,6 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN150926TYO1",
       "valid_until": "2026-09-07T11:07:35.079Z",
       "created_at": "2026-08-31T11:07:35.079Z",
-      "market": "SGD"
-    },
-    {
-      "id": "flight_SIN_SEL_1788109644727_gzs8",
-      "title": "Singapore to Seoul from SGD 289",
-      "destination": "Seoul",
-      "origin": "Singapore",
-      "original_price": 400,
-      "discounted_price": 289,
-      "discount_percent": 28,
-      "currency": "SGD",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN140926SEL1",
-      "valid_until": "2026-09-06T17:07:32.252Z",
-      "created_at": "2026-08-30T17:07:32.252Z",
       "market": "SGD"
     },
     {
@@ -1789,6 +1755,23 @@
       "market": "HKD"
     },
     {
+      "id": "flight_HKG_TYO_1788714447263_5lnw",
+      "title": "Hong Kong to Tokyo from HKD 2022",
+      "destination": "Tokyo",
+      "origin": "Hong Kong",
+      "original_price": 2800,
+      "discounted_price": 2022,
+      "discount_percent": 28,
+      "currency": "HKD",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG071026TYO1",
+      "valid_until": "2026-09-13T17:07:32.646Z",
+      "created_at": "2026-09-06T17:07:32.646Z",
+      "market": "HKD"
+    },
+    {
       "id": "flight_BKK_HKT_1788304051136_bmjc",
       "title": "Bangkok to Phuket from THB 1101",
       "destination": "Phuket",
@@ -1804,23 +1787,6 @@
       "valid_until": "2026-09-08T23:07:34.269Z",
       "created_at": "2026-09-01T23:07:34.269Z",
       "market": "THB"
-    },
-    {
-      "id": "flight_HKG_TYO_1788109646940_oqiz",
-      "title": "Hong Kong to Tokyo from HKD 2084",
-      "destination": "Tokyo",
-      "origin": "Hong Kong",
-      "original_price": 2800,
-      "discounted_price": 2084,
-      "discount_percent": 26,
-      "currency": "HKD",
-      "ota": "Aviasales",
-      "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG150926TYO1",
-      "valid_until": "2026-09-06T17:07:32.253Z",
-      "created_at": "2026-08-30T17:07:32.253Z",
-      "market": "HKD"
     },
     {
       "id": "flight_HKG_TYO_1788131249699_0izo",
@@ -2299,21 +2265,21 @@
       "market": "SGD"
     },
     {
-      "id": "flight_HKG_SEL_1788109646940_ztg4",
-      "title": "Hong Kong to Seoul from HKD 1365",
-      "destination": "Seoul",
-      "origin": "Hong Kong",
-      "original_price": 1800,
-      "discounted_price": 1365,
-      "discount_percent": 24,
-      "currency": "HKD",
+      "id": "flight_SIN_BCN_1788714445002_rhhg",
+      "title": "Singapore to Barcelona from SGD 628",
+      "destination": "Barcelona",
+      "origin": "Singapore",
+      "original_price": 850,
+      "discounted_price": 628,
+      "discount_percent": 26,
+      "currency": "SGD",
       "ota": "Aviasales",
       "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FHKG090926SEL1",
-      "valid_until": "2026-09-06T17:07:32.253Z",
-      "created_at": "2026-08-30T17:07:32.253Z",
-      "market": "HKD"
+      "image_url": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FSIN011126BCN1",
+      "valid_until": "2026-09-13T17:07:32.642Z",
+      "created_at": "2026-09-06T17:07:32.642Z",
+      "market": "SGD"
     },
     {
       "id": "flight_HKG_SEL_1788131249698_zkoz",
@@ -2894,20 +2860,20 @@
       "market": "MYR"
     },
     {
-      "id": "flight_KUL_KHH_1788109645793_43st",
-      "title": "Kuala Lumpur to Kaohsiung from MYR 856",
-      "destination": "Kaohsiung",
+      "id": "flight_KUL_TYO_1788714446215_k0hj",
+      "title": "Kuala Lumpur to Tokyo from MYR 1381",
+      "destination": "Tokyo",
       "origin": "Kuala Lumpur",
-      "original_price": 1100,
-      "discounted_price": 856,
-      "discount_percent": 22,
+      "original_price": 1800,
+      "discounted_price": 1381,
+      "discount_percent": 23,
       "currency": "MYR",
       "ota": "Aviasales",
       "category": "Flight",
-      "image_url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80",
-      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL250926KHH1",
-      "valid_until": "2026-09-06T17:07:32.252Z",
-      "created_at": "2026-08-30T17:07:32.252Z",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL261026TYO1",
+      "valid_until": "2026-09-13T17:07:32.645Z",
+      "created_at": "2026-09-06T17:07:32.645Z",
       "market": "MYR"
     },
     {
@@ -3401,6 +3367,40 @@
       "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL290926TYO1",
       "valid_until": "2026-09-09T11:07:33.115Z",
       "created_at": "2026-09-02T11:07:33.115Z",
+      "market": "MYR"
+    },
+    {
+      "id": "flight_KUL_TYO_1788368846690_o139",
+      "title": "Kuala Lumpur to Tokyo from MYR 1425",
+      "destination": "Tokyo",
+      "origin": "Kuala Lumpur",
+      "original_price": 1800,
+      "discounted_price": 1425,
+      "discount_percent": 21,
+      "currency": "MYR",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL290926TYO1",
+      "valid_until": "2026-09-09T17:07:33.214Z",
+      "created_at": "2026-09-02T17:07:33.214Z",
+      "market": "MYR"
+    },
+    {
+      "id": "flight_KUL_TYO_1788390446114_oqgq",
+      "title": "Kuala Lumpur to Tokyo from MYR 1425",
+      "destination": "Tokyo",
+      "origin": "Kuala Lumpur",
+      "original_price": 1800,
+      "discounted_price": 1425,
+      "discount_percent": 21,
+      "currency": "MYR",
+      "ota": "Aviasales",
+      "category": "Flight",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
+      "affiliate_link": "https://tp.media/r?marker=709139&trs=505880&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2Fsearch%2FKUL290926TYO1",
+      "valid_until": "2026-09-09T23:07:32.118Z",
+      "created_at": "2026-09-02T23:07:32.118Z",
       "market": "MYR"
     }
   ]
