@@ -1313,7 +1313,7 @@ function cardNormal(d){
       </span>
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${esc(d.ota)}</span></b></span>
       <span class="d-mkt">${mktPills(d.market)}</span>
-      <span class="d-exp${urgCls}">Ends <time datetime="${escAttr(d.valid_until)}">${fmtDate(d.valid_until)}</time></span>
+      <span class="d-exp${urgCls}">${esc(d.date_label||'Ends')} <time datetime="${escAttr(d.valid_until)}">${fmtDate(d.valid_until)}</time></span>
     </div>
   </div>
   <!-- desktop: price + CTA (hidden on mobile via CSS) -->
@@ -1382,7 +1382,7 @@ function cardVoucher(d){
     <div class="dr2">
       <span class="d-ota">via <b itemprop="seller" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">${esc(d.ota)}</span></b></span>
       <span class="d-mkt">${mktPills(d.market)}</span>
-      <span class="d-exp${urgCls}">Ends <time datetime="${escAttr(d.valid_until)}">${fmtDate(d.valid_until)}</time></span>
+      <span class="d-exp${urgCls}">${esc(d.date_label||'Ends')} <time datetime="${escAttr(d.valid_until)}">${fmtDate(d.valid_until)}</time></span>
       ${tcsBtn}
     </div>
   </div>
@@ -1724,7 +1724,8 @@ function normaliseHotelDeal(h){
     original_price:   parseFloat(h.original_price)  || 0,
     discounted_price: parseFloat(h.deal_price)       || 0,
     discount_percent: parseInt(h.discount_percent)   || 0,
-    valid_until:      h.last_updated || '2099-12-31',
+    valid_until:      h.stay_end || h.last_updated || '2099-12-31',
+    date_label:       h.stay_end ? 'Stay until' : 'Updated',
     link:             h.url || '#',
     is_hot:           (parseInt(h.discount_percent) || 0) >= 25,
     is_expiring:      false
