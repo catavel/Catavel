@@ -113,6 +113,9 @@ ul,ol{list-style:none}
 /* ===========================================
    CATEGORY NAV (sticky)
    =========================================== */
+.hotel-note{display:none;margin:0 0 12px;padding:9px 12px;border-left:3px solid var(--teal-bd);background:var(--white);border-radius:0 6px 6px 0;font-size:12px;line-height:1.5;color:var(--muted)}
+.hotel-note.on{display:block}
+.hotel-note b{color:var(--text);font-weight:600}
 .cat-nav{background:var(--white);border-bottom:1px solid var(--bdr);position:sticky;top:48px;z-index:90}
 .cat-nav-i{display:flex;gap:4px;align-items:center;height:52px;overflow-x:auto;scrollbar-width:none;padding:0 2px}
 .cat-nav-i::-webkit-scrollbar{display:none}
@@ -1004,6 +1007,8 @@ ul,ol{list-style:none}
           </select>
         </div>
       </div>
+
+      <p class="hotel-note" id="hotel-note">Hotel prices are <b>indicative</b>, based on a 1 night stay for 2 adults on the dates shown, checked when this page was last updated. Agoda may apply extra coupons at checkout, so the price you pay is often lower.</p>
       <ul class="dl" id="dl" aria-label="Travel deals"></ul>
     </section>
 
@@ -1489,11 +1494,21 @@ function render(arr){
   if(!arr.length){
     list.innerHTML='<li><div class="empty" role="status"><p>No deals match your filters. Adjusting filters or check back in 6 hours.</p></div></li>';
     ct.textContent='0 deals';
+    toggleHotelNote([]);
     return;
   }
   list.innerHTML=arr.map(d=>d.category==='voucher'?cardVoucher(d):cardNormal(d)).join('');
   ct.textContent=arr.length+' deal'+(arr.length!==1?'s':'');
+  toggleHotelNote(arr);
   injectSchema(arr);
+}
+
+/* Show the indicative-price note only when hotel cards are on screen. */
+function toggleHotelNote(arr){
+  const n=document.getElementById('hotel-note');
+  if(!n) return;
+  const hasHotel=(arr||[]).some(d=>d.category==='hotel');
+  n.classList.toggle('on',hasHotel);
 }
 
 /* ─── FILTER ENGINE ─── */
