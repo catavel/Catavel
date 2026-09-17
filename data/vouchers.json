@@ -1241,23 +1241,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_summer26",
-    "ota": "Radisson Hotels",
-    "promo_code": "SUMMER26",
-    "description": "Summer Sale",
-    "type": "percent",
-    "discount": "35%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
-    "valid_until": "2026-09-10",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fsummer-sale",
-    "tcs": "Offer Details: Up to 35% off on participating hotels, Additional 3,000 Radisson Rewards bonus points per stay\nBooking Window: April 30, 2026 – May 28, 2026\nStay Window: July 1, 2026 – September 10, 2026",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_hotelonapp",
     "ota": "Klook",
     "promo_code": "HOTELONAPP",
@@ -1324,23 +1307,6 @@
     "tcs": "Travel to South Korea\nOffer: Up to 50% OFF\nCampaign Period: Until 30 September 2026\nPromo Page URL: https://www.traveloka.com/id-id/promotion/travel-to-south-korea",
     "status": "active",
     "is_expiring": false
-  },
-  {
-    "id": "vc_no_code_needed_12",
-    "ota": "Radisson Hotels",
-    "promo_code": "NO CODE NEEDED",
-    "description": "Global Summer Sale",
-    "type": "deal",
-    "discount": "",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
-    "valid_until": "2026-09-10",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fsummer-sale",
-    "tcs": "Save up to 35%\nBooking Window: Today – May 28, 2026\nStay Window: July 1, 2026 – September 10, 2026",
-    "status": "active",
-    "is_expiring": true
   },
   {
     "id": "vc_protecthk26",
@@ -2023,7 +1989,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_13",
+    "id": "vc_no_code_needed_12",
     "ota": "Radisson Hotels",
     "promo_code": "NO CODE NEEDED",
     "description": "Save up to 25% on your next Thailand escape",
@@ -2040,7 +2006,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_14",
+    "id": "vc_no_code_needed_13",
     "ota": "Radisson Hotels",
     "promo_code": "NO CODE NEEDED",
     "description": "China Summer Sale",
@@ -2053,74 +2019,6 @@
     "market": "ALL",
     "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fchina-summer-sale",
     "tcs": "Save up to 20% + 2,000 bonus points\n\nTarget Market: China",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_post264000810",
-    "ota": "Klook",
-    "promo_code": "POST264000810",
-    "description": "刷中華郵政VISA金融卡 全站商品滿$2500折$400",
-    "type": "flat",
-    "discount": "TWD 400",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-09",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_kintetsu",
-    "ota": "Klook",
-    "promo_code": "KINTETSU",
-    "description": "Kintetsu Rail Tickets 10% off",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-10",
-    "market": "ALL",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "This \"10%\" promo code is only applicable to the following selected Kintetsu Rail tickets:\n\"Kintetsu Rail Pass - 5-day digital pass\"\n\"Kintetsu Rail Pass - 5-day digital pass plus\"\n\"Osaka to Nagoya and Ise Express Train by Kintetsu\"\n\"Kyoto to Nara Express Train by Kintetsu\"\n\"Osaka to Nara Express Train by Kintetsu\"\nMax cap of 3USD.\nPromo code quantities are limited and applied on a first-come, first-served basis at checkout. If a warning appears at checkout indicating that the promo code is unavailable, it means that the usage limit for the promo code has been reached. The actual discount is subject to the final checkout page. Expiration date: September 10th",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_post264000817",
-    "ota": "Klook",
-    "promo_code": "POST264000817",
-    "description": "刷中華郵政VISA金融卡 全站商品滿$2500折$400",
-    "type": "flat",
-    "discount": "TWD 400",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-16",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
-    "status": "active",
-    "is_expiring": false
-  },
-  {
-    "id": "vc_klk11atome",
-    "ota": "Klook",
-    "promo_code": "KLK11ATOME",
-    "description": "Exclusively for Atome app users only - Minimum spend RM400 on all activities",
-    "type": "percent",
-    "discount": "11%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-16",
-    "market": "MYR",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Exclusively for Atome app users only - Minimum spend RM400 on all activities",
     "status": "active",
     "is_expiring": false
   },
@@ -2139,7 +2037,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_klehot7526q3",
@@ -2737,7 +2635,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_15",
+    "id": "vc_no_code_needed_14",
     "ota": "Watsons Wine",
     "promo_code": "NO CODE NEEDED",
     "description": "優惠三: 中國葡萄酒及烈酒優惠 | 買 2 支額外 9 折",
@@ -2754,7 +2652,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_16",
+    "id": "vc_no_code_needed_15",
     "ota": "Watsons Wine",
     "promo_code": "NO CODE NEEDED",
     "description": "優惠二: 中秋美酒套裝 | 低至$88/支*",
@@ -2771,7 +2669,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_17",
+    "id": "vc_no_code_needed_16",
     "ota": "Watsons Wine",
     "promo_code": "NO CODE NEEDED",
     "description": "優惠一: 嚐聚一起 |近100款美酒低至$140",
@@ -2788,57 +2686,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_themepark99",
-    "ota": "Klook",
-    "promo_code": "THEMEPARK99",
-    "description": "[Theme park] Get 399.-off when booking attraction at least 5,000.-",
-    "type": "flat",
-    "discount": "THB 399",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-09",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable from 1-8 Sep 2026, [Theme park] Get  399.- when booking  attraction at least 5,000.-. Excludes flights, gift cards, and discounted activities. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_pm26mxb1g1",
-    "ota": "Klook",
-    "promo_code": "PM26MXB1G1",
-    "description": "[PayMe]  MX - Mooncake B1G1",
-    "type": "percent",
-    "discount": "50%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-09",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Book MX -Mala Spicy Beef Mooncake/Pork Mooncake with XO Sauce and get Buy 1 get 1 with PayMe. To redeem the offer, enter promo code: PM26MXB1G1. Offer is not applicable to certain products as specified by Klook from time to time. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_earlytaihang",
-    "ota": "Klook",
-    "promo_code": "EARLYTAIHANG",
-    "description": "Early Bird Arts in the City: Revisit Tai Hang 12% off",
-    "type": "percent",
-    "discount": "12%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-13",
-    "market": "ALL",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Book Arts in the City: Revisit Tai Hang and get Early Bird 12% off. Offer is not applicable to certain products as specified by Klook from time to time. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_amzthai",
     "ota": "Klook",
     "promo_code": "AMZTHAI",
@@ -2853,7 +2700,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "僅限台灣用戶，使用Klook訂購全站泰國商品，輸入優惠碼滿新台幣$1500，最高可折抵新台幣$150，使用期限至2026/9/23。優惠碼不得於JR交通票券、日本環球影城快速通關、東京迪士尼、機票、eSIM、禮券/商品卡與部分餐券相關商品使用，獨家及優惠商品恕不提供折扣，優惠碼數量有限，以結帳先後順序為主，若結帳畫面出現不適用，表示此優惠碼已達到使用上限。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_thaiamz",
@@ -2870,7 +2717,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "僅限台灣用戶，使用Klook訂購全站泰國商品，輸入優惠碼滿新台幣$1500，最高可折抵新台幣$200，使用期限至2026/9/23。優惠碼不得於JR交通票券、日本環球影城快速通關、東京迪士尼、機票、eSIM、禮券/商品卡與部分餐券相關商品使用，獨家及優惠商品恕不提供折扣，優惠碼數量有限，以結帳先後順序為主，若結帳畫面出現不適用，表示此優惠碼已達到使用上限。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_post264000831",
@@ -3536,91 +3383,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_mobility99",
-    "ota": "Klook",
-    "promo_code": "MOBILITY99",
-    "description": "Get 299.- when booking mobility or train ticket at least 3,500.-",
-    "type": "flat",
-    "discount": "THB 299",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-09",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable from 2-8 Sep 2026, Get 299.-off when booking mobility or train ticket at least 3,500.-. Excludes flights, gift cards, and discounted activities. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_thailand99",
-    "ota": "Klook",
-    "promo_code": "THAILAND99",
-    "description": "199.-off  min spend 3,000.- when booking activities in Thailand",
-    "type": "flat",
-    "discount": "THB 199",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-09",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable from 1-8 July 2026. Get 7% off max capped 200.- when booking activities in Thailand at least 2,000.-. Excludes hotels, flights, gift cards, and discounted activities. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_pm26melco",
-    "ota": "Klook",
-    "promo_code": "PM26MELCO",
-    "description": "[PayMe] Melco Products 12% off",
-    "type": "percent",
-    "discount": "12%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-10",
-    "market": "HKD, MOP",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Book Melco Products and get 12% off (Capped at HKD 120). To redeem the offer, enter promo code: PM26MELCO. Offer is not applicable to certain products as specified by Klook from time to time. Each User can enjoy this offer ONCE. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_wp1000904",
-    "ota": "Klook",
-    "promo_code": "WP1000904",
-    "description": "Studio City Water Park from HK$100",
-    "type": "flat",
-    "discount": "HKD 328",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-10",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Hong Kong Users only. Purchase Studio City Water Park Ticket lowest at HK$100. (max. discount at HK$328 off)(Offer is not applicable to certain packages) during the promotional period and cannot be used in conjunction with other promotions. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit. If it is not used, no refund will be given. Terms and conditions apply. Klook reserves the right to suspend, cancel or modify the promotion at any time without prior notice.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_wps300904",
-    "ota": "Klook",
-    "promo_code": "WPS300904",
-    "description": "Studio City Water Park + Spotlight Dinner Buffet 30% off",
-    "type": "percent",
-    "discount": "30%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-09-10",
-    "market": "HKD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Hong Kong Users only. Purchase Studio City Water Park Ticket + Spotlight Dinner Buffet Combo to enjoy 30% off. (max. discount at HK$305.1 off)(Offer is not applicable to certain packages) during the promotional period and cannot be used in conjunction with other promotions. Offer quotas are on a first-come, first-served basis, while quotas last. The code will not be available once it reaches usage limit. If it is not used, no refund will be given. Terms and conditions apply. Klook reserves the right to suspend, cancel or modify the promotion at any time without prior notice.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_20sunway",
     "ota": "Klook",
     "promo_code": "20SUNWAY",
@@ -3635,7 +3397,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"20%\" discount coupon is valid only for \"Sunway Lagoon Ticket\". Max discount of 10 USD.\nThe number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: September 20th",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_twatt5_",
@@ -3825,20 +3587,71 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_18",
-    "ota": "Lazada TH",
+    "id": "vc_no_code_needed_17",
+    "ota": "Traveloka",
     "promo_code": "NO CODE NEEDED",
-    "description": "9.9 MEGA BRAND SALE",
+    "description": "Premium Bus",
     "type": "deal",
     "discount": "",
     "min_spend": "",
     "max_discount": "",
-    "applicable_for": "Other - Lazada_CPS_WebAPP_TH",
-    "valid_until": "2026-09-11",
+    "applicable_for": "Other - Traveloka_CPS_Web_App_ID",
+    "valid_until": "",
     "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=56303&AID=2361654&Type=21&r=https%3A%2F%2Fpages.lazada.co.th%2Fwow%2Fgcp%2Froute%2Flazada%2Fth%2Fupr_1000345_lazada%2Fchannel%2Fth%2Fupr-router%2Fth%3Fwx_navbar_transparent%3Dtrue%26hybrid%3D1%26data_prefetch%3Dtrue%26at_iframe%3D1%26lzd_navbar_hidden%3Dtrue%26use_skeleton%3Dfalse%26prefetch_replace%3D1%26wh_pid%3D%2Flazada%2Fmegascenario%2Fth%2FD9-2026%2Fd9superwowsale",
-    "tcs": "1. คูปอง 9.9 ลดสูงสุด 10,000.-*\n2. LazFlash ลดสูงสุด 90%*\n3. แบรนด์ดังลดแรง 6 ชั่วโมงแรก (2ทุ่ม-ตี2)",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56551&AID=2361654&Type=21&r=https%3A%2F%2Fwww.traveloka.com%2Fid-id%2Fpromotion%2Fbus-and-shuttle",
+    "tcs": "Offer: First class bus experience from IDR 300K",
     "status": "active",
-    "is_expiring": true
+    "is_expiring": false
+  },
+  {
+    "id": "vc_no_code_needed_18",
+    "ota": "Traveloka",
+    "promo_code": "NO CODE NEEDED",
+    "description": "Premium Train",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Traveloka_CPS_Web_App_ID",
+    "valid_until": "",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56551&AID=2361654&Type=21&r=https%3A%2F%2Fwww.traveloka.com%2Fid-id%2Fkereta-api%2Fkereta-luxury",
+    "tcs": "Offer: Travel in style with panoramic, luxury, or suite carriages for ultimate comfort",
+    "status": "active",
+    "is_expiring": false
+  },
+  {
+    "id": "vc_no_code_needed_19",
+    "ota": "Traveloka",
+    "promo_code": "NO CODE NEEDED",
+    "description": "Disney Cruise Line Offline Event – Surabaya",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Traveloka_CPS_Web_App_ID",
+    "valid_until": "2026-09-27",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56551&AID=2361654&Type=21&r=https%3A%2F%2Fwww.traveloka.com%2Fid-id%2Fpromotion%2Fpromo-disney-adventure",
+    "tcs": "Offer: 30% Instant Cashback for bookings at the booth, plus up to IDR 500K OFF Surabaya ⇆ Singapore flights and Singapore stay. Online: Instant Cashback up to 12%",
+    "status": "active",
+    "is_expiring": false
+  },
+  {
+    "id": "vc_no_code_needed_20",
+    "ota": "Traveloka",
+    "promo_code": "NO CODE NEEDED",
+    "description": "Traveloka ID: September Deals You Can't Miss!",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Traveloka_CPS_Web_App_ID",
+    "valid_until": "2026-09-30",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56551&AID=2361654&Type=21&r=https%3A%2F%2Fwww.traveloka.com%2Fid-id%2Fpromotion%2Fpromo-disney-adventure",
+    "tcs": "Travel to Taiwan\nOffer: Catch your dream concert in Taiwan and save up to IDR 500K on your travel bookings",
+    "status": "active",
+    "is_expiring": false
   }
 ]
