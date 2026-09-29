@@ -464,7 +464,7 @@ ul,ol{list-style:none}
    NEWSLETTER
    =========================================== */
 .nl{background:var(--bg);border-top:1px solid var(--bdr);padding:36px 0}
-.nl-i{max-width:380px;margin:0 auto;text-align:center}
+.nl-i{max-width:380px;margin:0 auto;text-align:center;padding:0 16px}
 .nl-eye{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--orange);margin-bottom:8px}
 .nl h2{font-family:var(--fh);font-size:21px;font-weight:400;margin-bottom:6px;letter-spacing:-.2px}
 .nl p{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:16px}
@@ -475,6 +475,7 @@ ul,ol{list-style:none}
 .nl-sub{padding:0 18px;background:var(--orange);color:#fff;font-size:13px;font-weight:500;border-radius:var(--r);white-space:nowrap;min-height:46px;transition:background .12s}
 .nl-sub:hover{background:var(--orange-d)}
 .nl-note{font-size:11px;color:var(--muted);margin-top:8px}
+.nl-tg{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
 .nl-note a{color:var(--teal)}
 
 .ft-social{display:flex;gap:8px;margin-top:12px}
@@ -1073,14 +1074,11 @@ ul,ol{list-style:none}
      ══════════════════════════════════ -->
 <section class="nl" aria-labelledby="nl-h">
   <div class="nl-i">
-    <p class="nl-eye">Weekly Digest</p>
-    <h2 id="nl-h">Top deals, every Monday</h2>
-    <p>The week's best travel deals, straight to your inbox. Free.</p>
-    <form class="nl-form" action="#" method="post" onsubmit="doNL(event)">
-      <input class="nl-inp" type="email" name="EMAIL" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
-      <button class="nl-sub" type="submit">Subscribe</button>
-    </form>
-    <p class="nl-note">No spam. <a href="/privacy-policy/">Privacy Policy</a>.</p>
+    <p class="nl-eye">Telegram</p>
+    <h2 id="nl-h">Get Singapore deals on Telegram</h2>
+    <p>Hotel deals and promo codes that work in Singapore, priced in SGD. Free, no sign-up.</p>
+    <a class="nl-sub nl-tg" href="https://t.me/CatavelSGTravelDeals" target="_blank" rel="noopener noreferrer" onclick="if(typeof gtag==='function')gtag('event','telegram_join_click',{placement:'home_block'})">Join on Telegram</a>
+    <p class="nl-note">Opens Telegram. Leave anytime.</p>
   </div>
 </section>
 
@@ -1703,7 +1701,6 @@ function applyMF(){
 }
 
 /* ─── NEWSLETTER ─── */
-function doNL(e){e.preventDefault();showToast('Subscribed! First digest arrives Monday.');e.target.reset();}
 
 /* ─── TOAST ─── */
 let _tt;
@@ -1766,6 +1763,13 @@ function normaliseDeal(x){
 }
 
 /* ─── NORMALISE vouchers.json → homepage deal format ─── */
+/* Agoda is a direct affiliate: make sure every Agoda link carries Catavel's cid. */
+function withAgodaCid_(url){
+  let u = String(url || '').trim();
+  if (!/^https?:\/\/(www\.)?agoda\.com/i.test(u) || /[?&]cid=/i.test(u)) return u;
+  u = u.replace(/^https?:\/\/(www\.)?agoda\.com\/?/i, 'https://www.agoda.com/');
+  return u + (u.indexOf('?') > -1 ? '&' : '?') + 'cid=1961800';
+}
 function normaliseVoucher(v, idx){
   /* Parse discount value + type from strings like "8%", "Up to 15%",
      "HKD 100", "MYR 15", "0.05" (Sheets percent auto-cast), "Varies".
@@ -1833,7 +1837,7 @@ function normaliseVoucher(v, idx){
     discount_percent: pct,
     discount_value:   discValue,
     valid_until:      v.valid_until || v['Valid Until'] || '2099-12-31',
-    link:             v.affiliate_link || v['Affiliate Link'] || '#',
+    link:             withAgodaCid_(v.affiliate_link || v['Affiliate Link'] || '#'),
     voucher_code:     isManualCode ? code : 'NO CODE NEEDED',
     voucher_type:     voucherType,
     is_hot:           pct >= 15,

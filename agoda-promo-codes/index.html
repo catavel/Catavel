@@ -12,21 +12,21 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agoda Promo Codes May 2026 - Singapore &amp; Malaysia | Catavel</title>
-<meta name="description" content="Latest verified Agoda promo codes &amp; deals for Singapore &amp; Malaysia (May 2026). Reveal codes instantly, copied to clipboard, redirected to Agoda.">
+<title>Agoda Promo Codes 2026 - Singapore &amp; Malaysia | Catavel</title>
+<meta name="description" content="Agoda promo codes &amp; deals for Singapore, Malaysia and more. Expired codes are hidden automatically. Reveal a code, copy it, then book on Agoda.">
 <meta name="robots" content="index, follow, max-snippet:-1">
 <link rel="canonical" href="https://catavel.com/agoda-promo-codes/">
 <meta name="agd-partner-verification" content="4939903">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://catavel.com/agoda-promo-codes/">
-<meta property="og:title" content="Agoda Promo Codes May 2026 - Singapore &amp; Malaysia">
+<meta property="og:title" content="Agoda Promo Codes 2026 - Singapore &amp; Malaysia">
 <meta property="og:description" content="Verified Agoda promo codes &amp; hotel deals for SG &amp; MY. Copy &amp; save instantly.">
 <meta property="og:site_name" content="Catavel">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Agoda Promo Codes May 2026 - Singapore & Malaysia","description":"Latest verified Agoda promo codes and hotel deals for Singapore and Malaysia travelers.","url":"https://catavel.com/agoda-promo-codes/","publisher":{"@type":"Organization","name":"Catavel","url":"https://catavel.com"},"dateModified":"2026-03-24","datePublished":"2026-03-10"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Agoda Promo Codes 2026 - Singapore & Malaysia","description":"Latest verified Agoda promo codes and hotel deals for Singapore and Malaysia travelers.","url":"https://catavel.com/agoda-promo-codes/","publisher":{"@type":"Organization","name":"Catavel","url":"https://catavel.com"},"dateModified":"2026-09-29","datePublished":"2026-03-10"}</script>
 <style>
 :root{
   --teal:#00897B;--teal-d:#00695C;--teal-lt:#E6F4F2;--teal-bd:#B2DFDB;
@@ -198,7 +198,7 @@ ul,ol{list-style:none}
       <img class="brand-logo" src="https://www.google.com/s2/favicons?domain=agoda.com&sz=32" alt="Agoda" loading="lazy">
       Agoda Promo Codes
     </div>
-    <h1><strong>Agoda Promo Codes</strong> - <span id="monthYear">May 2026</span></h1>
+    <h1><strong>Agoda Promo Codes</strong> - <span id="monthYear">2026</span></h1>
     <p class="pg-sub">Verified promo codes and hotel deals for Singapore &amp; Malaysia travelers. Click &#8220;Reveal&#8221; to copy a code, or &#8220;Use Promo&#8221; for codeless deals - you&#8217;ll be redirected to Agoda automatically.</p>
     <div class="pg-stats">
       <div><div class="pg-stat-n" id="activeCount">-</div><div class="pg-stat-l">Active codes &amp; deals</div></div>
@@ -305,7 +305,7 @@ ul,ol{list-style:none}
     <div class="related-g">
       <a href="/klook-promo-codes/" class="related-a"><img src="https://www.google.com/s2/favicons?domain=klook.com&sz=32" alt="" loading="lazy">Klook Codes</a>
       <a href="/trip-com-promo-codes/" class="related-a"><img src="https://www.google.com/s2/favicons?domain=trip.com&sz=32" alt="" loading="lazy">Trip.com Codes</a>
-      <a href="https://www.agoda.com" class="related-a" target="_blank" rel="noopener nofollow"><img src="https://www.google.com/s2/favicons?domain=agoda.com&sz=32" alt="" loading="lazy">Browse Agoda &#8599;</a>
+      <a href="https://www.agoda.com/?cid=1961800" class="related-a" target="_blank" rel="nofollow noopener sponsored"><img src="https://www.google.com/s2/favicons?domain=agoda.com&sz=32" alt="" loading="lazy">Browse Agoda &#8599;</a>
       <a href="/" class="related-a">&#127991; All Deals</a>
     </div>
   </div>
@@ -344,8 +344,8 @@ ul,ol{list-style:none}
    PAGE CONFIG - Agoda
    ══════════════════════════════════════════════ */
 const PAGE_OTA      = 'Agoda';
-const AFF_BASE      = 'https://www.agoda.com';
-const VOUCHERS_JSON = '/vouchers.json';
+const AFF_BASE      = 'https://www.agoda.com/?cid=1961800';
+const VOUCHER_SOURCES = ['/data/vouchers.json', '/vouchers.json'];
 const OTA_NAME      = 'Agoda';
 
 const MARKETS = [
@@ -360,22 +360,17 @@ let ALL = [];
 async function init() {
   updateMonthYear();
   try {
-    const res = await fetch(VOUCHERS_JSON, { cache: 'no-cache' });
-    if (!res.ok) throw 0;
-    const data = await res.json();
-    const arr = Array.isArray(data) ? data
-              : (data.vouchers && Array.isArray(data.vouchers)) ? data.vouchers : [];
-    ALL = arr.filter(v => v.ota && v.ota.toLowerCase() === PAGE_OTA.toLowerCase());
-    if (data.lastUpdated) {
-      const d = new Date(data.lastUpdated);
-      const str = d.toLocaleString('en-SG', { hour:'2-digit', minute:'2-digit', hour12:true, day:'numeric', month:'short' });
-      document.getElementById('lastUpdated').textContent = 'Updated ' + str;
-      document.getElementById('secUpdated').textContent = str;
-    }
+    const loaded = await loadVouchers_();
+    if (!loaded) throw 0;
+    const today = todayISO_();
+    ALL = loaded.list.filter(v => v.ota.toLowerCase() === PAGE_OTA.toLowerCase()
+      && v.status === 'active' && (!v.valid_until || v.valid_until >= today));
+    applyUpdatedLabel_(loaded.updated);
   } catch(_) {
-    ALL = SAMPLE;
-    document.getElementById('lastUpdated').textContent = 'Sample data';
-    document.getElementById('secUpdated').textContent  = 'Sample data';
+    ALL = [];
+    LOAD_FAILED = true;
+    document.getElementById('lastUpdated').textContent = 'Codes unavailable';
+    document.getElementById('secUpdated').textContent  = '-';
   } finally {
     document.getElementById('skeletons').style.display = 'none';
     updateCountBadges();
@@ -384,9 +379,93 @@ async function init() {
   }
 }
 
+/* ── DATA: one voucher feed for every page ──
+   Reads /data/vouchers.json (kept fresh by pushVouchersToGitHub) and falls back
+   to /vouchers.json. Normalises both schemas, hides expired codes using the
+   visitor's own date, and tags Agoda links with Catavel's cid. */
+const AGODA_CID = '1961800';
+let LOAD_FAILED = false;
+
+function todayISO_() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+function daysUntil_(iso) {
+  const p = iso.split('-').map(Number), t = todayISO_().split('-').map(Number);
+  return Math.round((Date.UTC(p[0], p[1] - 1, p[2]) - Date.UTC(t[0], t[1] - 1, t[2])) / 86400000);
+}
+function withAgodaCid_(url) {
+  let u = String(url || '').trim();
+  if (!/^https?:\/\/(www\.)?agoda\.com/i.test(u) || /[?&]cid=/i.test(u)) return u;
+  u = u.replace(/^https?:\/\/(www\.)?agoda\.com\/?/i, 'https://www.agoda.com/');
+  return u + (u.indexOf('?') > -1 ? '&' : '?') + 'cid=' + AGODA_CID;
+}
+function normVoucher_(v) {
+  let code = String(v.code != null ? v.code : (v.promo_code || '')).trim();
+  if (/no code/i.test(code)) code = '';
+  let vu = String(v.valid_until || '').trim();
+  let tc = String(v.tc != null ? v.tc : (v.tcs || '')).trim();
+  if (vu && !/^\d{4}-\d{2}-\d{2}$/.test(vu)) {
+    if (!/after redemption/i.test(tc)) tc = ('Valid for ' + vu + '. ' + tc).trim();
+    vu = '';
+  }
+  return {
+    id: v.id || '', ota: String(v.ota || ''), code: code, description: v.description || '',
+    discount_type: v.discount_type || v.type || '', discount: v.discount || '',
+    min_spend: v.min_spend || '', max_discount: v.max_discount || '',
+    applicable_for: v.applicable_for || '', valid_until: vu, market: v.market || '',
+    affiliate_link: withAgodaCid_(v.affiliate_link), tc: tc,
+    status: String(v.status || 'active').toLowerCase(),
+    is_expiring: vu ? daysUntil_(vu) <= 7 : false
+  };
+}
+async function loadVouchers_() {
+  for (const src of VOUCHER_SOURCES) {
+    try {
+      const res = await fetch(src, { cache: 'no-cache' });
+      if (!res.ok) continue;
+      const data = await res.json();
+      const arr = Array.isArray(data) ? data : (data && Array.isArray(data.vouchers) ? data.vouchers : null);
+      if (!arr || !arr.length) continue;
+      return { list: arr.map(normVoucher_), updated: (data && data.lastUpdated) || '' };
+    } catch (e) { /* try the next source */ }
+  }
+  return null;
+}
+function applyUpdatedLabel_(updated) {
+  const d = new Date(updated);
+  if (updated && !isNaN(d)) {
+    const str = d.toLocaleString('en-SG', { hour:'2-digit', minute:'2-digit', hour12:true, day:'numeric', month:'short' });
+    document.getElementById('lastUpdated').textContent = 'Updated ' + str;
+    document.getElementById('secUpdated').textContent = str;
+  } else {
+    document.getElementById('lastUpdated').textContent = 'Expired codes auto-hidden';
+    document.getElementById('secUpdated').textContent = 'Live';
+  }
+}
+function emptyMsg_() {
+  if (LOAD_FAILED) return '<div class="empty" role="status"><p>Codes could not load right now.<br>Please refresh the page in a moment.</p></div>';
+  if (!ALL.length) return '<div class="empty" role="status"><p>No active ' + OTA_NAME + ' codes right now.<br>New codes are added often, so check back soon.</p></div>';
+  return '<div class="empty" role="status"><p>No deals match selected markets.<br>Check at least one market in the sidebar.</p></div>';
+}
+function showMissingNotice_(code) {
+  if (document.getElementById('missNotice')) return;
+  const groups = document.getElementById('vcGroups');
+  if (!groups || !groups.parentNode) return;
+  const safe = String(code).slice(0, 40);
+  const n = document.createElement('div');
+  n.id = 'missNotice';
+  n.setAttribute('role', 'status');
+  n.style.cssText = 'margin:0 0 14px;padding:12px 14px;border:1px solid #00897B;border-radius:10px;background:#E0F2F1;color:#00574B;font-size:14px;line-height:1.5';
+  n.textContent = 'The code ' + safe + ' has expired or is no longer available. Here are the ' + OTA_NAME + ' codes that still work today.';
+  groups.parentNode.insertBefore(n, groups);
+  window.scrollTo({ top: Math.max(0, n.getBoundingClientRect().top + window.scrollY - 110), behavior: 'smooth' });
+  try { if (typeof gtag === 'function') gtag('event', 'reveal_code_missing', { ota: OTA_NAME, promo_code: safe }); } catch (e) {}
+}
+
 /* ── AUTO-REVEAL FROM TELEGRAM LINK ──
    Reads ?reveal=<CODE> from the URL (set by the Telegram bot link),
-   scrolls to that voucher card, shows + copies the code, and
+   scrolls to that voucher card, shows the code (copied on tap), and
    highlights it. The affiliate link is NOT auto-opened (browsers block
    non-user-initiated popups) - the user taps the button, which is a
    reliable affiliate click. If the code's market is unchecked, we tick
@@ -405,6 +484,8 @@ function autoRevealFromUrl_() {
           document.querySelectorAll('.sb input[type=checkbox]').forEach(function(b){ b.checked = true; });
           render();
           setTimeout(function(){ attempt(true); }, 60);
+        } else if (!LOAD_FAILED) {
+          showMissingNotice_(want);
         }
         return;
       }
@@ -418,12 +499,13 @@ function autoRevealFromUrl_() {
 
       if (!w.classList.contains('open')) {
         w.classList.add('open');
+        // No clipboard call here: without a tap, browsers ask for clipboard
+        // permission. The code is shown; the tap on the button copies it.
         var code = w.dataset.code || '';
-        if (code) { try { copyText(code); } catch(e){} }
         var btn = w.querySelector('.btn-rv');
-        if (btn) btn.textContent = 'Copied! ✓ Tap to use';
+        if (btn) btn.textContent = 'Copy & open';
         if (typeof showToast === 'function' && code) {
-          showToast('Code copied: ' + code + ' - tap the button to open ' + OTA_NAME);
+          showToast('Your code: ' + code + '. Tap the button to copy it and open ' + OTA_NAME + '.');
         }
       }
     };
@@ -434,6 +516,16 @@ function autoRevealFromUrl_() {
 
 function onMktChange() { render(); }
 
+/* A voucher shows in every market group it names (case-insensitive, comma
+   lists). Global codes, and codes for markets without their own group, go to
+   "All Markets" so nothing is silently hidden. */
+function inGroup_(v, key) {
+  const parts = String(v.market || '').toUpperCase().split(',').map(s => s.trim()).filter(Boolean);
+  const specific = MARKETS.map(m => m.key).filter(k => k !== 'ALL');
+  if (key === 'ALL') return !parts.length || parts.indexOf('ALL') > -1 || !parts.some(p => specific.indexOf(p) > -1);
+  return parts.indexOf(key) > -1;
+}
+
 function getCheckedMarkets() {
   return Array.from(document.querySelectorAll('.sb input[type=checkbox]'))
     .filter(cb => cb.checked).map(cb => cb.value);
@@ -441,7 +533,7 @@ function getCheckedMarkets() {
 
 function updateCountBadges() {
   MARKETS.forEach(m => {
-    const ct = ALL.filter(v => v.market === m.key).length;
+    const ct = ALL.filter(v => inGroup_(v, m.key)).length;
     const el = document.getElementById('ct-' + m.key);
     if (el) el.textContent = ct + ' deal' + (ct !== 1 ? 's' : '');
     const lbl = document.getElementById('lbl-' + m.key);
@@ -457,7 +549,7 @@ function render() {
 
   MARKETS.forEach(m => {
     if (!checked.includes(m.key)) return;
-    const codes = ALL.filter(v => v.market === m.key);
+    const codes = ALL.filter(v => inGroup_(v, m.key));
     if (!codes.length) return;
     totalShown += codes.length;
     html += `<div class="mkt-group" id="grp-${m.key}">
@@ -469,7 +561,7 @@ function render() {
     </div>`;
   });
 
-  if (!html) html = '<div class="empty" role="status"><p>No deals match selected markets.<br>Check at least one market in the sidebar.</p></div>';
+  if (!html) html = emptyMsg_();
   groups.innerHTML = html;
   listCt.textContent = totalShown + ' deal' + (totalShown !== 1 ? 's' : '');
   updateStats();
@@ -508,11 +600,11 @@ const discLabel = v.discount
     codeWidget = `<div><div class="vc-discount">${esc(discLabel)}</div><div class="vc-discount-sub">with this code</div></div>
       <div class="cw" id="cw-${cid}" data-code="${esc(v.code)}" data-link="${esc(affLink)}">
         <span class="ch" aria-label="Code hidden - click Reveal">${esc(v.code)}</span>
-        <a class="btn-rv" href="${esc(affLink)}" target="_blank" rel="noopener nofollow" onclick="reveal('${cid}')" aria-label="Reveal ${esc(v.code)} and open ${OTA_NAME}">Reveal</a>
+        <a class="btn-rv" href="${esc(affLink)}" target="_blank" rel="nofollow noopener sponsored" onclick="reveal('${cid}')" aria-label="Reveal ${esc(v.code)} and open ${OTA_NAME}">Reveal</a>
       </div>`;
   } else {
     codeWidget = `<div><div class="vc-discount">${esc(discLabel)}</div><div class="vc-discount-sub">no code needed</div></div>
-      <a class="btn-promo" href="${esc(affLink)}" target="_blank" rel="noopener nofollow" onclick="showToast('Redirecting to ${OTA_NAME}...');trackAffiliate('','use_promo')">
+      <a class="btn-promo" href="${esc(affLink)}" target="_blank" rel="nofollow noopener sponsored" onclick="showToast('Redirecting to ${OTA_NAME}...');trackAffiliate('','use_promo')">
         Use Promo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>`;
   }
@@ -578,11 +670,6 @@ function copyText(t) { if (navigator.clipboard) navigator.clipboard.writeText(t)
 function fbCopy(t) { try { const el = document.createElement('textarea'); el.value = t; el.style.cssText = 'position:fixed;opacity:0;top:0;left:0;pointer-events:none'; document.body.appendChild(el); el.focus(); el.select(); document.execCommand('copy'); document.body.removeChild(el); } catch(_) {} }
 let _tt;
 function showToast(msg) { document.getElementById('toastMsg').textContent = msg; const t = document.getElementById('toast'); t.classList.add('on'); clearTimeout(_tt); _tt = setTimeout(() => t.classList.remove('on'), 3000); }
-
-const SAMPLE = [
-  {id:'vc_1',ota:'Agoda',code:'AGODATPT',description:'10% off hotels - up to $100 off, reusable 5 times',discount_type:'percent',discount:'10%',min_spend:'',max_discount:'USD 100',applicable_for:'Hotels',valid_until:'',market:'SGD',affiliate_link:'https://www.agoda.com',tc:'Redeem at Agoda Deals page first. 30-day validity after redeem. Up to 5 uses.',is_expiring:false},
-  {id:'vc_2',ota:'Agoda',code:'',description:'First Agoda app booking - 10% off automatically',discount_type:'percent',discount:'10%',min_spend:'',max_discount:'',applicable_for:'Hotels, flights, activities',valid_until:'',market:'SGD',affiliate_link:'https://www.agoda.com',tc:'Download Agoda app. Auto-applied on first booking.',is_expiring:false},
-];
 
 document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
 </script>
