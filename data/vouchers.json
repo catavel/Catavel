@@ -130,7 +130,7 @@
     "applicable_for": "Hotels",
     "valid_until": "",
     "market": "SGD",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "Redeem at Agoda Deals page first. 30-day validity after redeem. Up to 5 uses.",
     "status": "active",
     "is_expiring": false
@@ -147,7 +147,7 @@
     "applicable_for": "Activities",
     "valid_until": "",
     "market": "SGD",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "Redeem at Agoda Deals page. Up to 5 uses per user.",
     "status": "active",
     "is_expiring": false
@@ -470,7 +470,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "ALL",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "Universal code for all Agoda users. Up to 8% off hotel bookings worldwide. Max discount US$21. No min. spend required. Valid 1 month after redemption.",
     "status": "active",
     "is_expiring": false
@@ -487,7 +487,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "ALL",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "New app users only. 10% off first hotel booking via Agoda mobile app. Auto-applied on app checkout. One-time use.",
     "status": "active",
     "is_expiring": false
@@ -504,7 +504,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "MYR",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "Visa cards issued in Malaysia only. Up to 16% off hotel bookings. Activated via agoda.com/visamy landing page (no code input).",
     "status": "active",
     "is_expiring": false
@@ -521,7 +521,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "HKD",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "HSBC Hong Kong credit card holders only. Up to 25% off hotels. Activated via landing page (no code input).",
     "status": "active",
     "is_expiring": false
@@ -538,7 +538,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "HKD",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "Citi Hong Kong credit card holders only. 7% off hotels. Activated via landing page (no code input).",
     "status": "active",
     "is_expiring": false
@@ -555,7 +555,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "HKD",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "Bank of East Asia HK credit card holders only. 7% off global hotels. Stay until 30 Jun 2027. Activated via landing page (no code input).",
     "status": "active",
     "is_expiring": false
@@ -572,7 +572,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "SGD",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "DBS and POSB Singapore cardholders only. Extra 15% off overseas stays. Activated via landing page (no code input).",
     "status": "active",
     "is_expiring": false
@@ -589,7 +589,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "SGD",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "HSBC Singapore credit card holders only. 15% off hotels. Activated via landing page (no code input).",
     "status": "active",
     "is_expiring": false
@@ -606,7 +606,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "ALL",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "Eco-certified participating hotels only. 15% off. $1 donation per booking to WWF. Ongoing program. All users.",
     "status": "active",
     "is_expiring": false
@@ -623,7 +623,7 @@
     "applicable_for": "Hotels",
     "valid_until": "2026-12-31",
     "market": "ALL",
-    "affiliate_link": "https://www.agoda.com",
+    "affiliate_link": "https://www.agoda.com/?cid=1961800",
     "tcs": "Up to 30% off hotels in Bangkok Tokyo Paris Dubai Singapore and more. Check-in within 90 days of booking. Property-dependent availability.",
     "status": "active",
     "is_expiring": false
