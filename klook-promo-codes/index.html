@@ -12,20 +12,20 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Klook Promo Codes May 2026 - Singapore &amp; Malaysia</title>
-<meta name="description" content="Latest verified Klook promo codes &amp; deals for Singapore &amp; Malaysia (May 2026). Reveal codes instantly, copied to clipboard, redirected to Klook.">
+<title>Klook Promo Codes 2026 - Singapore &amp; Malaysia</title>
+<meta name="description" content="Klook promo codes &amp; deals for Singapore, Malaysia and more. Expired codes are hidden automatically. Reveal a code, copy it, then book on Klook.">
 <meta name="robots" content="index, follow, max-snippet:-1">
 <link rel="canonical" href="https://catavel.com/klook-promo-codes/">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://catavel.com/klook-promo-codes/">
-<meta property="og:title" content="Klook Promo Codes May 2026 - Singapore &amp; Malaysia">
+<meta property="og:title" content="Klook Promo Codes 2026 - Singapore &amp; Malaysia">
 <meta property="og:description" content="Verified Klook promo codes &amp; codeless deals for SG &amp; MY. Copy &amp; save instantly.">
 <meta property="og:site_name" content="Catavel">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Klook Promo Codes May 2026 - Singapore & Malaysia","description":"Latest verified Klook promo codes and codeless deals for Singapore and Malaysia travelers.","url":"https://catavel.com/klook-promo-codes/","publisher":{"@type":"Organization","name":"Catavel","url":"https://catavel.com"},"dateModified":"2026-03-24","datePublished":"2026-03-01"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Klook Promo Codes 2026 - Singapore & Malaysia","description":"Latest verified Klook promo codes and codeless deals for Singapore and Malaysia travelers.","url":"https://catavel.com/klook-promo-codes/","publisher":{"@type":"Organization","name":"Catavel","url":"https://catavel.com"},"dateModified":"2026-09-29","datePublished":"2026-03-01"}</script>
 <style>
 :root{
   --teal:#00897B;--teal-d:#00695C;--teal-lt:#E6F4F2;--teal-bd:#B2DFDB;
@@ -272,7 +272,7 @@ ul,ol{list-style:none}
       <img class="brand-logo" src="https://www.google.com/s2/favicons?domain=klook.com&sz=32" alt="Klook" loading="lazy">
       Klook Promo Codes
     </div>
-    <h1><strong>Klook Promo Codes</strong> - <span id="monthYear">May 2026</span></h1>
+    <h1><strong>Klook Promo Codes</strong> - <span id="monthYear">2026</span></h1>
     <p class="pg-sub">Verified promo codes and deals for Singapore &amp; Malaysia travelers. Click &#8220;Reveal&#8221; to copy a code, or &#8220;Use Promo&#8221; for codeless deals - you&#8217;ll be redirected to Klook automatically.</p>
     <div class="pg-stats">
       <div><div class="pg-stat-n" id="activeCount">-</div><div class="pg-stat-l">Active codes &amp; deals</div></div>
@@ -409,7 +409,7 @@ ul,ol{list-style:none}
    ══════════════════════════════════════════════ */
 const PAGE_OTA      = 'Klook';
 const AFF_BASE      = 'https://www.klook.com/?aid=115333';
-const VOUCHERS_JSON = '/vouchers.json';
+const VOUCHER_SOURCES = ['/data/vouchers.json', '/vouchers.json'];
 const OTA_NAME      = 'Klook';
 
 // Curated markets: always shown first when present in data
@@ -424,22 +424,17 @@ let vcSort = 'default';
 async function init() {
   updateMonthYear();
   try {
-    const res = await fetch(VOUCHERS_JSON, { cache: 'no-cache' });
-    if (!res.ok) throw 0;
-    const data = await res.json();
-    const arr = Array.isArray(data) ? data
-              : (data.vouchers && Array.isArray(data.vouchers)) ? data.vouchers : [];
-    ALL = arr.filter(v => v.ota && v.ota.toLowerCase() === PAGE_OTA.toLowerCase());
-    if (data.lastUpdated) {
-      const d = new Date(data.lastUpdated);
-      const str = d.toLocaleString('en-SG', { hour:'2-digit', minute:'2-digit', hour12:true, day:'numeric', month:'short' });
-      document.getElementById('lastUpdated').textContent = 'Updated ' + str;
-      document.getElementById('secUpdated').textContent = str;
-    }
+    const loaded = await loadVouchers_();
+    if (!loaded) throw 0;
+    const today = todayISO_();
+    ALL = loaded.list.filter(v => v.ota.toLowerCase() === PAGE_OTA.toLowerCase()
+      && v.status === 'active' && (!v.valid_until || v.valid_until >= today));
+    applyUpdatedLabel_(loaded.updated);
   } catch(_) {
-    ALL = SAMPLE;
-    document.getElementById('lastUpdated').textContent = 'Sample data';
-    document.getElementById('secUpdated').textContent  = 'Sample data';
+    ALL = [];
+    LOAD_FAILED = true;
+    document.getElementById('lastUpdated').textContent = 'Codes unavailable';
+    document.getElementById('secUpdated').textContent  = '-';
   } finally {
     document.getElementById('skeletons').style.display = 'none';
     buildMarkets();
@@ -448,9 +443,93 @@ async function init() {
   }
 }
 
+/* ── DATA: one voucher feed for every page ──
+   Reads /data/vouchers.json (kept fresh by pushVouchersToGitHub) and falls back
+   to /vouchers.json. Normalises both schemas, hides expired codes using the
+   visitor's own date, and tags Agoda links with Catavel's cid. */
+const AGODA_CID = '1961800';
+let LOAD_FAILED = false;
+
+function todayISO_() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+function daysUntil_(iso) {
+  const p = iso.split('-').map(Number), t = todayISO_().split('-').map(Number);
+  return Math.round((Date.UTC(p[0], p[1] - 1, p[2]) - Date.UTC(t[0], t[1] - 1, t[2])) / 86400000);
+}
+function withAgodaCid_(url) {
+  let u = String(url || '').trim();
+  if (!/^https?:\/\/(www\.)?agoda\.com/i.test(u) || /[?&]cid=/i.test(u)) return u;
+  u = u.replace(/^https?:\/\/(www\.)?agoda\.com\/?/i, 'https://www.agoda.com/');
+  return u + (u.indexOf('?') > -1 ? '&' : '?') + 'cid=' + AGODA_CID;
+}
+function normVoucher_(v) {
+  let code = String(v.code != null ? v.code : (v.promo_code || '')).trim();
+  if (/no code/i.test(code)) code = '';
+  let vu = String(v.valid_until || '').trim();
+  let tc = String(v.tc != null ? v.tc : (v.tcs || '')).trim();
+  if (vu && !/^\d{4}-\d{2}-\d{2}$/.test(vu)) {
+    if (!/after redemption/i.test(tc)) tc = ('Valid for ' + vu + '. ' + tc).trim();
+    vu = '';
+  }
+  return {
+    id: v.id || '', ota: String(v.ota || ''), code: code, description: v.description || '',
+    discount_type: v.discount_type || v.type || '', discount: v.discount || '',
+    min_spend: v.min_spend || '', max_discount: v.max_discount || '',
+    applicable_for: v.applicable_for || '', valid_until: vu, market: v.market || '',
+    affiliate_link: withAgodaCid_(v.affiliate_link), tc: tc,
+    status: String(v.status || 'active').toLowerCase(),
+    is_expiring: vu ? daysUntil_(vu) <= 7 : false
+  };
+}
+async function loadVouchers_() {
+  for (const src of VOUCHER_SOURCES) {
+    try {
+      const res = await fetch(src, { cache: 'no-cache' });
+      if (!res.ok) continue;
+      const data = await res.json();
+      const arr = Array.isArray(data) ? data : (data && Array.isArray(data.vouchers) ? data.vouchers : null);
+      if (!arr || !arr.length) continue;
+      return { list: arr.map(normVoucher_), updated: (data && data.lastUpdated) || '' };
+    } catch (e) { /* try the next source */ }
+  }
+  return null;
+}
+function applyUpdatedLabel_(updated) {
+  const d = new Date(updated);
+  if (updated && !isNaN(d)) {
+    const str = d.toLocaleString('en-SG', { hour:'2-digit', minute:'2-digit', hour12:true, day:'numeric', month:'short' });
+    document.getElementById('lastUpdated').textContent = 'Updated ' + str;
+    document.getElementById('secUpdated').textContent = str;
+  } else {
+    document.getElementById('lastUpdated').textContent = 'Expired codes auto-hidden';
+    document.getElementById('secUpdated').textContent = 'Live';
+  }
+}
+function emptyMsg_() {
+  if (LOAD_FAILED) return '<div class="empty" role="status"><p>Codes could not load right now.<br>Please refresh the page in a moment.</p></div>';
+  if (!ALL.length) return '<div class="empty" role="status"><p>No active ' + OTA_NAME + ' codes right now.<br>New codes are added often, so check back soon.</p></div>';
+  return '<div class="empty" role="status"><p>No deals match selected markets.<br>Check at least one market in the sidebar.</p></div>';
+}
+function showMissingNotice_(code) {
+  if (document.getElementById('missNotice')) return;
+  const groups = document.getElementById('vcGroups');
+  if (!groups || !groups.parentNode) return;
+  const safe = String(code).slice(0, 40);
+  const n = document.createElement('div');
+  n.id = 'missNotice';
+  n.setAttribute('role', 'status');
+  n.style.cssText = 'margin:0 0 14px;padding:12px 14px;border:1px solid #00897B;border-radius:10px;background:#E0F2F1;color:#00574B;font-size:14px;line-height:1.5';
+  n.textContent = 'The code ' + safe + ' has expired or is no longer available. Here are the ' + OTA_NAME + ' codes that still work today.';
+  groups.parentNode.insertBefore(n, groups);
+  window.scrollTo({ top: Math.max(0, n.getBoundingClientRect().top + window.scrollY - 110), behavior: 'smooth' });
+  try { if (typeof gtag === 'function') gtag('event', 'reveal_code_missing', { ota: OTA_NAME, promo_code: safe }); } catch (e) {}
+}
+
 /* ── AUTO-REVEAL FROM TELEGRAM LINK ──
    Reads ?reveal=<CODE> from the URL (set by the Telegram bot link),
-   scrolls to that voucher card, shows + copies the code, and
+   scrolls to that voucher card, shows the code (copied on tap), and
    highlights it. The affiliate link is NOT auto-opened (browsers block
    non-user-initiated popups) - the user taps the button, which is a
    reliable affiliate click. If the code's market is unchecked, we tick
@@ -470,6 +549,8 @@ function autoRevealFromUrl_() {
           document.querySelectorAll('.sb input[type=checkbox]').forEach(function(b){ b.checked = true; });
           render();
           setTimeout(function(){ attempt(true); }, 60);
+        } else if (!LOAD_FAILED) {
+          showMissingNotice_(want);
         }
         return;
       }
@@ -488,12 +569,13 @@ function autoRevealFromUrl_() {
       // reveal() no longer calls window.open - the native anchor href handles that on user tap.)
       if (!w.classList.contains('open')) {
         w.classList.add('open');
+        // No clipboard call here: without a tap, browsers ask for clipboard
+        // permission. The code is shown; the tap on the button copies it.
         var code = w.dataset.code || '';
-        if (code) { try { copyText(code); } catch(e){} }
         var btn = w.querySelector('.btn-rv');
-        if (btn) btn.textContent = 'Copied! ✓ Tap to use';
+        if (btn) btn.textContent = 'Copy & open';
         if (typeof showToast === 'function' && code) {
-          showToast('Code copied: ' + code + ' - tap the button to open ' + OTA_NAME);
+          showToast('Your code: ' + code + '. Tap the button to copy it and open ' + OTA_NAME + '.');
         }
       }
     };
@@ -655,7 +737,7 @@ function render() {
   });
 
   if (!html) {
-    html = '<div class="empty" role="status"><p>No deals match selected markets.<br>Check at least one market in the sidebar.</p></div>';
+    html = emptyMsg_();
   }
 
   groups.innerHTML = html;
@@ -829,12 +911,6 @@ function showToast(msg) {
   t.classList.add('on'); clearTimeout(_tt);
   _tt = setTimeout(() => t.classList.remove('on'), 3000);
 }
-
-/* ── SAMPLE FALLBACK ── */
-const SAMPLE = [
-  {id:'vc_1',ota:'Klook',code:'KLOOKNEW',description:'10% off first booking for new users',discount_type:'percent',discount:'10%',min_spend:'',max_discount:'',applicable_for:'All activities & products',valid_until:'',market:'SGD',affiliate_link:'https://www.klook.com/?aid=115333',tc:'New users only. One-time use.',is_expiring:false},
-  {id:'vc_2',ota:'Klook',code:'',description:'Visa cardholders - 15% off sitewide every Fri to Sun',discount_type:'percent',discount:'15%',min_spend:'SGD 50',max_discount:'SGD 10',applicable_for:'Sitewide (Fri noon to Sun)',valid_until:'2026-12-31',market:'SGD',affiliate_link:'https://www.klook.com/?aid=115333',tc:'Pay with Visa. Auto-applied at checkout.',is_expiring:false},
-];
 
 document.readyState === 'loading'
   ? document.addEventListener('DOMContentLoaded', init)
