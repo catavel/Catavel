@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-30T03:34:37.085Z",
-  "count": 56,
+  "lastUpdated": "2026-10-05T05:35:58.395Z",
+  "count": 57,
   "posts": [
     {
       "slug": "klook-promo-code",
@@ -40,6 +40,19 @@
       "source": "programmatic",
       "featured": true,
       "url": "/blog/best-esim-for-travel/"
+    },
+    {
+      "slug": "japan-travel-planner",
+      "title": "Japan Travel Planner 2026: What to Book and When",
+      "excerpt": "When Japan bookings open, from the Nintendo Museum lottery to Shinkansen seats, plus an honest look at the Catavel Japan Travel Planner for Google Sheets and Excel.",
+      "category": "guides",
+      "keyword": "japan travel planner",
+      "author": "Catavel",
+      "published": "2026-10-05",
+      "updated": "2026-10-05",
+      "source": "programmatic",
+      "featured": false,
+      "url": "/blog/japan-travel-planner/"
     },
     {
       "slug": "agoda-ocbc-promo-code-singapore",
