@@ -910,7 +910,7 @@
     "min_spend": "",
     "max_discount": "",
     "applicable_for": "Other - Cruise",
-    "valid_until": "2027-01-01",
+    "valid_until": "2027-04-01",
     "market": "ALL",
     "affiliate_link": "https://clk.omgt6.com/?PID=56499&AID=2361654&Type=21&r=",
     "tcs": "Train/Eurostar/UK bus 2% off existing user",
@@ -927,7 +927,7 @@
     "min_spend": "",
     "max_discount": "",
     "applicable_for": "Other - Cruise",
-    "valid_until": "2027-01-01",
+    "valid_until": "2027-04-01",
     "market": "ALL",
     "affiliate_link": "https://clk.omgt6.com/?PID=56499&AID=2361654&Type=21&r=",
     "tcs": "Train/Eurostar/UK bus 5% cap €20 off new user",
@@ -961,7 +961,7 @@
     "min_spend": "",
     "max_discount": "",
     "applicable_for": "Other - Cruise",
-    "valid_until": "2026-12-31",
+    "valid_until": "2027-04-01",
     "market": "ALL",
     "affiliate_link": "https://clk.omgt6.com/?PID=56499&AID=2361654&Type=21&r=",
     "tcs": "Railcard 20% off new user",
@@ -978,7 +978,7 @@
     "min_spend": "",
     "max_discount": "",
     "applicable_for": "Other - Cruise",
-    "valid_until": "2026-12-31",
+    "valid_until": "2027-04-01",
     "market": "ALL",
     "affiliate_link": "https://clk.omgt6.com/?PID=56499&AID=2361654&Type=21&r=",
     "tcs": "Railcard 20% off new user",
@@ -2125,23 +2125,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_post264000907",
-    "ota": "Klook",
-    "promo_code": "POST264000907",
-    "description": "刷中華郵政VISA金融卡 全站商品滿$2500折$400",
-    "type": "flat",
-    "discount": "TWD 400",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-10-06",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_post264000914",
     "ota": "Klook",
     "promo_code": "POST264000914",
@@ -2156,7 +2139,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_post264000921",
@@ -4008,6 +3991,23 @@
     "market": "ALL",
     "affiliate_link": "https://clk.omgt6.com/?PID=56314&AID=2361654&Type=21&r=https%3A%2F%2Fsg.trip.com%2Fsale%2Fw%2Fmrhmz1ilgml4pso1%2F1010sale.html%3Flocale%3Den-SG%26transparentBar%3D1%26wkp%3D1",
     "tcs": "Campaign Period\nPre-heat: 3 Oct (Sat)\nOn-sale: 7 - 10 Oct\n- 12-2PM Livestream @ JB Capri By Fraser Hotel\nPeak Day: 7 Oct\n\n\t\n- Daily: [OCBC Visa] UP TO $88 OFF Flight & Hotel Coupons\n- 7 Oct: Flight One-Price (travel period now - 30 April 2027)\n- 1PM: SIN-BKK TG @ $301 (OP ~$475)\n- 3PM: SIN-CAN CZ @ $301 (OP ~ $500)\n- 7 Oct, 2PM: Up To 50% OFF JB Hotel Flash Sale (Stay period now   to 31 Mar 2027, limited to 1 room night / booking)\n- 7 Oct, 4PM: $1 E-SIM\n- Daily, 4PM: 50% OFF/BOGO ANT (SG, MY, TW, CN)\n\nZH-SG Landing page\nhttps://sg.trip.com/sale/w/mrhmz1ilgml4pso1/1010sale.html?locale=zh-SG&transparentBar=1&wkp=1",
+    "status": "active",
+    "is_expiring": true
+  },
+  {
+    "id": "vc_no_code_needed_17",
+    "ota": "Lazada TH",
+    "promo_code": "NO CODE NEEDED",
+    "description": "10.10 BIG SALE",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Lazada_CPS_WebAPP_TH",
+    "valid_until": "2026-10-12",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56303&AID=2361654&Type=21&r=https%3A%2F%2Fpages.lazada.co.th%2Fwow%2Fgcp%2Froute%2Flazada%2Fth%2Fupr_1000345_lazada%2Fchannel%2Fth%2Fupr-router%2Fth%3Fpha%3Dtrue%26wx_navbar_transparent%3Dtrue%26hybrid%3D1%26data_prefetch%3Dtrue%26at_iframe%3D1%26lzd_navbar_hidden%3Dtrue%26prefetch_replace%3D1%26wh_pid%3D%2Flazada%2Fmegascenario%2Fth%2FTH_D10_2026%2F101026sale",
+    "tcs": "1. คูปอง LazMall ลดสูงสุด 40%*\n\n2. LazFlash ลดสูงสุด 80%*\n\n3. แบรนด์ดังลดแรง 6 ชั่วโมงแรก (2ทุ่ม-ตี2)",
     "status": "active",
     "is_expiring": true
   }
