@@ -1836,23 +1836,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_11",
-    "ota": "Radisson Hotels",
-    "promo_code": "NO CODE NEEDED",
-    "description": "China Summer Sale",
-    "type": "deal",
-    "discount": "",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
-    "valid_until": "2026-10-11",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fchina-summer-sale",
-    "tcs": "Save up to 20% + 2,000 bonus points\n\nTarget Market: China",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_sunmstb",
     "ota": "Klook",
     "promo_code": "SUNMSTB",
@@ -2091,7 +2074,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_12",
+    "id": "vc_no_code_needed_11",
     "ota": "Traveloka",
     "promo_code": "NO CODE NEEDED",
     "description": "Premium Bus",
@@ -2108,7 +2091,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_13",
+    "id": "vc_no_code_needed_12",
     "ota": "Traveloka",
     "promo_code": "NO CODE NEEDED",
     "description": "Premium Train",
@@ -2871,23 +2854,6 @@
     "tcs": "活動優惠辦法：透過指定連結進入Klook，結帳輸入指定活動優惠碼，並以指定信用卡全額付款，方可適用「Klook國外一日遊商品85折 」優惠。\n優惠碼每個帳號限使用1次，最高折抵金額為新台幣250元。\n優惠碼數量有限，以結帳先後順序為準。",
     "status": "active",
     "is_expiring": false
-  },
-  {
-    "id": "vc_ctbclp26ch4",
-    "ota": "Klook",
-    "promo_code": "CTBCLP26CH4",
-    "description": "刷中國信託LINE Pay Visa卡  台港澳飯店12% LINE POINTS回饋",
-    "type": "flat",
-    "discount": "TWD 1",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-10-11",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "活動優惠時間：2026/9/10-2026/10/11。\n活動優惠辦法：中國信託LINE Pay Visa信用卡持卡人需透過指定連結進入Klook並輸入指定優惠碼後，可享台港澳飯店12% LINE POINTS回饋。\n以中國信託LINE Pay Visa卡線上輸卡號或綁定LINE Pay方式，方可回饋。\n優惠碼每個帳號限用1次，單筆訂單最高回饋500點。\n優惠碼每檔限量500組，先買先得。",
-    "status": "active",
-    "is_expiring": true
   },
   {
     "id": "vc_chauhotelklk",
@@ -3876,7 +3842,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_14",
+    "id": "vc_no_code_needed_13",
     "ota": "Lazada TH",
     "promo_code": "NO CODE NEEDED",
     "description": "10.10 BIG SALE",
