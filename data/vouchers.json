@@ -1836,6 +1836,23 @@
     "is_expiring": false
   },
   {
+    "id": "vc_no_code_needed_11",
+    "ota": "Lazada TH",
+    "promo_code": "NO CODE NEEDED",
+    "description": "MID MONTH BRANDS SALE",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Lazada_CPS_WebAPP_TH",
+    "valid_until": "2026-10-17",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56303&AID=2361654&Type=21&r=https%3A%2F%2Fpages.lazada.co.th%2Fwow%2Fgcp%2Froute%2Flazada%2Fth%2Fupr_1000345_lazada%2Fchannel%2Fth%2Fupr-router%2Fth%3Fwx_navbar_transparent%3Dtrue%26hybrid%3D1%26data_prefetch%3Dtrue%26at_iframe%3D1%26pha%3Dtrue%26prefetch_replace%3D1%26wh_pid%3D%2Flazada%2Fmegascenario%2Fth%2Faug_midmonth_2026%2Fmidmonthbrandssale",
+    "tcs": "1. คูปองแบรนด์ดังลดสูงสุด 50% / LazMall Voucher up to 50%\n2. ของแท้ถูกชัวร์ / 100% Authentic & Low Price Guarantee\n3. แบรนด์ดังลด50% / Half Price Brand Deals",
+    "status": "active",
+    "is_expiring": true
+  },
+  {
     "id": "vc_sunmstb",
     "ota": "Klook",
     "promo_code": "SUNMSTB",
@@ -2074,7 +2091,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_11",
+    "id": "vc_no_code_needed_12",
     "ota": "Traveloka",
     "promo_code": "NO CODE NEEDED",
     "description": "Premium Bus",
@@ -2091,7 +2108,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_12",
+    "id": "vc_no_code_needed_13",
     "ota": "Traveloka",
     "promo_code": "NO CODE NEEDED",
     "description": "Premium Train",
@@ -2108,23 +2125,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_post264000914",
-    "ota": "Klook",
-    "promo_code": "POST264000914",
-    "description": "刷中華郵政VISA金融卡 全站商品滿$2500折$400",
-    "type": "flat",
-    "discount": "TWD 400",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-10-13",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_post264000921",
     "ota": "Klook",
     "promo_code": "POST264000921",
@@ -2139,7 +2139,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_post264000928",
@@ -3842,40 +3842,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_lerkdongjp10",
-    "ota": "Klook",
-    "promo_code": "LERKDONGJP10",
-    "description": "[Theme park & Mobility in Japan] 10% off max capped 500.- when booking activity or mobility in Japan at least 5,000.-",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-10-13",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable from 8-12 October 2026. Get 10% off max capped 500.- when booking activity or mobility in Japan at least 5,000.-. Excludes flights, gift cards, and discounted activities. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_bookarexnow10",
-    "ota": "Klook",
-    "promo_code": "BOOKAREXNOW10",
-    "description": "B1G1 AREX Incheon Airport Express Train Tickets",
-    "type": "percent",
-    "discount": "50%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-10-13",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "B1G1 AREX Incheon Airport Express Train Tickets. start from 10-12 October 2026 (start 00.00 am.). Code is for single use only. Valid for trains departing Incheon Airport → Seoul Station between 05:00-10:00 or 18:00–22:00 KST only. Not stackable with any other promotion. Code valid until 12 October 2026 or until quantity exhausted, whichever comes first. If the order is cancelled for any reason (including force majeure), the coupon cannot be returned.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_jptst5au",
     "ota": "Klook",
     "promo_code": "JPTST5AU",
@@ -3942,56 +3908,5 @@
     "tcs": "This \"10%\" discount coupon is valid only for: \"KidZania Kuala Lumpur Ticket\". Max discount at 5 USD.\nEach user is allowed to use it only once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: October 31st",
     "status": "active",
     "is_expiring": false
-  },
-  {
-    "id": "vc_lerkdongthai",
-    "ota": "Klook",
-    "promo_code": "LERKDONGTHAI",
-    "description": "10%off max 250.-  min spend 2,500.- when booking activities in Thailand",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-10-13",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable from 3-12 October 2026. Get 10%off max 250.-  min spend 2,500.- when booking activities in Thailand. Excludes hotels, flights, gift cards, and discounted activities. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_lerkdonghk10",
-    "ota": "Klook",
-    "promo_code": "LERKDONGHK10",
-    "description": "[Theme park & Mobility in Hong Kong] 10% off max capped 500.- when booking activity or mobility in Hong Kong at least 5,000.-",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-10-13",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable from 5-12 October 2026. Get 10% off max capped 500.- when booking activity or mobility in Hong Kong at least 5,000.-. Excludes flights, gift cards, and discounted activities. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_lerkdongcn10",
-    "ota": "Klook",
-    "promo_code": "LERKDONGCN10",
-    "description": "[Theme park & Mobility in China] 10% off max capped 500.- when booking activity or mobility in China at least 5,000.-",
-    "type": "percent",
-    "discount": "10%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-10-13",
-    "market": "THB",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Limited Offer. Only applicable from 6-12 October 2026. Get 10% off max capped 500.- when booking activity or mobility in China at least 5,000.-. Excludes flights, gift cards, and discounted activities. Offer valid for one-time use per user. Can apply to applicable activities only.",
-    "status": "active",
-    "is_expiring": true
   }
 ]
