@@ -3908,5 +3908,39 @@
     "tcs": "This \"10%\" discount coupon is valid only for: \"KidZania Kuala Lumpur Ticket\". Max discount at 5 USD.\nEach user is allowed to use it only once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: October 31st",
     "status": "active",
     "is_expiring": false
+  },
+  {
+    "id": "vc_cnrailautumn10",
+    "ota": "Klook",
+    "promo_code": "CNRAILAUTUMN10",
+    "description": "China Rail 10% off",
+    "type": "percent",
+    "discount": "10%",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "All activities",
+    "valid_until": "2026-10-31",
+    "market": "ALL",
+    "affiliate_link": "https://www.klook.com/deals?aid=115333",
+    "tcs": "This \"10%\" discount coupon is valid only for: \"China trains\". Max discount at 5 USD.\nEach user is allowed to use it only once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: October 31st",
+    "status": "active",
+    "is_expiring": false
+  },
+  {
+    "id": "vc_10krrail",
+    "ota": "Klook",
+    "promo_code": "10KRRAIL",
+    "description": "Korea Rail ticket 10% off",
+    "type": "percent",
+    "discount": "10%",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "All activities",
+    "valid_until": "2026-10-31",
+    "market": "ALL",
+    "affiliate_link": "https://www.klook.com/deals?aid=115333",
+    "tcs": "This \"10%\" discount coupon is valid only for: \"Korea Rail ticket\". Max discount at 5 USD.\nEach user is allowed to use it only once. The number of discount codes is limited. Discount codes will be applied based on the order of checkout. If a warning appears during checkout that the discount code is not applicable, it means the code has reached its usage limit. The final discount will be as shown on the final checkout page. Expiration date: October 31st",
+    "status": "active",
+    "is_expiring": false
   }
 ]
