@@ -1836,23 +1836,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_11",
-    "ota": "Lazada TH",
-    "promo_code": "NO CODE NEEDED",
-    "description": "MID MONTH BRANDS SALE",
-    "type": "deal",
-    "discount": "",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "Other - Lazada_CPS_WebAPP_TH",
-    "valid_until": "2026-10-17",
-    "market": "ALL",
-    "affiliate_link": "https://clk.omgt6.com/?PID=56303&AID=2361654&Type=21&r=https%3A%2F%2Fpages.lazada.co.th%2Fwow%2Fgcp%2Froute%2Flazada%2Fth%2Fupr_1000345_lazada%2Fchannel%2Fth%2Fupr-router%2Fth%3Fwx_navbar_transparent%3Dtrue%26hybrid%3D1%26data_prefetch%3Dtrue%26at_iframe%3D1%26pha%3Dtrue%26prefetch_replace%3D1%26wh_pid%3D%2Flazada%2Fmegascenario%2Fth%2Faug_midmonth_2026%2Fmidmonthbrandssale",
-    "tcs": "1. คูปองแบรนด์ดังลดสูงสุด 50% / LazMall Voucher up to 50%\n2. ของแท้ถูกชัวร์ / 100% Authentic & Low Price Guarantee\n3. แบรนด์ดังลด50% / Half Price Brand Deals",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_sunmstb",
     "ota": "Klook",
     "promo_code": "SUNMSTB",
@@ -2091,7 +2074,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_12",
+    "id": "vc_no_code_needed_11",
     "ota": "Traveloka",
     "promo_code": "NO CODE NEEDED",
     "description": "Premium Bus",
@@ -2108,7 +2091,7 @@
     "is_expiring": false
   },
   {
-    "id": "vc_no_code_needed_13",
+    "id": "vc_no_code_needed_12",
     "ota": "Traveloka",
     "promo_code": "NO CODE NEEDED",
     "description": "Premium Train",
