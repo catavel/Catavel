@@ -2091,23 +2091,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_post264000928",
-    "ota": "Klook",
-    "promo_code": "POST264000928",
-    "description": "刷中華郵政VISA金融卡 全站商品滿$2500折$400",
-    "type": "flat",
-    "discount": "TWD 400",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-10-27",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "活動優惠時間：2026/4/1-2027/3/31，每週一 00:00-23:59。\n活動優惠辦法：每週一消費Klook全站商品，綁定中華郵政VISA金融卡結帳，並輸入指定活動優惠碼成功完成付款，方可適用「Klook 全站商品滿2,500折400」優惠。\n優惠碼每週於每個帳號限使用1次，消費滿新台幣2,500元，最高折抵金額為新台幣400元。\n優惠碼於每週一凌晨0時開放領取，優惠碼效期共30天(含領取日)，例如：2026/4/6領取優惠碼，有效期限至2026/5/5。\n上述優惠碼每週限量200組，換完為止，以實際結帳時間及先後順序為準，若結帳時出現優惠碼不適用之警示，表示優惠碼已抵達使用上限，實際折扣以最終結帳頁面為準。\n特定美食餐券及體驗活動等特殊商品不適用，包含：家樂福、7-11、全家、星巴克、肯德基、麥當勞等連鎖餐飲即享券(禮物卡)。",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_vnatt5au",
     "ota": "Klook",
     "promo_code": "VNATT5AU",
