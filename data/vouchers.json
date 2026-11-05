@@ -2853,7 +2853,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Applicable to HK or Macau users enjoy 20% off on all SPA & Massage in Mainland China when purchase over HK$500, max discount HK$100. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_cnspa1023100",
@@ -2870,7 +2870,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Applicable to HK or Macau users enjoy 20% off on all SPA & Massage in Mainland China when purchase over HK$500, max discount HK$100. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_cnspaq480off",
@@ -2887,7 +2887,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Applicable to HK or Macau users enjoy 20% off on all SPA & Massage in Mainland China when purchase over HK$500, max discount HK$100. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_hktkdl1010",
@@ -4333,23 +4333,6 @@
     "tcs": "僅限台灣用戶，使用Klook訂購西拉雅指定商品，輸入優惠碼滿新台幣$201，最高可折抵新台幣$200，使用期限至2027/3/31。優惠碼不得於JR交通票券、日本環球影城快速通關、東京迪士尼、機票、禮券/商品卡與部分餐券相關商品使用，獨家及優惠商品恕不提供折扣，優惠碼數量有限，以結帳先後順序為主，若結帳畫面出現不適用，表示此優惠碼已達到使用上限。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
     "is_expiring": false
-  },
-  {
-    "id": "vc_all961030",
-    "ota": "Klook",
-    "promo_code": "ALL961030",
-    "description": "1030｜全站96折1111",
-    "type": "percent",
-    "discount": "4%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-11-05",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "早上11:00開搶，僅限台灣用戶，使用 Klook 訂購全站商品，輸入優惠碼96折優惠價，最高可折抵新台幣 $1111。使用期限為2026/11/05 23:59 使用完畢。不適用於延後付款。\n優惠碼不得於 JR交通票券、日本環球影城快速通關、機票、禮券/商品卡與部分餐券相關商品使用，獨家及優惠商品恕不提供折扣，優惠碼數量有限，以結帳先後順序為主，若結帳畫面出現不適用，表示此優惠碼已達到使用上限。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
-    "status": "active",
-    "is_expiring": true
   },
   {
     "id": "vc_upi111new10",
