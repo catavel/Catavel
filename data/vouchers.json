@@ -4400,7 +4400,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "僅限台灣用戶，使用 Klook 訂購指定日本、韓國商品，且出發日為訂購日 30 天 (含) 後，輸入優惠碼享 8 折早鳥優惠價，最高可折抵新台幣 $320，使用期限至 2026 年 11 月 13 日 23:59。優惠碼使用數量有限，以結帳先後順序為主，若結帳畫面出現不適用相關訊息，表示此優惠碼已達到使用上限。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_anzeutourearly",
@@ -4417,7 +4417,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "僅限台灣用戶，使用 Klook 訂購指定澳洲、歐洲商品，且出發日為訂購日 30 天 (含) 後，輸入優惠碼享 8 折早鳥優惠價，最高可折抵新台幣 $500，使用期限至 2026 年 11 月 13 日 23:59。優惠碼使用數量有限，以結帳先後順序為主，若結帳畫面出現不適用相關訊息，表示此優惠碼已達到使用上限。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_thtourearly",
@@ -4434,7 +4434,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "僅限台灣用戶，使用 Klook 訂購指定泰國商品，且出發日為訂購日 30 天 (含) 後，輸入優惠碼享 8 折早鳥優惠價，最高可折抵新台幣 $200，使用期限至 2026 年 11 月 13 日 23:59。優惠碼使用數量有限，以結帳先後順序為主，若結帳畫面出現不適用相關訊息，表示此優惠碼已達到使用上限。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_vntourearly",
@@ -4451,7 +4451,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "僅限台灣用戶，使用 Klook 訂購指定越南商品，且出發日為訂購日 30 天 (含) 後，輸入優惠碼享 8 折早鳥優惠價，最高可折抵新台幣 $200，使用期限至 2026 年 11 月 13 日 23:59。優惠碼使用數量有限，以結帳先後順序為主，若結帳畫面出現不適用相關訊息，表示此優惠碼已達到使用上限。商品頁面顯示的價格可能因匯率與季節因素變動，請以實際訂購時的結帳金額為準。優惠每會員限用乙次，逾期視同放棄，不得主張折現、點數或以其他商品替代。優惠券使用後即失效，不論任何原因（包含不可抗力之因素）取消訂單，優惠券恕無法返還。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_d11all111off",
@@ -4705,6 +4705,23 @@
     "market": "CNY",
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "This \"7%\" discount coupon is applicable to Europe & United Kingdom transportation products.\nNot include:\n\"Europe Train Tickets\"\nA minimum spend of US$300 is required, with a maximum discount of US$80.\nEach user is limited to one use. The number of discount codes is limited and will be applied on a first-come, first-served basis at checkout. If a warning appears at checkout indicating that the discount code is not applicable, it means the usage limit for that discount code has been reached. The final discount amount will be subject to what is displayed on the checkout page. Valid until: 5 days after redemption",
+    "status": "active",
+    "is_expiring": false
+  },
+  {
+    "id": "vc_seap21126",
+    "ota": "Radisson Hotels",
+    "promo_code": "SEAP21126",
+    "description": "Radisson Hotels 11.11 Deals",
+    "type": "deal",
+    "discount": "",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
+    "valid_until": "2026-11-14",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2F11-11-deals",
+    "tcs": "Save up to 35% on Bed & Breakfast stays at participating hotels in the SEAP region. Radisson Rewards members also earn 2,000 bonus points per stay.",
     "status": "active",
     "is_expiring": false
   }
