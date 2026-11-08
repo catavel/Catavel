@@ -2652,40 +2652,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_chbsat2651102",
-    "ota": "Klook",
-    "promo_code": "CHBSAT2651102",
-    "description": "刷彰化銀行商旅御璽Fun心卡 每週一全球指定樂園5折起",
-    "type": "percent",
-    "discount": "50%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-11-08",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "活動優惠時間：2026/10/1 - 2026/12/31。至Klook領取彰銀卡友專屬活動優惠碼，購買全球樂園指定商品，刷彰銀卡全額付費，該筆訂單享下述活動優惠：「週週瘋搶全球指定樂園5折起」每週一刷指定卡別購買指定樂園門票，享最優5折優惠，數量有限，購完為止。商旅御璽Fun心卡：每週限量20組，折抵上限1,500元。其他全卡友：每週限量15組，折抵上限1,100元。「週週瘋搶全球指定樂園5折起」活動於 Klook 平台訂購【全球指定樂園商品】，使用彰化銀行指定信用卡輸入優惠碼可享最優5折優惠，可補價差購買其他天數與時段方案。每組優惠碼每位會員帳號限使用乙次。上述各優惠皆須透過使用彰銀專屬優惠碼方可適用，商品頁面價格可能因匯率波動或季節調整而有所變動，優惠碼一經使用即視為生效並不得轉讓，實際折扣商品以最終結帳金額為準。上述優惠不得於日本環球影城/日本環球影城快速通關券等相關商品使用，獨家及優惠商品恕不提供折扣，詳細不適用商品請參閱服務條款。若因任何原因（包含但不限於不可抗力因素）取消訂單，該優惠碼恕不補發或返還。優惠碼逾期未使用視同放棄，恕不折抵現金、點數或其他商品。Klook 保留隨時修改、暫停或終止本活動及相關條款之權利，恕不另行通知。",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_chbaat2651102",
-    "ota": "Klook",
-    "promo_code": "CHBAAT2651102",
-    "description": "刷彰化銀行信用卡 每週一全球指定樂園5折起",
-    "type": "percent",
-    "discount": "50%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-11-08",
-    "market": "TWD",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "活動優惠時間：2026/10/1 - 2026/12/31。至Klook領取彰銀卡友專屬活動優惠碼，購買全球樂園指定商品，刷彰銀卡全額付費，該筆訂單享下述活動優惠：「週週瘋搶全球指定樂園5折起」每週一刷指定卡別購買指定樂園門票，享最優5折優惠，數量有限，購完為止。商旅御璽Fun心卡：每週限量20組，折抵上限1,500元。其他全卡友：每週限量15組，折抵上限1,100元。「週週瘋搶全球指定樂園5折起」活動於 Klook 平台訂購【全球指定樂園商品】，使用彰化銀行指定信用卡輸入優惠碼可享最優5折優惠，可補價差購買其他天數與時段方案。每組優惠碼每位會員帳號限使用乙次。上述各優惠皆須透過使用彰銀專屬優惠碼方可適用，商品頁面價格可能因匯率波動或季節調整而有所變動，優惠碼一經使用即視為生效並不得轉讓，實際折扣商品以最終結帳金額為準。上述優惠不得於日本環球影城/日本環球影城快速通關券等相關商品使用，獨家及優惠商品恕不提供折扣，詳細不適用商品請參閱服務條款。若因任何原因（包含但不限於不可抗力因素）取消訂單，該優惠碼恕不補發或返還。優惠碼逾期未使用視同放棄，恕不折抵現金、點數或其他商品。Klook 保留隨時修改、暫停或終止本活動及相關條款之權利，恕不另行通知。",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_post264001012",
     "ota": "Klook",
     "promo_code": "POST264001012",
@@ -2819,7 +2785,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Hong Kong users who book Tokyo Disney Resort tickets can enjoy a 10% discount by entering the promo code at checkout, with a maximum discount of HK$100. Each user can only use this offer once. No minimum spend is required, and it cannot be used in conjunction with other offers (direct product discounts, promo codes, discount codes, special package deals, etc.). The quantity of offers is limited, available on a first-come, first-served basis, while supplies last. The promo code will become invalid once its usage limit is reached. Terms and conditions apply.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_fallinkr50",
@@ -2836,7 +2802,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Applicable to HK and Macau users enjoy HK$50 off upon spending HK$499 or above on Korea Travel Products - Attractions,Activities,Tours,Hotels,Car Services (excluding WiFi,SIM cards, other exclusions determined by Klook), max discount HK$50. Each user can use this discount twice. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_post264001019",
@@ -4349,7 +4315,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Applicable to Hong Kong users only. Enjoy a HK$111 off discount on a single purchase of HK$2,000 or more across all products. This offer does not apply to Klook Passes and specific Klook products. Each user is limited to using this offer once. Quota is limited, available on a first-come, first-served basis, while supplies last. The promo code will become invalid after reaching the usage limit. Terms and conditions apply.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_alleuukstp5off",
