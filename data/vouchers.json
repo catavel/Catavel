@@ -4571,5 +4571,39 @@
     "tcs": "Save up to 35% on Bed & Breakfast stays at participating hotels in the SEAP region. Radisson Rewards members also earn 2,000 bonus points per stay.",
     "status": "active",
     "is_expiring": true
+  },
+  {
+    "id": "vc_no_code_needed_13",
+    "ota": "Trip.com",
+    "promo_code": "NO CODE NEEDED",
+    "description": "11.11 Mega Sale - PH",
+    "type": "flat",
+    "discount": "500",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - CPS_Bundle_[Flight+Hotels]",
+    "valid_until": "2026-11-11",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56314&AID=2361654&Type=21&r=https%3A%2F%2Fph.trip.com%2Fsale%2Fw%2F29948%2Fmegasale.html%3Flocale%3Den-PH",
+    "tcs": "> From ₱111 all-in flash sale when you fly Manila-Cebu/Boracay\n\n> Philippine Airlines B1G1 Roundtrip Manila to Boracay\n\n> From ₱499 International Flash Sale for Hotels and Flights\n\n> From ₱111 Domestic Hotel Flash Sale\n\n> ₱14,000 ALL-IN Flash Sale Hong Kong Flight + Hotel 3 Days 2 Nights for 2 Pax\n\n> Flight & Hotel Vouchers up to ₱1,500 OFF discount\n\n> Buy 1 Get 1 on Attractions and Tours\n\n> eSim Flash Sale",
+    "status": "active",
+    "is_expiring": true
+  },
+  {
+    "id": "vc_no_code_needed_14",
+    "ota": "Trip.com",
+    "promo_code": "NO CODE NEEDED",
+    "description": "SG 11.11",
+    "type": "percent",
+    "discount": "$220",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - CPS_Bundle_[Flight+Hotels]",
+    "valid_until": "2026-11-11",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt6.com/?PID=56314&AID=2361654&Type=21&r=https%3A%2F%2Fsg.trip.com%2Fsale%2Fw%2Fsn0akihheuus6ysr%2Fdouble11-megasale.html%3Flocale%3Den-SG%26transparentBar%3D1%26wkp%3D1",
+    "tcs": "LINK\n\nzh LINK\n\n• Daily S$220 OFF Coupon Drop with DBS/POSB Cards (12AM)\n\n• Flight Frenzy Sale\n\n   o Buy 1 get 1 free from Singapore to Seoul on Korean Air (12PM)\n\n   o All-In Singapore to Guangzhou at S$199 nett (1PM)\n\n   o All-In Singapore to Kuala Lumpur at S$69 nett (2PM)\n\n   o All-In Singapore to Bali at S$150 nett (4PM)\n\n   o All-In Singapore to Phu Quoc Island at S$111 nett (5PM)\n\n   o All-In Singapore to Sydney at S$599 nett (6PM)\n\n• Double up the Fun at 11AM\n\n   o Flight+Hotel packages starting from only S$350 for 2 pax!\n\n       - 5D4N Bangkok S$880 for 2 pax\n\n            - Flight: Thai Airways\n\n            - Hotel: Vela Dhi Glow\n\n       - 5D4N Ho Chi Minh S$660 for 2 pax\n\n            - Flight: Vietnam Airlines\n\n            - Hotel: KiN Hotel\n\n       - 3D2N Kuala Lumpur S$350 for 2 pax\n\n            - Flight: Malaysia Airlines\n\n            - Hotel: Dorsett Kuala Lumpur\n\n       - 5D4N Guangzhou S$770 for 2 pax\n\n            - Flight: China Southern\n\n            - Hotel: Echarm Hotel\n\n• 50% OFF / BOGO on famous IP parks at 7PM daily\n\n   o Buy 1 Get 1 Universal Studio Japan 1 day pass / Garden by the Bay / Taipei 101\n\n   o 50% OFF Shanghai Disneyland / Hong Kong Ocean Park / Everland / N Seoul Tower / Chimelong Safari Park\n\n• 50% OFF Package Tours (daily 12AM)\n\n• 50% OFF All* Categories\n\n   o 50% OFF on 11 Nov, 12AM on Airport Transfer, Car Rental, Attraction & Tours, Package Tour, Cruise\n\n• 40% OFF Insurance with any flights purchased between 11-14 Nov\n\n• S$1 E-SIMs to 8 different countries, dropping on 11 Nov 8PM\n\nZh Landing page- https://sg.trip.com/sale/w/sn0akihheuus6ysr/double11-megasale.html?locale=zh-SG&transparentBar=1&wkp=1",
+    "status": "active",
+    "is_expiring": true
   }
 ]
