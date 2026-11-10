@@ -1442,7 +1442,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "Applicable to HK users enjoy 12% off on Korea (Busan,Ulsan,Gyeongnam) Travel Products (excluding WiFi,SIM cards or other exclusions determined by Klook. Applicable to instant confirmation and non-refundable car service bookings and hotel bookings, pickup car period: now till 17Nov 2026 23:59[GMT+8] and dropoff car period: now till 31Dec 2026 23:59[GMT+8]),no minimum spending, max discount HK$25. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_klookesim99",
