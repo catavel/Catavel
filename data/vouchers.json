@@ -2652,57 +2652,6 @@
     "is_expiring": false
   },
   {
-    "id": "vc_cnspa1016100",
-    "ota": "Klook",
-    "promo_code": "CNSPA1016100",
-    "description": "ALL China SPA 20% OFF",
-    "type": "percent",
-    "discount": "20%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-11-12",
-    "market": "HKD, MOP",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Applicable to HK or Macau users enjoy 20% off on all SPA & Massage in Mainland China when purchase over HK$500, max discount HK$100. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_cnspa1023100",
-    "ota": "Klook",
-    "promo_code": "CNSPA1023100",
-    "description": "ALL China SPA 20% OFF",
-    "type": "percent",
-    "discount": "20%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-11-12",
-    "market": "HKD, MOP",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Applicable to HK or Macau users enjoy 20% off on all SPA & Massage in Mainland China when purchase over HK$500, max discount HK$100. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
-    "id": "vc_cnspaq480off",
-    "ota": "Klook",
-    "promo_code": "CNSPAQ480OFF",
-    "description": "ALL China SPA 20% OFF",
-    "type": "percent",
-    "discount": "20%",
-    "min_spend": "",
-    "max_discount": "",
-    "applicable_for": "All activities",
-    "valid_until": "2026-11-12",
-    "market": "HKD, MOP",
-    "affiliate_link": "https://www.klook.com/deals?aid=115333",
-    "tcs": "Applicable to HK or Macau users enjoy 20% off on all SPA & Massage in Mainland China when purchase over HK$500, max discount HK$100. Each user can use this discount once. Discount is available on a first-come-first-served basis and while stocks last. Discount code will become invalid once it reaches the usage limit. Terms and conditions apply.",
-    "status": "active",
-    "is_expiring": true
-  },
-  {
     "id": "vc_hktkdl1010",
     "ota": "Klook",
     "promo_code": "HKTKDL1010",
@@ -2768,7 +2717,7 @@
     "affiliate_link": "https://www.klook.com/deals?aid=115333",
     "tcs": "活動優惠時間：2026/11/1 00:00~2026/11/19 23:59。\n活動優惠辦法：透過指定連結進入Klook消費，輸入代碼「CTBCLP262002」並以中國信託LINE Pay卡輸入卡號或綁定LINE Pay線上支付費用，即享「Klook全站商品20% LINE POINTs回饋」。\n優惠碼每個帳號限用1次，單筆訂單最高回饋200點。\n優惠碼每月限量1,150組，先買先得。\n「美食品嚐類別」不適用，包含不限於：家樂福、7-11、全家、星巴克、肯德基、麥當勞等。",
     "status": "active",
-    "is_expiring": false
+    "is_expiring": true
   },
   {
     "id": "vc_post264001026",
