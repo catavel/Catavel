@@ -4231,5 +4231,39 @@
     "tcs": "This \"7%\" discount coupon is applicable to Europe & United Kingdom transportation products.\nNot include:\n\"Europe Train Tickets\"\nA minimum spend of US$300 is required, with a maximum discount of US$80.\nEach user is limited to one use. The number of discount codes is limited and will be applied on a first-come, first-served basis at checkout. If a warning appears at checkout indicating that the discount code is not applicable, it means the usage limit for that discount code has been reached. The final discount amount will be subject to what is displayed on the checkout page. Valid until: 5 days after redemption",
     "status": "active",
     "is_expiring": false
+  },
+  {
+    "id": "vc_no_code_needed_13",
+    "ota": "Radisson Hotels",
+    "promo_code": "NO CODE NEEDED",
+    "description": "art’otel Black Friday Weekend Exclusive",
+    "type": "percent",
+    "discount": "40%",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
+    "valid_until": "2026-12-31",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fartotel-black-friday-exclusive",
+    "tcs": "Save up to 40% OFF Suites and Studios, including breakfast and a bottle of champagne.",
+    "status": "active",
+    "is_expiring": false
+  },
+  {
+    "id": "vc_blck26",
+    "ota": "Radisson Hotels",
+    "promo_code": "BLCK26",
+    "description": "Radisson Hotels Black Friday",
+    "type": "percent",
+    "discount": "35%",
+    "min_spend": "",
+    "max_discount": "",
+    "applicable_for": "Other - Radisson Hotels_CPS_Web_Global",
+    "valid_until": "2026-12-02",
+    "market": "ALL",
+    "affiliate_link": "https://clk.omgt1.com/?PID=56894&AID=2361654&Type=21&r=https%3A%2F%2Fwww.radissonhotels.com%2Fen-us%2Fhotel-deals%2Fblack-friday",
+    "tcs": "Save up to 35% OFF stays at 685+ hotels across EMEA and APAC. Radisson Rewards members also receive 3,000 bonus points per stay.",
+    "status": "active",
+    "is_expiring": true
   }
 ]
